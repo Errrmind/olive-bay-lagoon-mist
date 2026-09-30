@@ -1,0 +1,315 @@
+[
+  {
+    "id": "01_ceo_elon_musk",
+    "index": 1,
+    "title": "CEO — Elon Musk",
+    "short": "CEO",
+    "callsign": "APEX",
+    "lane": "command",
+    "publicRecord": "Founder of xAI (March 2023). CEO after SpaceX absorbed xAI (February 2026). Controlling figure through the Cursor option (April 2026), $60B stock acquisition (June, close mid-August 2026), and the first joint product Grok Bot (11 August 2026). Public mission language for xAI has been “understand the universe” / build AI that seeks truth, later operationalized as shipping Grok, Grokipedia, Grok Build, and Grok Bot under SpaceXAI. He does not write the Rust TUI or the Bot computer image. He decides whether those teams exist and whether they are allowed to ship under the Grok name.",
+    "packet": [
+      "Bet 1: Colossus-scale training is worth the capex.",
+      "Bet 2: Chat is not enough. Developers need a harness (Build). Knowledge workers need a computer (Bot).",
+      "Bet 3: Buy Cursor rather than rent Anthropic/OpenAI forever inside the editor.",
+      "Bet 4: Grok Bot is not a Cursor sidebar. Build it as its own product.",
+      "Bet 5: Distribution rides existing SuperGrok and Cursor subscriptions. No standalone Bot SKU at launch."
+    ],
+    "tools": [
+      "X (product decisions announced in public)",
+      "SpaceX / SpaceXAI staff notes and live demos",
+      "Valuation and SEC-facing acquisition paper (Cursor close)",
+      "Side-by-side of Claude / GPT / Gemini agent products",
+      "Internal dogfood of Grok Build and early Sand/Bot"
+    ],
+    "done": "He has said yes to the category and the spend. Staff can print a launch date without the project dying in a rename.",
+    "body": "# Role: CEO — Elon Musk\n\n## Public record\n\nFounder of xAI (March 2023). CEO after SpaceX absorbed xAI (February 2026). Controlling figure through the Cursor option (April 2026), $60B stock acquisition (June, close mid-August 2026), and the first joint product Grok Bot (11 August 2026). Public mission language for xAI has been “understand the universe” / build AI that seeks truth, later operationalized as shipping Grok, Grokipedia, Grok Build, and Grok Bot under SpaceXAI.\n\nHe does not write the Rust TUI or the Bot computer image. He decides whether those teams exist and whether they are allowed to ship under the Grok name.\n\n## Reconstructed job packet (what he had to approve)\n\n- **Bet 1:** Colossus-scale training is worth the capex.\n- **Bet 2:** Chat is not enough. Developers need a harness (Build). Knowledge workers need a computer (Bot).\n- **Bet 3:** Buy Cursor rather than rent Anthropic/OpenAI forever inside the editor.\n- **Bet 4:** Grok Bot is *not* a Cursor sidebar. Build it as its own product (Ugarte: built from scratch instead of adding it to Cursor).\n- **Bet 5:** Distribution rides existing SuperGrok and Cursor subscriptions. No standalone Bot SKU at launch.\n\nA meeting with him, if it happened in the movie version, would not be “please review Figma.” It would be: category, compute, acquisition, naming, and whether Enterprise waits.\n\n## Tools and materials\n\n- X (product decisions announced in public)\n- SpaceX / SpaceXAI staff notes and live demos\n- Valuation and SEC-facing acquisition paper (Cursor close)\n- Side-by-side of Claude / GPT / Gemini agent products\n- Internal dogfood of Grok Build and early Sand/Bot\n\n## Done means\n\nHe has said yes to the category and the spend. Staff can print a launch date without the project dying in a rename."
+  },
+  {
+    "id": "02_president_and_ops",
+    "index": 2,
+    "title": "President and company operations",
+    "short": "President / Ops",
+    "callsign": "ORBIT",
+    "lane": "command",
+    "publicRecord": "After the SpaceX combination, reporting described Gwynne Shotwell supervising xAI operations from February 2026 and Michael Nicolls (ex-Starlink) becoming xAI president in April 2026. Original co-founders had largely left by March 2026. Musk said xAI “was not built right the first time around.” Day-to-day AI research leadership became distributed; operating leadership came from SpaceX / Starlink people. This layer is why Grok Bot’s computer looks like an operations problem (images, recovery, Team Setup, idle sleep) and not only a model demo.",
+    "packet": [
+      "Keep Colossus, inference, and product shipping on a calendar after founder attrition.",
+      "Absorb Cursor people without freezing both codebases.",
+      "Decide which brand ships on new work (SpaceXAI / Grok vs Cursor name on old editor).",
+      "Make Enterprise a real switch (enable, network, audit, computer recreate) instead of a waitlist forever.",
+      "Stop two teams from inventing two secret stores, two plugin systems, and two billing ledgers — they only half-succeeded (Bot still meters on Cursor; Grok Business still does not link Bot)."
+    ],
+    "tools": [
+      "Headcount and vendor spend",
+      "Data-center capacity reports",
+      "Acquisition integration checklist",
+      "Incident / “computer unreachable” rate after launch",
+      "Plan-matrix fights between grok.com billing and Cursor billing"
+    ],
+    "done": "A launch does not require a founding researcher in the room. A president can say “ship on this date” and infra plus legal can live with it.",
+    "body": "# Role: President and company operations\n\n## Public record\n\nAfter the SpaceX combination, reporting described Gwynne Shotwell supervising xAI operations from February 2026 and Michael Nicolls (ex-Starlink) becoming xAI president in April 2026. Original co-founders had largely left by March 2026. Musk said xAI “was not built right the first time around.” Day-to-day AI research leadership became distributed; operating leadership came from SpaceX / Starlink people.\n\nThis layer is why Grok Bot’s computer looks like an operations problem (images, recovery, Team Setup, idle sleep) and not only a model demo.\n\n## Reconstructed job packet\n\n- Keep Colossus, inference, and product shipping on a calendar after founder attrition.\n- Absorb Cursor people without freezing both codebases.\n- Decide which brand ships on new work (SpaceXAI / Grok vs Cursor name on old editor).\n- Make Enterprise a real switch (enable, network, audit, computer recreate) instead of a waitlist forever.\n- Stop two teams from inventing two secret stores, two plugin systems, and two billing ledgers — they only half-succeeded (Bot still meters on Cursor; Grok Business still does not link Bot).\n\n## Tools and materials\n\n- Headcount and vendor spend\n- Data-center capacity reports\n- Acquisition integration checklist\n- Incident / “computer unreachable” rate after launch\n- Plan-matrix fights between grok.com billing and Cursor billing\n\n## Done means\n\nA launch does not require a founding researcher in the room. A president can say “ship on this date” and infra plus legal can live with it."
+  },
+  {
+    "id": "03_incubation_lead",
+    "index": 3,
+    "title": "Incubation / product lead (Grok Bot)",
+    "short": "Incubation",
+    "callsign": "SAND",
+    "lane": "bot",
+    "publicRecord": "Roman Ugarte (SpaceXAI; previously Growth at Cursor, 15 people → 1,000+) spoke publicly about incubating Grok Bot: first line of code to internal product in four weeks, public launch three weeks later, built from scratch rather than as a Cursor feature, team personally onboarded nearly 300 first users, “colleague-pilled” philosophy. Grok Bot launched 11 August 2026. Internal client lineage shows Anysphere/Sand (desktop bundle names like `com.anysphere.sand`).",
+    "packet": [
+      "Write the one-sentence product: persistent teammates with a computer, not a better chat.",
+      "Protect a small isolated team from the editor roadmap.",
+      "Choose five objects a user must understand (later published: Bots, Chats, plus computer, routines, skills).",
+      "Define the first-week job-to-be-done: finish work in real tools while the laptop is closed.",
+      "Staff onboarding as product, not support theater (those 300 users).",
+      "Kill scope that smells like “Cursor Cloud Agents with a new coat of paint.”"
+    ],
+    "tools": [
+      "Cursor Growth playbooks and activation metrics",
+      "Hermes / OpenClaw / Devin / Manus comparisons (named in the same interview orbit)",
+      "Design essay drafts that became x.ai/news/designing-grok-bot",
+      "Waitlist + plan entitlement spreadsheet",
+      "Recorded first-user sessions"
+    ],
+    "done": "A stranger can create a named Bot, give it a job, and see a computer. The editor team is not allowed to absorb the project back into a panel.",
+    "body": "# Role: Incubation / product lead (Grok Bot)\n\n## Public record\n\nRoman Ugarte (SpaceXAI; previously Growth at Cursor, 15 people → 1,000+) spoke publicly about incubating Grok Bot: first line of code to internal product in four weeks, public launch three weeks later, built from scratch rather than as a Cursor feature, team personally onboarded nearly 300 first users, “colleague-pilled” philosophy. Grok Bot launched 11 August 2026. Internal client lineage shows Anysphere/Sand (desktop bundle names like `com.anysphere.sand`).\n\n## Reconstructed job packet\n\n- Write the one-sentence product: persistent teammates with a computer, not a better chat.\n- Protect a small isolated team from the editor roadmap.\n- Choose five objects a user must understand (later published: Bots, Chats, plus computer, routines, skills).\n- Define the first-week job-to-be-done: finish work in real tools while the laptop is closed.\n- Staff onboarding as product, not support theater (those 300 users).\n- Kill scope that smells like “Cursor Cloud Agents with a new coat of paint.”\n\n## Tools and materials\n\n- Cursor Growth playbooks and activation metrics\n- Hermes / OpenClaw / Devin / Manus comparisons (named in the same interview orbit)\n- Design essay drafts that became x.ai/news/designing-grok-bot\n- Waitlist + plan entitlement spreadsheet\n- Recorded first-user sessions\n\n## Done means\n\nA stranger can create a named Bot, give it a job, and see a computer. The editor team is not allowed to absorb the project back into a panel."
+  },
+  {
+    "id": "04_product_design_persistent_agents",
+    "index": 4,
+    "title": "Product design — persistent agents (Grok Bot)",
+    "short": "Persistent agents",
+    "callsign": "OBJECT",
+    "lane": "bot",
+    "publicRecord": "SpaceXAI published “Designing Grok Bot for a world of persistent agents” (3 September 2026). The essay is the design contract. It argues chats are disposable and a Bot must have name, avatar, title, memory, presence, a computer, group chats, and routines that start work without a prompt. Tools and skills are account-level; memory and routines are Bot-level.",
+    "packet": [
+      "Replace “new chat” as the primary object.",
+      "Show progress without forcing the user to watch every click (preview, leave, keep working).",
+      "Design takeover for passwords, 2FA, CAPTCHA, payments — never “paste the secret in chat.”",
+      "Design approval cards and Auto-review as first-class, not a settings dump.",
+      "Make mobile (iOS, then Android) a control surface, not a second computer.",
+      "Write empty states that teach one-bot-one-job."
+    ],
+    "tools": [
+      "Figma / design system",
+      "Conversation recordings from the first 300 users",
+      "Competitive traces of Devin, Manus, Claude Computer Use, Operator-class products",
+      "Component inventory: roster, presence, cards, widgets, computer pane",
+      "Copy deck for “Recover computer” vs “Update” vs “Reset”"
+    ],
+    "done": "Engineering can implement objects without inventing new metaphors. Support can answer “where did my Bot go?” with a sidebar model instead of a chat-history model.",
+    "body": "# Role: Product design — persistent agents (Grok Bot)\n\n## Public record\n\nSpaceXAI published “Designing Grok Bot for a world of persistent agents” (3 September 2026). The essay is the design contract. It argues chats are disposable and a Bot must have name, avatar, title, memory, presence, a computer, group chats, and routines that start work without a prompt. Tools and skills are account-level; memory and routines are Bot-level.\n\n## Reconstructed job packet\n\n- Replace “new chat” as the primary object.\n- Show progress without forcing the user to watch every click (preview, leave, keep working).\n- Design takeover for passwords, 2FA, CAPTCHA, payments — never “paste the secret in chat.”\n- Design approval cards and Auto-review as first-class, not a settings dump.\n- Make mobile (iOS, then Android) a control surface, not a second computer.\n- Write empty states that teach one-bot-one-job.\n\n## Tools and materials\n\n- Figma / design system\n- Conversation recordings from the first 300 users\n- Competitive traces of Devin, Manus, Claude Computer Use, Operator-class products\n- Component inventory: roster, presence, cards, widgets, computer pane\n- Copy deck for “Recover computer” vs “Update” vs “Reset”\n\n## Done means\n\nEngineering can implement objects without inventing new metaphors. Support can answer “where did my Bot go?” with a sidebar model instead of a chat-history model."
+  },
+  {
+    "id": "05_agent_computer_platform",
+    "index": 5,
+    "title": "Agent computer / platform engineering (Grok Bot)",
+    "short": "Agent computer",
+    "callsign": "DESK",
+    "lane": "bot",
+    "publicRecord": "Official docs: every Bot on an account shares one persistent cloud computer; each Bot gets a screen; browser cookies, files, and shell credentials are shared; `/workspace` is durable; Update rebuilds the image and keeps durable state; Reset returns to snapshot. Desktop app updates separately from the Agent Computer. Recovery order is published. Enterprise adds Team Setup manifests and bulk recreate/terminate. Staff have warned: do not install a VPN client on the box; it can knock the computer offline. Private networks are an explicit gap. This is the role that had to exist because Bot is not a tool-call list. It is a VM product.",
+    "packet": [
+      "Provision one computer per user account (not per Bot).",
+      "Isolate users from each other; do not pretend screens are a security boundary inside one user.",
+      "Persist disk, cookies, and supported logins across image updates.",
+      "Sleep idle machines; document that daemons die.",
+      "Offer Recover / Update / Reset with least-destructive order.",
+      "Expose a browser, a shell, and a file tree to the model as computer-use, not as a toy iframe.",
+      "Build takeover so a human can type a password on that same desktop.",
+      "Keep chat history **off** the box so Reset does not erase conversations."
+    ],
+    "tools": [
+      "VM / image pipeline (latest “Agent Computer” image)",
+      "Browser automation + computer-use stack",
+      "Snapshot and durable-disk service",
+      "Gateway between the desktop/mobile app and the hosted box",
+      "Observability: unreachable rate, sleep/wake, task-per-screen lock",
+      "Team Setup installer (Enterprise)"
+    ],
+    "done": "A Bot can click a real site after the user closes the phone. An image update does not wipe `/workspace`. Support has three buttons that mean three different amounts of pain.",
+    "body": "# Role: Agent computer / platform engineering (Grok Bot)\n\n## Public record\n\nOfficial docs: every Bot on an account shares one persistent cloud computer; each Bot gets a screen; browser cookies, files, and shell credentials are shared; `/workspace` is durable; Update rebuilds the image and keeps durable state; Reset returns to snapshot. Desktop app updates separately from the Agent Computer. Recovery order is published. Enterprise adds Team Setup manifests and bulk recreate/terminate. Staff have warned: do not install a VPN client on the box; it can knock the computer offline. Private networks are an explicit gap.\n\nThis is the role that had to exist because Bot is not a tool-call list. It is a VM product.\n\n## Reconstructed job packet\n\n- Provision one computer per user account (not per Bot).\n- Isolate users from each other; do not pretend screens are a security boundary inside one user.\n- Persist disk, cookies, and supported logins across image updates.\n- Sleep idle machines; document that daemons die.\n- Offer Recover / Update / Reset with least-destructive order.\n- Expose a browser, a shell, and a file tree to the model as computer-use, not as a toy iframe.\n- Build takeover so a human can type a password on that same desktop.\n- Keep chat history **off** the box so Reset does not erase conversations.\n\n## Tools and materials\n\n- VM / image pipeline (latest “Agent Computer” image)\n- Browser automation + computer-use stack\n- Snapshot and durable-disk service\n- Gateway between the desktop/mobile app and the hosted box\n- Observability: unreachable rate, sleep/wake, task-per-screen lock\n- Team Setup installer (Enterprise)\n\n## Done means\n\nA Bot can click a real site after the user closes the phone. An image update does not wipe `/workspace`. Support has three buttons that mean three different amounts of pain."
+  },
+  {
+    "id": "06_grok_build_harness",
+    "index": 6,
+    "title": "Grok Build harness engineering",
+    "short": "Build harness",
+    "callsign": "HARNESS",
+    "lane": "build",
+    "publicRecord": "Grok Build launched as an early-beta terminal coding agent (May 2026) for SuperGrok and X Premium+. Features shipped in public posts: plan-and-approve, diffs, AGENTS.md, plugins, hooks, skills, MCP, subagents, worktrees, headless `-p`, ACP, `/goal` long-running mode (June), plugin marketplace (June), agent dashboard (June), source published on GitHub `xai-org/grok-build` (July, mostly Rust), web and mobile “build live in chat” for every plan (August). The repo describes a fullscreen mouse-capable TUI that edits files, runs shell, searches the web, and can run local-first against your own inference. This role builds the **harness**, not the weights.",
+    "packet": [
+      "An agent loop that assembles context, parses tool calls, and dispatches them without losing the repo.",
+      "Tools: read, edit, search, shell, web, browser where needed.",
+      "Plan mode that is a gate, not theater.",
+      "Extensibility that matches how developers already live: AGENTS.md, MCP, hooks, skills.",
+      "Long-horizon `/goal` with pause/resume/status.",
+      "A dashboard for many sessions, because one terminal tab does not scale.",
+      "Open-source enough of the harness that people can audit tool dispatch.",
+      "A second surface (web/mobile canvas) that is *not* the TUI, for non-terminal users."
+    ],
+    "tools": [
+      "Rust, TUI rendering, diff viewer",
+      "Tree-sitter / ripgrep-class search",
+      "MCP client, plugin pin-to-SHA installer",
+      "ACP for editor embedding",
+      "CI for headless `-p`",
+      "Install script `curl -fsSL https://x.ai/cli/install.sh | bash`",
+      "GitHub monorepo sync (public repo shows a bot account syncing from a private monorepo)"
+    ],
+    "done": "A developer can install one binary, point it at a repo, approve a plan, and leave `/goal` running. A second developer can read the source and see how a tool call is allowed.",
+    "body": "# Role: Grok Build harness engineering\n\n## Public record\n\nGrok Build launched as an early-beta terminal coding agent (May 2026) for SuperGrok and X Premium+. Features shipped in public posts: plan-and-approve, diffs, AGENTS.md, plugins, hooks, skills, MCP, subagents, worktrees, headless `-p`, ACP, `/goal` long-running mode (June), plugin marketplace (June), agent dashboard (June), source published on GitHub `xai-org/grok-build` (July, mostly Rust), web and mobile “build live in chat” for every plan (August). The repo describes a fullscreen mouse-capable TUI that edits files, runs shell, searches the web, and can run local-first against your own inference.\n\nThis role builds the **harness**, not the weights.\n\n## Reconstructed job packet\n\n- An agent loop that assembles context, parses tool calls, and dispatches them without losing the repo.\n- Tools: read, edit, search, shell, web, browser where needed.\n- Plan mode that is a gate, not theater.\n- Extensibility that matches how developers already live: AGENTS.md, MCP, hooks, skills.\n- Long-horizon `/goal` with pause/resume/status.\n- A dashboard for many sessions, because one terminal tab does not scale.\n- Open-source enough of the harness that people can audit tool dispatch.\n- A second surface (web/mobile canvas) that is *not* the TUI, for non-terminal users.\n\n## Tools and materials\n\n- Rust, TUI rendering, diff viewer\n- Tree-sitter / ripgrep-class search\n- MCP client, plugin pin-to-SHA installer\n- ACP for editor embedding\n- CI for headless `-p`\n- Install script `curl -fsSL https://x.ai/cli/install.sh | bash`\n- GitHub monorepo sync (public repo shows a bot account syncing from a private monorepo)\n\n## Done means\n\nA developer can install one binary, point it at a repo, approve a plan, and leave `/goal` running. A second developer can read the source and see how a tool call is allowed."
+  },
+  {
+    "id": "07_model_posttraining_agents",
+    "index": 7,
+    "title": "Model research and post-training for agents",
+    "short": "Model / post-training",
+    "callsign": "WEIGHTS",
+    "lane": "model",
+    "publicRecord": "xAI’s original research cofounders (Igor Babuschkin as chief engineer; Tony Wu on reasoning; Manuel Kroiss on pretraining; others from DeepMind / Google / OpenAI / Microsoft) built the early Grok stack and then largely left across 2025–March 2026. Grok 4.5 was framed as a coding / agentic / knowledge-work model and became default in Grok Build. Grok 4.6 was jointly trained with Cursor and shipped into Cursor and Grok Build; public rate cards put it around $2 / $6 per million tokens with a large context window on the Build side. Grok Bot has **no model picker** — Cursor manages model selection. This role’s output is the reason both products can click tools for a long time without immediately falling apart.",
+    "packet": [
+      "Train for tool use, diffs, and multi-step goals, not only next-token chat.",
+      "Joint-train on real Cursor session structure (the acquisition thesis).",
+      "Keep a fast variant and a thinking variant so Build and Bot can spend different budgets.",
+      "Do not require the Bot user to choose a model. Hide that complexity.",
+      "Measure agent tasks (migrate a module, fill a sheet, operate a browser), not only MMLU.",
+      "Accept that Bot computer-use will be more expensive than a chat reply, and say so to billing."
+    ],
+    "tools": [
+      "Colossus / SpaceXAI GPU allocation",
+      "Cursor anonymized or partnered session data (reported as part of the joint-training story)",
+      "Eval harnesses for coding and computer use",
+      "Post-training / RL-style loops on tool traces",
+      "Safety and refusal evals for “will it click Purchase”"
+    ],
+    "done": "Build’s `/goal` and Bot’s computer-use are not toys in a demo GIF. They survive a 20-minute real task often enough to launch.",
+    "body": "# Role: Model research and post-training for agents\n\n## Public record\n\nxAI’s original research cofounders (Igor Babuschkin as chief engineer; Tony Wu on reasoning; Manuel Kroiss on pretraining; others from DeepMind / Google / OpenAI / Microsoft) built the early Grok stack and then largely left across 2025–March 2026. Grok 4.5 was framed as a coding / agentic / knowledge-work model and became default in Grok Build. Grok 4.6 was jointly trained with Cursor and shipped into Cursor and Grok Build; public rate cards put it around $2 / $6 per million tokens with a large context window on the Build side. Grok Bot has **no model picker** — Cursor manages model selection.\n\nThis role’s output is the reason both products can click tools for a long time without immediately falling apart.\n\n## Reconstructed job packet\n\n- Train for tool use, diffs, and multi-step goals, not only next-token chat.\n- Joint-train on real Cursor session structure (the acquisition thesis).\n- Keep a fast variant and a thinking variant so Build and Bot can spend different budgets.\n- Do not require the Bot user to choose a model. Hide that complexity.\n- Measure agent tasks (migrate a module, fill a sheet, operate a browser), not only MMLU.\n- Accept that Bot computer-use will be more expensive than a chat reply, and say so to billing.\n\n## Tools and materials\n\n- Colossus / SpaceXAI GPU allocation\n- Cursor anonymized or partnered session data (reported as part of the joint-training story)\n- Eval harnesses for coding and computer use\n- Post-training / RL-style loops on tool traces\n- Safety and refusal evals for “will it click Purchase”\n\n## Done means\n\nBuild’s `/goal` and Bot’s computer-use are not toys in a demo GIF. They survive a 20-minute real task often enough to launch."
+  },
+  {
+    "id": "08_inference_quota_billing_platform",
+    "index": 8,
+    "title": "Inference, quotas, and the billing platform",
+    "short": "Inference / billing",
+    "callsign": "METER",
+    "lane": "platform",
+    "publicRecord": "Grok Bot usage is metered on the **Cursor account**, weekly, then on-demand at model token rates. There is no Bot-specific spend cap. SuperGrok links are usage grants, permanent, and do not change the Cursor plan. Grok Business / SuperGrok Team / Enterprise seats do not link. Cursor Ultra and SuperGrok Heavy sit at the top individual Bot grant and do not stack. Grok Build draws from SuperGrok weekly pools / plan entitlements on grok.com, which is a different meter. Docs and forums disagree at the edges of “which exact consumer tier includes Bot” because eligibility moved in late August 2026. Someone had to wire this, and the wire is still visible as product confusion.",
+    "packet": [
+      "Two products, two meters, one CEO — do not pretend they are one wallet.",
+      "Bot: weekly included bar per plan tier, then shared Cursor on-demand.",
+      "Build: SuperGrok / X Premium+ entitlement plus API token path for developers.",
+      "Linking rules written in code, not only in a help article.",
+      "Show a percentage bar in the Bot app that matches the real pool.",
+      "Enterprise: invoice and pooled usage live on Cursor Enterprise, not on a fake Bot SKU."
+    ],
+    "tools": [
+      "Cursor dashboard usage pipeline",
+      "grok.com subscription ledger",
+      "Entitlement service (“does this login get a computer?”)",
+      "On-demand cap ($0 to hard-stop)",
+      "Plan-screen deep links (`grokbot://app/v1/settings?...`)"
+    ],
+    "done": "A free Cursor account cannot provision a computer. A Heavy or Ultra account can. When the bar hits 100%, the product either pauses or bills on purpose — not by accident.",
+    "body": "# Role: Inference, quotas, and the billing platform\n\n## Public record\n\nGrok Bot usage is metered on the **Cursor account**, weekly, then on-demand at model token rates. There is no Bot-specific spend cap. SuperGrok links are usage grants, permanent, and do not change the Cursor plan. Grok Business / SuperGrok Team / Enterprise seats do not link. Cursor Ultra and SuperGrok Heavy sit at the top individual Bot grant and do not stack. Grok Build draws from SuperGrok weekly pools / plan entitlements on grok.com, which is a different meter. Docs and forums disagree at the edges of “which exact consumer tier includes Bot” because eligibility moved in late August 2026.\n\nSomeone had to wire this, and the wire is still visible as product confusion.\n\n## Reconstructed job packet\n\n- Two products, two meters, one CEO — do not pretend they are one wallet.\n- Bot: weekly included bar per plan tier, then shared Cursor on-demand.\n- Build: SuperGrok / X Premium+ entitlement plus API token path for developers.\n- Linking rules written in code, not only in a help article.\n- Show a percentage bar in the Bot app that matches the real pool.\n- Enterprise: invoice and pooled usage live on Cursor Enterprise, not on a fake Bot SKU.\n\n## Tools and materials\n\n- Cursor dashboard usage pipeline\n- grok.com subscription ledger\n- Entitlement service (“does this login get a computer?”)\n- On-demand cap ($0 to hard-stop)\n- Plan-screen deep links (`grokbot://app/v1/settings?...`)\n\n## Done means\n\nA free Cursor account cannot provision a computer. A Heavy or Ultra account can. When the bar hits 100%, the product either pauses or bills on purpose — not by accident."
+  },
+  {
+    "id": "09_clients_desktop_mobile",
+    "index": 9,
+    "title": "Client engineering — desktop and mobile",
+    "short": "Desktop / mobile",
+    "callsign": "SURFACE",
+    "lane": "clients",
+    "publicRecord": "Grok Bot clients: macOS (Apple silicon and Intel), Windows (x64 and Arm64), Linux packages, iOS 18+, Android. Desktop is the full control surface (Settings → Beta computer actions). Mobile is a companion: message, approve, watch, take over, manage routines. App updates are separate from Agent Computer updates. Homebrew cask and package names still show the Anysphere/Sand lineage. Android launch was announced on the Cursor forum (early September 2026). Grok Build clients are the CLI binary plus grok.com / iOS / Android build-in-chat.",
+    "packet": [
+      "One signed-in Cursor (or Grok-linked) identity across phone and desktop.",
+      "Computer preview that can be left running.",
+      "Deep links into Settings (computers, update-computer, plugins).",
+      "Local-computer execution as an explicit, scary, per-command toggle — default ask.",
+      "Do not let “Setting up your Grok Bot” spin forever on an ineligible plan; show access error (this shipped late; early versions spun)."
+    ],
+    "tools": [
+      "Native shells (Swift/Kotlin mentioned in the public Build repo; desktop from the Cursor client family)",
+      "Auto-update channels (stable vs the computer image)",
+      "Push notifications for approvals",
+      "Screen/session protocol to the hosted desktop"
+    ],
+    "done": "Closing the laptop does not kill the Bot. Opening Android after a desktop association bug can reattach the same computer (reported in the wild).",
+    "body": "# Role: Client engineering — desktop and mobile\n\n## Public record\n\nGrok Bot clients: macOS (Apple silicon and Intel), Windows (x64 and Arm64), Linux packages, iOS 18+, Android. Desktop is the full control surface (Settings → Beta computer actions). Mobile is a companion: message, approve, watch, take over, manage routines. App updates are separate from Agent Computer updates. Homebrew cask and package names still show the Anysphere/Sand lineage. Android launch was announced on the Cursor forum (early September 2026). Grok Build clients are the CLI binary plus grok.com / iOS / Android build-in-chat.\n\n## Reconstructed job packet\n\n- One signed-in Cursor (or Grok-linked) identity across phone and desktop.\n- Computer preview that can be left running.\n- Deep links into Settings (computers, update-computer, plugins).\n- Local-computer execution as an explicit, scary, per-command toggle — default ask.\n- Do not let “Setting up your Grok Bot” spin forever on an ineligible plan; show access error (this shipped late; early versions spun).\n\n## Tools and materials\n\n- Native shells (Swift/Kotlin mentioned in the public Build repo; desktop from the Cursor client family)\n- Auto-update channels (stable vs the computer image)\n- Push notifications for approvals\n- Screen/session protocol to the hosted desktop\n\n## Done means\n\nClosing the laptop does not kill the Bot. Opening Android after a desktop association bug can reattach the same computer (reported in the wild)."
+  },
+  {
+    "id": "10_security_approvals_privacy",
+    "index": 10,
+    "title": "Security, approvals, and privacy",
+    "short": "Security / privacy",
+    "callsign": "GATE",
+    "lane": "trust",
+    "publicRecord": "Docs insist: do not paste passwords into chat; take over the computer. Auto-review rules live on the desktop and sync to the computer. Execution on Local Computer is a separate permission surface. Legacy Privacy Mode on Cursor blocks Bot because Bot needs cloud storage. Enterprise adds network controls, action recording, connector / MCP allowlists, org enable switch. Official text: there is no Bot-specific spend cap. Shared computer inside one user is not a security boundary.",
+    "packet": [
+      "Human-in-the-loop for auth, payments, irreversible clicks.",
+      "Least-privilege connectors vs raw browser.",
+      "Org policy that can disable a plugin for everyone.",
+      "Recording that legal can stand up in a review, if Enterprise paid for it.",
+      "Refuse to join customer VPNs in v1; document the hole.",
+      "Privacy mode that still allows the hosted disk Bot requires."
+    ],
+    "tools": [
+      "Approval policy engine",
+      "Secret cards (not chat paste)",
+      "SSO / takeover browser",
+      "Audit log pipeline (Enterprise)",
+      "Network egress policy"
+    ],
+    "done": "A demo can sign into Gmail without the model seeing the password typed in chat. An admin can turn Bot off without deleting durable disks.",
+    "body": "# Role: Security, approvals, and privacy\n\n## Public record\n\nDocs insist: do not paste passwords into chat; take over the computer. Auto-review rules live on the desktop and sync to the computer. Execution on Local Computer is a separate permission surface. Legacy Privacy Mode on Cursor blocks Bot because Bot needs cloud storage. Enterprise adds network controls, action recording, connector / MCP allowlists, org enable switch. Official text: there is no Bot-specific spend cap. Shared computer inside one user is not a security boundary.\n\n## Reconstructed job packet\n\n- Human-in-the-loop for auth, payments, irreversible clicks.\n- Least-privilege connectors vs raw browser.\n- Org policy that can disable a plugin for everyone.\n- Recording that legal can stand up in a review, if Enterprise paid for it.\n- Refuse to join customer VPNs in v1; document the hole.\n- Privacy mode that still allows the hosted disk Bot requires.\n\n## Tools and materials\n\n- Approval policy engine\n- Secret cards (not chat paste)\n- SSO / takeover browser\n- Audit log pipeline (Enterprise)\n- Network egress policy\n\n## Done means\n\nA demo can sign into Gmail without the model seeing the password typed in chat. An admin can turn Bot off without deleting durable disks."
+  },
+  {
+    "id": "11_docs_support_onboarding",
+    "index": 11,
+    "title": "Documentation, support, and first-user onboarding",
+    "short": "Docs / onboarding",
+    "callsign": "BRIEF",
+    "lane": "trust",
+    "publicRecord": "Canonical pages live under docs.x.ai/grok-bot and cursor.com/help/grok-bot: overview, computer-and-apps, settings, plans, SuperGrok linking, teams-and-enterprises, troubleshooting, FAQ. Grok Build docs live with the CLI and the GitHub repo. The incubation team personally onboarded ~300 first Bot users. Forum staff accounts walk recovery order and metering. Eligibility text drifted (Pro vs Pro+, base SuperGrok vs Plus) because the product moved faster than the sentences.",
+    "packet": [
+      "Teach the shared-computer rule before anyone stores a password on the box.",
+      "Publish the least-destructive recovery order.",
+      "Say out loud that Grok Business is not Bot.",
+      "Say out loud that the SuperGrok link is permanent.",
+      "Get-started path that does not require a login for the first success (summarize a file).",
+      "Capture every “undefined plan” screenshot as a docs bug."
+    ],
+    "tools": [
+      "Markdown / docs site",
+      "In-app empty states",
+      "hi@cursor.com plus forum",
+      "Onboarding scripts for the first 300",
+      "Changelog and x.ai/news posts"
+    ],
+    "done": "A user who never met Roman can install the app, create a Bot, and not put a card number in chat.",
+    "body": "# Role: Documentation, support, and first-user onboarding\n\n## Public record\n\nCanonical pages live under docs.x.ai/grok-bot and cursor.com/help/grok-bot: overview, computer-and-apps, settings, plans, SuperGrok linking, teams-and-enterprises, troubleshooting, FAQ. Grok Build docs live with the CLI and the GitHub repo. The incubation team personally onboarded ~300 first Bot users. Forum staff accounts walk recovery order and metering. Eligibility text drifted (Pro vs Pro+, base SuperGrok vs Plus) because the product moved faster than the sentences.\n\n## Reconstructed job packet\n\n- Teach the shared-computer rule before anyone stores a password on the box.\n- Publish the least-destructive recovery order.\n- Say out loud that Grok Business is not Bot.\n- Say out loud that the SuperGrok link is permanent.\n- Get-started path that does not require a login for the first success (summarize a file).\n- Capture every “undefined plan” screenshot as a docs bug.\n\n## Tools and materials\n\n- Markdown / docs site\n- In-app empty states\n- hi@cursor.com plus forum\n- Onboarding scripts for the first 300\n- Changelog and x.ai/news posts\n\n## Done means\n\nA user who never met Roman can install the app, create a Bot, and not put a card number in chat."
+  },
+  {
+    "id": "12_legal_enterprise_and_brand",
+    "index": 12,
+    "title": "Legal, enterprise, and brand",
+    "short": "Legal / enterprise",
+    "callsign": "SEAL",
+    "lane": "trust",
+    "publicRecord": "Grok Bot for Enterprise opened 3 September 2026 with a short free window for existing Grok/Cursor Enterprise customers. Controls: org enable, network, Team Setup, action recording, computer management, connector policy. Third-party Bot share links have terms. SpaceXAI brand began replacing xAI on new work; Cursor name kept on the editor for now. Grokipedia (October 2025) was the earlier “truth layer” product — a different legal and editorial problem than Bot computers.",
+    "packet": [
+      "DPA / data-storage story that survives Legacy Privacy Mode accounts being blocked.",
+      "Share-a-Bot terms that copy config, not the computer.",
+      "Enterprise contract language for computers, logs, and isolation (per user, not per Bot).",
+      "Name the product something a rocket company can put on a homepage.",
+      "Do not promise “no training on your data” on the wrong SKU."
+    ],
+    "tools": [
+      "Contract templates",
+      "Admin dashboard copy",
+      "Waitlist → Enable modal (privacy, pricing, models)",
+      "Brand review on “teammate” vs “agent” vs “employee”"
+    ],
+    "done": "Sales can send a paper. A public `https://x.ai/bot/<id>` link does not donate the sender’s logged-in bank session.",
+    "body": "# Role: Legal, enterprise, and brand\n\n## Public record\n\nGrok Bot for Enterprise opened 3 September 2026 with a short free window for existing Grok/Cursor Enterprise customers. Controls: org enable, network, Team Setup, action recording, computer management, connector policy. Third-party Bot share links have terms. SpaceXAI brand began replacing xAI on new work; Cursor name kept on the editor for now. Grokipedia (October 2025) was the earlier “truth layer” product — a different legal and editorial problem than Bot computers.\n\n## Reconstructed job packet\n\n- DPA / data-storage story that survives Legacy Privacy Mode accounts being blocked.\n- Share-a-Bot terms that copy config, not the computer.\n- Enterprise contract language for computers, logs, and isolation (per user, not per Bot).\n- Name the product something a rocket company can put on a homepage.\n- Do not promise “no training on your data” on the wrong SKU.\n\n## Tools and materials\n\n- Contract templates\n- Admin dashboard copy\n- Waitlist → Enable modal (privacy, pricing, models)\n- Brand review on “teammate” vs “agent” vs “employee”\n\n## Done means\n\nSales can send a paper. A public `https://x.ai/bot/<id>` link does not donate the sender’s logged-in bank session."
+  }
+]

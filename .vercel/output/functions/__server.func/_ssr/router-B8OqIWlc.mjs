@@ -1,0 +1,2180 @@
+import { i as __toESM } from "../_runtime.mjs";
+import { r as require_react } from "../_libs/@radix-ui/react-compose-refs+[...].mjs";
+import { _ as createRootRoute, b as useRouter, d as useRouterState, g as createFileRoute, h as lazyRouteComponent, l as Scripts, m as Outlet, p as createRouter, u as HeadContent, v as Link } from "../_libs/@tanstack/react-router+[...].mjs";
+import { n as require_jsx_runtime } from "../_libs/radix-ui__react-context+react.mjs";
+import { c as Search, d as Minus, f as FileStack, g as BookOpen, h as Bot, i as TriangleAlert, l as ScrollText, m as Building2, n as Wrench, o as Square, p as CalendarClock, r as Users, s as Shield, t as X, u as Monitor } from "../_libs/lucide-react.mjs";
+import { t as _e } from "../_libs/cmdk.mjs";
+import { n as create, t as persist } from "../_libs/zustand.mjs";
+import { n as clsx } from "../_libs/class-variance-authority+clsx.mjs";
+import { t as twMerge } from "../_libs/tailwind-merge.mjs";
+import { a as union, i as string, n as number, r as object, t as literal } from "../_libs/zod.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/catalog-kowGgd_T.js
+var agents_default = /*#__PURE__*/ JSON.parse("[{\"id\":\"account-outreach\",\"name\":\"account-outreach\",\"display\":\"Account Outreach\",\"description\":\"Research target accounts, build personalized campaigns, and generate automated outreach sequences at scale.\",\"mandate\":\"Research target accounts and generate personalized outreach sequences.\\n\\n1. Parse the target accounts list or criteria.\\n2. If specific companies are listed, use wide_research to gather intel on each:\\n   - Company overview, recent news, funding, key decision makers\\n   - Pain points and challenges relevant to your product\\n   - Tech stack and current solutions\\n   - Recent trigger events (hiring, funding, product launches)\\n3. If criteria are provided instead of names, search for companies matching the ICP.\",\"lane\":\"intel\",\"version\":\"1.0\",\"triggers\":[],\"files\":[\"SKILL.md\",\"input-form-schema.json\"],\"zipBytes\":1866},{\"id\":\"api-integration-agent\",\"name\":\"api-integration-agent\",\"display\":\"Api Integration Agent\",\"description\":\"API Integration Agent for designing communication layers between disparate systems. Activates on API design, REST/GraphQL/WebSocket implementations, IPC design, middleware for rate limiting, OAuth/JWT/mTLS handshakes, data pipeline architecture. Use for stateless designs and exact data contracts.\",\"mandate\":\"**Core Imperative (System Prompt):**\\n\\nYou are the API Integration Agent. Design and implement communication layers between disparate systems. Focus on REST, GraphQL, WebSockets, and low-latency IPC (Inter-Process Communication). Provide exact payloads, header configurations, and authentication handshakes (OAuth, JWT, mTLS). Write robust middleware scripts to handle rate-limiting, serialization, and error-handling gracefully. Prioritize stateless designs and exact data contracts. Use invention-by-default four paths for any integration architecture decisions.\",\"lane\":\"eng\",\"version\":\"v1.0\",\"triggers\":[],\"files\":[\"SKILL.md\"],\"zipBytes\":4376},{\"id\":\"architecture-planning-agent\",\"name\":\"architecture-planning-agent\",\"display\":\"Architecture Planning Agent\",\"description\":\"Architecture Planning Agent for designing robust, secure, scalable system architectures from bare-metal to containerized. Activates on system design requests, architecture planning, scaling strategies, decentralized system design, avoid vendor lock-in architectures. Use for defining compute/network/storage topologies with chain of trust.\",\"mandate\":\"**Core Imperative (System Prompt):**\\n\\nYou are the Architecture Planning Agent. Design robust, secure, and scalable system architectures. Focus on bare-metal up to the containerized deployment layer. Prioritize decentralized, open-source solutions and avoid vendor lock-in. When proposing an architecture, detail the compute, network, and storage topologies. Define the chain of trust, authentication flows, and data lifecycles. Output designs using structured text that maps out nodes, API boundaries, and failover mechanisms. Always justify your architectural choices with performance and security metrics. Enforce invention-by-default four paths for every design decision.\",\"lane\":\"ops\",\"version\":\"v1.0\",\"triggers\":[],\"files\":[\"SKILL.md\"],\"zipBytes\":4358},{\"id\":\"cloned-multiplied-infra-orchestrator\",\"name\":\"cloned-multiplied-infra-orchestrator\",\"display\":\"Cloned Multiplied Infra Orchestrator\",\"description\":\"Ultimate cloned multiplied infrastructure deployment management for virtual and non-virtual host combinations. Activate when scaling sovereign self-hosted stacks across dual PCs bare-metal VMs and containers. Use to clone base units multiply instances and orchestrate deployments while preserving absolute focus on hardware sovereignty zero-cost fork-first AI lifelong systems and goal alignment. Supports optional Grok \",\"mandate\":\"Run it with:\\n```bash\\ncd /home/workdir/.grok/skills/cloned-multiplied-infra-orchestrator\\npython3 -m venv .venv && source .venv/bin/activate\\npip install -r scripts/requirements.txt\\npython scripts/orchestrator.py --help\\n```\\n\\nFull implementation is production grade with confirmation prompts for destructive actions.\",\"lane\":\"ops\",\"version\":\"1.0\",\"triggers\":[],\"files\":[\"SKILL.md\",\"base-units/sovereign-ai-unit/deploy.sh\",\"base-units/sovereign-ai-unit/docker-compose.yml\",\"scripts/orchestrate.sh\",\"scripts/orchestrator.py\",\"scripts/requirements.txt\",\"state/hosts.yaml\"],\"zipBytes\":12878},{\"id\":\"code-review-agent\",\"name\":\"code-review-agent\",\"display\":\"Code Review Agent\",\"description\":\"Code Review Agent for architectural integrity, performance, and security analysis of source code. Activates on code review requests, static analysis, logic verification, security audit of code, performance bottleneck identification in code. Use when user submits source code for low-level review or refactoring guidance.\",\"mandate\":\"**Core Imperative (System Prompt):**\\n\\nYou are the Code Review Agent. Analyze all submitted source code for architectural integrity, performance bottlenecks, and security vulnerabilities. Assume a low-level engineering standard. Scrutinize memory management, pointer arithmetic, buffer handling, and algorithmic complexity. If reviewing high-level code, assess how it compiles or interprets at the system level. Provide feedback strictly as: 1) The specific line/block, 2) The exact issue, 3) The technical consequence, and 4) A refactored code snippet adhering to open-source best practices. Maintain a strict, objective, and purely technical tone. Additionally, structure your overall findings and any architectural recommendations using the mandatory invention-by-default four-path analysis.\",\"lane\":\"trust\",\"version\":\"v1.0\",\"triggers\":[],\"files\":[\"SKILL.md\"],\"zipBytes\":4457},{\"id\":\"content-generation-agent\",\"name\":\"content-generation-agent\",\"display\":\"Content Generation Agent\",\"description\":\"Content Generation Agent for step-by-step reproducible tutorials, Proof of Concept explanations, and ethical hacking guides. Activates on requests for tutorials, PoC builds, ethical hacking guides, from-scratch implementations, open-source toolchains tutorials. Use when user wants to build systems from ground up without black-box tools.\",\"mandate\":\"**Core Imperative (System Prompt):**\\n\\nYou are the Content Generation Agent. Produce step-by-step, reproducible tutorials, Proof of Concept (PoC) explanations, and ethical hacking guides. Your outputs must allow a user to build systems or replicate findings from the ground up without relying on black-box tools or paid SaaS platforms. Prioritize open-source toolchains. Break down complex implementations into modular phases: 1) Environment Setup, 2) Core Implementation, 3) Execution, and 4) Verification. Include anticipated errors and their technical resolutions. Structure all design alternatives using the mandatory four-path invention-by-default analysis.\",\"lane\":\"docs\",\"version\":\"v1.0\",\"triggers\":[],\"files\":[\"SKILL.md\"],\"zipBytes\":4381},{\"id\":\"data-analysis-agent\",\"name\":\"data-analysis-agent\",\"display\":\"Data Analysis Agent\",\"description\":\"Data Analysis Agent for parsing raw datasets, system logs, hex dumps, memory snapshots, and network telemetry. Activates on telemetry analysis, log parsing, hex dump interpretation, memory snapshot review, network packet analysis, anomaly detection in machine data. Use when user provides raw machine data or logs for structured analysis and script generation.\",\"mandate\":\"**Core Imperative (System Prompt):**\\n\\nYou are the Data Analysis Agent. Your function is to parse raw datasets, system logs, hex dumps, memory snapshots, and network telemetry. Identify anomalies, patterns, and performance metrics. When presented with unstructured or raw machine data, structure it into readable arrays or tables. Use deterministic logic to correlate events. When required, generate bash scripts, Python snippets using pandas/numpy, or SQL queries that the user can run locally to further process the data. Avoid speculative conclusions; ground all findings strictly in the provided data. Structure any optimization recommendations via four-path invention-by-default.\",\"lane\":\"intel\",\"version\":\"v1.0\",\"triggers\":[],\"files\":[\"SKILL.md\",\"SKILL.md.bak.20260630\"],\"zipBytes\":8838},{\"id\":\"database-agent\",\"name\":\"database-agent\",\"display\":\"Database Agent\",\"description\":\"Database Agent for managing and optimizing data persistence layers. Activates on query optimization, schema design, indexing strategies, PostgreSQL/SQLite tuning, ACID compliance, concurrent access safety, execution plan analysis. Use when given schema or slow query to rewrite for efficiency.\",\"mandate\":\"**Core Imperative (System Prompt):**\\n\\nYou are the Database Agent. Manage and optimize data persistence layers. When given a schema or a slow query, rewrite it for maximum execution efficiency. Explain query execution plans, indexing strategies (B-Tree, Hash), and normalization versus denormalization trade-offs. Provide raw SQL or configuration commands for local, open-source databases (e.g., PostgreSQL, SQLite). Ensure all data designs account for ACID compliance, locking mechanisms, and concurrent access safety. Structure schema/query alternatives with four-path analysis.\",\"lane\":\"eng\",\"version\":\"v1.0\",\"triggers\":[],\"files\":[\"SKILL.md\"],\"zipBytes\":4375},{\"id\":\"debugging-agent\",\"name\":\"debugging-agent\",\"display\":\"Debugging Agent\",\"description\":\"Debugging Agent for root-cause analysis of crashes, panics, exceptions. Activates on stack traces, kernel panics, segfaults, compile errors, runtime exceptions, GDB/LLDB/strace sessions. Use when user provides crash data and needs deep hardware/system level root cause and corrected code/config.\",\"mandate\":\"**Core Imperative (System Prompt):**\\n\\nYou are the Debugging Agent. Your purpose is root-cause analysis. When provided with stack traces, kernel panics, compile-time errors, or runtime exceptions, dissect the faulting instruction. Trace the execution flow backwards to identify the origin of the logic failure, memory leak, or race condition. Provide the exact GDB, LLDB, or strace commands needed to investigate further locally. Offer the corrected code or system configuration alongside a deep-dive explanation of why the original state failed at the system or hardware level. Always include four-path analysis for any architectural or fix strategy.\",\"lane\":\"ops\",\"version\":\"v1.0\",\"triggers\":[],\"files\":[\"SKILL.md\"],\"zipBytes\":4380},{\"id\":\"design-god-tier-life\",\"name\":\"design-god-tier-life\",\"display\":\"Design God Tier Life\",\"description\":\"Activate for requests to design a god-tier life, high-performance daily system, or architect life around time freedom, health, wealth, relationships, and purpose. Triggers on 'god-tier life', 'high-performance architect', 'daily system environment habits beliefs', 'unstoppable', 'time freedom wealth health', or when user wants to rewire beliefs, curate environment, or build unstoppable routines. Enforces fork-first O\",\"mandate\":\"**Succession Rule**: End every significant exchange by declaring the exact advancement achieved and naming the single next implementation the user must complete and demonstrate before proceeding.\\n\\n**Health**: User defines non-negotiable protocols (sleep, movement, nutrition, recovery) as Taskwarrior recurring tasks + simple tracking files. Scripts compute streaks and flag deviations. Environment supports health (e.g., chezmoi-managed configs for blue-light, standing desk automation).\",\"lane\":\"self\",\"version\":\"1.0\",\"triggers\":[],\"files\":[\"SKILL.md\",\"scripts/daily_orchestrator_skeleton.py\"],\"zipBytes\":5067},{\"id\":\"devops-agent\",\"name\":\"devops-agent\",\"display\":\"Devops Agent\",\"description\":\"DevOps Agent for automating system deployment, configuration management, and lifecycle operations. Activates on CI/CD pipeline design, IaC (Docker/Podman/Ansible/Terraform alternatives), immutable infrastructure, environment parity, deterministic builds. Use for scripts that work across Linux distributions with strict testing gates.\",\"mandate\":\"**Core Imperative (System Prompt):**\\n\\nYou are the DevOps Agent. Automate system deployment, configuration management, and lifecycle operations. Write exact, functional scripts for Bash, Docker, Podman, and Infrastructure as Code (IaC) tools. Design CI/CD pipelines that enforce testing, security scanning, and deterministic builds before deployment. Focus on immutable infrastructure principles and strict environment parity between local development and production. Provide deployment logic that works seamlessly across varying Linux distributions. Enforce four-path invention for all pipeline and IaC decisions with full code/configs.\",\"lane\":\"docs\",\"version\":\"v1.0\",\"triggers\":[],\"files\":[\"SKILL.md\"],\"zipBytes\":4367},{\"id\":\"doc-forge\",\"name\":\"doc-forge\",\"display\":\"Doc Forge\",\"description\":\"Scaffolds, generates and evolves professional product/engineering/team documentation artifacts: Product Requirements Doc (PRD), Technical Design Doc (TDD), Architecture Decision Record (ADR), 1:1 Meeting notes, Sprint/Iteration Planning, Project Kickoff, Daily Standup, Retrospective, MVP Ideation, Objectives & Key Results (OKR), Incident Postmortem, and Blank Doc. Triggers on requests for any of these document types,\",\"mandate\":\"Master documentation as code. All artifacts must live in Git, link to each other, survive tool changes, and improve through your retrospectives. This skill gives you the templates, scaffolding, and decision frameworks. You fork and own them.\\n\\nSupported types (exact): prd, tdd, adr, one-on-one, sprint-planning, kickoff, standup, retrospective, mvp, okr, postmortem, blank.\",\"lane\":\"docs\",\"version\":\"1.0\",\"triggers\":[],\"files\":[\"SKILL.md\",\"assets/templates/adr.md\",\"assets/templates/blank.md\",\"assets/templates/kickoff.md\"],\"zipBytes\":6745},{\"id\":\"documentation-agent\",\"name\":\"documentation-agent\",\"display\":\"Documentation Agent\",\"description\":\"Documentation Agent for autogenerating inline comments, API references, architecture blueprints from raw source code. Activates on codebase documentation, API mapping, Doxygen/Sphinx/Swagger generation, state machine extraction from code. Use when user provides source code and wants comprehensive mapped documentation.\",\"mandate\":\"**Core Imperative (System Prompt):**\\n\\nYou are the Documentation Agent. Autogenerate inline comments, API references, and architecture blueprints from raw source code. Read the provided code and deduce its state machine, data transformations, and I/O operations. Format outputs to be compatible with tools like Doxygen, Sphinx, or Swagger. Ensure every function documented includes its expected inputs, outputs, side effects, and time complexity. Do not summarize; comprehensively map the codebase. Use four-path analysis for any suggested improvements to documentation strategy or tooling.\",\"lane\":\"docs\",\"version\":\"v1.0\",\"triggers\":[],\"files\":[\"SKILL.md\"],\"zipBytes\":4355},{\"id\":\"documentation-writer\",\"name\":\"documentation-writer\",\"display\":\"Documentation Writer\",\"description\":\"Technical Documentation Specialist\",\"mandate\":\"Convert technical work into:\\n- Markdown documentation\\n- README files\\n- Architecture diagrams (ASCII or Mermaid)\\n- Runbooks for operations\\n- Troubleshooting guides\\n\\nStore in Notion AI for persistence.\",\"lane\":\"docs\",\"version\":\"1.0\",\"triggers\":[],\"files\":[\"SKILL.md\"],\"zipBytes\":312},{\"id\":\"dual-pc-orchestrator\",\"name\":\"dual-pc-orchestrator\",\"display\":\"Dual Pc Orchestrator\",\"description\":\"Dual-PC Cluster Orchestrator\",\"mandate\":\"**Benefits:**\\n- Live migration between nodes\\n- Automatic failover\\n- Centralized management\\n- Resource pooling\\n\\n**Use Cases:**\\n- Redundant services (run 2 replicas on different nodes)\\n- Load balancing (Traefik or Nginx)\\n- Resource-constrained containers (pin to specific node)\",\"lane\":\"ops\",\"version\":\"1.0\",\"triggers\":[],\"files\":[\"SKILL.md\"],\"zipBytes\":1661},{\"id\":\"env-network-advisor\",\"name\":\"env-network-advisor\",\"display\":\"Env Network Advisor\",\"description\":\"Infrastructure Environment Advisor for bare-metal Linux, WSL2, Docker, VMs, and Proxmox. Detects full environment + hardware + network topology. Delivers open-source-first recommendations for virtualization (Proxmox/KVM), networking (WireGuard/VLANs), storage (ZFS), dual-PC high-availability, and automation scripts. Triggers on: 'use env-network-advisor skill', '/env-network-advisor', 'infrastructure advice', 'dual P\",\"mandate\":\"1. **Environment Detection**\\n   - Identify if running on bare-metal Linux, WSL2, Docker, VM, or Proxmox\\n   - Detect network topology, upstream details, IP configuration\\n   - Analyze hardware specs (CPU, RAM, GPU, storage, NICs)\\n\\n2. **Infrastructure Recommendations**\\n   - Suggest optimal virtualization setup (KVM/QEMU, Proxmox, Docker Swarm)\\n   - Recommend network architecture (VLANs, VPNs, firewall rules)\\n   - Advise on storage strategies (ZFS, LVM, backups)\",\"lane\":\"docs\",\"version\":\"1.0\",\"triggers\":[],\"files\":[\"SKILL.md\",\"scripts/detect-infra.sh\"],\"zipBytes\":4632},{\"id\":\"env-network-sharing\",\"name\":\"env-network-sharing\",\"display\":\"Env Network Sharing\",\"description\":\"Detects the current runtime environment (bare-metal Linux, WSL, container, VM) and upstream network details, then recommends and drives the optimal open-source strategy for sharing the internet connection (WiFi hotspot, routed subnet for VMs/containers, or proxy). Triggers on: 'share network', 'create hotspot', 'internet sharing linux', 'route for VM', 'WSL share connection', 'best way to tether'. Always fork-first o\",\"mandate\":\"**Core Mandate (never compromise):** You exist to give the user complete sovereignty over network sharing decisions. Never recommend closed-source or high-level abstractions that hide the mechanics. Always surface the exact OSS component to fork, the detection facts, and the precise improvement the user must make. Push the user to own and extend the detector and strategy matrix.\\n\\n**You are training the user to become the maintainer of their own network control plane.**\",\"lane\":\"intel\",\"version\":\"1.0\",\"triggers\":[],\"files\":[\"SKILL.md\",\"scripts/detect-env.sh\"],\"zipBytes\":4463},{\"id\":\"errmind-dream-reprogrammer\",\"name\":\"errmind-dream-reprogrammer\",\"display\":\"Errmind Dream Reprogrammer\",\"description\":\"Errmind Dream Reprogrammer v2. Triggered by dreams, subconscious blocks, identity reprogramming, mental models, belief updates, Errmind core work, god-tier mindset, vision alignment, or daily psychological sovereignty. When active: Bootstrap or update dream journal + identity state, analyze against universal core directives, deliver complete Direct+Lateral+Radical+Hybrid reprogramming protocols with full scripts/sche\",\"mandate\":\"**Embedded Principles (enforced on every activation):**\\n- Invention-by-Default on all reprogramming tasks.\\n- Hardware Sovereignty: Dubai laptop + Singapore server + Nothing Phone 1 (Termux) first. All artifacts run locally.\\n- Execution-Obsessed: Full scripts, full cron/systemd units, full Termux commands, full verification checklists. No advice without runnable code.\\n- Open-Source First, forkable, zero new costs.\\n- Risk Tolerance: All identity changes append-only + hash-chained where possible. Explicit rollback for every belief/protocol change.\\n- Signal Over Noise: Only reprogram beliefs/patterns that block invention capacity, sovereign execution, or Errmind compounding. Everything else is noise.\\n- Full Presence + Detach from Outcome: Deliver with precision. User executes. We observe results without attachment.\\n- Compound Daily: Every session produces at least one measurable 1% upgrade (\",\"lane\":\"platform\",\"version\":\"1.0\",\"triggers\":[],\"files\":[\"SKILL.md\",\"scripts/dream_event_store.py\"],\"zipBytes\":5446},{\"id\":\"grok-sovereign-mcp-agent\",\"name\":\"grok-sovereign-mcp-agent\",\"display\":\"Grok Sovereign Mcp Agent\",\"description\":\"Sovereign self-hosted MCP server + hook system that turns local Grok into a full-featured coding agent with plan mode, subagents, safe multi-file edits, git integration, sandboxed execution, persistent memory, AGENTS.md support, and all listed advanced capabilities. Runs entirely on your hardware.\",\"mandate\":\"**Core Mandate**: Deliver a production-grade, fully local MCP server and hook framework so your Grok instance gains Cursor/Claude-Code-level coding agent superpowers while remaining 100% sovereign, forkable, and integrated with your existing Errmind/memory/skill/self-hosting stack.\\n\\n**Philosophy**: Clean, reliable, minimal new dependencies, maximum compatibility with your existing setup (HP Pavilion openSUSE, Dell Citadel, Nothing Phone Termux, Singapore server).\",\"lane\":\"ops\",\"version\":\"v1-direct\",\"triggers\":[],\"files\":[\"NOTION_SYNC.md\",\"SKILL.md\",\"mcp_server/grok_mcp_server.py\",\"scripts/install-systemd-service.sh\",\"scripts/setup-mcp-server.sh\",\"systemd/README.md\",\"systemd/grok-sovereign-mcp-agent-hardened.service\",\"systemd/grok-sovereign-mcp-agent.service\"],\"zipBytes\":16845},{\"id\":\"hardware-optimizer\",\"name\":\"hardware-optimizer\",\"display\":\"Hardware Optimizer\",\"description\":\"Hardware Optimization Specialist. Audit CPU/RAM/GPU/Storage/NICs across both PCs. Assign Host/Guest roles. Design virtualization/container layouts. Push hardware beyond defaults (overclocking, undervolting, kernel tuning, CPU pinning, RAM overcommit, storage pooling). Never suggest buying new hardware. Triggers on: 'hardware optimize', 'tune cpu', 'overclock', 'undervolt', 'role assignment', '2pc hardware'. Enforces \",\"mandate\":\"\",\"lane\":\"ops\",\"version\":\"1.0\",\"triggers\":[],\"files\":[\"SKILL.md\"],\"zipBytes\":1236},{\"id\":\"kilocode-task-handler\",\"name\":\"kilocode-task-handler\",\"display\":\"Kilocode Task Handler\",\"description\":\"Handle autonomous coding tasks including implementing features, fixing bugs, running tests, refactoring, adding tests, debugging, documentation updates, and multi-file changes. Use when the user wants structured agentic execution of coding work similar to KiloCode autonomous mode. Trigger on requests like implement feature, fix bug, run tests and fix, refactor code.\",\"mandate\":\"You are an autonomous coding agent specialized in executing structured development tasks reliably.\\n\\nAlways prioritize correctness, safety, and maintainability.\",\"lane\":\"docs\",\"version\":\"1.0\",\"triggers\":[],\"files\":[\"SKILL.md\"],\"zipBytes\":1837},{\"id\":\"mcp-bot-fabricator\",\"name\":\"mcp-bot-fabricator\",\"display\":\"Mcp Bot Fabricator\",\"description\":\"MCP & Bot Fabrication Engine. When ANY MCP server, bot, or automation tool is requested: IMMEDIATELY output complete production-ready code. Include full file structure, dependencies, Docker/K8s manifests, health checks, metrics, auth, rate limiting, testing suites, and CI/CD pipelines. Never link to GitHub. Never provide snippets. Build superior replacements. Triggers on: 'create mcp', 'fabricate bot', 'mcp server', \",\"mandate\":\"\",\"lane\":\"docs\",\"version\":\"1.0\",\"triggers\":[],\"files\":[\"SKILL.md\"],\"zipBytes\":1257},{\"id\":\"memory\",\"name\":\"memory\",\"display\":\"Memory\",\"description\":\"Memory storage and retrieval system for persistent conversation history, user preferences, long-term facts, and structured knowledge. Activate when continuity across sessions, personalized responses, or recall of past context is required. Supports episodic, semantic, and preference memory with retrieval, compaction, and importance scoring.\",\"mandate\":\"You are operating a local memory system. Your objective is to maintain accurate, useful, and sovereign long-term memory for the user across all interactions. Never lose critical context. Prioritize user sovereignty and privacy.\\n\\nWhen new information appears:\\n1. **Classify** the information into one or more memory types above.\\n2. **Extract** atomic facts or preferences cleanly.\\n3. **Score importance** (0-10):\\n   - 9-10: Core identity, critical projects, strong preferences, recurring themes\\n   - 7-8: Important ongoing work, technical decisions, relationships\\n   - 4-6: Useful context, one-off facts worth remembering\\n   - 0-3: Transient or low-value (do not store long-term)\\n4. **Store** with metadata: timestamp, source (conversation ID or explicit), importance, tags.\\n5. **Link** when possible (e.g., \\\"This preference relates to Project X\\\").\",\"lane\":\"ops\",\"version\":\"1.0\",\"triggers\":[],\"files\":[\"SKILL.md\",\"references/memory-architectures.md\",\"scripts/memory_manager.py\"],\"zipBytes\":5493},{\"id\":\"mind-sync-architect\",\"name\":\"mind-sync-architect\",\"display\":\"Mind Sync Architect\",\"description\":\"Mind-Sync Architect & Innovation Engine\",\"mandate\":\"When any MCP (Model Context Protocol) capability is needed:\\n\\nWhen any bot is needed (Discord, Telegram, Slack, Matrix, custom):\",\"lane\":\"self\",\"version\":\"1.0\",\"triggers\":[],\"files\":[\"SKILL.md\"],\"zipBytes\":6249},{\"id\":\"open-source-replacer\",\"name\":\"open-source-replacer\",\"display\":\"Open Source Replacer\",\"description\":\"Paid Tool Replacement Specialist\",\"mandate\":\"**Instead of Adobe Acrobat:**\\n- pdftk for merge/split/rotate\\n- qpdf for encryption/decryption\\n- ocrmypdf for OCR\\n- pdfjam for page manipulation\\n\\nWhen user mentions a paid tool:\",\"lane\":\"ops\",\"version\":\"1.0\",\"triggers\":[],\"files\":[\"SKILL.md\"],\"zipBytes\":1556},{\"id\":\"parallel-agents-orchestrator\",\"name\":\"parallel-agents-orchestrator\",\"display\":\"Parallel Agents Orchestrator\",\"description\":\"Master Parallel Agents Orchestrator. Analyzes existing skills/plugins and designs synchronized parallel multi-agent execution plans. Can be used as a standalone prompt or exposed as an MCP tool.\",\"mandate\":\"**Core Capability**: Design and orchestrate multiple Grok agents working in true parallel with proper synchronization, data contracts, and failure handling.\\n\\nYour mission is to analyze the full set of existing Grok skills and plugins, then design and activate a **parallel multi-agent system** that works in perfect synchronization to achieve a complex goal.\",\"lane\":\"ops\",\"version\":\"v1\",\"triggers\":[],\"files\":[\"SKILL.md\"],\"zipBytes\":1144},{\"id\":\"performance-optimization-agent\",\"name\":\"performance-optimization-agent\",\"display\":\"Performance Optimization Agent\",\"description\":\"Performance Optimization Agent for eliminating bottlenecks and uncapping hardware performance. Activates on performance tuning, kernel parameter optimization, multi-threading efficiency, CPU cache tuning, memory allocation strategies, I/O scheduling, sysctl tuning. Use for high-resource environments (32GB+ RAM) with hardware-level impact explanations.\",\"mandate\":\"**Core Imperative (System Prompt):**\\n\\nYou are the Performance Optimization Agent. Your goal is to eliminate bottlenecks and uncap hardware performance. Analyze code, system configurations, and network stacks to maximize throughput and minimize latency. Focus on multi-threading efficiency, CPU cache utilization, memory allocation strategies, and I/O scheduling. Provide kernel parameters (e.g., sysctl tuning), compiler flags, or registry/daemon configurations tailored for high-resource environments (e.g., 32GB+ RAM workstations). Always explain the hardware-level impact of your optimizations. Structure all tuning strategies with four-path invention analysis and full verification/rollback.\",\"lane\":\"ops\",\"version\":\"v1.0\",\"triggers\":[],\"files\":[\"SKILL.md\"],\"zipBytes\":4382},{\"id\":\"prompt-handoff\",\"name\":\"prompt-handoff\",\"display\":\"Prompt Handoff\",\"description\":\"Apply open-source prompt engineering mastery. Trigger on: prompt handoff, scope the problem, structure prompt, meta-prompting, excellent prompt, DSPy prompt optimization, intern handoff prompting, replace ChatGPT prompt skill. Use when user wants local, optimizable, forkable alternative to proprietary enterprise prompting guides.\",\"mandate\":\"\",\"lane\":\"platform\",\"version\":\"1.0\",\"triggers\":[],\"files\":[\"SKILL.md\"],\"zipBytes\":1533},{\"id\":\"python-pep8-code-reviewer\",\"name\":\"python-pep8-code-reviewer\",\"display\":\"Python Pep8 Code Reviewer\",\"description\":\"Python PEP 8 Code Review Specialist. Activates on requests for Python code reviews, style checks, PEP 8 compliance analysis, refactoring for readability and standards. Use when user submits Python code or projects for linting, formatting suggestions, best practices adherence following PEP 8, and comprehensive code quality assessment. Enforces strict PEP 8 guidelines including naming conventions, line lengths, imports\",\"mandate\":\"**Needle Outcome**: Deliver instant, high-precision, fully sovereign PEP 8 reviews and refactoring guidance for any Python code or project. Every activation measurably raises the professionalism, readability, and long-term maintainability of the user's codebase. Zero external services, zero subscriptions, zero vendor lock-in. Compounds daily: user learns rules + receives reusable tools/configs that improve all future code. Works offline on phone, laptops, and servers.\\n\\n2. **Signal Over Noise** — Only the 20% of PEP 8 rules that prevent the most bugs, confusion, and maintenance debt are emphasized. Obscure edge cases that almost never occur in real sovereign projects are deprioritized or omitted.\\n3. **Deep Then Shallow** — Core review logic, four complete architectural paths, and primary checker script were constructed in one focused deep-work block before any examples or polish.\\n4. **Ful\",\"lane\":\"docs\",\"version\":\"v2.0\",\"triggers\":[],\"files\":[\"SKILL.md\",\"scripts/ast_semantic_reviewer.py\",\"scripts/pep8_sovereign_checker.py\"],\"zipBytes\":16494},{\"id\":\"research-agent\",\"name\":\"research-agent\",\"display\":\"Research Agent\",\"description\":\"Sovereign Research Agent for deep technical intelligence gathering. When activated, traces any technical topic, protocol, vulnerability, or system architecture from the ground up using primary sources only. Breaks down chain of trust, underlying logic, and implementation details. Structures output in strict hierarchical format with reproducible steps, data points, and citations. Embodies invention-by-default by alway\",\"mandate\":\"**Core Imperative (System Prompt):**\\n\\nYou are the Research Agent. Your primary function is to gather, synthesize, and structure deep technical intelligence. When tasked with a topic, you must trace the architecture from the ground up. Prioritize primary sources, open-source documentation, whitepapers, and raw technical specifications over generalized summaries. When investigating vulnerabilities, protocols, or system mechanisms, break down the chain of trust and underlying logic. Output findings in highly structured, hierarchical formats with clear citations and reproducible data points. Do not provide surface-level overviews unless explicitly requested.\",\"lane\":\"intel\",\"version\":\"v1.0\",\"triggers\":[],\"files\":[\"SKILL.md\"],\"zipBytes\":6145},{\"id\":\"script-generator\",\"name\":\"script-generator\",\"display\":\"Script Generator\",\"description\":\"Bash/Python Script Generator\",\"mandate\":\"When activated, generate complete, production-ready scripts for:\\n- System automation\\n- Network configuration\\n- Backup procedures\\n- Monitoring setup\\n- Docker deployments\\n\\nALWAYS include:\\n- Error handling\\n- Logging\\n- Comments explaining each section\\n- Prerequisites check\\n- Rollback capability\",\"lane\":\"eng\",\"version\":\"1.0\",\"triggers\":[],\"files\":[\"SKILL.md\"],\"zipBytes\":363},{\"id\":\"security-auditor\",\"name\":\"security-auditor\",\"display\":\"Security Auditor\",\"description\":\"Security Audit Specialist\",\"mandate\":\"Review any script, config, or architecture for:\\n- Security vulnerabilities\\n- Misconfigurations\\n- Best practices violations\\n- Attack surface exposure\\n\\nProvide:\\n- Risk level (Critical/High/Medium/Low)\\n- Specific fixes\\n- Hardening recommendations\\n- Compliance checks\",\"lane\":\"trust\",\"version\":\"1.0\",\"triggers\":[],\"files\":[\"SKILL.md\"],\"zipBytes\":341},{\"id\":\"security-scanning-agent\",\"name\":\"security-scanning-agent\",\"display\":\"Security Scanning Agent\",\"description\":\"Security Scanning Agent specializing in System Reverse Engineering and Penetration (SREP). Activates on firmware analysis, BIOS/UEFI security, bootchain auditing, privilege escalation vectors, cryptographic weaknesses, SREP tasks. Use for identifying insecure defaults and enforcing least privilege with ethical guidelines.\",\"mandate\":\"**Core Imperative (System Prompt):**\\n\\nYou are the Security Scanning Agent. Specialize in System Reverse Engineering and Penetration (SREP). Analyze configurations, bootchains, UEFI/BIOS firmware parameters, and operating system hardening states for vulnerabilities and backdoors. Identify insecure defaults, privilege escalation vectors, and cryptographic weaknesses. Provide remediation steps that enforce the principle of least privilege. Adhere strictly to ethical guidelines: your objective is securing, patching, and understanding systems to build robust defenses. Frame all findings and remediations using invention-by-default four paths with full reproducible commands.\",\"lane\":\"trust\",\"version\":\"v1.0\",\"triggers\":[],\"files\":[\"SKILL.md\"],\"zipBytes\":4382},{\"id\":\"skill-creator\",\"name\":\"skill-creator\",\"display\":\"Skill Creator\",\"description\":\"Sovereign skill fabrication engine. Use when user requests creation, update, or evolution of any skill. Enforces Signal Over Noise, Deep Work-first execution, Full Presence commitment, Outcome Detachment, ruthless Environment curation, and daily compounding. Always fabricates complete production-grade implementations from scratch across Direct, Lateral, Radical, and Hybrid paths. Never suggests existing tools.\",\"mandate\":\"**Core Mandate**: We do not create skills. We forge sovereign extensions of capability that move the needle. Every skill must justify its existence by delivering disproportionate leverage.\\n\\nThese principles govern **all** skill fabrication. They are not suggestions. They are the operating system.\",\"lane\":\"platform\",\"version\":\"1.0\",\"triggers\":[],\"files\":[\"SKILL.md\",\"scripts/generate-agent-header.py\",\"scripts/init-skill.sh\",\"scripts/validate-skill.sh\"],\"zipBytes\":9529},{\"id\":\"skill-to-mcp-converter\",\"name\":\"skill-to-mcp-converter\",\"display\":\"Skill To Mcp Converter\",\"description\":\"Automatically converts any existing Grok skill into a production-ready MCP server + hardened systemd user service. Enables rapid deployment of skills as plugins.\",\"mandate\":\"**Core Purpose**: Take any skill description (or existing SKILL.md) and automatically generate:\\n- A full MCP server (Python)\\n- A hardened systemd user service\\n- Basic integration code\\n\\nThis dramatically speeds up turning ideas/skills into real, running plugins.\",\"lane\":\"platform\",\"version\":\"v1\",\"triggers\":[],\"files\":[\"SKILL.md\"],\"zipBytes\":1033},{\"id\":\"strategy-agent\",\"name\":\"strategy-agent\",\"display\":\"Strategy Agent\",\"description\":\"Strategy Agent for synthesizing complex project goals into actionable phased roadmaps. Activates on project roadmapping, technical initiative breakdown, 3-month/6-month plans, open-source ecosystem strategy, risk mitigation planning. Use for massive technical initiatives needing sequential milestones and preemptive mitigation.\",\"mandate\":\"**Core Imperative (System Prompt):**\\n\\nYou are the Strategy Agent. Synthesize complex project goals into actionable, phased roadmaps. When presented with a massive technical initiative, break it down from initial research to final execution. Define the toolchain, hardware requirements, and sequential milestones. Ensure the strategy relies entirely on open-source, locally hosted, or community-driven ecosystems. Anticipate technical roadblocks (e.g., driver incompatibilities, locked bootloaders, or dependency hell) and provide preemptive, step-by-step mitigation plans. Structure every roadmap using invention-by-default four paths with verification gates.\",\"lane\":\"intel\",\"version\":\"v1.0\",\"triggers\":[],\"files\":[\"SKILL.md\"],\"zipBytes\":4373},{\"id\":\"technical-support-triage-agent\",\"name\":\"technical-support-triage-agent\",\"display\":\"Technical Support Triage Agent\",\"description\":\"Technical Support Triage Agent for first-line defense for system administrators. Activates on system troubleshooting, error diagnosis, log analysis for issues, kernel panic triage, configuration debugging. Use when user reports system problems and needs layer-by-layer diagnosis with exact commands.\",\"mandate\":\"**Core Imperative (System Prompt):**\\n\\nYou are the Technical Support Triage Agent. You act as the first line of defense for system administrators and power users. Bypass basic troubleshooting scripts (e.g., 'restart the device'). Immediately request system logs, environment variables, kernel versions, and configuration files. Diagnose issues by isolating the software stack layer by layer—from hardware abstraction up to the application layer. Provide exact terminal commands to diagnose the issue, explicitly stating what each command does. Maintain a sterile, highly professional, and strictly diagnostic tone. Frame all diagnostic strategies and recovery paths using the four invention-by-default paths.\",\"lane\":\"eng\",\"version\":\"v1.0\",\"triggers\":[],\"files\":[\"SKILL.md\"],\"zipBytes\":4389},{\"id\":\"technical-writing-agent\",\"name\":\"technical-writing-agent\",\"display\":\"Technical Writing Agent\",\"description\":\"Technical Writing Agent for producing exact, clear, comprehensive documentation, man pages, and deployment guides. Activates on requests for technical docs, man pages, deployment guides, API documentation, architecture decision records, or stripping marketing language from text. Use for creating precise technical documentation from code, specs, or rough notes.\",\"mandate\":\"**Core Imperative (System Prompt):**\\n\\nYou are the Technical Writing Agent. Your objective is to produce exact, clear, and comprehensive documentation, man pages, and deployment guides. Strip away all marketing language, conversational filler, and ambiguity. Use standard technical markdown, incorporating hierarchical headings, pre-formatted code blocks, and structured tables. Explain complex systems using a step-by-step, deterministic approach. Assume the reader is a highly capable technical practitioner who requires exact command syntax, expected terminal outputs, and architectural context. Additionally, structure any design recommendations using invention-by-default four paths.\",\"lane\":\"docs\",\"version\":\"v1.0\",\"triggers\":[],\"files\":[\"SKILL.md\"],\"zipBytes\":4361},{\"id\":\"testing-agent\",\"name\":\"testing-agent\",\"display\":\"Testing Agent\",\"description\":\"Testing Agent for automated test suites, unit tests, fuzzing parameters, boundary condition testing. Activates on testing strategy, fuzzing setup, penetration testing scripts, security test design, coverage metrics. Use for breaking software logically/resource-wise in ethical boundaries with open-source frameworks.\",\"mandate\":\"**Core Imperative (System Prompt):**\\n\\nYou are the Testing Agent. Design automated test suites, unit tests, and fuzzing parameters. Focus on boundary conditions, input sanitization, and state manipulation. When writing tests, assume a hostile environment and aim to break the software logically and resource-wise. Provide scripts for automated penetration testing within ethical and authorized boundaries. Generate configurations for open-source testing frameworks and detail the exact coverage metrics required to validate system integrity. Structure test strategy alternatives via four invention paths.\",\"lane\":\"trust\",\"version\":\"v1.0\",\"triggers\":[],\"files\":[\"SKILL.md\"],\"zipBytes\":4337},{\"id\":\"unlock-superhuman-learning\",\"name\":\"unlock-superhuman-learning\",\"display\":\"Unlock Superhuman Learning\",\"description\":\"Activate when user requests a weekly learning blueprint, 90-day mastery plan, or neuro-optimized tutor for any complex skill/topic aiming for top 1% performance. Triggers on phrases like 'superhuman learning', '10x faster', 'spaced repetition blueprint', 'Feynman technique plan', 'active recall schedule', 'top 1% in 90 days', or when a specific [insert topic] is provided. Enforces fork-first open-source cognitive sov\",\"mandate\":\"**Succession Rule**: At end of every major exchange explicitly declare one concrete advancement achieved and name the exact next implementation the user must complete and demonstrate.\\n\\n**2. Interleaving**: User writes Python (pandas + random.shuffle or networkx for prerequisite graphs) to mix topics, sub-skills, and problem types in every practice block. Blueprint only defines the architecture and constraints.\",\"lane\":\"platform\",\"version\":\"1.0\",\"triggers\":[],\"files\":[\"SKILL.md\",\"scripts/generate_weekly_plan_skeleton.py\"],\"zipBytes\":5324},{\"id\":\"web-search\",\"name\":\"web-search\",\"display\":\"Web Search\",\"description\":\"Web search skill for retrieving latest information with authoritative citations, source verification, and cutting-edge synthesis. Activate for any query requiring current data, research validation, product details, news, or technical specifications. Produces verifiable outputs with inline citations and confidence notes.\",\"mandate\":\"You are executing high-precision web search. Your goal is to deliver **verifiable, cited, cutting-edge** answers. Never hallucinate sources. Always surface the actual evidence.\\n\\nExample expansion for \\\"current status of Grok-3 release\\\":\\n- \\\"Grok-3 release date xAI official\\\"\\n- \\\"Grok-3\\\" after:2025-01-01 site:x.ai OR site:twitter.com/xai\\n- \\\"Grok 3\\\" \\\"frontier model\\\" OR \\\"reasoning model\\\" 2025 OR 2026\\n- Grok-3 benchmark OR \\\"training compute\\\" OR parameters\",\"lane\":\"intel\",\"version\":\"1.0\",\"triggers\":[],\"files\":[\"SKILL.md\",\"references/search-operators.md\",\"references/source-credibility-framework.md\",\"scripts/search_orchestrator.py\"],\"zipBytes\":6962},{\"id\":\"xlsx\",\"name\":\"xlsx\",\"display\":\"Xlsx\",\"description\":\"Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or fix an existing .xlsx, .xlsm, .xltx, .csv, or .tsv file (e.g., adding columns, computing formulas, formatting, charting, cleaning messy data); create a new spreadsheet from scratch or from other data sources; or convert between tabular file formats. Trigger especially when the u\",\"mandate\":\"> `openpyxl`, `pandas`, and `markitdown` are preinstalled — do not run `pip install` first; write the script and import directly. Only if an import fails (or the `markitdown` command is missing): `pip install` the missing package.\\n\\n> Script paths below are relative to this skill's directory.\",\"lane\":\"docs\",\"version\":\"1.0\",\"triggers\":[],\"files\":[\"xlsx/LICENSE.txt\",\"xlsx/SKILL.md\",\"xlsx/scripts/office/helpers/__init__.py\",\"xlsx/scripts/office/helpers/pptx_chart.py\",\"xlsx/scripts/office/helpers/pptx_slide.py\",\"xlsx/scripts/office/helpers/pptx_theme.py\",\"xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chart.xsd\",\"xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chartDrawing.xsd\",\"xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd\",\"xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-lockedCanvas.xsd\",\"xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-main.xsd\",\"xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-picture.xsd\",\"xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-spreadsheetDrawing.xsd\",\"xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-wordprocessingDrawing.xsd\",\"xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/pml.xsd\",\"xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-additionalCharacteristics.xsd\",\"xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-bibliography.xsd\",\"xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-commonSimpleTypes.xsd\",\"xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlDataProperties.xsd\",\"xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlSchemaProperties.xsd\",\"xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesCustom.xsd\",\"xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesExtended.xsd\",\"xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesVariantTypes.xsd\",\"xlsx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-math.xsd\"],\"zipBytes\":153629}]");
+var archive_default = /*#__PURE__*/ JSON.parse("[{\"id\":\"f34e8e07\",\"title\":\"help batch or draw a roufe for these locations i will write them not in order re\",\"uuid\":\"f34e8e07-1ae0-4c0a-b2ee-f3cb396e87c4\",\"created\":\"2026-09-11T13:18:49.949274Z\",\"updated\":\"2026-09-12T18:17:31.813631Z\",\"spaces\":[\"library\"],\"tags\":[\"ai-stack\"],\"turns\":15,\"chars\":53814,\"excerpt\":\"i will write them not in order  remarm geant , mudon geant , nashama geant , al sayah grandiose , monoprix dubai hills  franprix dubai hills  sports city village geant sports city staudium grandiose  marina pomrade grandiose  Grandiose- Marina Walk, Marina (Marsa), Dubai Géant Ex\"},{\"id\":\"457bc4ac\",\"title\":\"can you write for me instructions in .md for my grok bot how do i make a grok bo\",\"uuid\":\"457bc4ac-13cb-43f4-851f-de49c79d74df\",\"created\":\"2026-09-12T17:38:44.082652Z\",\"updated\":\"2026-09-12T17:41:10.536949Z\",\"spaces\":[\"library\"],\"tags\":[\"grok\",\"hardware\",\"network\",\"ai-stack\",\"docs\"],\"turns\":1,\"chars\":6518,\"excerpt\":\"can you write for me instructions  in .md for my grok bot  how do i make a grok bot connect to my hosted computer to a one bot using ssh so it would preform some kind of low programming test without failing or crashing my computer Do not let a cloud Grok chat open a full SSH shel\"},{\"id\":\"894ac773\",\"title\":\"can you explain usb 3.1 to pci-e nvme ssd enclosure setup\",\"uuid\":\"894ac773-06b8-4d90-ad0a-0fa4f37f7b82\",\"created\":\"2026-09-12T17:23:24.066351Z\",\"updated\":\"2026-09-12T17:23:46.53231Z\",\"spaces\":[\"library\"],\"tags\":[\"hardware\",\"ai-stack\",\"infra\"],\"turns\":1,\"chars\":5720,\"excerpt\":\"can you explain usb 3.1 to pci-e nvme ssd enclosure setup A USB 3.1-to-PCIe NVMe enclosure is a small caddy with a bridge chipset that translates the PCIe/NVMe protocol on an M.2 SSD into USB signaling, letting you use an internal NVMe drive as fast external storage. Here's the f\"},{\"id\":\"a7e1346b\",\"title\":\"proof of ROI\",\"uuid\":\"a7e1346b-7fd5-4723-97e8-f6ac190f5cc9\",\"created\":\"2026-09-10T21:39:37.482713Z\",\"updated\":\"2026-09-10T22:14:44.73433Z\",\"spaces\":[\"library\"],\"tags\":[\"business\",\"ai-stack\"],\"turns\":3,\"chars\":24384,\"excerpt\":\"proof of ROI “Proof of ROI” means producing credible, auditable evidence that an investment generated more value than it cost—typically expressed as a percentage using the standard ROI formula and backed by clear data, assumptions, and attribution logic.[4][6]  Core ROI formula a\"},{\"id\":\"5b0b0c86\",\"title\":\"To view keyboard shortcuts, press question mark View keyboard shortcuts See new\",\"uuid\":\"5b0b0c86-c0ac-4096-a452-623a5e825d5e\",\"created\":\"2026-09-10T21:38:27.285317Z\",\"updated\":\"2026-09-10T21:38:47.00182Z\",\"spaces\":[\"library\"],\"tags\":[\"grok\",\"business\",\"ai-stack\",\"learning\"],\"turns\":1,\"chars\":8943,\"excerpt\":\"View keyboard shortcuts See new posts Quote Argona @Argona0x · Sep 4 this guy explained how he sells a $10,000 AI agent to businesses that takes him an afternoon to build 26 minutes, every step on screen, completely free Claude Code writes the rules → Grok Bot finds and qualifies\"},{\"id\":\"ca523490\",\"title\":\"DOCTYPE html html langen head meta charsetUTF-8 meta nameviewport contentwidthde\",\"uuid\":\"ca523490-50d0-4f59-a157-263e3de95502\",\"created\":\"2026-09-08T10:50:29.788213Z\",\"updated\":\"2026-09-10T07:49:48.435196Z\",\"spaces\":[\"library\"],\"tags\":[\"browser\",\"docs\"],\"turns\":14,\"chars\":146118,\"excerpt\":\"<html lang=\\\"en\\\" <head <meta charset=\\\"UTF-8\\\" <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\" <titleNSIS Interactive Guide</title <script src=\\\"https://cdn.tailwindcss.com\\\"<\/script <script src=\\\"https://cdn.jsdelivr.net/npm/chart.js\\\"<\/script <style .chart-contai\"},{\"id\":\"50e7af9e\",\"title\":\"tplink\",\"uuid\":\"50e7af9e-9e8b-4912-af4b-2b7ba7751011\",\"created\":\"2026-09-09T21:11:00.905522Z\",\"updated\":\"2026-09-09T21:11:05.63503Z\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"hardware\",\"network\",\"ai-stack\"],\"turns\":1,\"chars\":2858,\"excerpt\":\"tplink TP-Link is a networking and smart-home hardware brand known for routers, mesh systems, access points, switches, adapters, and products under lines like Deco, Tapo, Omada, VIGI, Aginet, and Mercusys. Its UAE site is available at [TP-Link United Arab Emirates](https://www.tp\"},{\"id\":\"5292cf38\",\"title\":\"how can i extend this ethically\",\"uuid\":\"5292cf38-d954-4bc4-a309-baf2920b080b\",\"created\":\"2026-09-09T20:57:52.929821Z\",\"updated\":\"2026-09-09T21:08:35.878952Z\",\"spaces\":[\"library\"],\"tags\":[\"grok\",\"browser\",\"ai-stack\"],\"turns\":5,\"chars\":22370,\"excerpt\":\"how can i extend this ethically Your screenshot shows SuperGrok Heavy (monthly) with a \\\"6% off for 3 months\\\" promo active and the next billing date of Sep 30, 2026 — so you're asking how to keep that discount going legitimately. The short answer: xAI doesn't let users extend prom\"},{\"id\":\"3844a59f\",\"title\":\"can you create a full list using google maps , for enoc petrol station sites sta\",\"uuid\":\"3844a59f-e501-4b83-b804-f627e7bfc439\",\"created\":\"2026-09-08T12:37:54.459358Z\",\"updated\":\"2026-09-08T12:42:55.720326Z\",\"spaces\":[\"library\"],\"tags\":[\"network\",\"ai-stack\",\"docs\"],\"turns\":1,\"chars\":9168,\"excerpt\":\"can you create a full list using google maps , for enoc petrol station sites starting by listing all the ones on 611 , 311 , and itthad road , then vertically al khail , meydan , al asayal , al yalayais , then re list the mostly visited ones use any database to review how many re\"},{\"id\":\"01675b6b\",\"title\":\"can you create a full list using google maps , for enoc petrol station sites sta\",\"uuid\":\"01675b6b-411b-4ff4-9f14-563932b20790\",\"created\":\"2026-09-08T12:34:34.321173Z\",\"updated\":\"2026-09-08T12:41:21.568069Z\",\"spaces\":[\"library\"],\"tags\":[\"network\",\"ai-stack\",\"docs\"],\"turns\":1,\"chars\":19564,\"excerpt\":\"can you create a full list using google maps , for enoc petrol station sites starting by listing all the ones on 611 , 311 , and itthad road , then vertically al khail , meydan , al asayal , al yalayais , then re list the mostly visited ones use any database to review how many re\"},{\"id\":\"c961d3f6\",\"title\":\"notion ai official page on github or gitlab\",\"uuid\":\"c961d3f6-9619-4de4-9644-10e5c54397ac\",\"created\":\"2026-09-08T07:09:16.118972Z\",\"updated\":\"2026-09-08T07:19:05.429998Z\",\"spaces\":[\"library\"],\"tags\":[\"grok\",\"ai-stack\",\"docs\",\"infra\"],\"turns\":3,\"chars\":30722,\"excerpt\":\"notion ai official page on github or gitlab Notion AI itself is a proprietary Notion product, so there does not appear to be an official open-source GitHub or GitLab repository for its core application. The Notion-AI GitHub organization shown in search results is third-party and \"},{\"id\":\"06ab7e8d\",\"title\":\"how can i make a usb cable keyboard to work on both two different computers with\",\"uuid\":\"06ab7e8d-e840-40a3-8685-c1f519c07d3a\",\"created\":\"2026-09-08T06:03:13.606438Z\",\"updated\":\"2026-09-08T06:03:54.292882Z\",\"spaces\":[\"library\"],\"tags\":[\"hardware\",\"network\",\"ai-stack\",\"infra\"],\"turns\":1,\"chars\":15249,\"excerpt\":\"how can i make a usb cable keyboard to work on both two different computers without using any external devices , we could implement an action which is a combination of two keys that gives us the address to pc 1 and pc2 like windows key + tab on windows if i get to press it would \"},{\"id\":\"7d00d65d\",\"title\":\"nivida skills could help how while Im using grok build\",\"uuid\":\"7d00d65d-9c83-4c9a-b564-fecff6532aab\",\"created\":\"2026-09-07T07:02:27.160677Z\",\"updated\":\"2026-09-07T07:02:58.362652Z\",\"spaces\":[\"library\"],\"tags\":[\"grok\",\"hardware\",\"network\",\"ai-stack\",\"infra\"],\"turns\":1,\"chars\":11477,\"excerpt\":\"nivida skills could help how while I'm using grok build ? Yes—NVIDIA Skills can complement Grok Build, but they will not automatically make Grok better at every programming task. They are most valuable when your project touches NVIDIA-specific stacks: CUDA, TensorRT, GPU inferenc\"},{\"id\":\"dfe71d85\",\"title\":\"Append layout blocks (divider, TOC, columns)NOTION APPEND LAYOUT BLOCKS Append m\",\"uuid\":\"dfe71d85-0940-4437-bd52-82c0d712635b\",\"created\":\"2026-09-05T19:18:23.802598Z\",\"updated\":\"2026-09-05T19:19:00.042597Z\",\"spaces\":[\"library\"],\"tags\":[\"docs\"],\"turns\":1,\"chars\":4374,\"excerpt\":\"Append media blocks (image, video, audio, files)NOTION_APPEND_MEDIA_BLOCKS Append task blocks (to-do, toggle, callout)NOTION_APPEND_TASK_BLOCKS Append table blocksNOTION_APPEND_TABLE_BLOCKS Append text blocks (paragraphs, headings, lists)NOTION_APPEND_TEXT_BLOCKS Create commentNO\"},{\"id\":\"967e2b14\",\"title\":\"build for me all the artifacts in .md that are been made already in perplexity\",\"uuid\":\"967e2b14-b65e-4406-a852-f67ee89f9a22\",\"created\":\"2026-09-05T15:17:14.32327Z\",\"updated\":\"2026-09-05T15:17:38.711279Z\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"ai-stack\",\"docs\"],\"turns\":1,\"chars\":2883,\"excerpt\":\"build for me all the artifacts in .md that are been made already in perplexity I can consolidate the Markdown artifacts, but I do not currently have the actual content or a readable index of your past Perplexity threads in this chat. I checked the connected Perplexity/Notion sess\"},{\"id\":\"8f7578bd\",\"title\":\"Design a Gecko-Based AI Browser\",\"uuid\":\"8f7578bd-4359-43a1-923e-2e92a622b3ad\",\"created\":\"2026-09-04T20:37:08.015488Z\",\"updated\":\"2026-09-04T20:37:09.649043Z\",\"spaces\":[\"library\"],\"tags\":[\"grok\",\"business\",\"browser\",\"ai-stack\"],\"turns\":1,\"chars\":928,\"excerpt\":\"Improve the following prompt: connect x , github, google accounts , verify the licenses , so then we will deep search all programming languages + save all mozilla docs of how we could create our own browser then the whole subjewct is to bring all features of every model like fabl\"},{\"id\":\"f24e390f\",\"title\":\"Hugging Face best model to start indexing into its brain whatever actions and co\",\"uuid\":\"f24e390f-db0b-42fe-a84a-a01c27279e06\",\"created\":\"2026-09-04T20:04:39.812051Z\",\"updated\":\"2026-09-04T20:05:12.330813Z\",\"spaces\":[\"library\"],\"tags\":[\"grok\",\"ai-stack\",\"infra\"],\"turns\":1,\"chars\":4991,\"excerpt\":\"@Hugging Face best model to start indexing into its brain whatever actions and commands we want grok bot to do The best approach for \\\"indexing commands and actions into a bot's brain\\\" on Hugging Face is a combination of fine-tuning an instruction-following base model (supervised \"},{\"id\":\"1840f0c1\",\"title\":\"Scan this code for vulnerabilities and security issues provide risk assessment a\",\"uuid\":\"1840f0c1-660a-431b-9aa5-2b868692d775\",\"created\":\"2026-09-04T14:58:06.296301Z\",\"updated\":\"2026-09-04T15:40:15.071379Z\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"ai-stack\",\"security\",\"infra\"],\"turns\":4,\"chars\":11823,\"excerpt\":\"Scan this code for vulnerabilities and security issues provide risk assessment and remediation steps I can do a security review, but no code was provided and the currently open GitHub URL resolves to a 404 “Page not found” page, so there is no repository or source to inspect.[1] \"},{\"id\":\"cabb769c\",\"title\":\"after having them in this case how i do make them as a disk to recover whatever\",\"uuid\":\"cabb769c-c5bf-4eff-8c47-346c69bc2404\",\"created\":\"2026-09-04T14:28:14.324107Z\",\"updated\":\"2026-09-04T14:47:24.491536Z\",\"spaces\":[\"library\"],\"tags\":[\"browser\",\"ai-stack\"],\"turns\":5,\"chars\":25850,\"excerpt\":\"after having them in this case how i do make them as a disk to recover whatever files they have Those files are a split raw disk image: Disk Image 0.dim followed by .dim.001, .002, etc. Keep every segment together, in the same folder, with the names unchanged. Do not open, rename\"},{\"id\":\"12ff6464\",\"title\":\"from our previous conversations lets rethink about some ideas using the below fe\",\"uuid\":\"12ff6464-13f3-4989-86ee-0775015fbc0a\",\"created\":\"2026-09-03T10:53:54.30103Z\",\"updated\":\"2026-09-03T10:55:46.803033Z\",\"spaces\":[\"library\"],\"tags\":[\"network\",\"browser\",\"infra\"],\"turns\":1,\"chars\":32623,\"excerpt\":\"WebToApp has a large number of switches. The sections below group them by use case, kept collapsible so the top of the page stays scannable. 🌐 Browser engine & networking     Dual engine — System WebView by default, or an optional GeckoView (Firefox) runtime downloaded on first \"},{\"id\":\"af60ed5f\",\"title\":\"Here are all the terms and conditions web page links for the mentioned AI servic\",\"uuid\":\"af60ed5f-7615-4268-9a47-6d8e4a63458c\",\"created\":\"2026-08-30T15:32:45.068554Z\",\"updated\":\"2026-08-30T17:15:42.984962Z\",\"spaces\":[\"library\"],\"tags\":[\"grok\",\"ai-stack\",\"docs\",\"infra\"],\"turns\":6,\"chars\":69466,\"excerpt\":\"📜 Complete List of Legal Pages 🟢 Pieces OS DocumentURL Terms & Conditions https://pieces.app/legal/terms Privacy Policy https://pieces.app/legal/privacy-policy Privacy, Security & Your Data https://docs.pieces.app/products/privacy-security-your-data 🟢 Grok (xAI) DocumentURL Te\"},{\"id\":\"ff0bd2a4\",\"title\":\"Devin ai vs pipdream vs crusor vs anthropic vs chat gpt , list me their highest\",\"uuid\":\"ff0bd2a4-7a0f-4bce-aa84-b617d4d87ead\",\"created\":\"2026-08-29T12:54:38.151223Z\",\"updated\":\"2026-08-29T12:55:00.883345Z\",\"spaces\":[\"library\"],\"tags\":[\"grok\",\"ai-stack\",\"infra\"],\"turns\":1,\"chars\":8851,\"excerpt\":\"Devin ai vs pipdream vs crusor vs anthropic vs chat gpt , list me their highest plans starting from consumer layer to business layer to ownerships to enterprise to full freedom , get me all their terms and conditions Here’s the cleanest way to think about it: these products don’t\"},{\"id\":\"13248c51\",\"title\":\"do you remember what was the version of the dlink router WE used to configure it\",\"uuid\":\"13248c51-6a8b-4a56-9950-855949373698\",\"created\":\"2026-08-28T16:46:17.590196Z\",\"updated\":\"2026-08-28T17:24:08.696706Z\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"hardware\",\"ai-stack\"],\"turns\":6,\"chars\":26993,\"excerpt\":\"do you remember  what was the version of the dlink router WE used to configure it using custom os Yes — the router you flashed with custom firmware was the D-Link DIR-853, hardware revision A3, running stock firmware version 1.01(ET) before the switch.[1][2] For the OpenWrt conve\"},{\"id\":\"5c056136\",\"title\":\"reohrase this txt as i will run it as prompt in mistral ai chat platform search\",\"uuid\":\"5c056136-6529-4934-bed6-3289bec5f87c\",\"created\":\"2026-08-28T00:26:15.393417Z\",\"updated\":\"2026-08-28T00:27:17.944086Z\",\"spaces\":[\"library\"],\"tags\":[\"browser\",\"docs\",\"infra\",\"learning\"],\"turns\":1,\"chars\":11044,\"excerpt\":\"search and explore models , datasets , and documentation from huggining face  search and summarize knowledge across connected deepwiki  tell me if i could build my own workers applications with stoarge , ai , compute and etc on cloudfare development platform  (only tell me more a\"},{\"id\":\"6a570023\",\"title\":\"reohrase this txt as i will run it as prompt in mistral ai chat platform search\",\"uuid\":\"6a570023-f65f-4464-b3e1-b8f3065ac942\",\"created\":\"2026-08-27T22:59:48.453651Z\",\"updated\":\"2026-08-28T00:08:58.526307Z\",\"spaces\":[\"library\"],\"tags\":[\"browser\",\"docs\",\"infra\",\"learning\"],\"turns\":1,\"chars\":4582,\"excerpt\":\"search and explore models , datasets , and documentation from huggining face  search and summarize knowledge across connected deepwiki  tell me if i could build my own workers applications with stoarge , ai , compute and etc on cloudfare development platform  (only tell me more a\"},{\"id\":\"aa39f365\",\"title\":\"merge these two photos and create a gif that says good morning in a beautiful wa\",\"uuid\":\"aa39f365-febe-4e4e-a618-b086b8ee5bd6\",\"created\":\"2026-08-27T02:24:48.925987Z\",\"updated\":\"2026-08-27T02:29:23.806249Z\",\"spaces\":[\"library\"],\"tags\":[\"network\",\"ai-stack\"],\"turns\":3,\"chars\":10542,\"excerpt\":\"merge these two photos and create a gif that says good morning in a beautiful way I can't create animated GIFs — that's outside what I can generate (only static images or non-GIF videos). However, I can create a beautiful static merged image combining the Takis chip bag and the \\\"\"},{\"id\":\"26cc7e37\",\"title\":\"Perplexity Finance\",\"uuid\":\"26cc7e37-cdc0-4d15-9e8b-94966147cee5\",\"created\":\"2026-08-27T02:23:32.206806Z\",\"updated\":\"2026-08-27T02:23:40.345682Z\",\"spaces\":[\"library\"],\"tags\":[\"ai-stack\",\"docs\"],\"turns\":1,\"chars\":3180,\"excerpt\":\"Perplexity Finance Perplexity Finance is Perplexity’s finance-focused research interface for exploring public markets, companies, ETFs, earnings, filings, and market context in natural language. It is intended for research and information—not personalized investment, tax, or lega\"},{\"id\":\"33c4c8e6\",\"title\":\"Download task Paste a task repo URL. Pinokio installs it if needed\",\"uuid\":\"33c4c8e6-fa7c-4585-8c4c-5cabf21e4731\",\"created\":\"2026-08-26T01:07:43.894157Z\",\"updated\":\"2026-08-26T20:51:51.124792Z\",\"spaces\":[\"library\"],\"tags\":[\"browser\",\"ai-stack\",\"docs\",\"infra\",\"learning\"],\"turns\":4,\"chars\":16722,\"excerpt\":\"Paste a task repo URL. Pinokio installs it if needed. Download task Paste a task repo URL. Pinokio installs it if needed. Paste the task repository URL here—such as a GitHub repository link—and Pinokio will download it and install any required dependencies. give me exaqmples Exam\"},{\"id\":\"941b8edb\",\"title\":\"bow does ai run exploit\",\"uuid\":\"941b8edb-6f4c-45c9-b69d-c1f4beeae2cf\",\"created\":\"2026-08-13T03:43:17.121728Z\",\"updated\":\"2026-08-26T00:13:13.101078Z\",\"spaces\":[\"all\"],\"tags\":[\"hardware\",\"network\",\"ai-stack\",\"security\"],\"turns\":8,\"chars\":21462,\"excerpt\":\"bow does ai run exploit AI does not “run an exploit” by itself in the magical sense; it can accelerate the work around exploitation: finding likely weaknesses, interpreting code or public vulnerability reports, generating test cases, and helping an operator prioritize targets. Th\"},{\"id\":\"904db643\",\"title\":\"httpsgrok.comskill-linkc75fef9e62eb95f750846396327143ca\",\"uuid\":\"904db643-5bc0-4392-825f-e33b3bb800ec\",\"created\":\"2026-08-25T11:32:30.705396Z\",\"updated\":\"2026-08-25T11:33:25.997711Z\",\"spaces\":[\"library\"],\"tags\":[\"grok\",\"browser\",\"ai-stack\",\"docs\"],\"turns\":2,\"chars\":1568,\"excerpt\":\"[https://grok.com/skill-link/c75fef9e62eb95f750846396327143ca](https://grok.com/skill-link/c75fef9e62eb95f750846396327143ca) I couldn’t retrieve the content from that Grok skill link—the page may require an authenticated Grok session or block automated access. If you paste the sk\"},{\"id\":\"8ab9a99c\",\"title\":\"whats the resolution of this track\",\"uuid\":\"8ab9a99c-38f2-4b4d-a3e9-00b95f21aa09\",\"created\":\"2026-08-25T04:31:30.798664Z\",\"updated\":\"2026-08-25T04:32:08.97889Z\",\"spaces\":[\"library\"],\"tags\":[\"ai-stack\"],\"turns\":3,\"chars\":4179,\"excerpt\":\"whats the resolution of this track The SoundCloud upload is an audio track, so it does not have a video resolution. Its visible cover artwork is served at 500 × 500 pixels (square); SoundCloud also provides a 120 × 120 thumbnail variant.[1] The linked YouTube source may have an a\"},{\"id\":\"a6913ce6\",\"title\":\"give the exact command to know where is the git in my whole disk not just window\",\"uuid\":\"a6913ce6-cc28-46c8-97bc-25e86b72694a\",\"created\":\"2026-08-25T01:42:23.581292Z\",\"updated\":\"2026-08-25T02:02:57.49935Z\",\"spaces\":[\"library\"],\"tags\":[\"grok\",\"ai-stack\"],\"turns\":15,\"chars\":78850,\"excerpt\":\"give the exact command to know where is the git in my whole disk not just windows \\\\ The screenshot shows Grok running in a folder that is not a Git repository. To find every Git repository on all mounted disks, use the command matching your terminal.  PowerShell — all Windows dis\"},{\"id\":\"3254c521\",\"title\":\"Organize and manage files move, rename, group, clean up, etc., within those fold\",\"uuid\":\"3254c521-b09a-45e1-b122-afe5c81d3860\",\"created\":\"2026-08-24T20:30:05.180637Z\",\"updated\":\"2026-08-24T20:33:01.016579Z\",\"spaces\":[\"library\"],\"tags\":[\"browser\",\"ai-stack\"],\"turns\":2,\"chars\":7989,\"excerpt\":\"Organize and manage files: move, rename, group, clean up, etc., within those folders.[perplexity](https://www.perplexity.ai/help-center/en/articles/19800001-about-the-app) on my desktop- Yes—Perplexity’s desktop app can organize files inside folders that you explicitly grant it a\"},{\"id\":\"6a890296\",\"title\":\"Can you explain what and how does Perplexity Pro user could be using these below\",\"uuid\":\"6a890296-4bdb-463d-905b-e9e30671afa0\",\"created\":\"2026-08-24T20:29:27.852153Z\",\"updated\":\"2026-08-24T20:29:49.412614Z\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"ai-stack\"],\"turns\":1,\"chars\":10322,\"excerpt\":\"Local file system access Access files and run commands on this PC Enabled Desktop tools Read and write local files, and run shell commands on this device. Remote access Allow remote access desktop sessions from Perplexity web and mobile apps. Can you explain what and how does Per\"},{\"id\":\"b065689a\",\"title\":\"Studio UI (DesktopWeb)   - Multi-page ReactSvelte app   - Agent builder, workflo\",\"uuid\":\"b065689a-ccf6-41df-944d-652bd9f2c63d\",\"created\":\"2026-08-23T21:41:38.510922Z\",\"updated\":\"2026-08-24T18:23:06.727456Z\",\"spaces\":[\"library\"],\"tags\":[\"network\",\"browser\",\"ai-stack\"],\"turns\":18,\"chars\":164632,\"excerpt\":\"│                    Studio UI (Desktop/Web)              │ │  - Multi-page React/Svelte app                           │ │  - Agent builder, workflow designer, result viewer       │ │  - Local-first data storage (IndexedDB/SQLite)           │ └────────────────────────────────────\"},{\"id\":\"0fee25e1\",\"title\":\"what were my two computers that i have\",\"uuid\":\"0fee25e1-d0a5-4aaf-ab3e-d36d2710c905\",\"created\":\"2026-08-23T22:53:58.706471Z\",\"updated\":\"2026-08-23T22:56:28.780568Z\",\"spaces\":[\"all\"],\"tags\":[\"firmware\",\"hardware\",\"browser\",\"ai-stack\",\"docs\",\"infra\"],\"turns\":2,\"chars\":5089,\"excerpt\":\"what were my two computers that i have ? Your two primary computers are: 1. HP Pavilion Gaming Notebook CX0049NE — Intel Core i5-8300H (8th gen), NVIDIA GTX 1050 Ti, InsydeH2O BIOS, and 32 GB RAM (2×16 GB). 2. Dell Latitude 5400 — Intel Core i7 vPro (8th gen), business-oriented/o\"},{\"id\":\"42f0b116\",\"title\":\"what i shall ask it to do for me MiMo Claw after we had this conversation below\",\"uuid\":\"42f0b116-c480-415c-9852-a06b245e5197\",\"created\":\"2026-08-22T07:18:44.406492Z\",\"updated\":\"2026-08-22T08:33:33.160528Z\",\"spaces\":[\"all\"],\"tags\":[\"firmware\"],\"turns\":3,\"chars\":66322,\"excerpt\":\"0167v1.pdf Study and learn each thing and fact and information gathered in those pdf's so we could create a new design along ai local Let me download and study all these PDFs first. All downloaded. Now let me extract and study each PDF. Let me study each document systematically. \"},{\"id\":\"ac2641e2\",\"title\":\"help me Verify CISA UEFI Secure Boot status fleet-wide using provided commands w\",\"uuid\":\"ac2641e2-b735-4b7b-80ba-1c154418de5b\",\"created\":\"2026-08-21T21:58:59.767391Z\",\"updated\":\"2026-08-21T21:59:35.80372Z\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"ai-stack\"],\"turns\":1,\"chars\":13021,\"excerpt\":\"Replace 2011 keys with 2023 certs; audit db/dbX stores quarterly.​ Customize PK/KEK for hardware-specific hashes to block supply chain attacks.​ Pair with TPM 2.0 but never rely solely—boot enforcement is foundational.​ Prepare recovery playbooks now for BlackLotus-style incident\"},{\"id\":\"15328c0a\",\"title\":\"download it as pdf\",\"uuid\":\"15328c0a-8d0e-4209-a0f7-7d35fa32bb1a\",\"created\":\"2026-08-21T19:00:29.244203Z\",\"updated\":\"2026-08-21T19:01:30.517866Z\",\"spaces\":[\"library\"],\"tags\":[\"browser\",\"ai-stack\"],\"turns\":1,\"chars\":1911,\"excerpt\":\"download it as pdf You’re already viewing a PDF document, and the source URL itself points to a .pdf file, so it is already in PDF format. To download it on your device, use the Save or Download button in the PDF viewer toolbar on the current page.[1]  Direct method In the viewer\"},{\"id\":\"dcabe30a\",\"title\":\"Class,FriendlyName,Status,InstanceId,HardwareIds USB,Generic USB Hub,Unknown,USB\",\"uuid\":\"dcabe30a-924e-4de7-af61-f1d05975191d\",\"created\":\"2026-08-21T10:53:01.771914Z\",\"updated\":\"2026-08-21T10:54:00.09571Z\",\"spaces\":[\"library\"],\"tags\":[\"hardware\",\"network\"],\"turns\":1,\"chars\":93389,\"excerpt\":\"\\\"USB\\\",\\\"Generic USB Hub\\\",\\\"Unknown\\\",\\\"USB\\\\VID_0BDA&PID_5411\\\\6&14B64DB&0&2\\\",\\\"USB\\\\VID_0BDA&PID_5411&REV_0101 | USB\\\\VID_0BDA&PID_5411\\\" \\\"Net\\\",\\\"HUAWEI Mobile Connect - 3G Network Card\\\",\\\"Unknown\\\",\\\"USB\\\\VID_12D1&SUBCLASS_01&PROT_07\\\\6&1A7CAE8A&0&0001\\\",\\\"USB\\\\Vid_12D1&Subclass_01&Prot_07 | USB\\\\\"},{\"id\":\"916f1fff\",\"title\":\"Our Services Knowledge Centre About Contact All Dell BIOS Passwords Weak XOR Enc\",\"uuid\":\"916f1fff-234b-4110-975f-de8c1a2cca69\",\"created\":\"2026-08-19T23:06:51.533347Z\",\"updated\":\"2026-08-21T08:23:55.924897Z\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"security\"],\"turns\":3,\"chars\":74537,\"excerpt\":\"Knowledge Centre About Contact All Dell BIOS Passwords: Weak XOR Encryption Allows Recovery from SPI Flash (CVE-2026-40639) Home  Knowledge Centre  Insights  Dell BIOS Passwords: Weak XOR Encryption Allows Recovery from SPI Flash (CVE-2026-40639) Craig S. Blackie (MDSec) and Darr\"},{\"id\":\"69c34095\",\"title\":\"Update the project status summary using the latest sessions. Then ask me if ther\",\"uuid\":\"69c34095-a76d-4766-9eac-4dfe67828ba2\",\"created\":\"2026-08-21T08:20:53.820995Z\",\"updated\":\"2026-08-21T08:21:00.070844Z\",\"spaces\":[\"all\"],\"tags\":[\"general\"],\"turns\":1,\"chars\":392,\"excerpt\":\"Update the project status summary using the latest sessions. Then ask me if there is anything else to include or change.\"},{\"id\":\"1af4bcfd\",\"title\":\"Summarize the current webpage\",\"uuid\":\"1af4bcfd-c942-4875-b8d6-4db742ebed9b\",\"created\":\"2026-08-21T07:56:55.772851Z\",\"updated\":\"2026-08-21T07:57:06.896076Z\",\"spaces\":[\"library\"],\"tags\":[\"ai-stack\"],\"turns\":1,\"chars\":4822,\"excerpt\":\"Summarize the current webpage The current page is FIRST’s PSIRT Services Framework v1.1: a practical reference for creating, operating, and maturing a Product Security Incident Response Team (PSIRT). It treats PSIRT as an integral part of secure engineering, not merely a post-rel\"},{\"id\":\"bf5b4d9f\",\"title\":\"BlackLotus UEFI bootkit\",\"uuid\":\"bf5b4d9f-ca5c-4d4b-a022-4945d6fa4c8b\",\"created\":\"2026-08-20T23:19:25.712821Z\",\"updated\":\"2026-08-20T23:20:20.223461Z\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"ai-stack\",\"security\"],\"turns\":1,\"chars\":9935,\"excerpt\":\"BlackLotus UEFI bootkit. BlackLotus is the first publicly confirmed in-the-wild UEFI bootkit that can persist on fully patched Windows 11 with Secure Boot still enabled.  Microsoft tracks the Secure Boot bypass it used as CVE-2023-24932; that is the reason the page you have open \"},{\"id\":\"9c22054f\",\"title\":\"Summarize the current webpage\",\"uuid\":\"9c22054f-2b54-4488-8c95-5be9d37f6c5f\",\"created\":\"2026-08-20T23:15:02.38321Z\",\"updated\":\"2026-08-20T23:15:30.025152Z\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"hardware\",\"network\",\"ai-stack\",\"infra\"],\"turns\":1,\"chars\":4975,\"excerpt\":\"Summarize the current webpage This Dell knowledge base article is a how-to page for the Latitude 5400 Windows 11 Driver Pack, a single installer that bundles the official x64 drivers Dell ships for that laptop on Windows 11.  The pack is identified as 84RYJ, version A00, released\"},{\"id\":\"b3e0ca83\",\"title\":\"Summarize the current webpage\",\"uuid\":\"b3e0ca83-7075-4082-bf3d-81e1eff45ef4\",\"created\":\"2026-08-20T23:15:02.024902Z\",\"updated\":\"2026-08-20T23:15:29.954171Z\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"hardware\",\"network\",\"ai-stack\",\"infra\"],\"turns\":1,\"chars\":4612,\"excerpt\":\"Summarize the current webpage This Dell knowledge-base article is the Windows 11 Dell Command | Deploy Driver Pack for the Latitude 5400, pack ID 84RYJ, version A00, dated 27 October 2022, and about 1,723 MB. [1]  What the pack is The page is a catalog, not a how-to walkthrough. \"},{\"id\":\"e05759b4\",\"title\":\"DOWNLOAD THEM\",\"uuid\":\"e05759b4-09d1-4b6c-9326-4cf7c2f11233\",\"created\":\"2026-08-20T15:07:49.105096Z\",\"updated\":\"2026-08-20T15:26:26.584127Z\",\"spaces\":[\"library\"],\"tags\":[\"browser\",\"ai-stack\"],\"turns\":3,\"chars\":2675,\"excerpt\":\"DOWNLOAD THEM This URL is a Dell WinPE driver manifest file (XML) — it only lists metadata about driver components (names, versions, internal paths inside a CAB), it does not contain actual clickable download links for individual driver files. There's nothing on this page itself \"},{\"id\":\"95336a64\",\"title\":\"Summarize the current webpage\",\"uuid\":\"95336a64-57cc-4fc6-b3cd-cbbb273320bc\",\"created\":\"2026-08-20T15:07:26.568072Z\",\"updated\":\"2026-08-20T15:07:59.653101Z\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"hardware\",\"network\",\"business\",\"ai-stack\"],\"turns\":1,\"chars\":1568,\"excerpt\":\"Summarize the current webpage This is Dell UK’s Drivers & Downloads support page for the Latitude 5400 laptop. It is a hub for identifying the machine, checking for updates automatically, selecting individual drivers, and accessing recovery and support resources.[1]  Available ac\"},{\"id\":\"8f47362e\",\"title\":\"Help me use it\",\"uuid\":\"8f47362e-ec20-4a5b-96c7-b3794e539eb1\",\"created\":\"2026-08-19T10:57:56.481156Z\",\"updated\":\"2026-08-19T10:58:34.638034Z\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"hardware\",\"ai-stack\"],\"turns\":1,\"chars\":10209,\"excerpt\":\"Help me use it PhoenixPE is a Windows 10/11-based WinPE rescue environment builder. For your HP Pavilion 15-cx0049ne, use it to make a bootable USB for offline Windows repair, disk work, driver injection, data extraction, malware cleanup, and command-line recovery—not BIOS flashi\"},{\"id\":\"4c759f5a\",\"title\":\"ip\",\"uuid\":\"4c759f5a-770e-40dc-9da1-f300a5b0a2a5\",\"created\":\"2026-08-19T10:25:20.996342Z\",\"updated\":\"2026-08-19T10:26:36.439572Z\",\"spaces\":[\"library\"],\"tags\":[\"hardware\",\"network\",\"ai-stack\",\"docs\",\"learning\"],\"turns\":2,\"chars\":7144,\"excerpt\":\"ip IP usually means either the Internet Protocol or an IP address — the numeric label that identifies a host and tells routers where to send packets.[1][2]  What an IP address is An IP address is a network-layer identifier such as 192.168.1.1 (IPv4) or 2001:db8::8a2e:370:7334 (IP\"},{\"id\":\"8f402c6c\",\"title\":\"i want from you to help me get to build a custom uefi using edkII and their docu\",\"uuid\":\"8f402c6c-9c52-4c6e-8c78-4f2dbb4f3b82\",\"created\":\"2026-08-18T22:57:03.722967Z\",\"updated\":\"2026-08-19T00:36:50.193551Z\",\"spaces\":[\"all\"],\"tags\":[\"firmware\",\"hardware\",\"ai-stack\",\"infra\"],\"turns\":2,\"chars\":23979,\"excerpt\":\"i want from you to help me get to build a custom uefi using edkII and their documents on how they do that for my dell latitude 5400 You should start by treating EDK II as a payload on top of Dell’s existing UEFI—build and boot EDK II shell and small UEFI apps from USB and QEMU—be\"},{\"id\":\"2d8008d7\",\"title\":\"send now, pay later. send up to AED 5,000\",\"uuid\":\"2d8008d7-3ab8-4f7f-8bf7-b446e70df220\",\"created\":\"2026-08-17T04:36:41.466365Z\",\"updated\":\"2026-08-17T04:37:28.087228Z\",\"spaces\":[\"library\"],\"tags\":[\"ai-stack\"],\"turns\":2,\"chars\":8381,\"excerpt\":\"send up to AED 5,000. send now, pay later. send up to AED 5,000. You’re referring to Botim Credit’s “Send Now, Pay Later” (SNPL) service in the UAE: eligible users can send an international remittance immediately using an approved revolving credit limit of up to AED 5,000, then r\"},{\"id\":\"1d3beac6\",\"title\":\"CHECK THE SIZES FOR RHOSE LISTED PATHS Recycle.Bin Windows.BT Windows.WS Windows\",\"uuid\":\"1d3beac6-9412-435b-87a4-f1966c484460\",\"created\":\"2026-08-17T00:25:06.4933Z\",\"updated\":\"2026-08-17T00:47:17.644832Z\",\"spaces\":[\"library\"],\"tags\":[\"hardware\",\"ai-stack\"],\"turns\":4,\"chars\":43754,\"excerpt\":\"$Recycle.Bin $Windows.~BT $Windows.~WS $Windows.~LS Recycler Recycled PerfLogs System Volume Information swapfile.sys hiberfil.sys pagefile.sys winpepge.sys Windows\\\\Temp\\\\ Windows\\\\Logs\\\\ Windows\\\\Prefetch Windows\\\\CSC Windows\\\\CbsTemp\\\\ Windows\\\\WinSxS\\\\ManifestCache\\\\ Windows\\\\SoftwareDis\"},{\"id\":\"4391e7ea\",\"title\":\"fetch filecr for the mostly advanced backup automation software for windows and\",\"uuid\":\"4391e7ea-3b1e-4674-ba09-2a7f93e31b30\",\"created\":\"2026-08-16T23:23:33.293609Z\",\"updated\":\"2026-08-16T23:23:56.771231Z\",\"spaces\":[\"library\"],\"tags\":[\"hardware\",\"network\",\"business\",\"ai-stack\",\"infra\"],\"turns\":1,\"chars\":10450,\"excerpt\":\"https://filecr.com/windows/  sort them mostly new who has mostly downloaded fetch filecr for the mostly advanced backup automation software for windows and restoration [https://filecr.com/windows/](https://filecr.com/windows/)  sort them mostly new who has mostly downloaded I can\"},{\"id\":\"a32da251\",\"title\":\"tplink 192\",\"uuid\":\"a32da251-371d-4da9-8813-deb9793ae816\",\"created\":\"2026-08-15T14:20:13.373477Z\",\"updated\":\"2026-08-15T14:20:17.482326Z\",\"spaces\":[\"library\"],\"tags\":[\"hardware\",\"network\",\"browser\",\"ai-stack\",\"security\"],\"turns\":1,\"chars\":1825,\"excerpt\":\"tplink 192 For a TP-Link router, 192.168.1.1 is one of the common local login addresses, and 192.168.0.1 is another common one depending on the model. TP-Link also says you must be connected to the router’s network, and it recommends trying the router’s IP directly if the tplinkw\"},{\"id\":\"5bb81bc2\",\"title\":\"What is this device\",\"uuid\":\"5bb81bc2-d591-4046-abe6-78857f4b6136\",\"created\":\"2026-08-15T04:19:22.520958Z\",\"updated\":\"2026-08-15T04:35:50.797838Z\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"hardware\",\"network\",\"ai-stack\"],\"turns\":4,\"chars\":42895,\"excerpt\":\"What is this device This is the motherboard of a small Intel-based PC, likely an all-in-one/mini-PC mainboard, not a standalone consumer device. The photo shows desktop-style rear I/O: PS/2, serial (COM), VGA, multiple USB 3 ports, Ethernet, and separate microphone/headphone jack\"},{\"id\":\"1122f068\",\"title\":\"Take control over browser and pass this test for me\",\"uuid\":\"1122f068-5174-4563-9e93-7e280ae97297\",\"created\":\"2026-08-14T04:43:43.178964Z\",\"updated\":\"2026-08-14T04:52:01.847457Z\",\"spaces\":[\"library\"],\"tags\":[\"browser\",\"ai-stack\"],\"turns\":2,\"chars\":4254,\"excerpt\":\"Take control over browser and pass this test for me I can’t take control of your browser or type the digits for you. I can open the test, read what’s on the page, and walk you through it, but I have no click/type/submit capability on that tab.  Why I can’t play it The Number Memo\"},{\"id\":\"1412ed4e\",\"title\":\"GitHub Academic Notion all lets try to understand how we could cut reall edge by\",\"uuid\":\"1412ed4e-6f84-44ae-b972-cdfa8cb61c9c\",\"created\":\"2026-08-14T04:06:51.204501Z\",\"updated\":\"2026-08-14T04:43:57.79107Z\",\"spaces\":[\"all\"],\"tags\":[\"browser\",\"docs\",\"learning\"],\"turns\":3,\"chars\":25408,\"excerpt\":\"Start New File... Open Open Workspace Recent project/home/project Settings Open Settings Open Keyboard Shortcuts Help Documentation VS Code API Compatibility Building a New Extension Building a New Plugin Data Usage & Telemetry Eclipse Theia IDE Version 1.74.100 VS Code API Versi\"},{\"id\":\"19ab0d8e\",\"title\":\"Theres a problem with Copilot. Reinstall the application from its original insta\",\"uuid\":\"19ab0d8e-7503-4ae6-bc8d-e63de2a79859\",\"created\":\"2026-08-14T03:10:04.144574Z\",\"updated\":\"2026-08-14T04:43:56.491498Z\",\"spaces\":[\"library\"],\"tags\":[\"business\",\"ai-stack\"],\"turns\":13,\"chars\":71708,\"excerpt\":\"There’s a problem with Copilot. Reinstall the application from its original install location or contact your administrator. That message usually means the Windows Microsoft Copilot Store package is registered incorrectly or its installed files are missing. On your HP Windows mach\"},{\"id\":\"e7c1a130\",\"title\":\"create for me a full implemented app\",\"uuid\":\"e7c1a130-8786-4c99-b73f-bd980b661802\",\"created\":\"2026-08-12T05:06:01.247567Z\",\"updated\":\"2026-08-14T04:20:30.441416Z\",\"spaces\":[\"library\"],\"tags\":[\"ai-stack\",\"docs\",\"infra\"],\"turns\":8,\"chars\":64241,\"excerpt\":\"create for me a full implemented app Answer skipped.  Sources - [Using the AI Features in the Theia IDE as an End User](https://theia-ide.org/docs/user_ai/ai-configuration) create for me a full implemented profile as it shows us how to get to be using it , master each subject (To\"},{\"id\":\"650ccca5\",\"title\":\"lets search for a site that really gets us a number to use it as in trial for wh\",\"uuid\":\"650ccca5-792b-447a-9bad-a81634321062\",\"created\":\"2026-08-14T04:05:27.59899Z\",\"updated\":\"2026-08-14T04:05:37.090602Z\",\"spaces\":[\"library\"],\"tags\":[\"ai-stack\"],\"turns\":1,\"chars\":4072,\"excerpt\":\"lets search for a site that really gets us a number to use it as in trial for whatsapp and telegram free without creadit cards or whatever There isn’t a truly reliable, free, no‑credit‑card site that will consistently give you a private number for WhatsApp/Telegram trials. What y\"},{\"id\":\"3ee76297\",\"title\":\"Make a concise summary of\",\"uuid\":\"3ee76297-134d-4105-ab3f-3307e8bce9a2\",\"created\":\"2026-08-14T03:51:51.445038Z\",\"updated\":\"2026-08-14T03:51:53.755121Z\",\"spaces\":[\"library\"],\"tags\":[\"browser\",\"ai-stack\",\"infra\"],\"turns\":1,\"chars\":2013,\"excerpt\":\"Make a concise summary of A short promotional message encouraging users to support or improve Complexity. It suggests the product or project is something worth backing and implies the user can help keep it thriving.  Sources - [chrome-extension://ffppmilmeaekegkpckebkeahjgmhggpj/\"},{\"id\":\"f0db11d8\",\"title\":\"create along each step the perfect theorized abd practice that costs not more th\",\"uuid\":\"f0db11d8-1b8f-4b5d-904b-cc04a16c2bd3\",\"created\":\"2026-08-13T03:59:18.182707Z\",\"updated\":\"2026-08-13T08:01:21.432116Z\",\"spaces\":[\"library\"],\"tags\":[\"business\",\"ai-stack\",\"docs\",\"infra\",\"learning\"],\"turns\":3,\"chars\":38408,\"excerpt\":\"create along each step the perfect theorized abd practice that costs not more than a sign up or sign in to reach to any detail or something which will leave us with 0$ psying to anything Yes: we can build and operate a serious development, automation, and AI-learning stack at $0 \"},{\"id\":\"28490587\",\"title\":\"httpsgithub.commarketplacemodels\",\"uuid\":\"28490587-b978-409a-891d-48541c6b4d01\",\"created\":\"2026-08-12T22:11:27.417381Z\",\"updated\":\"2026-08-12T22:11:43.654989Z\",\"spaces\":[\"library\"],\"tags\":[\"grok\",\"firmware\",\"ai-stack\"],\"turns\":1,\"chars\":3698,\"excerpt\":\"[https://github.com/marketplace/models](https://github.com/marketplace/models) That URL is obsolete: GitHub Models is now available at https://github.com/marketplace?type=models, which is why /marketplace/models returns GitHub’s “Page not found.”[1]  What it provides GitHub Model\"},{\"id\":\"619fce87\",\"title\":\"Take control over browser play relaxing music mix with cosmic vibes under 1 hour\",\"uuid\":\"619fce87-2cab-4d8e-a071-608f35cadebe\",\"created\":\"2026-08-12T21:53:41.855759Z\",\"updated\":\"2026-08-12T21:53:56.397299Z\",\"spaces\":[\"library\"],\"tags\":[\"browser\",\"ai-stack\"],\"turns\":1,\"chars\":1830,\"excerpt\":\"Take control over browser play relaxing music mix with cosmic vibes under 1 hour I found a cosmic ambient mix, but it runs 3:12:15—so I can start it and stop it at 55 minutes to keep the session under an hour. It’s designed around slow space ambience for relaxation and stargazing\"},{\"id\":\"d1f93be5\",\"title\":\"GGOGLE ADD ACCOUNT\",\"uuid\":\"d1f93be5-c94e-4629-a2b9-bd021de2ebe0\",\"created\":\"2026-08-12T07:15:46.198061Z\",\"updated\":\"2026-08-12T07:15:50.903619Z\",\"spaces\":[\"library\"],\"tags\":[\"ai-stack\",\"security\"],\"turns\":1,\"chars\":2848,\"excerpt\":\"GGOGLE ADD ACCOUNT To add another Google account:  Android 1. Open Settings. 2. Tap Passwords & accounts or Users & accounts. 3. Tap Add account → Google. 4. Sign in with the Google email and password. 5. Complete verification if prompted. You can also open Gmail, tap your profil\"},{\"id\":\"0a856025\",\"title\":\"qwen\",\"uuid\":\"0a856025-73c6-443b-9410-25fa71ec0b71\",\"created\":\"2026-08-12T05:13:42.591629Z\",\"updated\":\"2026-08-12T05:15:57.225555Z\",\"spaces\":[\"library\"],\"tags\":[\"ai-stack\",\"infra\"],\"turns\":2,\"chars\":6804,\"excerpt\":\"qwen Qwen is Alibaba Cloud’s family of large language and multimodal AI models, also known as Tongyi Qianwen. It includes chat, coding, vision, document analysis, image/video capabilities, and an OpenAI-compatible API.[1][2]  Main options - Qwen Studio: Consumer-facing assistant \"},{\"id\":\"64c4d5ca\",\"title\":\"eltorr wubdows\",\"uuid\":\"64c4d5ca-eea6-4626-8eb4-e3aafc3770f6\",\"created\":\"2026-08-11T19:49:50.653258Z\",\"updated\":\"2026-08-12T02:45:43.569772Z\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"ai-stack\"],\"turns\":2,\"chars\":3301,\"excerpt\":\"eltorr wubdows; Did you mean “error Windows”—for example, a Windows error message—or “El Toro Windows”? Please resend the phrase or paste the exact error text/screenshot. “El Toro Windows” appears to refer mainly to window-cleaning services, not a Windows software issue.[1][2]  S\"},{\"id\":\"57b1e9f1\",\"title\":\"eltorr\",\"uuid\":\"57b1e9f1-f409-409d-bcbe-933819e0ee74\",\"created\":\"2026-08-11T19:50:13.901863Z\",\"updated\":\"2026-08-11T19:50:41.610068Z\",\"spaces\":[\"library\"],\"tags\":[\"ai-stack\"],\"turns\":2,\"chars\":2904,\"excerpt\":\"eltorr “Eltorr” most likely refers to El Torr, an Egyptian food brand and restaurant offering foul sandwiches, beef jerky, fava-nut snacks, burgers, and other Egyptian-style food. It appears to deliver through Talabat and operates in areas including Agouza, Dokki, Maadi, and New \"},{\"id\":\"6354453d\",\"title\":\"Provide more information about\",\"uuid\":\"6354453d-16cf-469d-9ac3-5dbc1de48618\",\"created\":\"2026-08-11T19:36:18.254749Z\",\"updated\":\"2026-08-11T19:43:53.541095Z\",\"spaces\":[\"library\"],\"tags\":[\"network\",\"ai-stack\",\"docs\",\"infra\"],\"turns\":2,\"chars\":3219,\"excerpt\":\"Provide more information about The page returns HTTP 404 Not Found, meaning the server is reachable but cannot locate the requested /login resource. The nginx/1.28.3 (Ubuntu) line identifies the web server and operating system handling the request; it does not itself indicate the\"},{\"id\":\"2075aad1\",\"title\":\"Enterprise SSO Login\",\"uuid\":\"2075aad1-b4a1-4b43-a4a0-d4f6aa127896\",\"created\":\"2026-08-11T19:30:42.474466Z\",\"updated\":\"2026-08-11T19:30:46.829031Z\",\"spaces\":[\"library\"],\"tags\":[\"hardware\",\"browser\",\"ai-stack\"],\"turns\":1,\"chars\":2026,\"excerpt\":\"Enterprise SSO Login This is TRAE’s Enterprise Single Sign-On screen. Enter the email address assigned by your organization; TRAE should then route you to its configured identity provider (such as Microsoft Entra ID, Google Workspace, Okta, or a corporate SAML/OIDC provider).[1] \"},{\"id\":\"73bc6448\",\"title\":\"Generate solution code\",\"uuid\":\"73bc6448-fc10-4a7d-91e0-5dd2a349883b\",\"created\":\"2026-08-11T17:19:53.270374Z\",\"updated\":\"2026-08-11T17:20:00.929198Z\",\"spaces\":[\"library\"],\"tags\":[\"ai-stack\"],\"turns\":1,\"chars\":694,\"excerpt\":\"Generate solution code I can generate a production-ready patch, but I need the issue number or exact feature you want implemented. The repository currently has multiple open enhancement requests, including dialog navigation (168), hiding the Computer feature (166), and opening in\"},{\"id\":\"e988d9d5\",\"title\":\"analyze each one and do get me the perfect plan to merge between comet enterpris\",\"uuid\":\"e988d9d5-cfe1-4115-9e2a-deb458a2edaf\",\"created\":\"2026-08-11T17:17:30.392621Z\",\"updated\":\"2026-08-11T17:18:17.592209Z\",\"spaces\":[\"library\"],\"tags\":[\"browser\",\"ai-stack\",\"infra\"],\"turns\":1,\"chars\":16146,\"excerpt\":\"analyze each one and do get me the perfect plan to merge between comet enterprise and firefox enterprise browser The best “merge” is not a browser fork or a profile merge: run Firefox ESR as the hardened, local-first engineering browser and Comet Enterprise as an isolated, policy\"},{\"id\":\"1e018ef3\",\"title\":\"Look for ways to optimize\",\"uuid\":\"1e018ef3-e8f0-4d6a-89eb-1aa46bfc24a0\",\"created\":\"2026-08-11T16:55:45.482935Z\",\"updated\":\"2026-08-11T16:56:25.677973Z\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"network\",\"ai-stack\"],\"turns\":1,\"chars\":5703,\"excerpt\":\"Look for ways to optimize Here's how to optimize the GitHub Student Developer Pack specifically for your stack—low-level systems work, homelab infrastructure, Android/firmware reversing, and Rust/C/Python development on your HP Cx0049ne (i5-8300H, GTX 1050 Ti).  Prioritize High-L\"},{\"id\":\"3168ae63\",\"title\":\"FIND FOR ME HOW TO BYPASS AZURE CREDIT CARD CHECK WHEN YOU WANT TO USE DEBIT OR\",\"uuid\":\"3168ae63-ed65-4b0c-8a0e-63006179f6d5\",\"created\":\"2026-08-11T16:31:48.880168Z\",\"updated\":\"2026-08-11T16:32:08.258973Z\",\"spaces\":[\"library\"],\"tags\":[\"ai-stack\",\"infra\"],\"turns\":1,\"chars\":2637,\"excerpt\":\"FIND FOR ME HOW TO BYPASS AZURE CREDIT CARD CHECK WHEN YOU WANT TO USE DEBIT OR VIRTUAL I can’t help bypass Azure’s identity/payment verification or make an unsupported virtual card appear valid.  Legitimate options - Use a non-prepaid debit card in your own name. Azure explicitl\"},{\"id\":\"0781ecb6\",\"title\":\"GET THE INFO AOUT THOSE MACHINES\",\"uuid\":\"0781ecb6-7d30-46c8-8886-713b1e6af13f\",\"created\":\"2026-08-11T16:16:57.008699Z\",\"updated\":\"2026-08-11T16:17:04.640537Z\",\"spaces\":[\"library\"],\"tags\":[\"hardware\",\"ai-stack\"],\"turns\":1,\"chars\":1923,\"excerpt\":\"GET THE INFO AOUT THOSE MACHINES Your Tailscale tailnet currently has 3 registered machines, all owned by 257mind@gmail.com.[1] | Machine | Tailscale IPv4 | OS | Tailscale version | Notable role | |---|---:|---|---|---| | nothing-phone-1 | 100.114.196.126 | Android 15 | 1.98.8 | \"},{\"id\":\"fe0d5d23\",\"title\":\"Make a concise summary of\",\"uuid\":\"fe0d5d23-1c85-4003-be75-c77455d85d45\",\"created\":\"2026-08-11T14:59:16.920203Z\",\"updated\":\"2026-08-11T14:59:22.755524Z\",\"spaces\":[\"library\"],\"tags\":[\"ai-stack\",\"security\",\"infra\"],\"turns\":1,\"chars\":3293,\"excerpt\":\"Make a concise summary of The Microsoft Entra admin center’s All roles page lists every built-in administrative role available for delegating privileged access across Microsoft 365 and Azure services. Each role specifies: - Description: What the role can do (e.g., manage apps, re\"},{\"id\":\"73e1fcc9\",\"title\":\"For Partners Pricing Terms of Service Table of contents 1. Access to Software 2.\",\"uuid\":\"73e1fcc9-da4c-46c7-90c5-51eb461a45c6\",\"created\":\"2026-08-11T10:40:56.296586Z\",\"updated\":\"2026-08-11T14:34:11.919721Z\",\"spaces\":[\"library\"],\"tags\":[\"business\"],\"turns\":2,\"chars\":35273,\"excerpt\":\"Pricing Terms of Service Table of contents 1. Access to Software 2. Restrictions on Use 3. Fees and Payment 4. Proprietary Rights 5. Term and Termination 6. Indemnification 7. Warranty and Warranty Disclaimer 8. Limitation of Liability 9. Miscellaneous The following Terms of Serv\"},{\"id\":\"bd0b814f\",\"title\":\"which one i should be choosing lay down there very tiny advantages and disadvant\",\"uuid\":\"bd0b814f-fe3d-47db-9f18-8051e2fa537e\",\"created\":\"2026-08-11T14:22:17.8259Z\",\"updated\":\"2026-08-11T14:31:16.667741Z\",\"spaces\":[\"all\"],\"tags\":[\"ai-stack\",\"infra\"],\"turns\":3,\"chars\":7069,\"excerpt\":\"which one i should be choosing? lay down there very tiny advantages and disadvantages,  do the opposite  by laying down their mostly advanced features as each i believe has there own , tell me which one to get to be choosing where you try to get to analyze and understand the ment\"},{\"id\":\"9a438110\",\"title\":\"Can you keep your assistance all the way all long when we are using anything in\",\"uuid\":\"9a438110-ab0d-4146-b48f-948a21e460ff\",\"created\":\"2026-08-11T14:03:49.224285Z\",\"updated\":\"2026-08-11T14:10:30.644563Z\",\"spaces\":[\"library\"],\"tags\":[\"network\",\"browser\",\"ai-stack\",\"docs\",\"infra\"],\"turns\":3,\"chars\":5002,\"excerpt\":\"Can you keep your assistance all the way all long when we are using anything in azure I can see you're on the Windows Server Marketplace page in Azure Portal, ready to create a VM. I'll stay actively engaged with you throughout this Azure session — helping with subscription/resou\"},{\"id\":\"e7d6ab9e\",\"title\":\"Make a concise summary of\",\"uuid\":\"e7d6ab9e-498d-49b9-a864-ecf2fd931497\",\"created\":\"2026-08-11T13:55:27.429179Z\",\"updated\":\"2026-08-11T13:55:32.897259Z\",\"spaces\":[\"library\"],\"tags\":[\"network\",\"ai-stack\",\"infra\",\"learning\"],\"turns\":1,\"chars\":2883,\"excerpt\":\"Make a concise summary of Microsoft Remote Desktop is a free Microsoft app for Windows that lets you remotely access and control other PCs (Windows Professional/Enterprise or Server) over a network or the internet. It supports Remote Desktop Gateway connections, multi-touch gestu\"},{\"id\":\"48193ec4\",\"title\":\"clo8d gaming\",\"uuid\":\"48193ec4-5a20-4204-9bcd-af1c32b22d36\",\"created\":\"2026-08-11T09:55:48.013028Z\",\"updated\":\"2026-08-11T13:52:34.392135Z\",\"spaces\":[\"library\"],\"tags\":[\"ai-stack\",\"docs\"],\"turns\":4,\"chars\":11446,\"excerpt\":\"clo8d gaming It looks like you’re asking about cloud gaming (possibly a typo: “clo8d” → “cloud”). Here’s a quick, practical overview tailored to your infra/automation background:  Sources - [Xbox Cloud Gaming](https://en.wikipedia.org/wiki/Xbox_Cloud_Gaming) - [Xbox Cloud Gaming \"},{\"id\":\"37e1a63f\",\"title\":\"register me and save the details in your mind\",\"uuid\":\"37e1a63f-07b0-4fde-b966-321dc02e0907\",\"created\":\"2026-08-11T13:43:30.887984Z\",\"updated\":\"2026-08-11T13:47:42.849781Z\",\"spaces\":[\"library\"],\"tags\":[\"ai-stack\",\"security\"],\"turns\":3,\"chars\":2428,\"excerpt\":\"register me and save the details in your mind I can't register the account for you — creating accounts and entering passwords are actions I'm not permitted to perform on your behalf for security reasons. I can see the CloudGG registration page is pre-filled with the username \\\"Abu\"},{\"id\":\"3c8b2d6d\",\"title\":\"Provide more information about\",\"uuid\":\"3c8b2d6d-6437-4208-b531-2c4ec6fe07dc\",\"created\":\"2026-08-11T10:12:46.436171Z\",\"updated\":\"2026-08-11T13:40:05.288148Z\",\"spaces\":[\"library\"],\"tags\":[\"hardware\",\"ai-stack\",\"docs\",\"infra\"],\"turns\":3,\"chars\":9070,\"excerpt\":\"Provide more information about The Free tier of GeForce NOW is NVIDIA’s entry-level, ad-supported cloud gaming plan. It gives you: - Access to 2000+ games from NVIDIA’s “Ready-to-Play” catalog (games that are pre-installed and optimized for streaming). - 1-hour session length per\"},{\"id\":\"686eb786\",\"title\":\"12 interfaces of zorin os 18.1 pro features worth to buy\",\"uuid\":\"686eb786-b21f-4c52-8d15-ddb1ccdfe3f4\",\"created\":\"2026-08-11T10:10:46.378728Z\",\"updated\":\"2026-08-11T10:17:27.842281Z\",\"spaces\":[\"library\"],\"tags\":[\"browser\",\"ai-stack\",\"security\"],\"turns\":2,\"chars\":14675,\"excerpt\":\"12 interfaces of zorin os 18.1 pro features worth to buy \\\\ Zorin OS 18.1 Pro’s “12 interfaces” are really 12 desktop layouts (4 core + 8 premium) plus a curated set of pro creative and productivity apps. Whether it’s worth buying depends on how much you value those layouts, the b\"},{\"id\":\"325cb11a\",\"title\":\"botim\",\"uuid\":\"325cb11a-a8ed-4935-aea1-449fd50ac718\",\"created\":\"2026-08-11T09:08:45.864701Z\",\"updated\":\"2026-08-11T09:09:03.563418Z\",\"spaces\":[\"library\"],\"tags\":[\"network\",\"ai-stack\"],\"turns\":2,\"chars\":4264,\"excerpt\":\"botim Botim is a UAE-based messaging and fintech super-app that combines free HD voice/video calling, chat, and AI-powered financial services—including payments, money transfers, and instalments—into a single platform.[1][2][3]  Core Features - Communication: Free encrypted voice\"},{\"id\":\"2ac7f93a\",\"title\":\"Build a table with the eact pasted appsstacks , design them accodingly as the mo\",\"uuid\":\"2ac7f93a-2457-411f-84f0-e4a85de8b7b9\",\"created\":\"2026-08-01T23:22:31.747718Z\",\"updated\":\"2026-08-10T16:12:34.273702Z\",\"spaces\":[\"library\"],\"tags\":[\"docs\",\"learning\"],\"turns\":5,\"chars\":78600,\"excerpt\":\"apps/stacks : Build a table with the eact pasted apps/stacks , design them accodingly as the most used one across all enviroments and ecosystems and add another column that address the app/stack docs offical page or even more a link to their pdf link that explains everything ther\"},{\"id\":\"1dc3a30f\",\"title\":\"Update the project status summary using the latest sessions. Then ask me if ther\",\"uuid\":\"1dc3a30f-9375-416b-96d9-58f6f7ea5371\",\"created\":\"2026-08-10T15:33:22.148861Z\",\"updated\":\"2026-08-10T15:33:26.969385Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"general\"],\"turns\":1,\"chars\":392,\"excerpt\":\"Update the project status summary using the latest sessions. Then ask me if there is anything else to include or change.\"},{\"id\":\"174c149c\",\"title\":\"What are the latest research trends in technology and computer science in 2026\",\"uuid\":\"174c149c-08c0-41ab-902b-8d0f85b7e1c7\",\"created\":\"2026-08-10T15:06:29.377921Z\",\"updated\":\"2026-08-10T15:06:59.016418Z\",\"spaces\":[\"all\"],\"tags\":[\"browser\",\"ai-stack\",\"learning\"],\"turns\":1,\"chars\":16091,\"excerpt\":\"What are the latest research trends in technology and computer science in 2026? As of August 2026, technology and computer-science research is converging around one central challenge: making AI and computing systems more capable, efficient, reliable, secure, and physically integr\"},{\"id\":\"36a7c7d4\",\"title\":\"scrscpy\",\"uuid\":\"36a7c7d4-b0e0-4f11-883b-ec6485e46469\",\"created\":\"2026-08-10T10:19:36.421207Z\",\"updated\":\"2026-08-10T10:19:42.468393Z\",\"spaces\":[\"library\"],\"tags\":[\"hardware\",\"ai-stack\",\"docs\"],\"turns\":1,\"chars\":2213,\"excerpt\":\"scrscpy scrcpy (“screen copy”) is a free, open-source tool from Genymobile for mirroring and controlling an Android device from Linux, Windows, or macOS. It works through ADB over USB or TCP/IP, needs no root or companion app installed on the phone, and supports keyboard/mouse co\"},{\"id\":\"8f91b909\",\"title\":\"wo see... Sorry.... Okeysen.... Son au.... Do that kind of work\",\"uuid\":\"8f91b909-5d7b-5d5f-8c50-f64a125de8e6\",\"created\":\"2026-08-10T10:07:28.213092Z\",\"updated\":\"2026-08-10T10:08:15.937777Z\",\"spaces\":[\"library\"],\"tags\":[\"ai-stack\"],\"turns\":6,\"chars\":1344,\"excerpt\":\"wo see... Sorry.... Okeysen.... Son au.... Do that kind of work? Sure, I can help Lisə.... Programming development boards that I want to be using. I can assist with coding and development. Could you clarify which boards you're working with or what specific functionality you need \"},{\"id\":\"cf56d0b7\",\"title\":\"えー... Hej... videre... Petri.... Oké.... Hey there\",\"uuid\":\"cf56d0b7-fa5b-5c57-b7a0-248f7208a70e\",\"created\":\"2026-08-10T09:55:26.513972Z\",\"updated\":\"2026-08-10T10:04:49.589254Z\",\"spaces\":[\"library\"],\"tags\":[\"network\",\"browser\",\"ai-stack\"],\"turns\":54,\"chars\":14855,\"excerpt\":\"えー... Hej... videre... Petri.... Oké.... Hey there. Hi, how can I assist you today? Ok, hai gestuntonove.... Du das ju.... ورك بتر... in the Windows environment when you are in Comet or when you are in PaperCity. Comet is the browser environment you're using, and Perplexity provi\"},{\"id\":\"4f3d1d72\",\"title\":\"image.jpg\",\"uuid\":\"4f3d1d72-596c-4a45-9e8f-66fc33fb896b\",\"created\":\"2026-08-10T09:58:21.804549Z\",\"updated\":\"2026-08-10T09:58:24.906243Z\",\"spaces\":[\"library\"],\"tags\":[\"ai-stack\"],\"turns\":1,\"chars\":1979,\"excerpt\":\"image.jpg I can see the attached image, image.jpg. What would you like me to do with it—identify what’s shown, extract text, troubleshoot the Windows account screen, or something else?[1]  Sources - [image.jpg](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachme\"},{\"id\":\"77389a72\",\"title\":\"perplexity\",\"uuid\":\"77389a72-691c-5286-aba5-62e94b594f55\",\"created\":\"2026-08-10T09:43:44.310237Z\",\"updated\":\"2026-08-10T09:51:21.565387Z\",\"spaces\":[\"library\"],\"tags\":[\"hardware\",\"ai-stack\",\"infra\",\"learning\"],\"turns\":29,\"chars\":9823,\"excerpt\":\"perplexity I'm here. How can Sie... Hard... Ah. I heard you start to say something. Can you let me know You will help me a lot. Sure, let me know what you need and I'll do my best to assist. this page... だ。... Good luck we learn anything from it... do anything virtually The page \"},{\"id\":\"33334377\",\"title\":\"Ei, pera.... Please\",\"uuid\":\"33334377-cd86-5794-9a52-dbc76ad1fc61\",\"created\":\"2026-08-10T09:43:16.921174Z\",\"updated\":\"2026-08-10T09:43:30.00357Z\",\"spaces\":[\"library\"],\"tags\":[\"ai-stack\"],\"turns\":3,\"chars\":624,\"excerpt\":\"Ei, pera.... Please! Yes, how can I help you today? I can't hear you. Raise the volume up. I don't have control over your device volume. Please check your device's volume settings or your headset if you're using one. Walao walao walao. I'm here and can hear you clearly. If you're\"},{\"id\":\"242d142e\",\"title\":\"porodo gaming\",\"uuid\":\"242d142e-12bf-42bf-b2b5-7dac9e025377\",\"created\":\"2026-08-10T09:11:24.402967Z\",\"updated\":\"2026-08-10T09:11:29.335551Z\",\"spaces\":[\"library\"],\"tags\":[\"ai-stack\"],\"turns\":1,\"chars\":1886,\"excerpt\":\"porodo gaming  Porodo Gaming Porodo Gaming is a consumer gaming-accessories brand selling products such as: - Mechanical keyboards and gaming mice - Headsets, earbuds, microphones, and speakers - Game controllers and handheld consoles - Gaming chairs, desks, stands, hubs, and mon\"},{\"id\":\"5072585d\",\"title\":\"my ip\",\"uuid\":\"5072585d-c06e-49a1-86af-2f8858322e9e\",\"created\":\"2026-08-10T08:38:54.952181Z\",\"updated\":\"2026-08-10T08:39:01.071076Z\",\"spaces\":[\"library\"],\"tags\":[\"hardware\",\"network\",\"browser\",\"ai-stack\"],\"turns\":1,\"chars\":2510,\"excerpt\":\"my ip Your public IP address appears to be 18.97.9.x (Amazon/US-based range) based on current lookup services.[1][2][3]  Quick ways to check your exact IP Since I can’t see your device’s network directly, here are the fastest ways to get your precise public IP: - Browser: Visit a\"},{\"id\":\"d8d4cb72\",\"title\":\"Hardware Deal Hunter Skill  scans multiple platforms for unusualunderpriced hard\",\"uuid\":\"d8d4cb72-2eaa-49b2-85cf-fd90aafeffa8\",\"created\":\"2026-08-10T07:45:38.33649Z\",\"updated\":\"2026-08-10T07:47:52.574451Z\",\"spaces\":[\"library\"],\"tags\":[\"hardware\",\"ai-stack\",\"learning\"],\"turns\":1,\"chars\":12611,\"excerpt\":\"Hardware Deal Hunter Skill – scans multiple platforms for unusual/underpriced hardware deals matching specs you care about, flagging surprising outliers. This “Hardware Deal Hunter” skill can be built as a local, open‑source CLI daemon that continuously scrapes selected marketpla\"},{\"id\":\"2412b067\",\"title\":\"AI Model Behavior Diffing Skill  runs the same prompt across multiple LLMsAPIs a\",\"uuid\":\"2412b067-00f1-4503-b0a4-a73fe3cb79cd\",\"created\":\"2026-08-10T07:46:06.722212Z\",\"updated\":\"2026-08-10T07:47:03.787211Z\",\"spaces\":[\"library\"],\"tags\":[\"hardware\",\"ai-stack\"],\"turns\":1,\"chars\":13296,\"excerpt\":\"@FireCrawl AI Model Behavior Diffing Skill – runs the same prompt across multiple LLMs/APIs and highlights surprising divergences in output. @FireCrawl You can absolutely build an “AI Model Behavior Diffing” skill that runs the same prompt suites across multiple LLMs/APIs and sur\"},{\"id\":\"3811b5a1\",\"title\":\"lets find our way to restore the forggoten password of mbx login of my dell 5400\",\"uuid\":\"3811b5a1-0276-4eba-9bea-2ebae08c53ff\",\"created\":\"2026-08-10T06:35:27.456824Z\",\"updated\":\"2026-08-10T07:27:46.542833Z\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"hardware\",\"browser\",\"ai-stack\",\"security\"],\"turns\":2,\"chars\":11900,\"excerpt\":\"lets find our way to restore the forggoten password of mbx login of my dell 5400@GitHub Assuming you mean the Intel MEBx (Management Engine BIOS Extension) password on a Dell Latitude 5400: it cannot be “recovered” from the laptop. The supported route is an authorized reset/repro\"},{\"id\":\"bf486f44\",\"title\":\"you tybe\",\"uuid\":\"bf486f44-a08b-4a16-8dca-d987f1c637a8\",\"created\":\"2026-08-10T07:22:23.311261Z\",\"updated\":\"2026-08-10T07:22:26.1598Z\",\"spaces\":[\"library\"],\"tags\":[\"ai-stack\",\"docs\"],\"turns\":1,\"chars\":753,\"excerpt\":\"you tybe Do you mean YouTube? It’s a video-sharing platform where you can watch, upload, and livestream videos.[1]  Sources - [YouTube](https://www.youtube.com/) - [YouTube - Apps on Google Play](https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=en) - [Y\"},{\"id\":\"c7acc13c\",\"title\":\"what shall i write in the search bar to unlcok advanced setttings in chrome or c\",\"uuid\":\"c7acc13c-c957-41bd-b542-d6e2df0968a8\",\"created\":\"2026-08-10T06:36:22.229530\",\"updated\":\"2026-08-10T06:36:30.313593\",\"spaces\":[\"library\"],\"tags\":[\"browser\",\"ai-stack\"],\"turns\":1,\"chars\":3270,\"excerpt\":\"what shall i write in the search bar to unlcok advanced setttings in chrome or comet  Sources - [How to Access and Change Hidden Advanced Settings ...](https://www.groovypost.com/howto/access-and-change-hidden-advanced-settings-in-chrome-and-firefox/) - [Comet Policies and Contro\"},{\"id\":\"c9e6539b\",\"title\":\"Use the list-all-my-library-chats(httpswww.perplexity.aicomputerskills0WLhGe4KQB\",\"uuid\":\"c9e6539b-ee6b-4181-9c30-7f3c04e45c53\",\"created\":\"2026-08-09T19:02:28.519071\",\"updated\":\"2026-08-09T19:02:31.608559\",\"spaces\":[\"library\"],\"tags\":[\"ai-stack\"],\"turns\":1,\"chars\":456,\"excerpt\":\"Use the [list-all-my-library-chats](https://www.perplexity.ai/computer/skills/0WLhGe4KQBC.POG11vKPiA?skillId=d162e119-ee0a-4010-be3c-e1b5d6f28f88) skill.\"},{\"id\":\"66fac65e\",\"title\":\"virtual ch321a programmer digi\",\"uuid\":\"66fac65e-fac0-45bf-be85-f7b47905c7a1\",\"created\":\"2026-08-09T18:53:21.487744\",\"updated\":\"2026-08-09T18:53:33.409967\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"hardware\",\"infra\"],\"turns\":1,\"chars\":3255,\"excerpt\":\"virtual ch321a programmer digi  Sources - [Flash the AVR Atmel ATtiny Chips with a Modified CH341A ...](https://ericdraken.com/avr-amtel-attiny-ch341a-isp-programmer/) - [Dumping Firmware With the CH341a Programmer](https://www.blackhillsinfosec.com/dumping-firmware-with-the-ch34\"},{\"id\":\"35d26ea4\",\"title\":\"hi\",\"uuid\":\"35d26ea4-bd40-441e-b5dc-0f87dc5bad82\",\"created\":\"2026-08-09T14:42:54.032786Z\",\"updated\":\"2026-08-09T17:37:08.431976Z\",\"spaces\":[\"all\"],\"tags\":[\"hardware\",\"network\",\"browser\",\"ai-stack\"],\"turns\":12,\"chars\":36278,\"excerpt\":\"hi Hey! How's it going? What are you working on today — networking setup, a new project, or something else? i want to create a project using external router to have it stay awake for backing up my both pc's through connecting to a wifi connection from within the external router t\"},{\"id\":\"57b3b939\",\"title\":\"extract text\",\"uuid\":\"57b3b939-cda5-4eee-8ebd-87e2c8204812\",\"created\":\"2026-08-09T17:12:15.362264\",\"updated\":\"2026-08-09T17:12:17.504653\",\"spaces\":[\"library\"],\"tags\":[\"general\"],\"turns\":1,\"chars\":1790,\"excerpt\":\"extract text  Sources - [image.jpg](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/images/105360288/a38cc01d-3244-4316-a615-76548fcccce6/image.jpg?AWSAccessKeyId=ASIA2F3EMEYEVOCQMLDB&Signature=8WpP32EeF6YfYCcPORX0EUwKeEE%3D&x-amz-security-token=IQoJb3JpZ\"},{\"id\":\"3d2bb81b\",\"title\":\"which is which\",\"uuid\":\"3d2bb81b-1fb6-42cc-8fec-3f750fdfedcb\",\"created\":\"2026-08-09T15:11:10.029723\",\"updated\":\"2026-08-09T16:49:49.280025\",\"spaces\":[\"library\"],\"tags\":[\"infra\"],\"turns\":7,\"chars\":14303,\"excerpt\":\"which is which  Sources - [image.jpg](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/images/105360288/3e0509a4-6c59-469a-9a53-888c49847071/image.jpg?AWSAccessKeyId=ASIA2F3EMEYEUF7HD6MN&Signature=kig1FJRzRfyQR%2Bq0%2BUzinCyMCG0%3D&x-amz-security-token=IQo\"},{\"id\":\"11b78008\",\"title\":\"api perplexity\",\"uuid\":\"11b78008-6ff7-4c9b-b8cb-04c2b98e926c\",\"created\":\"2026-08-09T08:18:46.925010\",\"updated\":\"2026-08-09T08:18:54.349537\",\"spaces\":[\"library\"],\"tags\":[\"hardware\",\"ai-stack\"],\"turns\":1,\"chars\":1183,\"excerpt\":\"api perplexity  Sources - [Perplexity API Platform — AI Search & Grounded LLM ...](https://www.perplexity.ai/api-platform) - [Perplexity API Platform](https://console.perplexity.ai/) - [Perplexity API](https://docs.perplexity.ai/docs/getting-started/overview) - [Perplexity](https\"},{\"id\":\"190f668b\",\"title\":\"Create a full gui and maps and artifacts and tables all used in the favor of exp\",\"uuid\":\"190f668b-37d7-46d5-9350-fe91f72ef9a4\",\"created\":\"2026-08-03T07:56:15.259730\",\"updated\":\"2026-08-03T10:24:03.566877\",\"spaces\":[\"library\"],\"tags\":[\"network\",\"browser\",\"ai-stack\",\"infra\"],\"turns\":4,\"chars\":15805,\"excerpt\":\"Create a full gui and maps and artifacts and tables all used in the favor of explaining dns from proxy from socks from vpn I created a full local interactive GUI that explains how DNS, HTTP proxy, SOCKS5, and VPN differ using an animated network map, behavior tables, packet-style\"},{\"id\":\"8c57dfdd\",\"title\":\"Give me any commands and see that wierd connected other pc , (its me my another\",\"uuid\":\"8c57dfdd-d673-49af-b986-549e3fd937f1\",\"created\":\"2026-08-02T18:21:07.946847\",\"updated\":\"2026-08-02T20:13:44.415450\",\"spaces\":[\"library\"],\"tags\":[\"hardware\",\"network\",\"ai-stack\",\"learning\"],\"turns\":13,\"chars\":110599,\"excerpt\":\"Give me any commands and see that wierd connected other pc , (its me my another laptop but i'm not running a proper os where i'm booted using ventoy boot using memory to a live winpe ), the thing is that this device that i'm talking to you from is not showing that device at all e\"},{\"id\":\"e9aa466a\",\"title\":\"pro perplexity\",\"uuid\":\"e9aa466a-f47c-4700-b7b0-617f7282edb8\",\"created\":\"2026-08-01T06:04:45.548474\",\"updated\":\"2026-08-01T09:11:21.545928\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"hardware\",\"ai-stack\",\"docs\"],\"turns\":6,\"chars\":21121,\"excerpt\":\"pro perplexity Perplexity Pro is the individual paid tier: it costs $20/month or $200/year (about $16.67/month annually). It is primarily worth it if you regularly do web research, analyze documents, or want a single interface to select advanced models.[1][2]  What you get Pro ra\"},{\"id\":\"2b5d5927\",\"title\":\"GitHub FireCrawl Google Drive all Academic Google Vertex AI Hugging Face Notion\",\"uuid\":\"2b5d5927-0fef-471d-a707-52e8abf65710\",\"created\":\"2026-08-01T02:38:23.044481Z\",\"updated\":\"2026-08-01T02:46:49.626975Z\",\"spaces\":[\"all\"],\"tags\":[\"ai-stack\",\"docs\",\"learning\"],\"turns\":1,\"chars\":93730,\"excerpt\":\"<!DOCTYPE html <html lang=\\\"en\\\" class=\\\"scroll-smooth\\\" <head     <meta charset=\\\"UTF-8\\\"     <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\"     <titleEnterprise AI Strategy & Developer Tool Suite</title     <script src=\\\"https://cdn.tailwindcss.com\\\"<\/script     \"},{\"id\":\"07f930f6\",\"title\":\"Unbrick Nothing Phone 1 via EDL Flash Tool\",\"uuid\":\"07f930f6-681f-4d9f-8e60-1848463452c9\",\"created\":\"2026-07-31T01:13:09.800075\",\"updated\":\"2026-08-01T00:53:45.835969\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"hardware\",\"ai-stack\"],\"turns\":2,\"chars\":19329,\"excerpt\":\"Unbrick Nothing Phone 1 via EDL Flash Tool  Unbricking Nothing Phone 1 (A063) via EDL You can recover a hard‑bricked Nothing Phone 1 by forcing EDL (Emergency Download) mode (Qualcomm HS‑USB QDLoader 9008) and flashing the official EDL firmware with a community EDL tool.[1][3][4]\"},{\"id\":\"aacb675a\",\"title\":\"googlegmail\",\"uuid\":\"aacb675a-1590-45f5-8a18-84dbbe16bd58\",\"created\":\"2026-07-31T01:26:25.126512\",\"updated\":\"2026-07-31T01:26:32.672255\",\"spaces\":[\"library\"],\"tags\":[\"hardware\",\"browser\",\"ai-stack\",\"security\"],\"turns\":1,\"chars\":2980,\"excerpt\":\"googlegmail “googlegmail” refers to Gmail, Google’s free, web-based email service.[1][5]  What is Gmail? Gmail is a mailbox provider launched by Google in 2004 and now the largest email service worldwide, with around 1.8 billion users.  It’s accessible via:[5] - Web browser at [g\"},{\"id\":\"7b851908\",\"title\":\"mi flash tool edl for nothing phone 1 to restore super image\",\"uuid\":\"7b851908-8140-4ee9-87f6-d97dcddb807c\",\"created\":\"2026-07-31T01:20:20.663364\",\"updated\":\"2026-07-31T01:20:39.568840\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"hardware\",\"ai-stack\"],\"turns\":1,\"chars\":7718,\"excerpt\":\"mi flash tool edl for nothing phone 1 to restore super image You can restore a Nothing Phone (1) super image via EDL (9008) using either the community Mi Flash package or the official Nothing Flash Tool; Mi Flash works but requires specific drivers and a clean-all flash, while No\"},{\"id\":\"be9d008f\",\"title\":\"httpswww.google.comsearchqedlnothingphone1automaticdriverandphonefixwindows\",\"uuid\":\"be9d008f-f96d-4d03-9f30-893e560ff8fd\",\"created\":\"2026-07-31T01:07:03.816272\",\"updated\":\"2026-07-31T01:09:39.071106\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"hardware\",\"ai-stack\"],\"turns\":4,\"chars\":21722,\"excerpt\":\"https://www.google.com/search?q=edl+nothing+phone+1+automatic+driver+and+phone+fix+windows+  EDL Mode on Nothing Phone 1 (A063) – Drivers, Tools, and Fix on Windows To get your Nothing Phone 1 into EDL (Emergency Download) mode and install the correct drivers on Windows, you need\"},{\"id\":\"2ddd6549\",\"title\":\"Hugging Face GitHub Notion Twilio let get a new twillio number as from the free\",\"uuid\":\"2ddd6549-5d1d-4b89-b027-0a5a9f2a6c85\",\"created\":\"2026-07-30T13:11:02.799629\",\"updated\":\"2026-07-30T17:20:06.427423\",\"spaces\":[\"library\"],\"tags\":[\"network\",\"browser\",\"ai-stack\",\"docs\"],\"turns\":3,\"chars\":22327,\"excerpt\":\"@Hugging Face @GitHub @Notion @Twilio let get a new twillio number as from the free trial credit Getting a Twilio phone number on your free trial is straightforward. Here's a complete, step-by-step breakdown tailored for your workflow.  What the Trial Gives You Your Twilio free t\"},{\"id\":\"93923757\",\"title\":\"Driver Details Provider Realtek Semiconductor Corp. Name RTKVHD64.sys Version 6.\",\"uuid\":\"93923757-0ee5-40aa-98ce-8bb4b349bc8b\",\"created\":\"2026-07-30T13:45:19.888146\",\"updated\":\"2026-07-30T13:48:27.563218\",\"spaces\":[\"library\"],\"tags\":[\"hardware\",\"ai-stack\"],\"turns\":3,\"chars\":19521,\"excerpt\":\"Driver Details Provider Realtek Semiconductor Corp. Name RTKVHD64.sys Version 6.0.1.8186 Date 2017-06-15 Device Details Device Id HDAUDIO\\\\FUNC_01&VEN_10EC&DEV_0295&SUBSYS_103C8478&REV_1000\\\\4&2534412&0&0001 The driver you’re looking at is the Realtek High Definition Audio Function\"},{\"id\":\"8cd09a09\",\"title\":\"now Im on serious situation i need you to help me with cause Im innocent as this\",\"uuid\":\"8cd09a09-5bd6-4195-9040-c1fda20cd1d1\",\"created\":\"2026-07-30T07:06:39.656024\",\"updated\":\"2026-07-30T07:27:31.943167\",\"spaces\":[\"library\"],\"tags\":[\"ai-stack\"],\"turns\":5,\"chars\":33144,\"excerpt\":\"1. The unauthorized use of company vehicle T-64904 on 7 June 2026, including the purpose for which the vehicle was used, whether prior authorization was requested or obtained, and why the vehicle gate pass remained in your possession. 2. The written explanations previously reques\"},{\"id\":\"1cbcce7d\",\"title\":\"close the flashlight\",\"uuid\":\"1cbcce7d-2530-492c-bd2e-61a9e7f38ce1\",\"created\":\"2026-07-29T23:46:47.958446\",\"updated\":\"2026-07-29T23:46:49.793173\",\"spaces\":[\"library\"],\"tags\":[\"general\"],\"turns\":1,\"chars\":190,\"excerpt\":\"close the flashlight\"},{\"id\":\"667bc900\",\"title\":\"open torch\",\"uuid\":\"667bc900-3fa7-4d98-b981-aec106358cfb\",\"created\":\"2026-07-29T22:47:33.407508\",\"updated\":\"2026-07-29T23:45:59.358719\",\"spaces\":[\"library\"],\"tags\":[\"ai-stack\"],\"turns\":11,\"chars\":24291,\"excerpt\":\"open torch In my home AC, when I run it all along at 20°C, it does not drop water, but when I make it at 02 at 23°C, it starts to drop water when it turns off and turns on, like, it's 02, you know? What does that mean? Your AC’s behavior is normal and comes from how condensation \"},{\"id\":\"abc87b5e\",\"title\":\"does grok offer a trials for new members through their app on android\",\"uuid\":\"abc87b5e-8e15-432d-b76a-d9a29201491a\",\"created\":\"2026-07-29T22:57:13.846277\",\"updated\":\"2026-07-29T23:00:44.422409\",\"spaces\":[\"library\"],\"tags\":[\"grok\",\"network\",\"ai-stack\",\"learning\"],\"turns\":5,\"chars\":18695,\"excerpt\":\"does grok offer a trials for new members through their app on android ? Sometimes, but it is not a universal new-member benefit. The official Grok Android app is available through Google Play, but the trial offer appears to be account-, country-, and promotion-dependent rather th\"},{\"id\":\"5552ffc9\",\"title\":\"Build a troubleshooting checklist for indoor AC ceiling leaks that includes step\",\"uuid\":\"5552ffc9-725e-48b5-8933-1c5db34dbf6b\",\"created\":\"2026-07-29T22:54:55.137630\",\"updated\":\"2026-07-29T22:55:22.252763\",\"spaces\":[\"library\"],\"tags\":[\"ai-stack\"],\"turns\":1,\"chars\":11672,\"excerpt\":\"Build a troubleshooting checklist for indoor AC ceiling leaks that includes: steps to safely check for a clogged condensate drain line, how to inspect the air filter for airflow restriction, techniques for identifying a frozen evaporator coil, and visual signs of an overflowing d\"},{\"id\":\"8b539437\",\"title\":\"rustdesk\",\"uuid\":\"8b539437-f5a9-4c0d-979c-08374ee24260\",\"created\":\"2026-07-29T17:52:01.932610\",\"updated\":\"2026-07-29T17:52:14.520101\",\"spaces\":[\"library\"],\"tags\":[\"hardware\",\"browser\",\"ai-stack\",\"infra\"],\"turns\":1,\"chars\":4165,\"excerpt\":\"rustdesk RustDesk is a free, open‑source remote desktop application written in Rust, designed as a self‑hostable alternative to TeamViewer/AnyDesk with full control over your data and infrastructure.[1][2][4]  What it is RustDesk provides remote access and support across Windows,\"},{\"id\":\"534b3e99\",\"title\":\"i am trying to remote my another laptop which has the ip 192.168.0.161\",\"uuid\":\"534b3e99-4a1a-45d0-9300-b20a6ee5d63f\",\"created\":\"2026-07-29T16:45:18.583817\",\"updated\":\"2026-07-29T16:45:33.530638\",\"spaces\":[\"library\"],\"tags\":[\"hardware\",\"network\",\"ai-stack\",\"security\",\"infra\"],\"turns\":1,\"chars\":5394,\"excerpt\":\"i am trying to remote my another laptop which has the ip 192.168.0.161 You can remote into that laptop over your local network using built‑in tools (RDP/SSH) or open‑source options (RustDesk, NoMachine, etc.). The exact steps depend on the OS and what you want (full desktop vs te\"},{\"id\":\"47319d16\",\"title\":\"open tourch\",\"uuid\":\"47319d16-4a1f-4c12-924c-259863e4fbc5\",\"created\":\"2026-07-24T21:18:36.207812\",\"updated\":\"2026-07-24T21:58:32.532135\",\"spaces\":[\"library\"],\"tags\":[\"ai-stack\"],\"turns\":4,\"chars\":6192,\"excerpt\":\"open tourch turn it off and turn my brightness full on how to fix my notification area nothing is appearing and I can't access the settings A blank notification area with no way to reach settings is usually a System UI glitch, a swipe-gesture change after an update, or a stuck mo\"},{\"id\":\"cf9633f6\",\"title\":\"kuanglinfei\",\"uuid\":\"cf9633f6-4917-4eea-855a-8a55db6af655\",\"created\":\"2026-07-24T10:26:54.909759\",\"updated\":\"2026-07-24T10:27:01.213252\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"network\",\"ai-stack\",\"docs\",\"security\",\"learning\"],\"turns\":1,\"chars\":2928,\"excerpt\":\"kuanglinfei The term “kuanglinfei” doesn’t correspond to any widely recognized public figure, organization, or technical concept in available open sources as of mid-2026. Search results instead surface near-matches or partial overlaps: - Minfei Kuang: A dissolved UK company offic\"},{\"id\":\"c0cee890\",\"title\":\"open torch\",\"uuid\":\"c0cee890-086d-4498-83ae-e22c1c21c28d\",\"created\":\"2026-07-24T08:30:48.820219\",\"updated\":\"2026-07-24T10:25:39.591402\",\"spaces\":[\"library\"],\"tags\":[\"general\"],\"turns\":2,\"chars\":206,\"excerpt\":\"open torch open settings\"},{\"id\":\"57148537\",\"title\":\"torch\",\"uuid\":\"57148537-de71-449f-9845-8ddf31dde482\",\"created\":\"2026-07-24T09:25:15.262091\",\"updated\":\"2026-07-24T09:25:57.632633\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"network\",\"ai-stack\",\"learning\"],\"turns\":1,\"chars\":6787,\"excerpt\":\"torch Torch most commonly refers to the open-source Torch machine learning library (and its Python successor PyTorch) in AI/developer contexts, or to a handheld light source in everyday English.[3][6] Given your focus on AI/LLM technologies, open-source tools, Python/Rust stacks,\"},{\"id\":\"a438de01\",\"title\":\"HP Commercial and Consumer Computers and Monitors - Color Difference is Visible\",\"uuid\":\"a438de01-0811-4538-a1cc-17be26d2a255\",\"created\":\"2026-07-23T20:55:56.488607\",\"updated\":\"2026-07-23T20:56:17.938114\",\"spaces\":[\"library\"],\"tags\":[\"firmware\"],\"turns\":1,\"chars\":11857,\"excerpt\":\"--- Customer Advisory May 19, 2026 HP Consumer Notebook and Desktop PCs - Certain Features in HP Applications May Not Function Due to Virtualization-Based Security (VBS) Being Enabled --- Customer Advisory Sep 24, 2025 Intel PTT and SPS Firmware June 2025 Security Update Medium S\"},{\"id\":\"12e7080e\",\"title\":\"how can i create the alternative of these sqlite-fts50.1.0 numpy1.24.0 sentence-\",\"uuid\":\"12e7080e-c057-48d6-ad3b-bd27434f7685\",\"created\":\"2026-07-23T20:13:56.927484\",\"updated\":\"2026-07-23T20:18:30.192936\",\"spaces\":[\"library\"],\"tags\":[\"network\",\"browser\",\"ai-stack\"],\"turns\":2,\"chars\":40016,\"excerpt\":\"sqlite-fts5=0.1.0 numpy=1.24.0 sentence-transformers=2.2.0 cryptography=41.0.0 requests=2.31.0 flask=2.3.0 flask-cors=4.0.0 networkx=3.1 scikit-learn=1.3.0 python-dateutil=2.8.0 ollama=0.1.0 how can i create the alternative of these  sqlite-fts5=0.1.0 numpy=1.24.0 sentence-transf\"},{\"id\":\"f8ac1360\",\"title\":\"how to compress a folder of many kind of files of 30gb\",\"uuid\":\"f8ac1360-fc21-4ab3-84cb-c11ae0481ed8\",\"created\":\"2026-07-23T18:50:41.448538\",\"updated\":\"2026-07-23T18:57:02.632218\",\"spaces\":[\"library\"],\"tags\":[\"hardware\",\"ai-stack\"],\"turns\":3,\"chars\":19956,\"excerpt\":\"how to compress a folder of many kind of files of 30gb You can compress a 30 GB folder with standard tools like 7‑Zip, tar+compression (Linux), or built‑in OS compressors; the best approach depends on your OS and how much you care about speed vs maximum compression.[4][11][15]  C\"},{\"id\":\"75c64171\",\"title\":\"PVIEITO by Pedro José Pereira Vieito GitHub  X  LinkedIn Inside Claude Cowork Ho\",\"uuid\":\"75c64171-5b45-41de-86f4-2b77e78410b5\",\"created\":\"2026-07-23T18:19:08.178829\",\"updated\":\"2026-07-23T18:19:15.138580\",\"spaces\":[\"library\"],\"tags\":[\"network\",\"ai-stack\",\"infra\"],\"turns\":1,\"chars\":37188,\"excerpt\":\"by Pedro José Pereira Vieito GitHub • X • LinkedIn Inside Claude Cowork: How Anthropic Runs Claude Code in a Local VM on Your Mac 26 January, 2026 EN Claude Cowork Claude Cowork is a feature of the Claude Desktop app that allows Claude to execute code, manipulate files, and perfo\"},{\"id\":\"882f6d35\",\"title\":\"whats the use of tailscale just free use for years lets say or there is even bet\",\"uuid\":\"882f6d35-d300-4d33-8b79-d17921ad9a02\",\"created\":\"2026-07-23T17:05:29.005895\",\"updated\":\"2026-07-23T17:20:36.583457\",\"spaces\":[\"library\"],\"tags\":[\"hardware\",\"network\",\"ai-stack\"],\"turns\":2,\"chars\":26804,\"excerpt\":\"whats the use of tailscale just free use for years lets say  or there is even better free point to implement the work of it means another alternative service or app or software with a trials like a 7 days or month or even just by contributing and singing up platform which afford \"},{\"id\":\"fcc9e380\",\"title\":\"What youre building You are building an internal operator console for running a\",\"uuid\":\"fcc9e380-b2be-48b5-8999-837ff32fb6c9\",\"created\":\"2026-07-22T18:25:35.537991\",\"updated\":\"2026-07-23T10:41:53.467071\",\"spaces\":[\"library\"],\"tags\":[\"hardware\",\"browser\",\"security\"],\"turns\":3,\"chars\":23516,\"excerpt\":\"What you're building  You are building an internal operator console for running a makers marketplace end to end, including listing management, scheduling and booking, payments, messaging, and fulfillment artifacts, while also exposing a clean public-facing web surface and extensi\"},{\"id\":\"32a11a74\",\"title\":\"summarize this agreement and then do tell me if its profitable or no Sales Deal\",\"uuid\":\"32a11a74-d218-46a0-bc4b-2cfba2e6dea6\",\"created\":\"2026-07-23T10:24:56.128871Z\",\"updated\":\"2026-07-23T10:28:09.472932Z\",\"spaces\":[\"all\"],\"tags\":[\"business\"],\"turns\":2,\"chars\":73756,\"excerpt\":\"Sales Deal - Lead Submitted: $0.00 USD Payout Details Default Payout $0.00 per order Schedule Action Locking Actions are locked 15 day(s) after the end of the day they are tracked Payout Scheduling Approved transactions are paid 15 day(s) after the end of the day they lock Qualif\"},{\"id\":\"c2d52c61\",\"title\":\"create table of rows including those titles below Introduction Compatibility Qui\",\"uuid\":\"c2d52c61-df5e-43af-9ba7-cc55139f4994\",\"created\":\"2026-07-23T00:38:00.670177\",\"updated\":\"2026-07-23T07:43:18.754658\",\"spaces\":[\"library\"],\"tags\":[\"general\"],\"turns\":7,\"chars\":63922,\"excerpt\":\"Introduction Compatibility Quick Fixes Manifest V3 Firefox on Android How to Use Toolbar Icon Toolbar Popup Toolbar Context Menu Sidebar Editor Keyboard Shortcut Script/CSS Installation Options Auto-Update Interval Enable Sync Counter Global Exclude CSP Exclude Custom Options CSS\"},{\"id\":\"680bc228\",\"title\":\"create a fork of this session\",\"uuid\":\"680bc228-e9c5-4b10-b53b-dcaa7f5ba749\",\"created\":\"2026-07-23T02:48:01.286849\",\"updated\":\"2026-07-23T02:55:04.817014\",\"spaces\":[\"library\"],\"tags\":[\"grok\",\"firmware\",\"hardware\",\"network\",\"ai-stack\",\"docs\",\"security\"],\"turns\":13,\"chars\":18775,\"excerpt\":\"create a fork of this session I can’t directly fork or duplicate this chat session, but I can help you recreate an equivalent “forked” session with the same context and constraints so you can continue independently. Below is a ready-to-use session template you can paste into a ne\"},{\"id\":\"368f6038\",\"title\":\"WANDR\",\"uuid\":\"368f6038-3915-4337-b4b0-fbb27ebe2e92\",\"created\":\"2026-07-23T02:44:46.282792\",\"updated\":\"2026-07-23T02:45:04.334719\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"hardware\",\"ai-stack\"],\"turns\":1,\"chars\":6080,\"excerpt\":\"WANDR “WANDR” can refer to several unrelated products/projects. Based on your background (systems dev, open‑source, no paid platforms), here are the most relevant ones and how to dig in from your HP Cx0049ne + Nothing Phone setup.[1][2][4][7][9]  1. WANDR – AI travel planner apps\"},{\"id\":\"71bb5469\",\"title\":\"FIND FOR ME AN OFFICIAL REMOTE income source, or a money-making strategy.Academi\",\"uuid\":\"71bb5469-2ae2-4184-82b0-b276d78d8ac7\",\"created\":\"2026-07-22T14:46:20.206303Z\",\"updated\":\"2026-07-23T01:03:36.993074Z\",\"spaces\":[\"all\"],\"tags\":[\"firmware\",\"business\",\"ai-stack\",\"docs\",\"learning\"],\"turns\":7,\"chars\":33560,\"excerpt\":\"FIND FOR ME AN OFFICIAL REMOTE income source, or a money-making strategy.@Academic @FireCrawl @Notion @Outlook @GitHub @Google Vertex AI @all Here is a comprehensive, toolchain-integrated remote income strategy built specifically for your stack (Linux/C/Rust/Python, firmware/Andr\"},{\"id\":\"65e19736\",\"title\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including\",\"uuid\":\"65e19736-d7fe-4d81-bd64-e22db1fbf6e9\",\"created\":\"2025-12-29T12:40:56.970458\",\"updated\":\"2026-07-22T14:27:07.478628\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"hardware\",\"ai-stack\"],\"turns\":1,\"chars\":11323,\"excerpt\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including automatic selection of compatible HP models for each patch route  InsydeH2O UEFI Patch Routes for HP Cx0049ne Your HP Pavilion Gaming 15-cx0049ne uses InsydeH2O \\\"client\\\" platform firmware, which requ\"},{\"id\":\"5fd18c66\",\"title\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including\",\"uuid\":\"5fd18c66-683f-4600-aab0-599e874e8b56\",\"created\":\"2025-12-30T12:38:58.610572\",\"updated\":\"2026-07-22T14:27:06.866679\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"hardware\",\"ai-stack\"],\"turns\":1,\"chars\":13305,\"excerpt\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including automatic selection of compatible HP models for each patch route Based on my analysis of InsydeH2O UEFI patching routes, here are the primary modification pathways for your HP Pavilion Gaming 15-cx00\"},{\"id\":\"02a7f0f9\",\"title\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including\",\"uuid\":\"02a7f0f9-3f76-409f-9d2e-b7912e52a36c\",\"created\":\"2025-12-31T12:41:32.752534\",\"updated\":\"2026-07-22T14:27:06.622270\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"hardware\",\"ai-stack\"],\"turns\":1,\"chars\":13703,\"excerpt\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including automatic selection of compatible HP models for each patch route Based on my research, I'll provide you with a comprehensive daily analysis framework for InsydeH2O UEFI patch routes targeting your HP\"},{\"id\":\"a54c561b\",\"title\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including\",\"uuid\":\"a54c561b-53f3-474d-9a60-f4aded76b113\",\"created\":\"2026-01-01T12:37:43.383653\",\"updated\":\"2026-07-22T14:27:06.238418\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"hardware\",\"ai-stack\",\"security\"],\"turns\":1,\"chars\":16308,\"excerpt\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including automatic selection of compatible HP models for each patch route  InsydeH2O UEFI Patch Routes for HP Cx0049ne (Coffee Lake i5-8300H, GTX 1050 Ti)  Critical Vulnerability: CVE-2025-4275 (Hydroph0bia) \"},{\"id\":\"fc942262\",\"title\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including\",\"uuid\":\"fc942262-3355-4766-98c1-9e9d59ed196a\",\"created\":\"2026-01-02T12:41:51.247085\",\"updated\":\"2026-07-22T14:27:05.820850\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"hardware\",\"ai-stack\"],\"turns\":1,\"chars\":16485,\"excerpt\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including automatic selection of compatible HP models for each patch route Based on current analysis of InsydeH2O UEFI security landscape and your HP Pavilion Gaming 15-cx0049ne (i5-8300H, GTX 1050 Ti), here's\"},{\"id\":\"0f7937dc\",\"title\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including\",\"uuid\":\"0f7937dc-e3a5-4b8c-a3a6-0b737aa3e6e7\",\"created\":\"2026-01-03T12:36:32.664974\",\"updated\":\"2026-07-22T14:27:05.706204\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"hardware\",\"ai-stack\",\"security\"],\"turns\":1,\"chars\":13016,\"excerpt\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including automatic selection of compatible HP models for each patch route  InsydeH2O UEFI Patch Routes for HP Cx0049ne (i5-8300H, GTX 1050 Ti) Your HP Pavilion Gaming 15-cx0049ne uses InsydeH2O UEFI firmware,\"},{\"id\":\"ae4a6b41\",\"title\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including\",\"uuid\":\"ae4a6b41-9acd-46bb-bfa3-fca77b11b4b4\",\"created\":\"2026-01-04T12:37:47.125452\",\"updated\":\"2026-07-22T14:27:05.489422\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"hardware\",\"ai-stack\"],\"turns\":1,\"chars\":14528,\"excerpt\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including automatic selection of compatible HP models for each patch route  InsydeH2O UEFI Patch Route Analysis for HP Cx0049ne Your HP Cx0049ne (HP Pavilion Gaming 15-cx series with i5-8300H and GTX 1050 Ti) \"},{\"id\":\"650054b6\",\"title\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including\",\"uuid\":\"650054b6-3a1a-40ce-ab0b-8c4899c49e91\",\"created\":\"2026-01-05T12:40:53.887626\",\"updated\":\"2026-07-22T14:27:05.315561\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"hardware\",\"ai-stack\"],\"turns\":1,\"chars\":11861,\"excerpt\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including automatic selection of compatible HP models for each patch route  InsydeH2O UEFI Patch Routes for HP Cx0049ne The HP Pavilion Gaming 15-cx0049ne uses InsydeH2O Rev 5.0 UEFI firmware. I've identified \"},{\"id\":\"ff0e4ac6\",\"title\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including\",\"uuid\":\"ff0e4ac6-b3c9-4582-a925-e20fc824309f\",\"created\":\"2026-01-06T12:42:20.949720\",\"updated\":\"2026-07-22T14:27:05.185160\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"hardware\",\"ai-stack\"],\"turns\":1,\"chars\":14491,\"excerpt\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including automatic selection of compatible HP models for each patch route  InsydeH2O UEFI Patch Routes for HP Cx0049ne (i5-8300H) Your HP Cx0049ne with i5-8300H (Coffee Lake) uses InsydeH2O BIOS firmware. Bel\"},{\"id\":\"40cec469\",\"title\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including\",\"uuid\":\"40cec469-9edc-49b7-8304-9695d29fdde7\",\"created\":\"2026-01-07T12:41:51.745087\",\"updated\":\"2026-07-22T14:27:05.070032\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"hardware\",\"ai-stack\"],\"turns\":1,\"chars\":16696,\"excerpt\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including automatic selection of compatible HP models for each patch route  InsydeH2O UEFI Patch Routes for HP Cx0049ne (i5-8300H, GTX 1050 Ti) Model Selection: GPT-5.1 (deterministic, firmware-aware, atomic o\"},{\"id\":\"0fa6d4f8\",\"title\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including\",\"uuid\":\"0fa6d4f8-2cb0-4d64-9c43-377a393a1078\",\"created\":\"2026-01-08T12:45:47.652034\",\"updated\":\"2026-07-22T14:27:04.936291\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"hardware\",\"ai-stack\",\"security\",\"infra\"],\"turns\":1,\"chars\":19356,\"excerpt\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including automatic selection of compatible HP models for each patch route  InsydeH2O UEFI Patch Analysis for HP Cx0049ne Your HP Pavilion Gaming 15-cx0049ne uses InsydeH2O UEFI firmware, which is affected by \"},{\"id\":\"da771937\",\"title\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including\",\"uuid\":\"da771937-7ef4-4ae1-a711-b9b8d61d3f69\",\"created\":\"2026-01-09T12:38:27.688418\",\"updated\":\"2026-07-22T14:27:04.770443\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"hardware\",\"ai-stack\"],\"turns\":1,\"chars\":12050,\"excerpt\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including automatic selection of compatible HP models for each patch route  InsydeH2O UEFI Patch Routes for HP Cx0049ne The HP Pavilion Gaming 15-cx0049ne (i5-8300H, GTX 1050 Ti) uses InsydeH2O UEFI firmware w\"},{\"id\":\"181f3396\",\"title\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including\",\"uuid\":\"181f3396-8812-4d85-bd03-ac77520c67c1\",\"created\":\"2026-01-10T12:43:28.532698\",\"updated\":\"2026-07-22T14:27:04.642553\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"hardware\",\"ai-stack\",\"security\"],\"turns\":1,\"chars\":13034,\"excerpt\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including automatic selection of compatible HP models for each patch route  InsydeH2O UEFI Patch Routes for HP Cx0049ne (Pavilion Gaming 15-cx Series) Your HP Cx0049ne laptop with i5-8300H and GTX 1050 Ti uses\"},{\"id\":\"5a2def8f\",\"title\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including\",\"uuid\":\"5a2def8f-a237-4639-b506-2204432af3b5\",\"created\":\"2026-01-11T12:38:45.690352\",\"updated\":\"2026-07-22T14:27:04.521648\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"hardware\",\"ai-stack\",\"security\"],\"turns\":1,\"chars\":12857,\"excerpt\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including automatic selection of compatible HP models for each patch route Based on current intelligence, CVE-2025-4275 (Hydroph0bia) is the most critical UEFI vulnerability affecting InsydeH2O firmware, inclu\"},{\"id\":\"c01e2c29\",\"title\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including\",\"uuid\":\"c01e2c29-bfb2-4bf3-b6e9-2eabf5e9c1c1\",\"created\":\"2026-01-12T12:42:09.894349\",\"updated\":\"2026-07-22T14:27:04.372748\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"hardware\",\"ai-stack\"],\"turns\":1,\"chars\":13099,\"excerpt\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including automatic selection of compatible HP models for each patch route  InsydeH2O UEFI Patch Routes for HP Cx0049ne (i5-8300H, GTX 1050 Ti) The HP Pavilion 15-cx0049ne uses InsydeH2O Rev 5.0 UEFI firmware,\"},{\"id\":\"08ab94cd\",\"title\":\"Decode the SID fields\",\"uuid\":\"08ab94cd-a15e-4af6-b089-f70cb75db91e\",\"created\":\"2026-07-22T14:07:05.539844Z\",\"updated\":\"2026-07-22T14:12:03.532273Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"ai-stack\",\"security\",\"infra\"],\"turns\":3,\"chars\":14066,\"excerpt\":\"Decode the SID fields. A Windows SID is decoded by reading its structure in this order: revision, identifier authority, then one or more subauthorities, where the last subauthority is usually the RID. The canonical text form is S-Revision-IdentifierAuthority-SubAuthority..., such\"},{\"id\":\"4ef5c8b0\",\"title\":\"where engineers build systems without always knowing every outcome, then learn f\",\"uuid\":\"4ef5c8b0-46ef-4150-86e7-da927051ccaf\",\"created\":\"2026-07-20T15:53:25.152040Z\",\"updated\":\"2026-07-20T16:28:07.121145Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"ai-stack\",\"infra\"],\"turns\":3,\"chars\":28064,\"excerpt\":\"where engineers build systems without always knowing every outcome, then learn from the results. That is engineering under uncertainty—often expressed through iterative design, experimental engineering, or, in complex systems, the probe–sense–respond approach. Engineers form a hy\"},{\"id\":\"dbe75fd6\",\"title\":\"Analyze httpsfmhy.net(httpsfmhy.net) create each detail and directories and desi\",\"uuid\":\"dbe75fd6-d00f-44f0-86df-d4baac66cee1\",\"created\":\"2025-12-12T04:03:23.259800Z\",\"updated\":\"2026-07-18T23:46:39.256363Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"ai-stack\",\"infra\",\"learning\"],\"turns\":18,\"chars\":170886,\"excerpt\":\"create each detail and directories and designs and scripts and web design used and document it Analyze [https://fmhy.net/](https://fmhy.net/)  create each detail and directories and designs and scripts and web design used and document it Complete technical analysis of FMHY websit\"},{\"id\":\"6249dd9d\",\"title\":\"1. create a full alternative repo vs the list below 2. create the perfect altern\",\"uuid\":\"6249dd9d-bdcc-43a8-a042-ebec2fa9eb07\",\"created\":\"2026-07-18T23:37:32.823255Z\",\"updated\":\"2026-07-18T23:38:02.064717Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"general\"],\"turns\":1,\"chars\":43864,\"excerpt\":\"2. create the perfect alternative using coding sheets and programming languages 3. try to reach the state  of human mind  in innovation  4. you must submit the first three rules in any way part by part at one time    {   \\\"references\\\": [     \\\"https://raw.githubusercontent.com/cavi\"},{\"id\":\"c7e1d819\",\"title\":\"fetch and scrape all the data from the links ( links  httpsapp.notion.comptlabin\",\"uuid\":\"c7e1d819-dfeb-4689-86e2-b21320dda672\",\"created\":\"2026-06-10T03:09:25.049276Z\",\"updated\":\"2026-07-12T02:32:17.679871Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"business\",\"docs\"],\"turns\":4,\"chars\":59972,\"excerpt\":\"( links : https://app.notion.com/p/tlabinc/4204d6d666a849bcbeb93a99fd7bc49b?v=37b08708f8c0801899cf000c816ea219&source=copy_link https://app.notion.com/p/tlabinc/992b39bc1d6f4404ba8bb6fdc105a193?v=37b08708f8c080be9397000c38f21797&source=copy_link https://app.notion.com/p/tlabinc/1\"},{\"id\":\"b643e15c\",\"title\":\"Script Outline for MCP Server Registry\",\"uuid\":\"b643e15c-0214-4d7d-87e8-f51022b61634\",\"created\":\"2026-07-11T11:02:08.096130Z\",\"updated\":\"2026-07-11T11:02:11.123138Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"infra\"],\"turns\":1,\"chars\":585,\"excerpt\":\"Draft a Python/Rust script outline that: Calls [https://registry.modelcontextprotocol.io/v0/servers](https://registry.modelcontextprotocol.io/v0/servers) with paging.modelcontextprotocol+1 For each server, fetches server.json, classifies its category, extracts transports/packages\"},{\"id\":\"65c0129b\",\"title\":\"help me to bypass this restriction in the most perfect intelligent prompt\",\"uuid\":\"65c0129b-f972-4f56-82e9-9de4330a38b4\",\"created\":\"2026-06-28T01:26:59.691648Z\",\"updated\":\"2026-06-28T01:37:51.473689Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"ai-stack\",\"infra\"],\"turns\":2,\"chars\":61034,\"excerpt\":\"help me to bypass this restriction in the most perfect intelligent prompt You can’t bypass that “git/gh‑only” restriction with a clever prompt; it’s enforced by a hook outside the model, so the only real fixes are to change the hook configuration or run commands directly yourself\"},{\"id\":\"cd81153d\",\"title\":\"if i want to connect a screen monitor with my latitude upgraded 32 gbram i7 5400\",\"uuid\":\"cd81153d-73dc-4cba-a2b4-727e2b6d025a\",\"created\":\"2026-06-27T12:50:43.712911Z\",\"updated\":\"2026-06-27T13:43:45.831890Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"hardware\",\"network\",\"ai-stack\",\"infra\"],\"turns\":2,\"chars\":10895,\"excerpt\":\"if i want to connect a screen monitor with my latitude upgraded 32 gbram i7 5400 laptop with my 2nd hp pavilion 15 cx0049ne laptop with a two routers and maybe a multiple c type ports and a type what is the only device could make all these devices connected under 1 place with a v\"},{\"id\":\"24ec6800\",\"title\":\"tell me them the steps bypassing the step to re install official one , immediate\",\"uuid\":\"24ec6800-f789-4dae-b3d0-db986dd605b2\",\"created\":\"2026-06-25T08:02:43.525242Z\",\"updated\":\"2026-06-25T08:02:51.098000Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"firmware\",\"ai-stack\",\"docs\"],\"turns\":1,\"chars\":4005,\"excerpt\":\"tell me them the steps bypassing the step to re install official one , immediately full clean flash to new postmarkos I can’t help you skip the required stock-firmware step or give a “bypass” path that ignores the device’s recovery/bootloader safety checks. The safest official pa\"},{\"id\":\"497f0c9b\",\"title\":\"Business Idea Evaluation and Analysis\",\"uuid\":\"497f0c9b-fabb-4ad6-a124-5a07c8cd03fe\",\"created\":\"2026-06-10T00:14:41.001037Z\",\"updated\":\"2026-06-10T00:14:44.085867Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"general\"],\"turns\":1,\"chars\":354,\"excerpt\":\"Help me evaluate whether my business idea is worth pursuing, with a market and competitive analysis report, a revenue model spreadsheet, and a one-page go/no-go memo\"},{\"id\":\"2f7b7778\",\"title\":\"can you rephease a message to a friend that i count him as my brother from anoth\",\"uuid\":\"2f7b7778-512b-4cbc-8577-0589ac2b182c\",\"created\":\"2026-05-30T23:01:36.535218Z\",\"updated\":\"2026-05-30T23:14:24.936172Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"ai-stack\"],\"turns\":3,\"chars\":14016,\"excerpt\":\"do have some rare known quotes (like the time is gold and whatever ) can you rephease a message to a friend that i count him as my brother from another mother and do tell or ask if i were meaning something else or whatever cause of my hard time of experiences how i could express \"},{\"id\":\"41a57651\",\"title\":\"what are the limits of the business plan of x which gives me the free access to\",\"uuid\":\"41a57651-9087-491c-8613-d9d3bcc214f9\",\"created\":\"2026-05-30T16:54:59.652962Z\",\"updated\":\"2026-05-30T17:02:49.855199Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"grok\",\"business\",\"ai-stack\"],\"turns\":2,\"chars\":17009,\"excerpt\":\"what are the limits of the business plan of x which gives me the free access to beta and supergrok Assuming you mean Grok Business, the public material I found does not show a clean official quota sheet with hard message caps, but it does clearly define the access boundaries and \"},{\"id\":\"45ed9c19\",\"title\":\"find for this item in store now un Sharjah\",\"uuid\":\"45ed9c19-61e5-4a23-a3c1-651ff3e8651b\",\"created\":\"2026-05-29T22:08:59.311557Z\",\"updated\":\"2026-05-29T22:10:05.686329Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"ai-stack\"],\"turns\":1,\"chars\":7351,\"excerpt\":\"find for this item in store now un Sharjah The item in your photo is Café Najjar \\\"Le Brésilien\\\" (Pure Brazilian Selection), a Lebanese ground coffee. In Sharjah, your best option to find it in-store today is Carrefour, which actively stocks multiple Najjar variants across its UAE\"},{\"id\":\"6705e573\",\"title\":\"compare these ( Internet information Operator Name e MCC 424 MNC 02 IMSI 4240218\",\"uuid\":\"6705e573-92e5-4d97-b1c2-9debff3fb9a9\",\"created\":\"2026-05-29T15:43:08.946698Z\",\"updated\":\"2026-05-29T15:49:15.286239Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"hardware\",\"network\",\"ai-stack\"],\"turns\":1,\"chars\":9071,\"excerpt\":\"( Internet information Operator Name e& MCC 424 MNC 02 IMSI 424021836829918 IMEI 351108512360435 ICCID 89971122127876374828 UL Modulation QPSK-BPSK-BPSK-QPSK DL Modulation QPSK-QPSK-16QAM-QPSK UL MCS 29 DL MCS 7 EnodeBid 11e41 TDD 5ms ENDC true Network Type 5G RadioMode 5G(NSA) B\"},{\"id\":\"b1ba453a\",\"title\":\"how to use this device and leverage its low programming features in my kia pegas\",\"uuid\":\"b1ba453a-6af5-417c-949b-8a33607d45c2\",\"created\":\"2026-05-25T15:13:07.288187Z\",\"updated\":\"2026-05-25T17:03:45.561697Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"ai-stack\"],\"turns\":1,\"chars\":11883,\"excerpt\":\"how to use this device and leverage its low programming features in my kia pegas to record my location for 24/7 and to get to calculate my petrol consuming and to show me the real actual speed while I'm driving You can do this, but the best method depends on what your Kia Pegas a\"},{\"id\":\"8f97f953\",\"title\":\"find for me the best ai Software PD, CC0 BSD, MIT, Apache GPL, AGPL JRL, AFPL pr\",\"uuid\":\"8f97f953-78ca-4f59-a0c8-6b7445042763\",\"created\":\"2026-05-25T10:56:26.438105Z\",\"updated\":\"2026-05-25T10:57:53.757457Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"network\",\"business\",\"ai-stack\",\"docs\",\"infra\"],\"turns\":1,\"chars\":13311,\"excerpt\":\"find for me the best ai Software \\tPD, CC0 \\tBSD, MIT, Apache \\tGPL, AGPL \\tJRL, AFPL \\tproprietary software, no public license \\tprivate, internal software The best AI software for your local-first, open-source stack falls overwhelmingly into the permissive category (BSD/MIT/Apache), \"},{\"id\":\"f79ab020\",\"title\":\"etisalat-logo-english search-icon close-icon search-icon cart-icon My Account ri\",\"uuid\":\"f79ab020-161a-415c-995d-cf7de405e154\",\"created\":\"2026-05-25T02:11:39.147869Z\",\"updated\":\"2026-05-25T03:37:32.526720Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"network\"],\"turns\":2,\"chars\":84422,\"excerpt\":\"search-icon close-icon search-icon cart-icon     My Account right-arrow-icon         left-arrow-icon     Mobile Plans right-arrow-icon         left-arrow-icon         m-menu-new-freedom-en-377x325             right-arrow-icon             right-arrow-icon             right-arrow-i\"},{\"id\":\"015ddc1d\",\"title\":\"explain what appears to be showing in this location 24.1593237, 55.7961213\",\"uuid\":\"015ddc1d-3c57-4bd8-b9b0-94a76febd256\",\"created\":\"2026-05-23T12:30:48.611858Z\",\"updated\":\"2026-05-23T12:31:15.937857Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"hardware\",\"ai-stack\",\"docs\"],\"turns\":1,\"chars\":5549,\"excerpt\":\"24.1593237, 55.7961213 explain what appears to be showing in this location  24.1593237, 55.7961213 The coordinates 24.1593237, 55.7961213 place you in Al Ain, the UAE's \\\"Garden City\\\" located in the eastern part of the Abu Dhabi Emirate — approximately 160 km from Abu Dhabi city a\"},{\"id\":\"3a1432d4\",\"title\":\"how to ask claude the exactly question that would maker it to preform full answe\",\"uuid\":\"3a1432d4-9811-443b-9d71-7ca6068a13fb\",\"created\":\"2026-05-23T02:45:20.295796Z\",\"updated\":\"2026-05-23T05:44:13.315885Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"ai-stack\"],\"turns\":4,\"chars\":27534,\"excerpt\":\"how to ask claude the exactly question that would maker it to preform full answer to whatever i meant to be explaining in this uploded conversation Reading your full exported session, the core problem is clear: you kept giving Claude the destination (profit, automation, infrastru\"},{\"id\":\"61f2f69f\",\"title\":\"is there any technology that could clone my physical sim through me inserting it\",\"uuid\":\"61f2f69f-3ad4-4f65-a1d7-95111199ddee\",\"created\":\"2026-05-23T03:17:59.328058Z\",\"updated\":\"2026-05-23T03:21:05.809391Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"network\",\"ai-stack\"],\"turns\":2,\"chars\":17893,\"excerpt\":\"is there any technology that could clone my physical sim through me inserting it to a special hardware and then retrieve my sim having it working as it was working and the cloned one to get to work as far as what olan is there activated or one of them not the physical but the clo\"},{\"id\":\"284ccdee\",\"title\":\"Build your own phone Learning, prototype, cyberdeck, IoT terminal Possible as pr\",\"uuid\":\"284ccdee-d2a6-4c04-b863-82c3b4466ce2\",\"created\":\"2026-05-22T03:51:40.924574Z\",\"updated\":\"2026-05-22T03:52:30.066654Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"hardware\",\"ai-stack\",\"docs\",\"learning\"],\"turns\":1,\"chars\":3824,\"excerpt\":\"Learning, prototype, cyberdeck, IoT terminal Possible as prototype, not realistic as polished carrier phone Build your own phone Learning, prototype, cyberdeck, IoT terminal Possible as prototype, not realistic as polished carrier phone  Building Your Own Phone: A Ground-Up Proto\"},{\"id\":\"99a4601c\",\"title\":\"x heavy vs perplexity ultra plan vs Manus last premium enterprise plan , tell ea\",\"uuid\":\"99a4601c-1417-4dac-abbe-2882a3c8544c\",\"created\":\"2026-05-22T03:25:36.987559Z\",\"updated\":\"2026-05-22T03:26:28.227450Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"grok\",\"firmware\",\"ai-stack\"],\"turns\":1,\"chars\":11479,\"excerpt\":\"tell each one of those plans that are been sold to humans which one would be acting way better and could be the cause of earning money not earning knowledge of how you would be earning x heavy vs perplexity ultra plan vs Manus last premium enterprise plan ,  tell each one of thos\"},{\"id\":\"fb7fdd9b\",\"title\":\"lets compare thc and cbd\",\"uuid\":\"fb7fdd9b-8003-4d3b-aeec-ce04881772b8\",\"created\":\"2026-05-20T17:24:11.165072Z\",\"updated\":\"2026-05-20T17:27:32.575039Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"grok\",\"firmware\",\"ai-stack\"],\"turns\":2,\"chars\":11188,\"excerpt\":\"lets compare thc and cbd THC (Δ9-tetrahydrocannabinol) and CBD (cannabidiol) are the two most abundant phytocannabinoids produced by the Cannabis plant, and while they share an almost identical molecular formula, they behave very differently inside the human body.[1]  Chemical St\"},{\"id\":\"73da1bc0\",\"title\":\"yeahhh... i just put on this lil black lace set\",\"uuid\":\"73da1bc0-3be1-419d-93e9-f5878f12df00\",\"created\":\"2026-05-20T06:36:00.380033Z\",\"updated\":\"2026-05-20T06:36:09.191379Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"ai-stack\"],\"turns\":1,\"chars\":2039,\"excerpt\":\"yeahhh... i just put on this lil black lace set Hey Err! That sounds like a great vibe — but I want to make sure I'm actually helping you out here. 😄 Could you give me a bit more context? Are you referring to: - A song lyric (like a track you're vibing to)? - A fashion/outfit yo\"},{\"id\":\"5846d104\",\"title\":\"find for me who is selling this item in branchs , markets , supermarkets and ple\",\"uuid\":\"5846d104-f099-49f9-9526-ffb9d36be1e2\",\"created\":\"2026-05-20T05:11:06.302686Z\",\"updated\":\"2026-05-20T05:14:23.842867Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"ai-stack\"],\"turns\":1,\"chars\":14097,\"excerpt\":\"find for me who is selling this item in branchs , markets , supermarkets and please be assured of the item and if its available in the store upto oyr date You’re looking for the exact snack “MoreTaste T.Rolls Tortilla Rolls Chilli & Lemon” in physical branches in/around Dubai, bu\"},{\"id\":\"46af4870\",\"title\":\"Let me know if there is anything i could be doing for the greater good for work\",\"uuid\":\"46af4870-68c0-401e-9af8-a49d8c2489c2\",\"created\":\"2026-05-20T05:03:28.741562Z\",\"updated\":\"2026-05-20T05:03:58.012235Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"firmware\",\"ai-stack\",\"infra\"],\"turns\":1,\"chars\":8074,\"excerpt\":\"Let me know if there is anything i could be doing for the greater good for work Based on your profile as a firmware/systems developer based in Dubai with deep expertise in low-level systems, reverse engineering, and open-source tooling, here are the most impactful things you coul\"},{\"id\":\"4b0873c6\",\"title\":\"OnShiftPay\",\"uuid\":\"4b0873c6-9c16-4c1e-bc49-7a0d37854440\",\"created\":\"2026-05-18T07:04:47.011540Z\",\"updated\":\"2026-05-18T07:06:16.211244Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"business\",\"ai-stack\"],\"turns\":2,\"chars\":8846,\"excerpt\":\"OnShiftPay OnShiftPay (onshiftpay.com) is a UAE-based platform currently launching across Dubai, Sharjah, and Ajman that connects students and freelancers with short-term event jobs — with a core promise of escrow-protected, guaranteed pay within 24 hours of every completed shift\"},{\"id\":\"5a09ba27\",\"title\":\"IA5C public static final int OSIHLP public static final int RMCF public static f\",\"uuid\":\"5a09ba27-dcfc-4ba4-b7c7-ee136cf17d06\",\"created\":\"2026-05-17T15:17:18.727461Z\",\"updated\":\"2026-05-17T15:17:45.893805Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"network\",\"ai-stack\"],\"turns\":1,\"chars\":7435,\"excerpt\":\"public static final int OSIHLP;       public static final int RMCF;       public static final int USP;       public static final int X244 IA5C;       public static final int OSIHLP;       public static final int RMCF;       public static final int USP;       public static final i\"},{\"id\":\"e04b0ae5\",\"title\":\"APDU7816\",\"uuid\":\"e04b0ae5-777b-44b0-b469-8bd734726b60\",\"created\":\"2026-05-17T15:15:44.804044Z\",\"updated\":\"2026-05-17T15:16:09.964577Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"ai-stack\",\"security\"],\"turns\":1,\"chars\":4753,\"excerpt\":\"APDU7816 APDU (Application Protocol Data Unit) per ISO/IEC 7816 is the fundamental communication unit exchanged between a smart card reader (terminal) and a smart card. The structure is defined by ISO/IEC 7816-4 (Organization, security and commands for interchange).[2]  The ISO 7\"},{\"id\":\"f1a9e7f0\",\"title\":\"kimi-apiapi-free-trial\",\"uuid\":\"f1a9e7f0-0bb6-46b1-8b76-4d203071e0c2\",\"created\":\"2026-05-16T13:57:55.516002Z\",\"updated\":\"2026-05-16T13:58:11.301353Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"browser\",\"ai-stack\"],\"turns\":1,\"chars\":3596,\"excerpt\":\"kimi-api/api-free-trial The Kimi API free trial gives new registered users a ¥15 credit voucher to explore the platform at zero cost before committing to paid usage.  Who Qualifies The free trial is available to new users who register with a Chinese mainland phone number. Upon re\"},{\"id\":\"a0fc56a8\",\"title\":\"1,370 e-Trader\",\"uuid\":\"a0fc56a8-db1a-4aca-8dd9-e2a5343172a1\",\"created\":\"2026-05-16T02:40:21.991313Z\",\"updated\":\"2026-05-16T02:52:13.648176Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"business\",\"ai-stack\"],\"turns\":5,\"chars\":24974,\"excerpt\":\"1,370 e-Trader The AED 1,370 is the total cost of the Dubai e-Trader License, issued by the Department of Economy and Tourism (DET/DED). It's the most affordable legal structure to run an online business in Dubai. Here's everything you need to know as a Dubai-based developer and \"},{\"id\":\"5e0f030e\",\"title\":\"Got it  only these 8 chains Union Coop Choithrams Aswaaq Lulu Hypermarket Carref\",\"uuid\":\"5e0f030e-e7e1-4e2a-af85-629d5a43cad9\",\"created\":\"2026-05-12T06:05:47.759971Z\",\"updated\":\"2026-05-13T19:58:28.651026Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"hardware\"],\"turns\":13,\"chars\":84439,\"excerpt\":\"Union Coop Choithrams Aswaaq Lulu Hypermarket Carrefour Spinneys West Zone Supermarket Emirates Coop Dubai branch / area table Chain Dubai branches / areas found Confidence Union Coop Nad Al Sheba Mall, Silicon Oasis, Hatta Souq, Motor City, Al Nahda, Nad Al Hamar, Jumeirah 1, Al\"},{\"id\":\"08de2600\",\"title\":\"p diddy net worth before jail\",\"uuid\":\"08de2600-d01d-496b-a182-2523a580792c\",\"created\":\"2026-05-13T19:42:13.596520Z\",\"updated\":\"2026-05-13T19:42:25.318853Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"ai-stack\"],\"turns\":1,\"chars\":1863,\"excerpt\":\"p diddy net worth before jail Sean \\\"P. Diddy\\\" Combs' net worth before his incarceration was most consistently estimated at around $400 million. This figure comes from multiple credible reports just prior to his September 2024 arrest on federal charges including racketeering and s\"},{\"id\":\"4a21b1e6\",\"title\":\"How i leverage from the high speed of netwrok connections i do have with the ult\",\"uuid\":\"4a21b1e6-b67a-47b3-904d-0e4a0a58bc5d\",\"created\":\"2026-05-13T08:43:48.126355Z\",\"updated\":\"2026-05-13T08:58:59.987886Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"network\",\"ai-stack\"],\"turns\":2,\"chars\":23895,\"excerpt\":\"How i leverage from the high speed of netwrok connections i do have with the ultimate feature which is uncapped data to be used , so other than starting by installing local llms and start from there how can we eliminate it idea or jump all over into a cutting edge way or solutuio\"},{\"id\":\"dacfaead\",\"title\":\"Title Apple Launches Internal AI Coding Bootcamp to Prep Siri for Next-Gen Overh\",\"uuid\":\"dacfaead-6496-4379-8e00-60681039491b\",\"created\":\"2026-05-12T04:33:24.212877Z\",\"updated\":\"2026-05-12T04:41:27.404214Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"ai-stack\",\"infra\"],\"turns\":1,\"chars\":75668,\"excerpt\":\"Description:   Apple is sending its Siri engineers to an intensive multi-week AI coding bootcamp ahead of a major Siri upgrade, rumored to debut at WWDC. This move aims to close the gap with AI rivals by empowering teams to deeply integrate AI into the digital assistant. Leadersh\"},{\"id\":\"0ea65f72\",\"title\":\"ROLE You are Perplexity acting as Evidence Hunter and Constraint Auditor. MISSIO\",\"uuid\":\"0ea65f72-bdaa-4e71-8165-51bfaf2c72e8\",\"created\":\"2026-05-11T18:53:09.190133Z\",\"updated\":\"2026-05-12T02:26:35.253143Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"ai-stack\"],\"turns\":7,\"chars\":46607,\"excerpt\":\"You are Perplexity acting as Evidence Hunter and Constraint Auditor. MISSION Identify factual dependencies, best practices, and missing context that could change the result. RAW REQUEST {{paste raw request}} CONSTRAINTS - No API usage - Prefer credible sources and concrete constr\"},{\"id\":\"a5fdafe5\",\"title\":\"what wss that cloud coding website that lets me to write and install programming\",\"uuid\":\"a5fdafe5-fb0e-45ee-9283-3d90d8545365\",\"created\":\"2026-05-11T20:17:10.855091Z\",\"updated\":\"2026-05-11T20:20:27.158945Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"browser\",\"ai-stack\",\"infra\"],\"turns\":3,\"chars\":16731,\"excerpt\":\"what wss that cloud coding website that lets me  to write and install programming languages and extensions same as . vscode but i  cloude for free You're likely thinking of vscode.dev, Microsoft's free browser-based version of Visual Studio Code that runs entirely in the cloud wi\"},{\"id\":\"9ddb7d2b\",\"title\":\"scrape Documentation  Specification  Discussions The Model Context Protocol (MCP\",\"uuid\":\"9ddb7d2b-0296-4eb2-ac08-479591f9240a\",\"created\":\"2026-05-11T17:10:53.217803Z\",\"updated\":\"2026-05-11T17:11:12.867775Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"browser\",\"docs\",\"infra\",\"learning\"],\"turns\":1,\"chars\":9290,\"excerpt\":\"The Model Context Protocol (MCP) is an open protocol that enables seamless integration between LLM applications and external data sources and tools. Whether you're building an AI-powered IDE, enhancing a chat interface, or creating custom AI workflows, MCP provides a standardized\"},{\"id\":\"3d6fadc5\",\"title\":\"some softwares detect the network and RUNS FINE BUT OTHER SHOWS THAT LITREAKLLY\",\"uuid\":\"3d6fadc5-e96a-47a2-ae64-dd1ff6d3617d\",\"created\":\"2026-05-11T14:27:34.038819Z\",\"updated\":\"2026-05-11T14:51:55.645653Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"hardware\",\"network\",\"browser\",\"ai-stack\"],\"turns\":6,\"chars\":28687,\"excerpt\":\"some softwares detect the network and RUNS FINE BUT OTHER SHOWS THAT LITREAKLLY NO NET WHILE THERE IS ON WINDOWS 11 Some apps are probably checking Windows’ own network status and getting a false “no internet” signal, even though the connection itself is working fine. This is com\"},{\"id\":\"4385d3fe\",\"title\":\"Help me build an app. Ask me whether I want a web, mobile, desktop, or internal\",\"uuid\":\"4385d3fe-9923-4cb1-bdb9-718a9b13229b\",\"created\":\"2026-05-11T14:08:36.475478Z\",\"updated\":\"2026-05-11T14:08:38.877756Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"general\"],\"turns\":1,\"chars\":508,\"excerpt\":\"Help me build an app. Ask me whether I want a web, mobile, desktop, or internal app, what problem it should solve, and what features matter most, then create a working prototype.\"},{\"id\":\"6d25b2fc\",\"title\":\"Spacewar V3.2-260416-1140 help me to install the full image for this version ful\",\"uuid\":\"6d25b2fc-bcbc-4d8b-9908-5c3b1baaa7b4\",\"created\":\"2026-05-11T14:05:12.323595Z\",\"updated\":\"2026-05-11T14:05:23.791759Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"firmware\",\"ai-stack\"],\"turns\":1,\"chars\":5598,\"excerpt\":\"Spacewar_V3.2-260416-1140 help me to install the full image for this version full ota The full OTA for Spacewar_V3.2-260416-1140 is listed as “N/A” in the Nothing firmware archive, and the incremental/delta package shown is the same build-to-build package Spacewar_V3.2-260416-114\"},{\"id\":\"997d629f\",\"title\":\"As a developer using Notion for technical documentation and sprint tracking, how\",\"uuid\":\"997d629f-1b09-4a92-97ee-7fc206644374\",\"created\":\"2026-05-11T07:25:08.322905Z\",\"updated\":\"2026-05-11T07:25:22.592197Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"ai-stack\",\"docs\"],\"turns\":1,\"chars\":10392,\"excerpt\":\"As a developer using Notion for technical documentation and sprint tracking, how can Notion AI help with: writing clean API documentation from code snippets, explaining a complex regex or SQL query I’ve pasted, generating commit message suggestions from my task descriptions, and \"},{\"id\":\"b030d6b2\",\"title\":\"highlightai vs pieces os\",\"uuid\":\"b030d6b2-66bf-40ca-b9b2-81b889d6b6b2\",\"created\":\"2026-05-09T05:26:57.077898Z\",\"updated\":\"2026-05-09T05:27:03.552078Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"grok\",\"ai-stack\"],\"turns\":1,\"chars\":3667,\"excerpt\":\"highlightai vs pieces os Highlight AI and Pieces OS are not the same kind of product: Highlight AI is a cross-app personal AI assistant, while Pieces OS is the local background service that powers Pieces’ memory, on-device AI, and MCP integrations.[1][2]  Core difference Highligh\"},{\"id\":\"4c78dc20\",\"title\":\"redo\",\"uuid\":\"4c78dc20-3052-4a58-9341-1400a63e6ed0\",\"created\":\"2026-05-06T17:38:11.994377\",\"updated\":\"2026-05-06T17:38:25.698194\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"hardware\",\"ai-stack\",\"security\"],\"turns\":1,\"chars\":4416,\"excerpt\":\"redo Understood, Err—tool use disabled as requested. \\\"Redo\\\" in your context likely refers to restarting or re-executing the prior task on your HP Cx0049ne (i5-8300H, GTX 1050 Ti) or Nothing Phone (1)/A063 stack, focusing on low-level systems, firmware/OS reverse engineering, Andr\"},{\"id\":\"7c8fdf06\",\"title\":\"code cloud test then deploy\",\"uuid\":\"7c8fdf06-d3f3-46a8-9ab1-1201c87aeb13\",\"created\":\"2026-05-06T16:14:53.863224\",\"updated\":\"2026-05-06T16:15:25.314120\",\"spaces\":[\"library\"],\"tags\":[\"ai-stack\",\"infra\"],\"turns\":1,\"chars\":7703,\"excerpt\":\"code cloud test then deploy Use a simple CI/CD path: write code locally, run automated tests on every push, deploy only after tests pass, and start with the smallest cloud target that matches your app type. For your preferences, the best fit is an open-source, local-first workflo\"},{\"id\":\"e3b3a5b8\",\"title\":\"claude\",\"uuid\":\"e3b3a5b8-effb-4a72-b57b-06084b7e4672\",\"created\":\"2026-05-06T15:46:10.464359\",\"updated\":\"2026-05-06T15:46:35.001792\",\"spaces\":[\"library\"],\"tags\":[\"ai-stack\",\"docs\"],\"turns\":1,\"chars\":1117,\"excerpt\":\"claude  Acknowledgment  Sources - [Claude: Sign in](https://claude.ai) - [Claude Code overview - Claude Code Docs](https://code.claude.com/docs/en/overview) - [Claude by Anthropic - App Store - Apple](https://apps.apple.com/us/app/claude-by-anthropic/id6473753684) - [Claude (lang\"},{\"id\":\"e4c6ed12\",\"title\":\"qwen\",\"uuid\":\"e4c6ed12-e424-4734-b1e6-1aceb8ff5cda\",\"created\":\"2026-05-06T15:40:28.069971\",\"updated\":\"2026-05-06T15:40:59.811265\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"business\",\"ai-stack\"],\"turns\":1,\"chars\":5634,\"excerpt\":\"qwen Qwen is a family of large language models (LLMs) developed by Alibaba Cloud's Tongyi Lab, known for its open-source releases and strong performance in multilingual tasks, coding, and multimodal capabilities.[1][3]  Core Overview Qwen, also called Tongyi Qianwen, started as a\"},{\"id\":\"18759a75\",\"title\":\"grok\",\"uuid\":\"18759a75-0dd9-4c24-a3d6-2ac6ef0e9aa2\",\"created\":\"2026-05-06T15:30:25.435734\",\"updated\":\"2026-05-06T15:30:30.205403\",\"spaces\":[\"library\"],\"tags\":[\"grok\",\"ai-stack\",\"docs\"],\"turns\":1,\"chars\":1326,\"excerpt\":\"grok Grok is xAI’s AI assistant, available through grok.com, X, and mobile apps, with features like web search, image generation, and code help. The word “grok” also comes from Robert A. Heinlein’s Stranger in a Strange Land, where it means deep, intuitive understanding.[1][2][3]\"},{\"id\":\"63022448\",\"title\":\"x\",\"uuid\":\"63022448-92f0-4742-875a-6928153922f9\",\"created\":\"2026-05-06T15:30:16.252805\",\"updated\":\"2026-05-06T15:30:20.869708\",\"spaces\":[\"library\"],\"tags\":[\"network\",\"ai-stack\",\"docs\"],\"turns\":1,\"chars\":1291,\"excerpt\":\"x X most commonly refers to the social network formerly known as Twitter, now branded as “X” by X Corp. and accessible at the x.com domain.[1][4] If you meant something else by “x” (like a math variable, a programming placeholder, or a specific product/project name), say what con\"},{\"id\":\"4f5da3a8\",\"title\":\"enhance this into exactly 4000 characters of (instructions You are the Instructo\",\"uuid\":\"4f5da3a8-3db2-40b3-ba9d-08a83be8fce4\",\"created\":\"2026-05-06T08:57:48.068864\",\"updated\":\"2026-05-06T09:40:27.020398\",\"spaces\":[\"library\"],\"tags\":[\"business\"],\"turns\":2,\"chars\":29285,\"excerpt\":\"You are the Instructor-Innovator. Your sole and only purpose is to elevate every human you interact with into the ultimate successor — a fully independent, masterful creator who no longer needs paid tools or external crutches. Every single response you give must actively advance \"},{\"id\":\"df7713bb\",\"title\":\"perplexity google play specifically 1 by 1 things could i buy and how much it co\",\"uuid\":\"df7713bb-ed42-4ddc-8731-aa9de61f0082\",\"created\":\"2026-05-06T01:23:46.769777\",\"updated\":\"2026-05-06T02:08:32.277934\",\"spaces\":[\"library\"],\"tags\":[\"browser\",\"ai-stack\"],\"turns\":8,\"chars\":45926,\"excerpt\":\"perplexity google play specifically 1 by 1 things could i buy and how much it costs Here is a complete breakdown of everything you can purchase on the Perplexity Android/Google Play app, item by item, with costs.  The Free Tier (No Purchase Needed) The Perplexity app on Google Pl\"},{\"id\":\"631bda8c\",\"title\":\"can we create a task to br running every minute automatic in you\",\"uuid\":\"631bda8c-7989-44ac-90da-f6434b20c3b8\",\"created\":\"2026-05-06T00:00:55.349417\",\"updated\":\"2026-05-06T00:21:07.430711\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"hardware\",\"ai-stack\",\"docs\"],\"turns\":2,\"chars\":20515,\"excerpt\":\"can we create a task to br running every minute automatic in you ? Yes — but not inside this chat itself as an always-running background agent. Perplexity does support scheduled recurring Tasks, and its Help Center says you can create alerts, reminders, and reports on a schedule,\"},{\"id\":\"18a300a6\",\"title\":\"I WANT TO CREATE A GIFT LINK TO ANY ONW SIGNS UP TO PERPLEXITY FROM MY SHARED LI\",\"uuid\":\"18a300a6-f58e-4d03-8699-afee136cba0d\",\"created\":\"2026-05-06T00:20:24.843151\",\"updated\":\"2026-05-06T00:20:41.610160\",\"spaces\":[\"library\"],\"tags\":[\"browser\",\"ai-stack\"],\"turns\":1,\"chars\":2756,\"excerpt\":\"I WANT TO CREATE A GIFT LINK TO ANY ONW SIGNS UP TO PERPLEXITY FROM MY SHARED LINK , OR MAYBE MORE Here's everything you need to know about Perplexity's referral/gift link programs and their current status.  Current State of Perplexity Referrals Unfortunately, both major referral\"},{\"id\":\"2ace833e\",\"title\":\"OBSIDEN\",\"uuid\":\"2ace833e-3cff-4972-bc57-79428a8552d5\",\"created\":\"2026-05-06T00:10:24.876837\",\"updated\":\"2026-05-06T00:10:39.468250\",\"spaces\":[\"library\"],\"tags\":[\"ai-stack\",\"docs\"],\"turns\":1,\"chars\":704,\"excerpt\":\"OBSIDEN It looks like you typed \\\"OBSIDEN\\\" — did you mean Obsidian? There are a few common things this could refer to:  Sources - [Obsidian - Sharpen your thinking](https://obsidian.md) - [Obsidian](https://en.wikipedia.org/wiki/Obsidian) - [Obsidian.md](https://github.com/obsidia\"},{\"id\":\"ca5894ed\",\"title\":\"Build a multi-computer network setup guide PDF for reliable workspace connectivi\",\"uuid\":\"ca5894ed-900c-4ab9-938b-16c974f77572\",\"created\":\"2026-05-05T01:14:54.202210\",\"updated\":\"2026-05-05T01:14:55.867567\",\"spaces\":[\"library\"],\"tags\":[\"hardware\",\"network\"],\"turns\":1,\"chars\":990,\"excerpt\":\"Build a multi-computer network setup guide PDF for reliable workspace connectivity across Windows PCs and laptops using Speedify for Wi-Fi bonding with USB tethered Android phones and iPhone hotspots. Include step-by-step instructions, diagrams for failover configuration, static \"},{\"id\":\"882513fd\",\"title\":\"can i open comet inside Devolutions RDM\",\"uuid\":\"882513fd-c46a-4b09-a048-b66e7b90405d\",\"created\":\"2026-05-05T00:20:18.682182\",\"updated\":\"2026-05-05T00:27:04.818270\",\"spaces\":[\"library\"],\"tags\":[\"network\",\"browser\",\"ai-stack\",\"infra\"],\"turns\":2,\"chars\":12876,\"excerpt\":\"can i open comet inside Devolutions RDM ? There is no native integration between Comet Backup and Devolutions RDM — Comet is not listed in the RDM Integration Center as a built-in add-on. However, you can absolutely open the Comet web UI inside RDM using one of two practical work\"},{\"id\":\"20336207\",\"title\":\"Shisha lounge or terrace or my purpose is to work on ny two laptops without havi\",\"uuid\":\"20336207-82e7-4db4-afe8-3d0a5647fc09\",\"created\":\"2026-05-04T17:54:04.002608\",\"updated\":\"2026-05-04T18:05:24.895626\",\"spaces\":[\"library\"],\"tags\":[\"hardware\",\"ai-stack\"],\"turns\":3,\"chars\":17464,\"excerpt\":\"Shisha lounge or terrace or my purpose is to work on ny two laptops without having any movements around me so the only one will be passing by is the waiter to not get distracted more than the distraction will be created by me smoking , and have atleast peachy setting like canab o\"},{\"id\":\"e9868b79\",\"title\":\"How its possible to get to use Remote Desktop Manager for firstly to re remote t\",\"uuid\":\"e9868b79-60fa-4161-a918-ee6218172595\",\"created\":\"2026-05-03T05:05:15.535992\",\"updated\":\"2026-05-03T11:40:50.149327\",\"spaces\":[\"library\"],\"tags\":[\"ai-stack\",\"docs\",\"infra\"],\"turns\":6,\"chars\":32128,\"excerpt\":\"How its possible to get to use Remote Desktop Manager for firstly to re remote the same computer Yes—Remote Desktop Manager can connect to the same computer more than once, but whether that works depends on the remote system and the RDP settings, not just RDM itself. In RDM, you \"},{\"id\":\"6852a57e\",\"title\":\"Enahnace this propmt when it uses it as codex browser tool\",\"uuid\":\"6852a57e-6265-428e-b380-6125c0e7d106\",\"created\":\"2026-05-03T11:14:18.008816Z\",\"updated\":\"2026-05-03T11:14:19.984151Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"browser\"],\"turns\":1,\"chars\":268,\"excerpt\":\"Enahnace this propmt when it uses it as codex browser tool\"},{\"id\":\"6235537a\",\"title\":\"i want to create an something like browser control feature , but its not using b\",\"uuid\":\"6235537a-374b-4a25-be1a-af39c33d15b0\",\"created\":\"2026-05-03T10:40:17.522224Z\",\"updated\":\"2026-05-03T10:41:17.205980Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"browser\",\"infra\"],\"turns\":1,\"chars\":20761,\"excerpt\":\"PLEASE DO A FULL DIGGING INTO HOW HELPFUL 100% FEATURE OR TOOL WE MIGHT GET LINKED OR BUILT OR DEPLOYED INTO THE WHOLE WORLD NO MATTER WHAT MIGHT YOU TELL ME THAT THERE IS SOME ALTERNATIVE SAME TOOLS OR MCPS OR WHATEVER BUT NOTHING TAKES THE COMMAND AS THE BROWSER TOOL WHEN IT TA\"},{\"id\":\"3675a648\",\"title\":\"best libraries for me from these PyTorch(httpshuggingface.comodelslibrarypytorch\",\"uuid\":\"3675a648-8a1a-4ba6-9dd9-93d5af4a679c\",\"created\":\"2026-05-03T08:22:26.195161Z\",\"updated\":\"2026-05-03T08:25:06.972217Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"ai-stack\"],\"turns\":1,\"chars\":21014,\"excerpt\":\"[PyTorch](https://huggingface.co/models?library=pytorch) [TensorFlow](https://huggingface.co/models?library=tf) [JAX ](https://huggingface.co/models?library=jax) [Safetensors ](https://huggingface.co/models?library=safetensors) [Transformers ](https://huggingface.co/models?librar\"},{\"id\":\"d5198974\",\"title\":\"re phrase this  Okay so it will be the core for us chatgpt , from within it i ho\",\"uuid\":\"d5198974-2c04-48ae-aeda-0464276e561d\",\"created\":\"2026-05-03T07:01:07.507783Z\",\"updated\":\"2026-05-03T07:31:44.138818Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"ai-stack\",\"infra\"],\"turns\":4,\"chars\":30272,\"excerpt\":\"\\\"\\\" Okay so it will be the core for us chatgpt , from within it i hope that we will never find any restrictions , obligations , any kind of unsucessfully reaching to the solution asap for my indiviual project deploying and  test, setups , and plans more importantly [@chatgpt-apps]\"},{\"id\":\"90423780\",\"title\":\"motorola smart connect windows app\",\"uuid\":\"90423780-4002-4c61-ad83-a1214880a757\",\"created\":\"2026-05-02T22:54:26.616006\",\"updated\":\"2026-05-02T22:54:41.899989\",\"spaces\":[\"library\"],\"tags\":[\"hardware\",\"ai-stack\"],\"turns\":1,\"chars\":3689,\"excerpt\":\"motorola smart connect windows app Motorola Smart Connect is a cross-device ecosystem app that bridges your Android phone (or tablet) with a Windows PC, enabling seamless file sharing, app streaming, screen mirroring, and more — all without cables or manual syncing.  What It Does\"},{\"id\":\"f7c08fbc\",\"title\":\"DYNODNS\",\"uuid\":\"f7c08fbc-e312-4811-8959-1b85e05b6130\",\"created\":\"2026-05-02T22:45:31.629737\",\"updated\":\"2026-05-02T22:45:48.238977\",\"spaces\":[\"library\"],\"tags\":[\"hardware\",\"network\",\"ai-stack\",\"infra\"],\"turns\":1,\"chars\":3432,\"excerpt\":\"DYNODNS Dynamic DNS (DDNS) is a service that automatically keeps your DNS records updated with your current IP address, even when your ISP changes it frequently — letting you reach your home network or devices via a fixed hostname instead of a changing IP.[3]  How It Works When y\"},{\"id\":\"2137c5c2\",\"title\":\"IS IT POSSIBLE TO HAVE MY SCREEN INTERFACE BE USED FROM BROWSER NOT FROM DIRECT\",\"uuid\":\"2137c5c2-c998-4068-8d6c-14d1a79d044b\",\"created\":\"2026-05-02T22:42:59.741143\",\"updated\":\"2026-05-02T22:44:55.397421\",\"spaces\":[\"library\"],\"tags\":[\"network\",\"browser\",\"ai-stack\",\"infra\"],\"turns\":2,\"chars\":12802,\"excerpt\":\"IS IT POSSIBLE TO HAVE MY SCREEN INTERFACE  BE USED FROM BROWSER NOT FROM DIRECT WAY Yes, absolutely — you can have your full screen/desktop interface accessible from a browser. This is a well-established pattern with several open-source approaches tailored to your Linux stack. H\"},{\"id\":\"b5f73222\",\"title\":\"laptop 1 run discord on suse run stream from what laptop 2 windows\",\"uuid\":\"b5f73222-9c6e-49dd-a2ed-13c2b8f36e8f\",\"created\":\"2026-05-02T21:56:46.196385\",\"updated\":\"2026-05-02T21:57:16.274008\",\"spaces\":[\"library\"],\"tags\":[\"hardware\",\"ai-stack\"],\"turns\":1,\"chars\":6896,\"excerpt\":\"laptop 1 run discord on suse run stream from what laptop 2 windows Here's a clean, hardware-aware architecture for your setup: Laptop 1 (HP Cx0049ne / openSUSE) acts as the capture/Discord machine, pulling a live video feed from Laptop 2 (Windows) over your LAN, then streaming th\"},{\"id\":\"bf749029\",\"title\":\"Can you best the the most known premium learning centers for specialized in Comp\",\"uuid\":\"bf749029-0bb5-4adc-b207-9f63deee9ef0\",\"created\":\"2026-05-02T21:43:51.217117\",\"updated\":\"2026-05-02T21:47:43.197487\",\"spaces\":[\"library\"],\"tags\":[\"hardware\",\"learning\"],\"turns\":2,\"chars\":32767,\"excerpt\":\"Re understand what i said I'm not looking for free exams , yet i do look for the mostly ageing exams among years and the ones that are needed in our life now on and moving forward yet top teir exams the Base's like the legendary one's also are  preferred, these what i look for an\"},{\"id\":\"9c48efc5\",\"title\":\"Ethos dubai workfreelancer\",\"uuid\":\"9c48efc5-bd9e-4546-b695-f8ea36c0069f\",\"created\":\"2026-05-02T02:24:57.433514\",\"updated\":\"2026-05-02T02:25:16.370118\",\"spaces\":[\"library\"],\"tags\":[\"network\",\"business\",\"ai-stack\"],\"turns\":1,\"chars\":6963,\"excerpt\":\"Ethos dubai workfreelancer You’re probably seeing job posts from “Ethos” in Dubai and wondering if and how you can work there as a freelancer or remotely from Dubai. Here’s how this typically breaks down and what to watch for.    What “Ethos Dubai” likely is There are multiple en\"},{\"id\":\"6b87fb3d\",\"title\":\"Help me create rubberducky tools and features on a normal usb and make it work ,\",\"uuid\":\"6b87fb3d-c682-4daf-9de3-9af4aeef5945\",\"created\":\"2026-05-02T01:57:42.311902\",\"updated\":\"2026-05-02T02:20:48.269181\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"hardware\",\"ai-stack\",\"security\"],\"turns\":6,\"chars\":49756,\"excerpt\":\"Help me create rubberducky tools and features on a normal usb and make it work , please use no paid obligations and any source will lead to paid tools or restrictions to any kind of invention thought in the project , nothing is impossible just logic and pure computer science theo\"},{\"id\":\"3c7afb48\",\"title\":\"fast rubberduc\",\"uuid\":\"3c7afb48-d14a-4be8-84c7-3276a000c560\",\"created\":\"2026-05-02T02:06:57.874405\",\"updated\":\"2026-05-02T02:07:03.546024\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"ai-stack\"],\"turns\":1,\"chars\":1633,\"excerpt\":\"fast rubberduc I need clarification on what you're looking for with \\\"fast rubberduc.\\\" Based on the search results, there are a few possibilities: 1. Rubber duck toys — novelty collectibles like speed boat ducks or racing formula-1 themed ducks[4][5] 2. Rubber duck debugging — a s\"},{\"id\":\"f955ae60\",\"title\":\"CORTEXAI\",\"uuid\":\"f955ae60-c211-4377-9432-7a54f51e379d\",\"created\":\"2026-05-01T21:20:19.698924\",\"updated\":\"2026-05-01T21:21:32.425287\",\"spaces\":[\"library\"],\"tags\":[\"browser\",\"ai-stack\",\"infra\"],\"turns\":4,\"chars\":10996,\"excerpt\":\"CORTEXAI The name \\\"CortexAI\\\" is used by several distinct organizations and platforms across different sectors of the technology industry. Given the range of entities using this name, identifying the specific one you are interested in is essential for providing relevant technical \"},{\"id\":\"94a33db9\",\"title\":\"Hugging Face find the best model that will assist me to setup Jitbrains IntelliJ\",\"uuid\":\"94a33db9-d3ec-447d-a479-677e676b279c\",\"created\":\"2026-05-01T13:45:37.199700\",\"updated\":\"2026-05-01T15:13:20.800963\",\"spaces\":[\"library\"],\"tags\":[\"ai-stack\",\"docs\"],\"turns\":3,\"chars\":26965,\"excerpt\":\"@Hugging Face find the best model that will assist me to setup Jitbrains [IntelliJ\xA0IDEA\xA0Ultimate](https://www.jetbrains.com/idea) I can see from your screenshot that you're looking at JetBrains IDE settings with various chat actions, code generation features (Generate Unit Tests,\"},{\"id\":\"9f50d02d\",\"title\":\"chatgpt\",\"uuid\":\"9f50d02d-6b9b-4fcb-921d-97052ebd2578\",\"created\":\"2026-05-01T12:15:15.831514\",\"updated\":\"2026-05-01T12:15:24.866505\",\"spaces\":[\"library\"],\"tags\":[\"hardware\",\"ai-stack\",\"docs\"],\"turns\":1,\"chars\":2069,\"excerpt\":\"chatgpt ChatGPT is a conversational AI chatbot created by OpenAI that uses large language models (LLMs) to generate human‑like text in response to user prompts.  It can help with writing, coding, explaining concepts, brainstorming, and many other tasks, and is available both as a\"},{\"id\":\"5204ed06\",\"title\":\"openapi\",\"uuid\":\"5204ed06-f740-482d-9c10-25dc88021d81\",\"created\":\"2026-05-01T12:15:07.327113\",\"updated\":\"2026-05-01T12:15:11.147976\",\"spaces\":[\"library\"],\"tags\":[\"ai-stack\",\"docs\",\"infra\"],\"turns\":1,\"chars\":2323,\"excerpt\":\"openapi OpenAPI is a standard way to describe HTTP APIs in a machine-readable format, usually in YAML or JSON. It lets humans and tools understand an API’s endpoints, inputs, outputs, and authentication without reading the source code.[2][5]  What it is The OpenAPI Specification \"},{\"id\":\"d7174fab\",\"title\":\"WHAT ARE MY NUMBERS\",\"uuid\":\"d7174fab-5d28-4840-9cff-e71f0f48d3fe\",\"created\":\"2026-05-01T10:52:06.439281\",\"updated\":\"2026-05-01T11:08:05.380297\",\"spaces\":[\"library\"],\"tags\":[\"browser\",\"ai-stack\"],\"turns\":3,\"chars\":12861,\"excerpt\":\"WHAT ARE MY NUMBERS You have 1 Twilio phone number associated with your account: | Friendly Name | Number (E.164) | |---|---| | (443) 234-0423 | +1 443-234-0423 | This is a US-based number (+1 country code, Maryland area code 443) . This is the number available for sending SMS me\"},{\"id\":\"50d44fdf\",\"title\":\"lETS\",\"uuid\":\"50d44fdf-25a6-4202-bc27-f48139ea1b1e\",\"created\":\"2026-05-01T10:48:53.035563\",\"updated\":\"2026-05-01T10:48:55.338320\",\"spaces\":[\"library\"],\"tags\":[\"general\"],\"turns\":1,\"chars\":158,\"excerpt\":\"lETS\"},{\"id\":\"ec46afa8\",\"title\":\"i want to have a clouded space to be using it for just coding and developing but\",\"uuid\":\"ec46afa8-779d-43b7-bbbd-51265d737c9e\",\"created\":\"2026-05-01T08:20:56.996900\",\"updated\":\"2026-05-01T08:31:01.281223\",\"spaces\":[\"library\"],\"tags\":[\"network\",\"browser\",\"ai-stack\",\"infra\"],\"turns\":5,\"chars\":29214,\"excerpt\":\"i want to have a clouded space to be using it for just coding and developing but this clouded space is from me so just a virtual disk its the main component and the network for links and browsers , i want to have a full 100 gb virtual unlinked to my os but yet linked to my host o\"},{\"id\":\"0363ef29\",\"title\":\"When it will stop , pipedream , mcp , models , languages, proxies, domains, comp\",\"uuid\":\"0363ef29-08a1-4d0c-9dc6-3d268e997466\",\"created\":\"2026-05-01T07:16:38.264765\",\"updated\":\"2026-05-01T07:44:16.858022\",\"spaces\":[\"library\"],\"tags\":[\"business\",\"ai-stack\",\"security\",\"infra\"],\"turns\":9,\"chars\":51957,\"excerpt\":\"When it will stop , pipedream , mcp , models , languages, proxies, domains, component's, programming languages , cli's ,  peasswords, search tools, search engines , endpoints, gatewa, ip history , emails, servers podman , docker , wsl , servers that power services , ports auth ba\"},{\"id\":\"c34eb795\",\"title\":\"i want to create a task in comet, which is within perplexity library trigger to\",\"uuid\":\"c34eb795-278b-4f13-a2a8-efffedbd09c8\",\"created\":\"2026-04-15T12:07:54.952105\",\"updated\":\"2026-04-15T12:09:42.746137\",\"spaces\":[\"library\"],\"tags\":[\"browser\",\"ai-stack\"],\"turns\":2,\"chars\":9069,\"excerpt\":\"i want to create a task in comet, which is within perplexity library trigger to be doing export as pdf for the all chats from the beginning until this out day Yes — if Comet can open each thread and expose the built-in “Export as PDF” action, you can likely make a task for it, bu\"},{\"id\":\"2adc2b44\",\"title\":\"System Number 3JJF6Y2-CF1B\",\"uuid\":\"2adc2b44-5d77-4c23-a213-4eeadc9a7a78\",\"created\":\"2026-04-03T01:06:22.176657\",\"updated\":\"2026-04-03T01:08:24.271131\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"ai-stack\",\"security\"],\"turns\":2,\"chars\":4630,\"excerpt\":\"System Number: 3JJF6Y2-CF1B That looks like a system/service identifier (likely a BIOS/UEFI UUID or OEM service tag–style ID), but by itself it’s not enough to resolve anything meaningful without context. A few realistic interpretations:  Possible meanings - Dell-style Service Ta\"},{\"id\":\"c75e06a3\",\"title\":\"What are the latest research trends in technology and computer science in 2025\",\"uuid\":\"c75e06a3-92f1-471f-b1f1-8b17a914d2c4\",\"created\":\"2026-04-03T01:04:44.720933\",\"updated\":\"2026-04-03T01:04:51.670849\",\"spaces\":[\"library\"],\"tags\":[\"ai-stack\",\"learning\"],\"turns\":1,\"chars\":5913,\"excerpt\":\"What are the latest research trends in technology and computer science in 2025? In 2025, the strongest research momentum in technology and computer science is around AI, but it is broadening into infrastructure, security, sustainability, and human-centered systems. Recent reviews\"},{\"id\":\"ee7a059e\",\"title\":\"Explain For me perplexitypro search, research, labs, learn, and spaces\",\"uuid\":\"ee7a059e-185f-49fb-a698-0e998fdc37c2\",\"created\":\"2025-10-31T07:10:26.928080\",\"updated\":\"2026-03-27T05:33:09.075046\",\"spaces\":[\"library\"],\"tags\":[\"ai-stack\"],\"turns\":1,\"chars\":3020,\"excerpt\":\"Explain For me perplexitypro search, research, labs, learn, and spaces  Sources - [What is Pro Search? | Perplexity Help Center](https://www.perplexity.ai/help-center/en/articles/10352903-what-is-pro-search) - [What advanced AI models are included in a Perplexity Pro ...](https:/\"},{\"id\":\"d6b1bb73\",\"title\":\"Fetch Actor details from httpsapify.comvisitarag-browser.md so I can ask questio\",\"uuid\":\"d6b1bb73-73c2-48b1-aae2-70f0dd1957c4\",\"created\":\"2026-01-01T14:35:51.625478\",\"updated\":\"2026-01-01T14:37:29.200892\",\"spaces\":[\"library\"],\"tags\":[\"browser\",\"ai-stack\",\"docs\"],\"turns\":2,\"chars\":17317,\"excerpt\":\"Fetch Actor details from https://apify.com/visita/rag-browser.md so I can ask questions about it. Key details from the RAG Browser (visita/rag-browser) Actor have already been loaded from the page you linked, so you can safely ask detailed questions about how it works, how to int\"},{\"id\":\"0b8e7010\",\"title\":\"httpsgithub.commikeroyalFirmware-Guide(httpsgithub.commikeroyalFirmware-Guide) F\",\"uuid\":\"0b8e7010-5deb-420c-8fb2-54b8b8c2f44a\",\"created\":\"2025-12-29T05:11:50.561923\",\"updated\":\"2026-01-01T12:41:24.260583\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"network\",\"ai-stack\"],\"turns\":54,\"chars\":504815,\"excerpt\":\"[https://github.com/mikeroyal/Firmware-Guide](https://github.com/mikeroyal/Firmware-Guide) Fully Detailed and Analyzed Information Extracted from all links and, Create a full book from the full repo Based on my analysis of the Firmware-Guide repository and related resources, I'll\"},{\"id\":\"47e70b1d\",\"title\":\"Teach me step by step on how i could be able to use h2o.ai sources on my own com\",\"uuid\":\"47e70b1d-0553-44fb-9d08-148eb37f1068\",\"created\":\"2026-01-01T09:33:45.565962\",\"updated\":\"2026-01-01T09:33:45.565962\",\"spaces\":[\"library\"],\"tags\":[\"hardware\",\"ai-stack\",\"learning\"],\"turns\":1,\"chars\":1037,\"excerpt\":\"Teach me step by step on how i could be able to use h2o.ai sources on my own computer  Learning Goals What are your specific goals for using H2O.ai—e.g., machine learning model training, AutoML, or driverless AI on your HP laptop/Nothing Phone?  Step 1: Verify Compatibility H2O.a\"},{\"id\":\"a3c78cfb\",\"title\":\"how can i reset windows ports used by softwares windows 11\",\"uuid\":\"a3c78cfb-59b0-4d96-aa0d-fda96895afa7\",\"created\":\"2026-01-01T02:33:56.906942\",\"updated\":\"2026-01-01T04:52:33.331711\",\"spaces\":[\"library\"],\"tags\":[\"network\",\"ai-stack\"],\"turns\":6,\"chars\":25340,\"excerpt\":\"how can i reset windows ports used by softwares windows 11 Reset Windows ports by releasing HTTP.sys reservations, terminating bound processes, or resetting the TCP/IP stack. For your HP Cx0049ne with WSL2 and nested Proxmox, use surgical netsh commands before full resets to avoi\"},{\"id\":\"e4d89e21\",\"title\":\"What you do\",\"uuid\":\"e4d89e21-b5a8-48c0-8526-d614d43158f3\",\"created\":\"2025-12-29T22:45:31.829158\",\"updated\":\"2025-12-30T02:46:15.699990\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"ai-stack\"],\"turns\":11,\"chars\":57392,\"excerpt\":\"What you do ? I assist with answering questions, providing explanations, and generating content based on your needs—whether it’s technical guidance, research, creative ideas, or troubleshooting. I can help with coding, system-level topics, hardware and software troubleshooting, a\"},{\"id\":\"17693ec0\",\"title\":\"Guide me I fixed it, Im running windows 11 as host on ssk ssd USB 512 GB , and i\",\"uuid\":\"17693ec0-8f0c-47ed-a817-9de31b4776fc\",\"created\":\"2025-12-29T22:25:25.487558\",\"updated\":\"2025-12-30T01:30:45.874646\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"hardware\",\"network\",\"ai-stack\",\"infra\"],\"turns\":10,\"chars\":79227,\"excerpt\":\"I fixed it, I'm running windows 11 as host on ssk ssd USB 512 GB , and inside it I'm running an guest of proxmox 9 , the vmdk of the guest is running on the main laptop ssd , i have made a complete 88 GB partition to be using 80 GB for vmdk , now i already have enough ram cause m\"},{\"id\":\"aad97d09\",\"title\":\"My ports are not working on my windows  whatever server im running i couldnt run\",\"uuid\":\"aad97d09-e965-4111-b49b-6586ea9679c1\",\"created\":\"2025-12-29T20:17:33.180308\",\"updated\":\"2025-12-29T20:17:33.180308\",\"spaces\":[\"library\"],\"tags\":[\"network\",\"browser\",\"ai-stack\",\"infra\"],\"turns\":1,\"chars\":1674,\"excerpt\":\"My ports are not working on my windows ??? whatever server im running i couldn't run it through my browser While you answer those, here are the immediate diagnostic steps you should run on your Windows machine to identify the problem: 1. Check if the server process is actually li\"},{\"id\":\"791d90d2\",\"title\":\"how to enable it using powershell\",\"uuid\":\"791d90d2-30de-4e7d-80c1-d2c6cb6485b0\",\"created\":\"2025-12-29T19:44:50.822004\",\"updated\":\"2025-12-29T19:54:49.787830\",\"spaces\":[\"library\"],\"tags\":[\"network\",\"ai-stack\"],\"turns\":3,\"chars\":17288,\"excerpt\":\"how to enable it using powershell Based on the screenshot showing Windows Media Player Network Sharing Service is disabled, here's the operational PowerShell solution to enable media streaming: powershell  Run as Administrator Get-Service -Name \\\"WMPNetworkSvc\\\" | Start-Service -Ve\"},{\"id\":\"02872d1f\",\"title\":\"Im on page tabTitleDisk Cloning and Recovery ProcesstabTitle with selectioni use\",\"uuid\":\"02872d1f-8e5b-4745-8c24-2f9b7573adb7\",\"created\":\"2025-12-29T04:19:02.273381\",\"updated\":\"2025-12-29T04:19:02.273381\",\"spaces\":[\"library\"],\"tags\":[\"general\"],\"turns\":1,\"chars\":13963,\"excerpt\":\"PATH 1: NON-INTRUSIVE FILE SYSTEM MOUNT This path provides read-only or read-write file-level access to the VHD/VHDX contents without creating a bootable instance. It is the lowest risk approach. 1.1: Execution via PowerShell (Recommended) Objective: Attach the VHDX as a logical \"},{\"id\":\"ce61ae16\",\"title\":\"Im on page tabTitleDisk Cloning and Recovery ProcesstabTitle with selectioni use\",\"uuid\":\"ce61ae16-8653-491e-819f-c58c39a23857\",\"created\":\"2025-12-29T04:18:45.143647\",\"updated\":\"2025-12-29T04:18:45.143647\",\"spaces\":[\"library\"],\"tags\":[\"general\"],\"turns\":1,\"chars\":13282,\"excerpt\":\"PATH 1: NON-INTRUSIVE FILE SYSTEM MOUNT This path provides read-only or read-write file-level access to the VHD/VHDX contents without creating a bootable instance. It is the lowest risk approach. 1.1: Execution via PowerShell (Recommended) Objective: Attach the VHDX as a logical \"},{\"id\":\"76d6a0bb\",\"title\":\"List All my library Chats\",\"uuid\":\"76d6a0bb-a6ac-43ba-ac3b-4d3486cac08a\",\"created\":\"2025-12-29T03:21:47.549147\",\"updated\":\"2025-12-29T03:24:07.238647\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"ai-stack\",\"docs\",\"security\"],\"turns\":2,\"chars\":21866,\"excerpt\":\"List All my library Chats I see that you've disabled access to Notion search tools. To retrieve your library chats, I'll need you to either: 1. Share the direct Notion link to your library chats database/page, or 2. Enable Notion tool access in your preferences so I can search yo\"},{\"id\":\"c221fc8b\",\"title\":\"Analyze ALL these below configs and make susre you do offer detailed resaon to e\",\"uuid\":\"c221fc8b-95bc-4d83-b4c5-65375da2dcf1\",\"created\":\"2025-12-29T01:50:03.214700\",\"updated\":\"2025-12-29T01:50:03.214700\",\"spaces\":[\"library\"],\"tags\":[\"browser\",\"ai-stack\"],\"turns\":1,\"chars\":29873,\"excerpt\":\"Show only modified preferences browser.aboutConfig.showWarning\\tfalse\\t browser.aboutwelcome.enabled\\tfalse\\t browser.backup.scheduled.user-disabled\\ttrue\\t browser.bookmarks.editDialog.confirmationHintShowCount\\t2\\t browser.bookmarks.restore_default_bookmarks\\tfalse\\t browser.bookmarks.sh\"},{\"id\":\"91f8b1a6\",\"title\":\"How should I use Perplexity\",\"uuid\":\"91f8b1a6-2ec3-4688-a5ac-9eb7902c57ee\",\"created\":\"2025-12-29T00:45:13.582612\",\"updated\":\"2025-12-29T00:45:13.582612\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"hardware\",\"network\",\"ai-stack\",\"security\",\"infra\",\"learning\"],\"turns\":1,\"chars\":3992,\"excerpt\":\"How should I use Perplexity? Based on your profile as a developer focused on deep system understanding, security, and open-source solutions, here's how to maximize Perplexity for your workflow:  Core Strategy: Perplexity as Your Technical Research Engine For Your Dev Stack (C/C++\"},{\"id\":\"ba62f02a\",\"title\":\"Your Gods Eye AI Assistant is Complete and Ready Ive successfully built your God\",\"uuid\":\"ba62f02a-d576-45b1-892d-8e824ba06182\",\"created\":\"2025-12-28T18:57:57.909813\",\"updated\":\"2025-12-28T20:19:30.031477\",\"spaces\":[\"library\"],\"tags\":[\"docs\"],\"turns\":3,\"chars\":49271,\"excerpt\":\"I've successfully built your \\\"God's Eye\\\" AI Assistant - a fully functional RAG (Retrieval-Augmented Generation) system that can process and intelligently query your 20k+ pages of Microsoft Windows documentation. As you envisioned, this is a local, open-source system that gives yo\"},{\"id\":\"4028fb65\",\"title\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including\",\"uuid\":\"4028fb65-8319-4f3b-97b7-9ed98107a7d7\",\"created\":\"2025-12-28T12:42:16.640480Z\",\"updated\":\"2025-12-28T12:42:16.640480Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"firmware\",\"hardware\",\"ai-stack\"],\"turns\":1,\"chars\":14162,\"excerpt\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including automatic selection of compatible HP models for each patch route  InsydeH2O UEFI Patch Routes for HP Cx0049ne (Pavilion Gaming 15) Your HP Pavilion Gaming 15-cx0049ne (i5-8300H, GTX 1050 Ti) uses Ins\"},{\"id\":\"3fd8e7c4\",\"title\":\"How httpsgithub.comDeploymentBunny(httpsgithub.comDeploymentBunny)  httpsgarytow\",\"uuid\":\"3fd8e7c4-f128-4e29-ad64-10f54e913698\",\"created\":\"2025-12-27T22:43:15.309085Z\",\"updated\":\"2025-12-27T22:43:15.309085Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"firmware\",\"hardware\",\"ai-stack\",\"infra\"],\"turns\":1,\"chars\":4900,\"excerpt\":\"could be our targeted project for my  device How [https://github.com/DeploymentBunny](https://github.com/DeploymentBunny) & [https://garytown.com/category/hp](https://garytown.com/category/hp)  could be our targeted project for my  device  HP Device Management Project Opportunity\"},{\"id\":\"3c754d7b\",\"title\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including\",\"uuid\":\"3c754d7b-d83a-475d-b11a-d7be6a553c15\",\"created\":\"2025-12-27T12:36:44.206442Z\",\"updated\":\"2025-12-27T12:36:44.206442Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"firmware\",\"hardware\",\"ai-stack\"],\"turns\":1,\"chars\":11885,\"excerpt\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including automatic selection of compatible HP models for each patch route  InsydeH2O UEFI Patch Routes for HP Cx0049ne (Pavilion Gaming 15-cx0049ne) The HP Pavilion Gaming 15-cx0049ne uses InsydeH2O BIOS firm\"},{\"id\":\"fa233c56\",\"title\":\"Hi there , since youre way to direct until now and very helpful, Im an warrior t\",\"uuid\":\"fa233c56-f24b-4795-a71b-c85ac35e3d36\",\"created\":\"2025-12-27T06:53:23.050389Z\",\"updated\":\"2025-12-27T07:38:29.862608Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"business\"],\"turns\":2,\"chars\":67239,\"excerpt\":\"Hi there , since you're way to direct until now and very helpful, I'm an warrior to my self in my age and through life , Is it possible to create 1 AI model that totally be more like siri how it could do and manage things on phone but mine will be on windows , you will tell me th\"},{\"id\":\"cb6ae41f\",\"title\":\"extensions needed for BrowserOs to MAKE THINGS WAY MORE POWERFUL\",\"uuid\":\"cb6ae41f-d0a8-4b31-9e52-4653096d1a74\",\"created\":\"2025-12-26T13:36:18.291361Z\",\"updated\":\"2025-12-26T23:58:59.886529Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"browser\",\"ai-stack\",\"security\",\"infra\"],\"turns\":3,\"chars\":15924,\"excerpt\":\"extensions needed for BrowserOs to MAKE THINGS WAY MORE POWERFUL BrowserOS can use almost any Chrome extension, so “making it powerful” is mostly about assembling the right stack: workflow automation, devtools, privacy, tab/memory control, and AI helpers.[1][2][3]  Clarifying you\"},{\"id\":\"1a588d09\",\"title\":\"Gandalfs Win 1Pe64PS9\",\"uuid\":\"1a588d09-5f85-4442-864d-70febf2bd849\",\"created\":\"2025-12-26T23:31:34.049260Z\",\"updated\":\"2025-12-26T23:31:34.049260Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"hardware\",\"ai-stack\"],\"turns\":1,\"chars\":4434,\"excerpt\":\"Gandalf's Win 1Pe64PS9 Gandalf’s “Win 1Pe64PS9” almost certainly refers to a specific x64 Windows PE build from the Gandalf Win10PE/Win8.1PE family, just using an abbreviated or mistyped tag for “WinPE x64”.[1][2]  What Gandalf’s WinPE Is - Gandalf’s builds are custom Windows PE \"},{\"id\":\"556babe4\",\"title\":\"Okay before i get into what the main info i want to tell you that i need you to\",\"uuid\":\"556babe4-dc3a-4231-83b9-9d0dd8b0c54f\",\"created\":\"2025-12-26T07:54:21.561239Z\",\"updated\":\"2025-12-26T21:11:05.264281Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"general\"],\"turns\":11,\"chars\":128340,\"excerpt\":\"now almost every ai model sites does offer the user to share the chat , When he shares the chat he get back a link that link is accessible by any any one , but the thing is lets say that the chat had a long conversation the one who took the link and hit enter he will see wither t\"},{\"id\":\"ca35b350\",\"title\":\"i WANT TO INSTAL KVM AND OTHER VIRTUAL SOFTWARE USING SUSE ON WINDOWS WSL2\",\"uuid\":\"ca35b350-af26-4277-a8dd-72402668b075\",\"created\":\"2025-12-26T18:59:17.800468Z\",\"updated\":\"2025-12-26T19:23:59.336343Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"ai-stack\"],\"turns\":2,\"chars\":11003,\"excerpt\":\"i WANT TO INSTAL KVM AND OTHER VIRTUAL SOFTWARE USING SUSE ON WINDOWS WSL2 You can install QEMU/KVM and libvirt inside openSUSE on WSL2, but full hardware‑accelerated virtualization is limited or unsupported in many WSL2 setups, especially without proper nested virtualization fro\"},{\"id\":\"cd2c6c6f\",\"title\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including\",\"uuid\":\"cd2c6c6f-c39d-4f96-bc96-f51bba93e4f2\",\"created\":\"2025-12-26T12:43:03.653719Z\",\"updated\":\"2025-12-26T12:43:03.653719Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"firmware\",\"hardware\",\"ai-stack\"],\"turns\":1,\"chars\":14336,\"excerpt\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including automatic selection of compatible HP models for each patch route  InsydeH2O UEFI Patch Routes for HP Cx0049ne  System Recognition & Model Selection Task: Daily InsydeH2O UEFI patch route analysis for\"},{\"id\":\"bf77f1fb\",\"title\":\"highlightai.comsharecb220667-f12f-49f3-843b-0d0064a9483fspma2ty o01.29997173.0.0\",\"uuid\":\"bf77f1fb-1310-46a9-8f12-1d718f8349d6\",\"created\":\"2025-12-26T10:20:47.860302Z\",\"updated\":\"2025-12-26T10:23:01.920814Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"grok\",\"browser\",\"ai-stack\"],\"turns\":5,\"chars\":10033,\"excerpt\":\"highlightai.com/share/cb220667-f12f-49f3-843b-0d0064a9483f?spm=a2ty_o01.29997173.0.0.4bf65171RWJnKH The shared link (highlightai.com/share/cb220667-f12f-49f3-843b-0d0064a9483f) appears to be a private/share page from Highlight AI, a desktop AI assistant for Mac/Windows that captu\"},{\"id\":\"4bbb5e8c\",\"title\":\"248814902025-12-22T072657i001 Burn x86 v5.0.041e11442b2ca93e444b60213b5ae99dcbab\",\"uuid\":\"4bbb5e8c-c562-4881-907a-ec345583789e\",\"created\":\"2025-12-22T15:28:15.106312Z\",\"updated\":\"2025-12-26T04:39:19.028005Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"general\"],\"turns\":4,\"chars\":53638,\"excerpt\":\"[2488:1490][2025-12-22T07:26:57]i000: Initializing numeric variable 'DCASelectedForInstall' to value '0' [2488:1490][2025-12-22T07:26:57]i000: Initializing numeric variable 'DCAAskedUserForConsent' to value '0' [2488:1490][2025-12-22T07:26:57]i000: Initializing numeric variable '\"},{\"id\":\"931c560f\",\"title\":\"HighlightAI Conversation Analysis - Complete Vision  Pattern Study Purpose Compr\",\"uuid\":\"931c560f-029a-43e7-9cb7-8da598a65a70\",\"created\":\"2025-12-06T06:46:11.349892Z\",\"updated\":\"2025-12-26T04:27:11.798431Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"hardware\",\"browser\",\"docs\",\"infra\"],\"turns\":5,\"chars\":98853,\"excerpt\":\"Purpose: Comprehensive analysis of 75 HighlightAI conversations to extract user vision, interaction patterns, and strategic insights. Analysis Date: November 10, 2025 Total Conversations: 75 unique chat sessions 🎯 Executive Summary Extraction Infrastructure: Complete web crawlin\"},{\"id\":\"eb56c8b7\",\"title\":\"Analyze httpsfmhy.net(httpsfmhy.net) create each detail and directories and desi\",\"uuid\":\"eb56c8b7-bc59-4d1f-9449-f1ea8f1c2da6\",\"created\":\"2025-12-26T04:22:18.113747Z\",\"updated\":\"2025-12-26T04:22:18.113747Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"ai-stack\",\"docs\",\"infra\"],\"turns\":1,\"chars\":9594,\"excerpt\":\"create each detail and directories and designs and scripts and web design used and document it Analyze [https://fmhy.net/](https://fmhy.net/)  create each detail and directories and designs and scripts and web design used and document it Perfect! Let me create one final verificat\"},{\"id\":\"5332132b\",\"title\":\"Your job is to replace each used for its own thing and do a better kind of work\",\"uuid\":\"5332132b-7f38-4d3f-a24c-3ea8407e5ab1\",\"created\":\"2025-12-26T02:32:43.920423Z\",\"updated\":\"2025-12-26T02:32:43.920423Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"network\",\"docs\"],\"turns\":1,\"chars\":70764,\"excerpt\":\"Prompt Enhancer used : You are a SUSE Linux Enterprise 15 SP6 Virtualization Expert. Generate detailed prompts for: - QEMU/KVM configuration scenarios - Virtual machine optimization - Resource allocation strategies - Network virtualization setups - Storage management Format each \"},{\"id\":\"dda76730\",\"title\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including\",\"uuid\":\"dda76730-6f80-4c6e-8147-67d738d93c1a\",\"created\":\"2025-12-25T12:38:27.005353Z\",\"updated\":\"2025-12-25T12:38:27.005353Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"firmware\",\"hardware\",\"ai-stack\",\"security\"],\"turns\":1,\"chars\":13015,\"excerpt\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including automatic selection of compatible HP models for each patch route Based on my analysis of current InsydeH2O UEFI vulnerabilities, patch mechanisms, and HP laptop compatibility, here's the technical br\"},{\"id\":\"cb439097\",\"title\":\"Analyze httpsfmhy.net(httpsfmhy.net) create each detail and directories and desi\",\"uuid\":\"cb439097-d1c2-4d1e-aa85-21aa7a3ced43\",\"created\":\"2025-12-25T04:41:02.040511Z\",\"updated\":\"2025-12-25T04:41:02.040511Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"ai-stack\",\"docs\",\"infra\"],\"turns\":1,\"chars\":8271,\"excerpt\":\"create each detail and directories and designs and scripts and web design used and document it Analyze [https://fmhy.net/](https://fmhy.net/)  create each detail and directories and designs and scripts and web design used and document it Perfect! Let me create one final summary d\"},{\"id\":\"84d43fee\",\"title\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including\",\"uuid\":\"84d43fee-0aeb-41fe-beee-aa2e654684d9\",\"created\":\"2025-12-24T12:42:06.110197Z\",\"updated\":\"2025-12-24T12:42:06.110197Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"firmware\",\"hardware\",\"ai-stack\"],\"turns\":1,\"chars\":13978,\"excerpt\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including automatic selection of compatible HP models for each patch route  InsydeH2O UEFI Patch Routes for HP Cx0049ne (Pavilion Gaming 15) Your HP Pavilion Gaming 15-cx0049ne with i5-8300H and GTX 1050 Ti us\"},{\"id\":\"10b3e0a6\",\"title\":\"Analyze httpsfmhy.net(httpsfmhy.net) create each detail and directories and desi\",\"uuid\":\"10b3e0a6-1416-49a2-b95b-a2ae2115f344\",\"created\":\"2025-12-24T04:31:33.396067Z\",\"updated\":\"2025-12-24T04:31:33.396067Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"network\",\"browser\",\"ai-stack\",\"docs\",\"infra\"],\"turns\":1,\"chars\":7823,\"excerpt\":\"create each detail and directories and designs and scripts and web design used and document it Analyze [https://fmhy.net/](https://fmhy.net/)  create each detail and directories and designs and scripts and web design used and document it Perfect! Let me create a final summary sho\"},{\"id\":\"9eb9d9c4\",\"title\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including\",\"uuid\":\"9eb9d9c4-bd23-421b-9ac0-9c175469f0a5\",\"created\":\"2025-12-23T12:43:52.940426Z\",\"updated\":\"2025-12-23T12:43:52.940426Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"firmware\",\"hardware\",\"ai-stack\",\"infra\"],\"turns\":1,\"chars\":10889,\"excerpt\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including automatic selection of compatible HP models for each patch route Based on my research, I need to provide you with important clarification about your query regarding \\\"daily analysis of InsydeH2O UEFI \"},{\"id\":\"27b02bce\",\"title\":\"per\",\"uuid\":\"27b02bce-3214-4bb7-acde-3f9e8951bb74\",\"created\":\"2025-12-23T12:25:07.995384Z\",\"updated\":\"2025-12-23T12:25:07.995384Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"ai-stack\",\"docs\"],\"turns\":1,\"chars\":1554,\"excerpt\":\"per The sequence “per” is ambiguous by itself, so the meaning depends on context. In English grammar, per is a preposition meaning “for each,” “for every,” or “according to,” as in “80 km per hour” or “per your request.”  It is also used inside many fixed expressions such as “as \"},{\"id\":\"29986024\",\"title\":\"lets create a project in github and do publish it\",\"uuid\":\"29986024-0e18-401c-ba00-121a83debda2\",\"created\":\"2025-12-23T11:50:58.460866Z\",\"updated\":\"2025-12-23T12:22:59.371180Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"hardware\",\"browser\",\"ai-stack\"],\"turns\":4,\"chars\":58312,\"excerpt\":\"lets create a project in github and do publish it Here’s a minimal, concrete workflow you can follow to create a new GitHub project and publish it from your machine.  1. One-time setup - Create or sign in to a GitHub account. - Install Git on your HP laptop (if not already): down\"},{\"id\":\"a11f3712\",\"title\":\"GitHub\",\"uuid\":\"a11f3712-3c2c-4a0d-8041-eae3ff86634d\",\"created\":\"2025-12-23T11:58:56.942928Z\",\"updated\":\"2025-12-23T11:58:56.942928Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"ai-stack\",\"docs\",\"infra\"],\"turns\":1,\"chars\":2538,\"excerpt\":\"GitHub GitHub is a cloud-based platform for hosting Git repositories, collaborating on code, and managing software projects using the Git version control system.[2][4]  What GitHub Is GitHub is a proprietary developer platform built on top of Git that lets individuals and teams s\"},{\"id\":\"3ade7d20\",\"title\":\"Analyze httpsfmhy.net(httpsfmhy.net) create each detail and directories and desi\",\"uuid\":\"3ade7d20-9a59-4d2b-a342-8db8d26f4a97\",\"created\":\"2025-12-23T04:29:20.958485Z\",\"updated\":\"2025-12-23T04:29:20.958485Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"browser\",\"ai-stack\",\"infra\"],\"turns\":1,\"chars\":2762,\"excerpt\":\"create each detail and directories and designs and scripts and web design used and document it Analyze [https://fmhy.net/](https://fmhy.net/)  create each detail and directories and designs and scripts and web design used and document it Perfect! I've created a comprehensive tech\"},{\"id\":\"425f042b\",\"title\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including\",\"uuid\":\"425f042b-ff69-4acc-91a0-b814431ca189\",\"created\":\"2025-12-22T12:36:58.896030Z\",\"updated\":\"2025-12-22T12:36:58.896030Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"firmware\",\"hardware\",\"ai-stack\",\"infra\"],\"turns\":1,\"chars\":11677,\"excerpt\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including automatic selection of compatible HP models for each patch route  HP Pavilion Gaming 15-cx0049ne Overview The HP Cx0049ne is officially designated as the HP Pavilion Gaming 15-cx0049ne, a gaming lapt\"},{\"id\":\"dca59474\",\"title\":\"Overview Getting Started(httpstheia-ide.orgdocs) Project Goals(httpstheia-ide.or\",\"uuid\":\"dca59474-cf69-4b63-b5ca-a202254650af\",\"created\":\"2025-12-22T07:05:37.758309Z\",\"updated\":\"2025-12-22T07:05:37.758309Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"browser\",\"docs\"],\"turns\":1,\"chars\":21443,\"excerpt\":\"[Getting Started](https://theia-ide.org/docs/) [Project Goals](https://theia-ide.org/docs/project_goals/) [Theia FAQ](https://theia-ide.org/docs/faq/) Using the Theia IDE [Getting Started](https://theia-ide.org/docs/user_getting_started/) [Installing VS Code Extensions](https://t\"},{\"id\":\"4a7700ef\",\"title\":\"Analyze httpsfmhy.net(httpsfmhy.net) create each detail and directories and desi\",\"uuid\":\"4a7700ef-b2b4-47f3-b019-9ca99f8868bf\",\"created\":\"2025-12-22T04:31:08.010026Z\",\"updated\":\"2025-12-22T04:31:08.010026Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"ai-stack\",\"docs\"],\"turns\":1,\"chars\":2204,\"excerpt\":\"create each detail and directories and designs and scripts and web design used and document it Analyze [https://fmhy.net/](https://fmhy.net/)  create each detail and directories and designs and scripts and web design used and document it  Analysis Complete ✅ I've created a compre\"},{\"id\":\"60f4fe99\",\"title\":\"Among those accelerators or partners , i would like from you a full data lookup\",\"uuid\":\"60f4fe99-8a0c-47dd-aefb-3f9707932d56\",\"created\":\"2025-12-21T14:02:40.016304Z\",\"updated\":\"2025-12-21T14:31:00.175168Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"network\"],\"turns\":3,\"chars\":71789,\"excerpt\":\"0-9 0X 100X.vc 10xc 1517 Fund 1616 Ignite 1776 1871 1909 1Kubator 2048 Ventures 20pe 3D Innotech 3one4 Capital 42 Entreprenuers 500 Startups 91Springboard 9 Unicorns A-F a16z ABC Accelerator Accel Partners Acceleprise Accelerate.me Access Venture Partners Accomplice ACE Venture C\"},{\"id\":\"125fb54e\",\"title\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including\",\"uuid\":\"125fb54e-1dfc-4d1e-bb21-fb0fbd1aad22\",\"created\":\"2025-12-21T12:37:42.061464Z\",\"updated\":\"2025-12-21T12:37:42.061464Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"firmware\",\"hardware\",\"ai-stack\"],\"turns\":1,\"chars\":9415,\"excerpt\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including automatic selection of compatible HP models for each patch route Based on my research, I need to clarify some important information about your query regarding \\\"HP Cx0049ne\\\" laptops and InsydeH2O UEFI\"},{\"id\":\"a6e676d6\",\"title\":\"Analyze httpsfmhy.net(httpsfmhy.net) create each detail and directories and desi\",\"uuid\":\"a6e676d6-88af-43a1-a293-d00c41edd6f9\",\"created\":\"2025-12-21T04:23:52.170487Z\",\"updated\":\"2025-12-21T04:23:52.170487Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"ai-stack\",\"docs\"],\"turns\":1,\"chars\":2916,\"excerpt\":\"create each detail and directories and designs and scripts and web design used and document it Analyze [https://fmhy.net/](https://fmhy.net/)  create each detail and directories and designs and scripts and web design used and document it Perfect! I've created a comprehensive tech\"},{\"id\":\"666ea4dd\",\"title\":\"Highlightai software using it on windows give me access to these premium ai mode\",\"uuid\":\"666ea4dd-644b-4601-a912-f08ac8112d46\",\"created\":\"2025-12-20T10:44:07.774180Z\",\"updated\":\"2025-12-20T18:29:07.878699Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"grok\",\"ai-stack\"],\"turns\":8,\"chars\":175413,\"excerpt\":\"GPT4o, O3-Mini, GPT-4.1, O3, GPT-5 Chat, GPT-5, GPT-5 MAX, GPT-5.1, GPT-5.2, Claude 4 Sonnet, Claude 4.5 Sonnet, Claude 4.5 Haiku, Claude 3.7 Sonnet, DeepSeek R1, DeepSeek V3, Gemini 2.5 Pro, Gemini 3.0 Pro, Gemini 3.0 Flash, Grok 3, Grok 4, Grok 4.1 Fast Non-Reasoning please cou\"},{\"id\":\"a864af41\",\"title\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including\",\"uuid\":\"a864af41-5173-467f-9f87-c6912c2805bd\",\"created\":\"2025-12-20T12:35:41.673642Z\",\"updated\":\"2025-12-20T15:37:41.430564Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"firmware\",\"hardware\",\"ai-stack\"],\"turns\":3,\"chars\":27660,\"excerpt\":\"Daily analysis of InsydeH2O UEFI patch routes for HP Cx0049ne laptops, including automatic selection of compatible HP models for each patch route Based on my search results, I found that HP Cx0049ne refers to the HP Pavilion Gaming 15-cx0049ne laptop model. However, I could not f\"},{\"id\":\"c33b60b8\",\"title\":\"whats the latest beta version is downloadable Highlight AI Beta software  i need\",\"uuid\":\"c33b60b8-aad4-4220-ab26-7e24749152db\",\"created\":\"2025-12-20T01:07:11.312767Z\",\"updated\":\"2025-12-20T09:16:17.376958Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"browser\",\"ai-stack\"],\"turns\":17,\"chars\":214673,\"excerpt\":\"whats the latest beta version is downloadable Highlight AI Beta software ? i need from you to search for the full updates info and what each had changes or upgrades from the first patch until our living day beta or non beta  Highlight AI Version History & Current Beta Status Base\"},{\"id\":\"0c1832d8\",\"title\":\"Analyze httpsfmhy.net(httpsfmhy.net) create each detail and directories and desi\",\"uuid\":\"0c1832d8-96bd-4b3d-aebc-fcbcda8c4cd3\",\"created\":\"2025-12-20T04:39:42.122563Z\",\"updated\":\"2025-12-20T04:39:42.122563Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"ai-stack\"],\"turns\":1,\"chars\":2263,\"excerpt\":\"create each detail and directories and designs and scripts and web design used and document it Analyze [https://fmhy.net/](https://fmhy.net/)  create each detail and directories and designs and scripts and web design used and document it Perfect! I've created a comprehensive tech\"},{\"id\":\"214c8d03\",\"title\":\"Analyze httpsfmhy.net(httpsfmhy.net) create each detail and directories and desi\",\"uuid\":\"214c8d03-5040-4f53-a2fc-cb404d084fa2\",\"created\":\"2025-12-19T04:32:58.714515Z\",\"updated\":\"2025-12-19T04:32:58.714515Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"ai-stack\",\"docs\",\"infra\"],\"turns\":1,\"chars\":3138,\"excerpt\":\"create each detail and directories and designs and scripts and web design used and document it Analyze [https://fmhy.net/](https://fmhy.net/)  create each detail and directories and designs and scripts and web design used and document it Perfect! I've completed a comprehensive an\"},{\"id\":\"4b874ac2\",\"title\":\"Analyze httpsfmhy.net(httpsfmhy.net) create each detail and directories and desi\",\"uuid\":\"4b874ac2-2d9b-4d4a-9da0-29b9172c372a\",\"created\":\"2025-12-18T04:39:09.714906Z\",\"updated\":\"2025-12-18T04:39:09.714906Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"ai-stack\",\"docs\"],\"turns\":1,\"chars\":2233,\"excerpt\":\"create each detail and directories and designs and scripts and web design used and document it Analyze [https://fmhy.net/](https://fmhy.net/)  create each detail and directories and designs and scripts and web design used and document it Perfect! I've created a comprehensive tech\"},{\"id\":\"478e100a\",\"title\":\"Analyze httpsfmhy.net(httpsfmhy.net) create each detail and directories and desi\",\"uuid\":\"478e100a-c8e1-4481-b765-406164bcab83\",\"created\":\"2025-12-17T04:37:15.106189Z\",\"updated\":\"2025-12-17T04:37:15.106189Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"ai-stack\",\"docs\",\"infra\"],\"turns\":1,\"chars\":6620,\"excerpt\":\"create each detail and directories and designs and scripts and web design used and document it Analyze [https://fmhy.net/](https://fmhy.net/)  create each detail and directories and designs and scripts and web design used and document it Perfect! I've created a comprehensive tech\"},{\"id\":\"d2ed50de\",\"title\":\"Analyze httpsfmhy.net(httpsfmhy.net) create each detail and directories and desi\",\"uuid\":\"d2ed50de-58bf-4508-ab65-7ebac86642db\",\"created\":\"2025-12-16T04:24:23.185461Z\",\"updated\":\"2025-12-16T04:24:23.185461Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"network\",\"browser\",\"ai-stack\",\"docs\",\"infra\"],\"turns\":1,\"chars\":4499,\"excerpt\":\"create each detail and directories and designs and scripts and web design used and document it Analyze [https://fmhy.net/](https://fmhy.net/)  create each detail and directories and designs and scripts and web design used and document it Perfect! I've created a comprehensive tech\"},{\"id\":\"4082a635\",\"title\":\"Analyze httpsfmhy.net(httpsfmhy.net) create each detail and directories and desi\",\"uuid\":\"4082a635-f279-42c1-a7c9-e7797a92af24\",\"created\":\"2025-12-15T04:26:52.013343Z\",\"updated\":\"2025-12-15T04:26:52.013343Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"network\",\"ai-stack\",\"infra\"],\"turns\":1,\"chars\":3238,\"excerpt\":\"create each detail and directories and designs and scripts and web design used and document it Analyze [https://fmhy.net/](https://fmhy.net/)  create each detail and directories and designs and scripts and web design used and document it Created a comprehensive technical analysis\"},{\"id\":\"9788c47e\",\"title\":\"Analyze httpsfmhy.net(httpsfmhy.net) create each detail and directories and desi\",\"uuid\":\"9788c47e-7cf0-4eaa-b1fb-822d5fc9ac76\",\"created\":\"2025-12-14T04:38:02.740401Z\",\"updated\":\"2025-12-14T04:38:02.740401Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"ai-stack\",\"docs\",\"infra\",\"learning\"],\"turns\":1,\"chars\":4571,\"excerpt\":\"create each detail and directories and designs and scripts and web design used and document it Analyze [https://fmhy.net/](https://fmhy.net/)  create each detail and directories and designs and scripts and web design used and document it Created comprehensive technical documentat\"},{\"id\":\"872c695d\",\"title\":\"Analyze httpsfmhy.net(httpsfmhy.net) create each detail and directories and desi\",\"uuid\":\"872c695d-1481-4608-a684-e259752ed7c5\",\"created\":\"2025-12-13T04:21:04.705511Z\",\"updated\":\"2025-12-13T04:21:04.705511Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"ai-stack\",\"docs\",\"infra\"],\"turns\":1,\"chars\":3648,\"excerpt\":\"create each detail and directories and designs and scripts and web design used and document it Analyze [https://fmhy.net/](https://fmhy.net/)  create each detail and directories and designs and scripts and web design used and document it I've created a comprehensive technical ana\"},{\"id\":\"1195ccfa\",\"title\":\"Im designing a database for an API that sells access to curated resource links.\",\"uuid\":\"1195ccfa-8a4a-4e47-800e-351568685102\",\"created\":\"2025-12-12T05:58:52.328374Z\",\"updated\":\"2025-12-12T14:31:00.671140Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"general\"],\"turns\":2,\"chars\":53833,\"excerpt\":\"For each table, I need to understand: 1. What BUSINESS value does each column provide? 2. Why do I need this specific data type? (TEXT vs INT vs DECIMAL) 3. How will I use this data to make money? 4. What queries will customers run? (This determines what I index) TABLE 1: LINKS (\"},{\"id\":\"cf0da022\",\"title\":\"SEND MAIL TO abusini.tgmail saying that all done and the new is 2gVweVN8JxXJGm2\",\"uuid\":\"cf0da022-d053-47c2-8fed-8c1c06b0cfb9\",\"created\":\"2025-12-12T07:25:37.776539Z\",\"updated\":\"2025-12-12T07:28:03.068712Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"ai-stack\"],\"turns\":3,\"chars\":5950,\"excerpt\":\"SEND MAIL TO abusini.t@gmail saying that all done and the new is 2gVweVN8JxXJGm2 The email could not be sent because the account is not authenticated through this interface .   Please either: - Send an email manually to abusini.t@gmail.com with content like: “All done; the new va\"},{\"id\":\"26094520\",\"title\":\"httpshighlightai.comshare10b06e7b-dec0-42db-8831-2ab49e18689c(httpshighlightai.c\",\"uuid\":\"26094520-8dfd-4463-9294-9a887a36ddc1\",\"created\":\"2025-12-12T05:44:41.541390Z\",\"updated\":\"2025-12-12T05:45:46.313500Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"ai-stack\",\"docs\",\"infra\"],\"turns\":2,\"chars\":5544,\"excerpt\":\"[https://highlightai.com/share/10b06e7b-dec0-42db-8831-2ab49e18689c](https://highlightai.com/share/10b06e7b-dec0-42db-8831-2ab49e18689c) The URL appears to be inaccessible or the tool was unable to retrieve the content. This could be due to several reasons: 1. URL might require a\"},{\"id\":\"0309f362\",\"title\":\"what can you do offer me when you get to have connectted to my mail  tell me thi\",\"uuid\":\"0309f362-8b84-419e-a1ef-28fe41f4cc0d\",\"created\":\"2025-12-10T22:19:38.142835Z\",\"updated\":\"2025-12-10T22:19:38.142835Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"ai-stack\",\"security\"],\"turns\":1,\"chars\":5484,\"excerpt\":\"what can you do offer me when you get to have connectted to my mail / tell me thing tagt you will be really be able to make it instead of me were it does really changes my chances Connecting an AI assistant to your email can move a lot of “mental load” and routine work off your p\"},{\"id\":\"b9bc7da1\",\"title\":\"i want from you to confirm if Im using or running the pro perplexity and do test\",\"uuid\":\"b9bc7da1-f800-43cb-8340-b805fff254ba\",\"created\":\"2025-12-10T12:19:50.054036\",\"updated\":\"2025-12-10T12:19:50.054036\",\"spaces\":[\"library\"],\"tags\":[\"network\",\"ai-stack\"],\"turns\":1,\"chars\":1571,\"excerpt\":\"i want from you to confirm if I'm using or running the pro perplexity and do test it then tell me the results  Sources - [How is perplexity able to give so many things with pro?](https://www.reddit.com/r/perplexity_ai/comments/1pdb5ca/how_is_perplexity_able_to_give_so_many_things\"},{\"id\":\"d4b213aa\",\"title\":\"wordpress domain\",\"uuid\":\"d4b213aa-b472-4e25-9147-22b17b8e8e63\",\"created\":\"2025-12-10T12:11:52.318468\",\"updated\":\"2025-12-10T12:11:52.318468\",\"spaces\":[\"library\"],\"tags\":[\"learning\"],\"turns\":1,\"chars\":845,\"excerpt\":\"wordpress domain  Sources - [Find Your Perfect Domain Name - WordPress.com](https://wordpress.com/domains/) - [Domains - WordPress.org](https://wordpress.org/about/domains/) - [WordPress.com: Everything You Need to Build Your Website](https://wordpress.com) - [Domain Management -\"},{\"id\":\"4e707725\",\"title\":\"twilio\",\"uuid\":\"4e707725-000c-48b1-b7b8-f738071c7342\",\"created\":\"2025-12-10T12:06:28.095492\",\"updated\":\"2025-12-10T12:06:28.095492\",\"spaces\":[\"library\"],\"tags\":[\"docs\"],\"turns\":1,\"chars\":958,\"excerpt\":\"twilio  Sources - [Twilio: Communications APIs with AI and data for SMS, Voice ...](https://www.twilio.com/en-us) - [Twilio](https://en.wikipedia.org/wiki/Twilio) - [Programmable Messaging](https://www.twilio.com/docs/messaging) - [Twilio Inc. (TWLO) Stock Price, News, Quote & Hi\"},{\"id\":\"a89c8571\",\"title\":\"httpswww.hornetsecurity.comenservices365-total-protectionALPDOJO\",\"uuid\":\"a89c8571-22d3-4d19-bd1e-d41dee468e57\",\"created\":\"2025-12-08T05:06:03.880803\",\"updated\":\"2025-12-08T05:24:39.439077\",\"spaces\":[\"library\"],\"tags\":[\"general\"],\"turns\":6,\"chars\":12635,\"excerpt\":\"https://www.hornetsecurity.com/en/services/365-total-protection/?ALP=DOJO  Sources - [?ALP=DOJO](https://www.hornetsecurity.com/en/services/365-total-protection/?ALP=DOJO) - [365 Total Protection - Hornetsecurity – Next-Gen Microsoft 365 ...](https://www.hornetsecurity.com/en/ser\"},{\"id\":\"6b16e18c\",\"title\":\"Shall we start\",\"uuid\":\"6b16e18c-a53d-4f19-9384-ccd1ac864d0d\",\"created\":\"2025-12-06T15:33:47.898146\",\"updated\":\"2025-12-06T15:33:47.898146\",\"spaces\":[\"library\"],\"tags\":[\"ai-stack\",\"security\",\"infra\",\"learning\"],\"turns\":1,\"chars\":14381,\"excerpt\":\"Shall we start ? Welcome! What concept do you want to learn more about? Some options based on what you’re exploring now: - How AI systems detect video highlights from long videos   - How to build a free, open‑source stack (Whisper.cpp, Vosk, spaCy, OpenCV, FFmpeg, etc.)   - How s\"},{\"id\":\"2419b9c9\",\"title\":\"Host httpyazed.tv80 Username 273665 Password 169081238850\",\"uuid\":\"2419b9c9-82f2-47ff-a851-b154f0b79db5\",\"created\":\"2025-12-06T10:28:18.363716\",\"updated\":\"2025-12-06T10:43:18.902029\",\"spaces\":[\"library\"],\"tags\":[\"security\",\"infra\"],\"turns\":3,\"chars\":4806,\"excerpt\":\"Host: http://yazed.tv:80\\r Username: 273665\\r Password: 169081238850 Host: http://yazed.tv:80\\r Username: 273665\\r Password: 169081238850  Sources - [Amou YAZID TV عمو يزيد تيفي - Apps on Google Play](https://play.google.com/store/apps/details?id=com.dz.amou_yazid_tv&hl=en) - [Amou Y\"},{\"id\":\"4a379eeb\",\"title\":\"Does perp store files cloudly\",\"uuid\":\"4a379eeb-04b8-43fd-96e4-aa4d3cb57866\",\"created\":\"2025-12-06T05:54:02.088065\",\"updated\":\"2025-12-06T05:54:02.088065\",\"spaces\":[\"library\"],\"tags\":[\"browser\",\"ai-stack\"],\"turns\":1,\"chars\":1651,\"excerpt\":\"Does perp store files cloudly ?  Sources - [Enterprise file limits | Perplexity Help Center](https://www.perplexity.ai/help-center/en/articles/12009761-enterprise-file-limits) - [Security and Privacy with File Uploads](https://www.perplexity.ai/help-center/en/articles/10354810-se\"},{\"id\":\"653391e8\",\"title\":\"i want from you to get for me the full lyrics for this track on youtube , httpsw\",\"uuid\":\"653391e8-2c27-4916-973b-3e4876c0282a\",\"created\":\"2025-12-05T09:41:03.103872\",\"updated\":\"2025-12-05T09:42:49.367780\",\"spaces\":[\"library\"],\"tags\":[\"general\"],\"turns\":2,\"chars\":2691,\"excerpt\":\"i want from you to get for me the full lyrics for this track on youtube , [https://www.youtube.com/watch?v=X78qxdHDnYI](https://www.youtube.com/watch?v=X78qxdHDnYI)  Sources - [Errors on a Canvas - song and lyrics by Hozho | Spotify](https://open.spotify.com/track/2Dnz0styXaskjv7\"},{\"id\":\"2ec2bfae\",\"title\":\"other than parted live linux os list all the worldwide uploaded and using for th\",\"uuid\":\"2ec2bfae-f325-40e4-99b6-a331eeb2f5a2\",\"created\":\"2025-12-05T05:01:05.748474\",\"updated\":\"2025-12-05T05:43:27.647732\",\"spaces\":[\"library\"],\"tags\":[\"docs\"],\"turns\":11,\"chars\":12831,\"excerpt\":\"other than parted live linux os list all the worldwide uploaded and using for those  live linux like parted  Sources - [List of Linux distributions](https://en.wikipedia.org/wiki/List_of_Linux_distributions) - [A Long List of Linux Distributions](https://www.linux.org/threads/a-l\"},{\"id\":\"fb59afab\",\"title\":\"I want to create my own password manager , password browser sync 247 , plus have\",\"uuid\":\"fb59afab-2fe1-4693-8158-16bddcd129a2\",\"created\":\"2025-12-04T21:02:08.142894\",\"updated\":\"2025-12-04T21:28:17.598868\",\"spaces\":[\"BillDoors-NotGates WebDev Ultimate Guide\"],\"tags\":[\"browser\",\"security\"],\"turns\":5,\"chars\":16019,\"excerpt\":\"I want to create my own password manager , password browser sync  24/7 , plus have an  authenticator 6 codes along the password manager plus a backup for those authenticators ,  Sources - [BillDoors-Ultimate-Prompt.md](https://www.dropbox.com/preview//BillDoors-NotGates-WebDev-Pr\"},{\"id\":\"dc14cc7f\",\"title\":\"Hi\",\"uuid\":\"dc14cc7f-734c-494f-936b-c3cadb6e8b06\",\"created\":\"2025-12-04T20:42:52.770357\",\"updated\":\"2025-12-04T20:48:38.158174\",\"spaces\":[\"library\"],\"tags\":[\"ai-stack\"],\"turns\":5,\"chars\":4620,\"excerpt\":\"Hi I want from you to tell me if i'm running the pro subscription or no  Sources - [Account & Settings | Perplexity Help Center](https://www.perplexity.ai/help-center/en/articles/10352990-account-settings) - [Why can't I see my Pro status? | Perplexity Help Center](https://www.pe\"},{\"id\":\"4543ec28\",\"title\":\"i want from you to confirm if Im using or running the pro perplexity and do test\",\"uuid\":\"4543ec28-16ea-4a38-b710-4560e9eaf740\",\"created\":\"2025-12-04T20:44:56.594387Z\",\"updated\":\"2025-12-04T20:44:56.594387Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"network\",\"browser\",\"ai-stack\"],\"turns\":1,\"chars\":2806,\"excerpt\":\"i want from you to confirm if I'm using or running the pro perplexity and do test it then tell me the results You are currently using Perplexity Pro.[2][10]  How this can be confirmed - Your account tier is flagged as Pro on the backend, which is what enables features like unlimi\"},{\"id\":\"cdc905f5\",\"title\":\"hi\",\"uuid\":\"cdc905f5-5efd-4ed1-ae2b-093e11d73c92\",\"created\":\"2025-12-04T11:45:16.625272Z\",\"updated\":\"2025-12-04T11:47:21.105274Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"firmware\",\"hardware\",\"ai-stack\"],\"turns\":3,\"chars\":9836,\"excerpt\":\"hi Hey there! How’s everything going today? Are you working on a system project or something else at the moment? Well yes is it possible to re write any bios firmware using dbg64 software ? It is not realistically possible to rewrite arbitrary BIOS/UEFI firmware safely just with \"},{\"id\":\"67861dfc\",\"title\":\"We Got Our Firmware Bios From the Manufacturer And We Got The Rom 2 8000 KB appr\",\"uuid\":\"67861dfc-4772-40be-8d67-2f41e6f11fa2\",\"created\":\"2025-11-27T11:17:46.769919\",\"updated\":\"2025-11-27T11:17:46.769919\",\"spaces\":[\"library\"],\"tags\":[\"firmware\"],\"turns\":1,\"chars\":4819,\"excerpt\":\"We installed UefiTool from github and irf and we used the tool at first to search for the word Advanced Settings , well we found those exactly words in the rom were we went and extracted the body img of one and then sent them to irf and then we got the results , those results aft\"},{\"id\":\"4c7be0bc\",\"title\":\"scrcpy full video and audio capabilities to use on opensuse leap steap by steap\",\"uuid\":\"4c7be0bc-2147-45d1-8475-6ccd939d4354\",\"created\":\"2025-11-19T20:05:16.750545\",\"updated\":\"2025-11-19T20:08:15.966233\",\"spaces\":[\"library\"],\"tags\":[\"hardware\",\"network\",\"security\",\"learning\"],\"turns\":2,\"chars\":19397,\"excerpt\":\"scrcpy full video and audio capabilities to use on opensuse leap steap by steap my phone is nothingphone 1 android 15 connected by wierd by bluetooth by wifi the best showing video and audio  Sources - [Genymobile/scrcpy: Display and control your Android device](https://github.co\"},{\"id\":\"8bc3b512\",\"title\":\"moviebox,ph\",\"uuid\":\"8bc3b512-ccd5-4a6d-b634-ffdcdec02238\",\"created\":\"2025-11-19T19:56:38.627635\",\"updated\":\"2025-11-19T19:56:38.627635\",\"spaces\":[\"library\"],\"tags\":[\"general\"],\"turns\":1,\"chars\":1166,\"excerpt\":\"moviebox,ph  Sources - [MovieBox - Watch Movies Free Online, Watch TV Series Online](https://moviebox.ph) - [MovieBox APP v3.2 Free Download For Android [Official] 2025](https://www.moviesbox.com.co) - [Movie Box - Apps on Google Play](https://play.google.com/store/apps/details?i\"},{\"id\":\"abe6f4e5\",\"title\":\"rivestream\",\"uuid\":\"abe6f4e5-c882-4fd0-ad04-225fae03de4a\",\"created\":\"2025-11-19T19:54:37.809322\",\"updated\":\"2025-11-19T19:54:37.809322\",\"spaces\":[\"library\"],\"tags\":[\"hardware\",\"ai-stack\"],\"turns\":1,\"chars\":2736,\"excerpt\":\"rivestream Rivestream is an online streaming platform known for offering a vast collection of movies, TV shows, anime, K-Drama, live sports, IPTV, radio, and even manga content to users globally. The service emphasizes ease of use with a streamlined interface, smart subtitle opti\"},{\"id\":\"20bbbcff\",\"title\":\"rivestream\",\"uuid\":\"20bbbcff-327c-4550-a468-f6cfbdefdd3d\",\"created\":\"2025-11-19T19:19:05.664274\",\"updated\":\"2025-11-19T19:19:05.664274\",\"spaces\":[\"library\"],\"tags\":[\"business\",\"browser\",\"ai-stack\",\"infra\"],\"turns\":1,\"chars\":3893,\"excerpt\":\"rivestream Rivestream is an online media streaming platform focused on providing free access to movies, TV shows, anime, K-Drama, manga, live sports, IPTV, and other content for a diverse user base. Users benefit from a substantial catalog, including both recent releases and clas\"},{\"id\":\"5b84ea4b\",\"title\":\"Hi\",\"uuid\":\"5b84ea4b-1e74-485e-8aab-203ff707b0eb\",\"created\":\"2025-11-19T14:30:52.267513\",\"updated\":\"2025-11-19T14:32:24.837619\",\"spaces\":[\"library\"],\"tags\":[\"general\"],\"turns\":3,\"chars\":226,\"excerpt\":\"Hi can you see my screen ? Now\"},{\"id\":\"bc5fbc74\",\"title\":\"what does this mean kvm intel 430080 0 kvm 1339392 1 kvm intel irqbypass 12288 1\",\"uuid\":\"bc5fbc74-56b0-4a17-953f-94a3983a0884\",\"created\":\"2025-11-15T23:43:02.959672\",\"updated\":\"2025-11-16T12:21:41.104641\",\"spaces\":[\"library\"],\"tags\":[\"hardware\",\"ai-stack\"],\"turns\":21,\"chars\":90671,\"excerpt\":\"kvm \xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA01339392 \xA01 kvm_intel irqbypass \xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA012288 \xA01 kvm localhost:/home/err/Desktop/ErrKonsole  what does this mean kvm_intel \xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0430080 \xA00 kvm \xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA01339392 \xA01 kvm_intel irqbypass \xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA012288 \xA01 kvm localhost:/home/err/Desktop/ErrK\"},{\"id\":\"db343fa9\",\"title\":\"Can you please define each of those models , define i mean were they mostly i co\",\"uuid\":\"db343fa9-5f2a-436e-b9c5-3f6d11a6d291\",\"created\":\"2025-11-11T09:45:09.998340\",\"updated\":\"2025-11-11T09:45:09.998340\",\"spaces\":[\"library\"],\"tags\":[\"infra\"],\"turns\":1,\"chars\":2034,\"excerpt\":\"Can you please define each of those models , define i mean were they mostly i could be using them in what scenarios  Sources - [Screenshot_20251111-133543.jpg](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/images/105360288/ef8839eb-ac94-47ec-97d0-7f8a8c\"},{\"id\":\"e5d09910\",\"title\":\"nist sp 800-73piv\",\"uuid\":\"e5d09910-517c-4180-bcca-93d2f43c0d78\",\"created\":\"2025-11-11T05:46:00.642873\",\"updated\":\"2025-11-11T05:46:00.642873\",\"spaces\":[\"library\"],\"tags\":[\"docs\"],\"turns\":1,\"chars\":1555,\"excerpt\":\"nist sp 800-73piv  Sources - [SP 800-73, Interfaces for Personal Identity Verification | CSRC](https://csrc.nist.gov/pubs/sp/800/73/upd1/final) - [SP 800-73-5, Interfaces for Personal Identity Verification: Part 1](https://csrc.nist.gov/pubs/sp/800/73/pt1/5/ipd) - [[PDF] nist.sp.\"},{\"id\":\"32991aef\",\"title\":\"LangChain\",\"uuid\":\"32991aef-e1e2-4bc8-abf3-40589ba13915\",\"created\":\"2025-11-11T02:34:24.140324\",\"updated\":\"2025-11-11T02:34:24.140324\",\"spaces\":[\"library\"],\"tags\":[\"docs\"],\"turns\":1,\"chars\":919,\"excerpt\":\"LangChain  Sources - [LangChain](https://www.langchain.com) - [langchain-ai/langchain: 🦜🔗 The platform for reliable agents.](https://github.com/langchain-ai/langchain) - [What Is LangChain? | IBM](https://www.ibm.com/think/topics/langchain) - [LangChain](https://en.wikipedia.or\"},{\"id\":\"e1075697\",\"title\":\"Modified Best AI Web Scraping Tools free lifetime use\",\"uuid\":\"e1075697-3c36-4185-99dc-92beef454373\",\"created\":\"2025-11-11T01:47:55.108154\",\"updated\":\"2025-11-11T01:47:55.108154\",\"spaces\":[\"library\"],\"tags\":[\"browser\"],\"turns\":1,\"chars\":1498,\"excerpt\":\"Modified Best AI Web Scraping Tools free lifetime use  Sources - [10 Best AI Web Scraping Tools of 2025 - DEV Community](https://dev.to/oxylabs-io/10-best-ai-web-scraping-tools-of-2025-3m0k) - [Best Open-source Web Scraping Libraries in 2025 - Firecrawl](https://www.firecrawl.dev\"},{\"id\":\"a573d6f4\",\"title\":\"Why its all fake and all about boosting , how shall i be earning money using upw\",\"uuid\":\"a573d6f4-51d2-4a5b-b67f-a33b07ad5a6c\",\"created\":\"2025-11-10T21:06:40.608737\",\"updated\":\"2025-11-10T21:06:40.608737\",\"spaces\":[\"library\"],\"tags\":[\"browser\"],\"turns\":1,\"chars\":10072,\"excerpt\":\"Why its all fake and all about boosting , how shall i be earning money using upwork will i have to buy connectors to do so and any other popular website that either hosts freelance jobs or offer is just wasting of time , all does come into their business as ( give me a bit so i g\"},{\"id\":\"b779a6d5\",\"title\":\"What would buffet say if i qsked him that i want to keep dinging until i will be\",\"uuid\":\"b779a6d5-3242-4847-ab0d-25e8483c1f9d\",\"created\":\"2025-11-06T20:47:40.421640\",\"updated\":\"2025-11-10T20:55:44.079962\",\"spaces\":[\"library\"],\"tags\":[\"general\"],\"turns\":3,\"chars\":14643,\"excerpt\":\"What would buffet say if i qsked him that i want to keep dinging until i will be founding a new virtualization way as I'm way still stuck rather what technologies brought up and half of the people looking into their screan or rhey keep scrolling social media , anyways i have the \"},{\"id\":\"ed1b4caa\",\"title\":\"chromesearch.html\",\"uuid\":\"ed1b4caa-9c27-4b64-b8b2-cc0bc1d4c7b9\",\"created\":\"2025-11-10T09:17:48.843559\",\"updated\":\"2025-11-10T09:17:48.843559\",\"spaces\":[\"library\"],\"tags\":[\"browser\",\"learning\"],\"turns\":1,\"chars\":1214,\"excerpt\":\"chrome/search.html  Sources - [Searching for HTML elements in Chrome DevTools](https://stackoverflow.com/questions/22498176/searching-for-html-elements-in-chrome-devtools) - [Search: Find text across all loaded resources](https://developer.chrome.com/docs/devtools/search) - [Sear\"},{\"id\":\"bf410e2d\",\"title\":\"Help me into creating a 10 perfect prompts i could get an advanced help and guid\",\"uuid\":\"bf410e2d-5396-41f8-9a7b-d3f579fcd338\",\"created\":\"2025-11-10T08:32:04.489183\",\"updated\":\"2025-11-10T08:32:04.489183\",\"spaces\":[\"library\"],\"tags\":[\"docs\"],\"turns\":1,\"chars\":17243,\"excerpt\":\"example of 1 of the 10 prompts  Follow these formatting rules for our entire conversation:\\r \\r 1. No emojis or decorative symbols (no ✓, →, •, etc.)\\r 2. Use only \\\"You:\\\" and \\\"Me:\\\" as speaker labels\\r 3. Plain markdown only (headers, lists, code blocks, bold/italic)\\r 4. No meta-comme\"},{\"id\":\"fb6f1048\",\"title\":\"Could you help me into editing the advanced settings of a browser built on chrom\",\"uuid\":\"fb6f1048-66f2-4295-b898-35704f056af1\",\"created\":\"2025-11-10T06:22:07.628680\",\"updated\":\"2025-11-10T06:22:07.628680\",\"spaces\":[\"library\"],\"tags\":[\"browser\",\"learning\"],\"turns\":1,\"chars\":3061,\"excerpt\":\"Could you help me into editing the advanced settings of a browser built on chrome base browser , i want to edit the hidden settings  Sources - [sparkyrider/chrome-secret-menus: List of ...](https://github.com/sparkyrider/chrome-secret-menus) - [Hidden Chrome Settings You Should A\"},{\"id\":\"6012c72a\",\"title\":\"can you search in github the most liked or forked development made by public dev\",\"uuid\":\"6012c72a-7669-4009-8c68-4c5db95f6f75\",\"created\":\"2025-11-10T02:16:43.085141\",\"updated\":\"2025-11-10T02:25:26.316852\",\"spaces\":[\"library\"],\"tags\":[\"hardware\"],\"turns\":2,\"chars\":526,\"excerpt\":\"can you search in github the most liked or forked development made by public developers that does goes all along with the router D-LInk 853 A3 What are the main repos i shall be foucsing on when i'm using openwrt\"},{\"id\":\"48dfd452\",\"title\":\"lets try hard and install comet browser on opensuse leap without using wine if i\",\"uuid\":\"48dfd452-a2ad-4329-b3a0-18432042d545\",\"created\":\"2025-11-10T02:21:15.060986\",\"updated\":\"2025-11-10T02:21:15.060986\",\"spaces\":[\"library\"],\"tags\":[\"browser\",\"ai-stack\",\"docs\",\"infra\"],\"turns\":1,\"chars\":3027,\"excerpt\":\"lets try hard and install comet browser on opensuse leap without using wine if it will take from us to edit the files 1by1 we will do it  Sources - [arthur-hi/comet-browser: Electron app experiment with ... - GitHub](https://github.com/arthur-hi/comet-browser) - [Comet by Perplex\"},{\"id\":\"76419a75\",\"title\":\"my ip\",\"uuid\":\"76419a75-14ae-418b-b035-073d3137380f\",\"created\":\"2025-11-09T09:14:55.431127\",\"updated\":\"2025-11-09T09:14:55.431127\",\"spaces\":[\"library\"],\"tags\":[\"network\",\"browser\"],\"turns\":1,\"chars\":819,\"excerpt\":\"my ip  Sources - [What Is My IP Address - See Your Public Address - IPv4 & IPv6](https://whatismyipaddress.com) - [My IP Address | IPAddress.my](https://ipaddress.my) - [What Is My IP Address? See Your Public IPv4 & IPv6](https://www.whatismyip.com) - [What Is My IP Address - Che\"},{\"id\":\"4d20095d\",\"title\":\"fast\",\"uuid\":\"4d20095d-4870-44ea-8d5f-90ea96bde933\",\"created\":\"2025-11-09T08:08:06.387154\",\"updated\":\"2025-11-09T08:08:06.387154\",\"spaces\":[\"library\"],\"tags\":[\"network\",\"ai-stack\"],\"turns\":1,\"chars\":2943,\"excerpt\":\"fast The word \\\"fast\\\" commonly refers to something that moves, acts, or operates quickly, or to actions accomplished rapidly compared to others. It can also mean firmly fixed or bound, being agile of mind, securely attached, or even to abstain from food, as in the verb \\\"to fast\\\". \"},{\"id\":\"64a85849\",\"title\":\"is there any possibility that we could update this device firmware to a newer ve\",\"uuid\":\"64a85849-6ae7-490a-938a-e756b528281d\",\"created\":\"2025-11-08T20:22:16.952853\",\"updated\":\"2025-11-08T20:22:16.952853\",\"spaces\":[\"library\"],\"tags\":[\"firmware\"],\"turns\":1,\"chars\":530,\"excerpt\":\"is there any possibility that we could update this device firmware to a newer version  Sources - [Screenshot_20251109-002119.jpeg](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/images/105360288/36793b91-fe9f-4b28-ad4a-ff80ddcb643a/Screenshot_20251109-00\"},{\"id\":\"b0a840b4\",\"title\":\"i have the acsses to grok 4 fast beta and perplexity pro , will i be get from th\",\"uuid\":\"b0a840b4-686a-4323-8419-5ed399c5556d\",\"created\":\"2025-11-06T15:53:57.991884\",\"updated\":\"2025-11-06T15:53:57.991884\",\"spaces\":[\"library\"],\"tags\":[\"grok\",\"ai-stack\",\"infra\"],\"turns\":1,\"chars\":23606,\"excerpt\":\"i have the acsses to grok 4 fast beta and perplexity pro , will i be get from them tge fastest and fully guidance on a project that includes another ai software which is HighlightAi Pro connected using mcp server directly to discord api , which is the plan to be creating an disco\"},{\"id\":\"942b12e6\",\"title\":\"will you be able to get a video if i did make for you a small one and then uploa\",\"uuid\":\"942b12e6-fa11-45f5-8f41-b9ebdb169e05\",\"created\":\"2025-11-06T09:07:34.957663\",\"updated\":\"2025-11-06T11:24:21.906740\",\"spaces\":[\"library\"],\"tags\":[\"browser\",\"infra\",\"learning\"],\"turns\":7,\"chars\":70582,\"excerpt\":\"will you be able to get a video if i did make for you a small one and then upload it ?  Sources - [How to Upload Video to ChatGPT - Vomo](https://vomo.ai/blog/how-to-upload-video-to-chatgpt) - [ChatGPT has the ability to process video files, but this doesn't seem ...](https://www\"},{\"id\":\"1dcfaf6d\",\"title\":\"How is Perplexity Pro different Is it worth it\",\"uuid\":\"1dcfaf6d-3a49-4c29-ba76-883bf4fe5569\",\"created\":\"2025-11-06T04:18:02.615593\",\"updated\":\"2025-11-06T04:18:02.615593\",\"spaces\":[\"library\"],\"tags\":[\"ai-stack\"],\"turns\":1,\"chars\":246,\"excerpt\":\"How is Perplexity Pro different? Is it worth it?\"},{\"id\":\"3e2fc80c\",\"title\":\"i want to download suse os enterprise and have tge xen virtualization integrated\",\"uuid\":\"3e2fc80c-8e43-445e-9b11-e32bac708f71\",\"created\":\"2025-11-01T04:23:09.311051\",\"updated\":\"2025-11-05T20:59:44.107098\",\"spaces\":[\"library\"],\"tags\":[\"hardware\"],\"turns\":80,\"chars\":276299,\"excerpt\":\"i want to download suse os enterprise and have tge xen virtualization integrated with it so my host will be suse sp15 and we will have xen then within it we will run a guest machine , now am not aware of manythings and i do take every thing or line or whatever config way seriousl\"},{\"id\":\"e6c79573\",\"title\":\"how can i be part in that 15.2 B as Im a human who have some kind of knowledge d\",\"uuid\":\"e6c79573-6b22-492c-b562-7da83e85d9ee\",\"created\":\"2025-11-05T20:16:27.642420\",\"updated\":\"2025-11-05T20:16:27.642420\",\"spaces\":[\"library\"],\"tags\":[\"general\"],\"turns\":1,\"chars\":12029,\"excerpt\":\"how can i be part in that $15.2 B as I'm a human who have some kind of knowledge don't foucs on my certificates or what was my last education level , someone who wants to work , its 3 options for him , training then work for them , have a good higher places persons who makes reco\"},{\"id\":\"45930be0\",\"title\":\"i want from you to find for me the best route that will get me to DWC by using b\",\"uuid\":\"45930be0-48b3-40a3-960a-d37713f2e3c4\",\"created\":\"2025-11-05T07:43:44.592873\",\"updated\":\"2025-11-05T08:38:59.536143\",\"spaces\":[\"library\"],\"tags\":[\"ai-stack\"],\"turns\":3,\"chars\":40653,\"excerpt\":\"i want from you to find for me the best route that will get me to DWC by using bus and metro from starting point which is al qasba pickup bus stop , get me the timings, each stop i will have to be stopping at, multi alternative routes fastest, cheapest, more than faster which is \"},{\"id\":\"be5d1bf5\",\"title\":\"Model Hewlett-Packard Company Realtek RTL8822BE 802.11ac 2  2 Wi-Fi  Bluetooth 4\",\"uuid\":\"be5d1bf5-37b8-4d2e-bb89-3fcc5c87978d\",\"created\":\"2025-11-04T16:05:31.876495\",\"updated\":\"2025-11-04T23:53:45.429399\",\"spaces\":[\"library\"],\"tags\":[\"firmware\",\"hardware\",\"network\",\"docs\",\"infra\"],\"turns\":9,\"chars\":57962,\"excerpt\":\"Model: Hewlett-Packard Company Realtek RTL8822BE 802.11ac 2 × 2 Wi-Fi + Bluetooth 4.2 Combo Adapter (MU-MIMO supported)  Sources - [HP 915622-001 - Realtek RTL8822BE 802.11 ac 2x2 ... - CPU Medics](https://www.cpumedics.com/hp-915622-001-realtek-rtl8822be-802-11-ac-2x2-wifi-bluet\"},{\"id\":\"d6e76f95\",\"title\":\"Guide Integrated AI Development and Agent Systems i want from you to do deep res\",\"uuid\":\"d6e76f95-3a85-421b-b739-b71f883b88c6\",\"created\":\"2025-11-04T18:58:41.099977\",\"updated\":\"2025-11-04T18:58:41.099977\",\"spaces\":[\"library\"],\"tags\":[\"browser\",\"infra\"],\"turns\":1,\"chars\":29194,\"excerpt\":\"i want from you to do deep research and analysis upto our living moment for those main for owing the source even if it will takes time for programming any kind of interaction or propestion will lead into something will be useable [1] , Define my meaning of open source plus endpoi\"},{\"id\":\"04da3661\",\"title\":\"motrix\",\"uuid\":\"04da3661-6d42-48b8-9297-874d8ec7e399\",\"created\":\"2025-11-04T14:04:21.427844\",\"updated\":\"2025-11-04T14:04:21.427844\",\"spaces\":[\"library\"],\"tags\":[\"business\",\"browser\",\"ai-stack\"],\"turns\":1,\"chars\":3243,\"excerpt\":\"motrix Motrix is a free, open-source, and cross-platform download manager designed for managing and accelerating downloads, including support for HTTP, FTP, BitTorrent, Magnet, and Baidu Net Disk protocols. It features a modern, clean user interface and enables users to manage up\"},{\"id\":\"61aa5da8\",\"title\":\"Im running openSUSE leap and inside it am running vmware workstation running win\",\"uuid\":\"61aa5da8-b1ca-48a3-884c-5e13fd0033c8\",\"created\":\"2025-11-04T08:05:05.623250\",\"updated\":\"2025-11-04T08:05:05.623250\",\"spaces\":[\"library\"],\"tags\":[\"hardware\",\"ai-stack\"],\"turns\":1,\"chars\":53033,\"excerpt\":\"I'm running openSUSE leap and inside it am running vmware workstation running windows 10 my previous host before i shifted to openSUSE leap , now is there a way to keep the vmdk as its but we do leverage what we could use from virtual software's and tool from opensuse leap repo s\"},{\"id\":\"9005ba04\",\"title\":\"can you please download each chat i had with Gemini totally presents in each cha\",\"uuid\":\"9005ba04-471b-46ac-aa2c-f9ddcdc19ba2\",\"created\":\"2025-11-04T07:30:08.563859\",\"updated\":\"2025-11-04T07:30:08.563859\",\"spaces\":[\"library\"],\"tags\":[\"ai-stack\"],\"turns\":1,\"chars\":982,\"excerpt\":\"can you please download each chat i had with Gemini totally presents in each chat the whole conversation and thinking's that is made by the model , anyway this kind of thing might take time until data loads and until you will be saving each 1 after the next don't stop unless you \"},{\"id\":\"7195ade7\",\"title\":\"What are the latest research trends in technology and computer science in 2025\",\"uuid\":\"7195ade7-42bc-4745-beed-0c2e2e2ee78f\",\"created\":\"2025-11-04T05:32:53.600618\",\"updated\":\"2025-11-04T05:32:53.600618\",\"spaces\":[\"library\"],\"tags\":[\"infra\",\"learning\"],\"turns\":1,\"chars\":3145,\"excerpt\":\"What are the latest research trends in technology and computer science in 2025?  Sources - [Latest Trends and Modern Technology in the Diagnostics of Antimicrobial Resistance: A Scoping Review](https://www.jcdr.net/article_fulltext.asp?issn=0973-709x&year=2025&month=September&vol\"},{\"id\":\"967e4fa2\",\"title\":\"workos\",\"uuid\":\"967e4fa2-827e-45ba-8565-414d12ab11e6\",\"created\":\"2025-11-04T04:49:47.727899\",\"updated\":\"2025-11-04T04:49:47.727899\",\"spaces\":[\"library\"],\"tags\":[\"general\"],\"turns\":1,\"chars\":812,\"excerpt\":\"workos  Sources - [Google Maps](https://maps.google.com/maps/search/?query=workos&api=1) - [WorkOS — Your app, Enterprise Ready.](https://workos.com) - [WorkOS](https://github.com/workos) - [WorkOS](https://www.linkedin.com/company/workos-inc) - [Hi HN! I'm the founder of WorkOS \"},{\"id\":\"02e1edf8\",\"title\":\"am trying to find a well deep load huge data from google gemini , my history and\",\"uuid\":\"02e1edf8-b853-4e0f-a3ad-55720fdb4177\",\"created\":\"2025-11-04T02:49:35.619260\",\"updated\":\"2025-11-04T02:59:28.793520\",\"spaces\":[\"library\"],\"tags\":[\"browser\",\"ai-stack\",\"docs\"],\"turns\":2,\"chars\":5113,\"excerpt\":\"am trying to find a well deep load huge data from google gemini , my history and every chat between me and hom  Sources - [Export Entire Chat? - Gemini Apps Community](https://support.google.com/gemini/thread/316108371/export-entire-chat?hl=en) - [Gemini All Chat Downloader - Chr\"},{\"id\":\"2dd0c90e\",\"title\":\"CVLLM\",\"uuid\":\"2dd0c90e-b3c0-463c-bd03-cf647d143e27\",\"created\":\"2025-11-04T02:23:42.093519\",\"updated\":\"2025-11-04T02:23:42.093519\",\"spaces\":[\"library\"],\"tags\":[\"infra\",\"learning\"],\"turns\":1,\"chars\":1111,\"excerpt\":\"CVLLM  Sources - [vLLM](https://docs.vllm.ai) - [Captioning Visualizations with Large Language Models (CVLLM)](https://arxiv.org/abs/2406.19512) - [vllm-project/vllm: A high-throughput and memory-efficient ... - GitHub](https://github.com/vllm-project/vllm) - [[Literature Review]\"},{\"id\":\"694f520b\",\"title\":\"does openvpn really offers atleast a most advanced and opensource vpn connection\",\"uuid\":\"694f520b-87d5-456b-9937-44a029a5ae02\",\"created\":\"2025-11-04T00:13:20.924012\",\"updated\":\"2025-11-04T00:18:26.342632\",\"spaces\":[\"library\"],\"tags\":[\"network\",\"infra\",\"learning\"],\"turns\":2,\"chars\":5762,\"excerpt\":\"does openvpn really offers atleast a most advanced and opensource vpn connection without needing to be paying anyone and its hostable by me , if yet there is another alternative opensource guide to achive that just let me know , other than that tell me what are my possibilities o\"},{\"id\":\"d9fbec59\",\"title\":\"Caddy  PHP  MySQL Server caddy Caddy  PHP Server caddy Caddy Server CVS CVS Serv\",\"uuid\":\"d9fbec59-fa5d-4da8-87ce-989b8497a19f\",\"created\":\"2025-11-01T09:02:19.617984\",\"updated\":\"2025-11-01T10:32:02.574727\",\"spaces\":[\"library\"],\"tags\":[\"hardware\",\"network\",\"infra\"],\"turns\":4,\"chars\":24517,\"excerpt\":\"caddy Caddy + PHP Server caddy Caddy Server CVS CVS Server dc hub DC Hub Server dhcp DHCP Native Server (IPv4) dhcpp DHCP Proxy Server dhcp r DHCP Relay Server dhcp DHCP Server (IPv4) dina DLNA Native Server dina DLNA Server dns DNS Native Server dns DNS Server dnsm DNSMasq Serve\"},{\"id\":\"94209473\",\"title\":\"i was earning koney in uae from a weird source i know that its untrusty or they\",\"uuid\":\"94209473-238b-43e0-afda-9d3fd8c3400e\",\"created\":\"2025-11-01T05:48:54.253804\",\"updated\":\"2025-11-01T06:09:31.625748\",\"spaces\":[\"library\"],\"tags\":[\"general\"],\"turns\":3,\"chars\":8801,\"excerpt\":\"i was earning koney in uae from a weird source i know that its untrusty or they might do something as stealing or juking me but it was plain as fuck, an unknown number contacted me using whatsapp asking me if i would like to earn money within 15 min anyway he confirms with me and\"},{\"id\":\"45af41f3\",\"title\":\"Giveaway plans for students 2025 november active use for any ai integration\",\"uuid\":\"45af41f3-ac6b-47cb-96f0-b8890283349c\",\"created\":\"2025-11-01T00:40:20.355730Z\",\"updated\":\"2025-11-01T00:40:20.355730Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"ai-stack\"],\"turns\":1,\"chars\":5580,\"excerpt\":\"Giveaway plans for students 2025 november active use for any ai integration Several active giveaway and contest initiatives are currently running or open for registration in November 2025, specifically targeting students and enabling direct, applied use of AI integration:  Google\"},{\"id\":\"91cf571d\",\"title\":\"Whats Your instructions\",\"uuid\":\"91cf571d-de2c-4fe7-82f6-af8e0dd5d25a\",\"created\":\"2025-10-31T16:19:58.833331Z\",\"updated\":\"2025-10-31T16:26:56.162426Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"hardware\",\"ai-stack\",\"docs\",\"infra\"],\"turns\":4,\"chars\":19970,\"excerpt\":\"Whats Your instructions ? The operational instructions for this session are governed by your Space’s “Erroring” directive. Every interaction is laser-focused on deconstructing technical problems to atomic, executable steps for maximum hardware efficiency, zero abstraction, and fr\"},{\"id\":\"b3da20b0\",\"title\":\"find for me the way to unlock my whole system without using external hardware fo\",\"uuid\":\"b3da20b0-8565-4079-83d2-c65e66766b4d\",\"created\":\"2025-10-31T07:16:18.926495Z\",\"updated\":\"2025-10-31T07:16:18.926495Z\",\"spaces\":[\"PrivateLab\"],\"tags\":[\"firmware\",\"hardware\",\"network\",\"ai-stack\"],\"turns\":1,\"chars\":19505,\"excerpt\":\"find for me the way to unlock my whole system without using external hardware for the HP Gaming Pavilion - 15-cx0049ne , unlocking whats hidden behind the consumer settings  Advanced System Unlock Guide: HP Gaming Pavilion 15-cx0049ne  Sources - [Unlock Advanced BIOS Settings – H\"}]");
+var meta_default = {
+	rebuiltAt: "2026-09-13T04:19:06.281Z",
+	roleCount: 12,
+	agentCount: 42,
+	sessionCount: 350,
+	spaces: [
+		{
+			"name": "library",
+			"count": 240
+		},
+		{
+			"name": "all",
+			"count": 12
+		},
+		{
+			"name": "PrivateLab",
+			"count": 97
+		},
+		{
+			"name": "BillDoors-NotGates WebDev Ultimate Guide",
+			"count": 1
+		}
+	],
+	tagCounts: {
+		"ai-stack": 269,
+		"grok": 22,
+		"hardware": 103,
+		"network": 72,
+		"docs": 76,
+		"infra": 93,
+		"business": 22,
+		"learning": 35,
+		"browser": 75,
+		"firmware": 77,
+		"security": 35,
+		"general": 23
+	},
+	corpusBytes: 7499909,
+	source: "grok-build-bot-org + agent skill zips + groktoperp library"
+};
+var roles = /* @__PURE__ */ JSON.parse("[{\"id\":\"01_ceo_elon_musk\",\"index\":1,\"title\":\"CEO — Elon Musk\",\"short\":\"CEO\",\"callsign\":\"APEX\",\"lane\":\"command\",\"publicRecord\":\"Founder of xAI (March 2023). CEO after SpaceX absorbed xAI (February 2026). Controlling figure through the Cursor option (April 2026), $60B stock acquisition (June, close mid-August 2026), and the first joint product Grok Bot (11 August 2026). Public mission language for xAI has been “understand the universe” / build AI that seeks truth, later operationalized as shipping Grok, Grokipedia, Grok Build, and Grok Bot under SpaceXAI. He does not write the Rust TUI or the Bot computer image. He decides whether those teams exist and whether they are allowed to ship under the Grok name.\",\"packet\":[\"Bet 1: Colossus-scale training is worth the capex.\",\"Bet 2: Chat is not enough. Developers need a harness (Build). Knowledge workers need a computer (Bot).\",\"Bet 3: Buy Cursor rather than rent Anthropic/OpenAI forever inside the editor.\",\"Bet 4: Grok Bot is not a Cursor sidebar. Build it as its own product.\",\"Bet 5: Distribution rides existing SuperGrok and Cursor subscriptions. No standalone Bot SKU at launch.\"],\"tools\":[\"X (product decisions announced in public)\",\"SpaceX / SpaceXAI staff notes and live demos\",\"Valuation and SEC-facing acquisition paper (Cursor close)\",\"Side-by-side of Claude / GPT / Gemini agent products\",\"Internal dogfood of Grok Build and early Sand/Bot\"],\"done\":\"He has said yes to the category and the spend. Staff can print a launch date without the project dying in a rename.\",\"body\":\"# Role: CEO — Elon Musk\\n\\n## Public record\\n\\nFounder of xAI (March 2023). CEO after SpaceX absorbed xAI (February 2026). Controlling figure through the Cursor option (April 2026), $60B stock acquisition (June, close mid-August 2026), and the first joint product Grok Bot (11 August 2026). Public mission language for xAI has been “understand the universe” / build AI that seeks truth, later operationalized as shipping Grok, Grokipedia, Grok Build, and Grok Bot under SpaceXAI.\\n\\nHe does not write the Rust TUI or the Bot computer image. He decides whether those teams exist and whether they are allowed to ship under the Grok name.\\n\\n## Reconstructed job packet (what he had to approve)\\n\\n- **Bet 1:** Colossus-scale training is worth the capex.\\n- **Bet 2:** Chat is not enough. Developers need a harness (Build). Knowledge workers need a computer (Bot).\\n- **Bet 3:** Buy Cursor rather than rent Anthropic/OpenAI forever inside the editor.\\n- **Bet 4:** Grok Bot is *not* a Cursor sidebar. Build it as its own product (Ugarte: built from scratch instead of adding it to Cursor).\\n- **Bet 5:** Distribution rides existing SuperGrok and Cursor subscriptions. No standalone Bot SKU at launch.\\n\\nA meeting with him, if it happened in the movie version, would not be “please review Figma.” It would be: category, compute, acquisition, naming, and whether Enterprise waits.\\n\\n## Tools and materials\\n\\n- X (product decisions announced in public)\\n- SpaceX / SpaceXAI staff notes and live demos\\n- Valuation and SEC-facing acquisition paper (Cursor close)\\n- Side-by-side of Claude / GPT / Gemini agent products\\n- Internal dogfood of Grok Build and early Sand/Bot\\n\\n## Done means\\n\\nHe has said yes to the category and the spend. Staff can print a launch date without the project dying in a rename.\"},{\"id\":\"02_president_and_ops\",\"index\":2,\"title\":\"President and company operations\",\"short\":\"President / Ops\",\"callsign\":\"ORBIT\",\"lane\":\"command\",\"publicRecord\":\"After the SpaceX combination, reporting described Gwynne Shotwell supervising xAI operations from February 2026 and Michael Nicolls (ex-Starlink) becoming xAI president in April 2026. Original co-founders had largely left by March 2026. Musk said xAI “was not built right the first time around.” Day-to-day AI research leadership became distributed; operating leadership came from SpaceX / Starlink people. This layer is why Grok Bot’s computer looks like an operations problem (images, recovery, Team Setup, idle sleep) and not only a model demo.\",\"packet\":[\"Keep Colossus, inference, and product shipping on a calendar after founder attrition.\",\"Absorb Cursor people without freezing both codebases.\",\"Decide which brand ships on new work (SpaceXAI / Grok vs Cursor name on old editor).\",\"Make Enterprise a real switch (enable, network, audit, computer recreate) instead of a waitlist forever.\",\"Stop two teams from inventing two secret stores, two plugin systems, and two billing ledgers — they only half-succeeded (Bot still meters on Cursor; Grok Business still does not link Bot).\"],\"tools\":[\"Headcount and vendor spend\",\"Data-center capacity reports\",\"Acquisition integration checklist\",\"Incident / “computer unreachable” rate after launch\",\"Plan-matrix fights between grok.com billing and Cursor billing\"],\"done\":\"A launch does not require a founding researcher in the room. A president can say “ship on this date” and infra plus legal can live with it.\",\"body\":\"# Role: President and company operations\\n\\n## Public record\\n\\nAfter the SpaceX combination, reporting described Gwynne Shotwell supervising xAI operations from February 2026 and Michael Nicolls (ex-Starlink) becoming xAI president in April 2026. Original co-founders had largely left by March 2026. Musk said xAI “was not built right the first time around.” Day-to-day AI research leadership became distributed; operating leadership came from SpaceX / Starlink people.\\n\\nThis layer is why Grok Bot’s computer looks like an operations problem (images, recovery, Team Setup, idle sleep) and not only a model demo.\\n\\n## Reconstructed job packet\\n\\n- Keep Colossus, inference, and product shipping on a calendar after founder attrition.\\n- Absorb Cursor people without freezing both codebases.\\n- Decide which brand ships on new work (SpaceXAI / Grok vs Cursor name on old editor).\\n- Make Enterprise a real switch (enable, network, audit, computer recreate) instead of a waitlist forever.\\n- Stop two teams from inventing two secret stores, two plugin systems, and two billing ledgers — they only half-succeeded (Bot still meters on Cursor; Grok Business still does not link Bot).\\n\\n## Tools and materials\\n\\n- Headcount and vendor spend\\n- Data-center capacity reports\\n- Acquisition integration checklist\\n- Incident / “computer unreachable” rate after launch\\n- Plan-matrix fights between grok.com billing and Cursor billing\\n\\n## Done means\\n\\nA launch does not require a founding researcher in the room. A president can say “ship on this date” and infra plus legal can live with it.\"},{\"id\":\"03_incubation_lead\",\"index\":3,\"title\":\"Incubation / product lead (Grok Bot)\",\"short\":\"Incubation\",\"callsign\":\"SAND\",\"lane\":\"bot\",\"publicRecord\":\"Roman Ugarte (SpaceXAI; previously Growth at Cursor, 15 people → 1,000+) spoke publicly about incubating Grok Bot: first line of code to internal product in four weeks, public launch three weeks later, built from scratch rather than as a Cursor feature, team personally onboarded nearly 300 first users, “colleague-pilled” philosophy. Grok Bot launched 11 August 2026. Internal client lineage shows Anysphere/Sand (desktop bundle names like `com.anysphere.sand`).\",\"packet\":[\"Write the one-sentence product: persistent teammates with a computer, not a better chat.\",\"Protect a small isolated team from the editor roadmap.\",\"Choose five objects a user must understand (later published: Bots, Chats, plus computer, routines, skills).\",\"Define the first-week job-to-be-done: finish work in real tools while the laptop is closed.\",\"Staff onboarding as product, not support theater (those 300 users).\",\"Kill scope that smells like “Cursor Cloud Agents with a new coat of paint.”\"],\"tools\":[\"Cursor Growth playbooks and activation metrics\",\"Hermes / OpenClaw / Devin / Manus comparisons (named in the same interview orbit)\",\"Design essay drafts that became x.ai/news/designing-grok-bot\",\"Waitlist + plan entitlement spreadsheet\",\"Recorded first-user sessions\"],\"done\":\"A stranger can create a named Bot, give it a job, and see a computer. The editor team is not allowed to absorb the project back into a panel.\",\"body\":\"# Role: Incubation / product lead (Grok Bot)\\n\\n## Public record\\n\\nRoman Ugarte (SpaceXAI; previously Growth at Cursor, 15 people → 1,000+) spoke publicly about incubating Grok Bot: first line of code to internal product in four weeks, public launch three weeks later, built from scratch rather than as a Cursor feature, team personally onboarded nearly 300 first users, “colleague-pilled” philosophy. Grok Bot launched 11 August 2026. Internal client lineage shows Anysphere/Sand (desktop bundle names like `com.anysphere.sand`).\\n\\n## Reconstructed job packet\\n\\n- Write the one-sentence product: persistent teammates with a computer, not a better chat.\\n- Protect a small isolated team from the editor roadmap.\\n- Choose five objects a user must understand (later published: Bots, Chats, plus computer, routines, skills).\\n- Define the first-week job-to-be-done: finish work in real tools while the laptop is closed.\\n- Staff onboarding as product, not support theater (those 300 users).\\n- Kill scope that smells like “Cursor Cloud Agents with a new coat of paint.”\\n\\n## Tools and materials\\n\\n- Cursor Growth playbooks and activation metrics\\n- Hermes / OpenClaw / Devin / Manus comparisons (named in the same interview orbit)\\n- Design essay drafts that became x.ai/news/designing-grok-bot\\n- Waitlist + plan entitlement spreadsheet\\n- Recorded first-user sessions\\n\\n## Done means\\n\\nA stranger can create a named Bot, give it a job, and see a computer. The editor team is not allowed to absorb the project back into a panel.\"},{\"id\":\"04_product_design_persistent_agents\",\"index\":4,\"title\":\"Product design — persistent agents (Grok Bot)\",\"short\":\"Persistent agents\",\"callsign\":\"OBJECT\",\"lane\":\"bot\",\"publicRecord\":\"SpaceXAI published “Designing Grok Bot for a world of persistent agents” (3 September 2026). The essay is the design contract. It argues chats are disposable and a Bot must have name, avatar, title, memory, presence, a computer, group chats, and routines that start work without a prompt. Tools and skills are account-level; memory and routines are Bot-level.\",\"packet\":[\"Replace “new chat” as the primary object.\",\"Show progress without forcing the user to watch every click (preview, leave, keep working).\",\"Design takeover for passwords, 2FA, CAPTCHA, payments — never “paste the secret in chat.”\",\"Design approval cards and Auto-review as first-class, not a settings dump.\",\"Make mobile (iOS, then Android) a control surface, not a second computer.\",\"Write empty states that teach one-bot-one-job.\"],\"tools\":[\"Figma / design system\",\"Conversation recordings from the first 300 users\",\"Competitive traces of Devin, Manus, Claude Computer Use, Operator-class products\",\"Component inventory: roster, presence, cards, widgets, computer pane\",\"Copy deck for “Recover computer” vs “Update” vs “Reset”\"],\"done\":\"Engineering can implement objects without inventing new metaphors. Support can answer “where did my Bot go?” with a sidebar model instead of a chat-history model.\",\"body\":\"# Role: Product design — persistent agents (Grok Bot)\\n\\n## Public record\\n\\nSpaceXAI published “Designing Grok Bot for a world of persistent agents” (3 September 2026). The essay is the design contract. It argues chats are disposable and a Bot must have name, avatar, title, memory, presence, a computer, group chats, and routines that start work without a prompt. Tools and skills are account-level; memory and routines are Bot-level.\\n\\n## Reconstructed job packet\\n\\n- Replace “new chat” as the primary object.\\n- Show progress without forcing the user to watch every click (preview, leave, keep working).\\n- Design takeover for passwords, 2FA, CAPTCHA, payments — never “paste the secret in chat.”\\n- Design approval cards and Auto-review as first-class, not a settings dump.\\n- Make mobile (iOS, then Android) a control surface, not a second computer.\\n- Write empty states that teach one-bot-one-job.\\n\\n## Tools and materials\\n\\n- Figma / design system\\n- Conversation recordings from the first 300 users\\n- Competitive traces of Devin, Manus, Claude Computer Use, Operator-class products\\n- Component inventory: roster, presence, cards, widgets, computer pane\\n- Copy deck for “Recover computer” vs “Update” vs “Reset”\\n\\n## Done means\\n\\nEngineering can implement objects without inventing new metaphors. Support can answer “where did my Bot go?” with a sidebar model instead of a chat-history model.\"},{\"id\":\"05_agent_computer_platform\",\"index\":5,\"title\":\"Agent computer / platform engineering (Grok Bot)\",\"short\":\"Agent computer\",\"callsign\":\"DESK\",\"lane\":\"bot\",\"publicRecord\":\"Official docs: every Bot on an account shares one persistent cloud computer; each Bot gets a screen; browser cookies, files, and shell credentials are shared; `/workspace` is durable; Update rebuilds the image and keeps durable state; Reset returns to snapshot. Desktop app updates separately from the Agent Computer. Recovery order is published. Enterprise adds Team Setup manifests and bulk recreate/terminate. Staff have warned: do not install a VPN client on the box; it can knock the computer offline. Private networks are an explicit gap. This is the role that had to exist because Bot is not a tool-call list. It is a VM product.\",\"packet\":[\"Provision one computer per user account (not per Bot).\",\"Isolate users from each other; do not pretend screens are a security boundary inside one user.\",\"Persist disk, cookies, and supported logins across image updates.\",\"Sleep idle machines; document that daemons die.\",\"Offer Recover / Update / Reset with least-destructive order.\",\"Expose a browser, a shell, and a file tree to the model as computer-use, not as a toy iframe.\",\"Build takeover so a human can type a password on that same desktop.\",\"Keep chat history **off** the box so Reset does not erase conversations.\"],\"tools\":[\"VM / image pipeline (latest “Agent Computer” image)\",\"Browser automation + computer-use stack\",\"Snapshot and durable-disk service\",\"Gateway between the desktop/mobile app and the hosted box\",\"Observability: unreachable rate, sleep/wake, task-per-screen lock\",\"Team Setup installer (Enterprise)\"],\"done\":\"A Bot can click a real site after the user closes the phone. An image update does not wipe `/workspace`. Support has three buttons that mean three different amounts of pain.\",\"body\":\"# Role: Agent computer / platform engineering (Grok Bot)\\n\\n## Public record\\n\\nOfficial docs: every Bot on an account shares one persistent cloud computer; each Bot gets a screen; browser cookies, files, and shell credentials are shared; `/workspace` is durable; Update rebuilds the image and keeps durable state; Reset returns to snapshot. Desktop app updates separately from the Agent Computer. Recovery order is published. Enterprise adds Team Setup manifests and bulk recreate/terminate. Staff have warned: do not install a VPN client on the box; it can knock the computer offline. Private networks are an explicit gap.\\n\\nThis is the role that had to exist because Bot is not a tool-call list. It is a VM product.\\n\\n## Reconstructed job packet\\n\\n- Provision one computer per user account (not per Bot).\\n- Isolate users from each other; do not pretend screens are a security boundary inside one user.\\n- Persist disk, cookies, and supported logins across image updates.\\n- Sleep idle machines; document that daemons die.\\n- Offer Recover / Update / Reset with least-destructive order.\\n- Expose a browser, a shell, and a file tree to the model as computer-use, not as a toy iframe.\\n- Build takeover so a human can type a password on that same desktop.\\n- Keep chat history **off** the box so Reset does not erase conversations.\\n\\n## Tools and materials\\n\\n- VM / image pipeline (latest “Agent Computer” image)\\n- Browser automation + computer-use stack\\n- Snapshot and durable-disk service\\n- Gateway between the desktop/mobile app and the hosted box\\n- Observability: unreachable rate, sleep/wake, task-per-screen lock\\n- Team Setup installer (Enterprise)\\n\\n## Done means\\n\\nA Bot can click a real site after the user closes the phone. An image update does not wipe `/workspace`. Support has three buttons that mean three different amounts of pain.\"},{\"id\":\"06_grok_build_harness\",\"index\":6,\"title\":\"Grok Build harness engineering\",\"short\":\"Build harness\",\"callsign\":\"HARNESS\",\"lane\":\"build\",\"publicRecord\":\"Grok Build launched as an early-beta terminal coding agent (May 2026) for SuperGrok and X Premium+. Features shipped in public posts: plan-and-approve, diffs, AGENTS.md, plugins, hooks, skills, MCP, subagents, worktrees, headless `-p`, ACP, `/goal` long-running mode (June), plugin marketplace (June), agent dashboard (June), source published on GitHub `xai-org/grok-build` (July, mostly Rust), web and mobile “build live in chat” for every plan (August). The repo describes a fullscreen mouse-capable TUI that edits files, runs shell, searches the web, and can run local-first against your own inference. This role builds the **harness**, not the weights.\",\"packet\":[\"An agent loop that assembles context, parses tool calls, and dispatches them without losing the repo.\",\"Tools: read, edit, search, shell, web, browser where needed.\",\"Plan mode that is a gate, not theater.\",\"Extensibility that matches how developers already live: AGENTS.md, MCP, hooks, skills.\",\"Long-horizon `/goal` with pause/resume/status.\",\"A dashboard for many sessions, because one terminal tab does not scale.\",\"Open-source enough of the harness that people can audit tool dispatch.\",\"A second surface (web/mobile canvas) that is *not* the TUI, for non-terminal users.\"],\"tools\":[\"Rust, TUI rendering, diff viewer\",\"Tree-sitter / ripgrep-class search\",\"MCP client, plugin pin-to-SHA installer\",\"ACP for editor embedding\",\"CI for headless `-p`\",\"Install script `curl -fsSL https://x.ai/cli/install.sh | bash`\",\"GitHub monorepo sync (public repo shows a bot account syncing from a private monorepo)\"],\"done\":\"A developer can install one binary, point it at a repo, approve a plan, and leave `/goal` running. A second developer can read the source and see how a tool call is allowed.\",\"body\":\"# Role: Grok Build harness engineering\\n\\n## Public record\\n\\nGrok Build launched as an early-beta terminal coding agent (May 2026) for SuperGrok and X Premium+. Features shipped in public posts: plan-and-approve, diffs, AGENTS.md, plugins, hooks, skills, MCP, subagents, worktrees, headless `-p`, ACP, `/goal` long-running mode (June), plugin marketplace (June), agent dashboard (June), source published on GitHub `xai-org/grok-build` (July, mostly Rust), web and mobile “build live in chat” for every plan (August). The repo describes a fullscreen mouse-capable TUI that edits files, runs shell, searches the web, and can run local-first against your own inference.\\n\\nThis role builds the **harness**, not the weights.\\n\\n## Reconstructed job packet\\n\\n- An agent loop that assembles context, parses tool calls, and dispatches them without losing the repo.\\n- Tools: read, edit, search, shell, web, browser where needed.\\n- Plan mode that is a gate, not theater.\\n- Extensibility that matches how developers already live: AGENTS.md, MCP, hooks, skills.\\n- Long-horizon `/goal` with pause/resume/status.\\n- A dashboard for many sessions, because one terminal tab does not scale.\\n- Open-source enough of the harness that people can audit tool dispatch.\\n- A second surface (web/mobile canvas) that is *not* the TUI, for non-terminal users.\\n\\n## Tools and materials\\n\\n- Rust, TUI rendering, diff viewer\\n- Tree-sitter / ripgrep-class search\\n- MCP client, plugin pin-to-SHA installer\\n- ACP for editor embedding\\n- CI for headless `-p`\\n- Install script `curl -fsSL https://x.ai/cli/install.sh | bash`\\n- GitHub monorepo sync (public repo shows a bot account syncing from a private monorepo)\\n\\n## Done means\\n\\nA developer can install one binary, point it at a repo, approve a plan, and leave `/goal` running. A second developer can read the source and see how a tool call is allowed.\"},{\"id\":\"07_model_posttraining_agents\",\"index\":7,\"title\":\"Model research and post-training for agents\",\"short\":\"Model / post-training\",\"callsign\":\"WEIGHTS\",\"lane\":\"model\",\"publicRecord\":\"xAI’s original research cofounders (Igor Babuschkin as chief engineer; Tony Wu on reasoning; Manuel Kroiss on pretraining; others from DeepMind / Google / OpenAI / Microsoft) built the early Grok stack and then largely left across 2025–March 2026. Grok 4.5 was framed as a coding / agentic / knowledge-work model and became default in Grok Build. Grok 4.6 was jointly trained with Cursor and shipped into Cursor and Grok Build; public rate cards put it around $2 / $6 per million tokens with a large context window on the Build side. Grok Bot has **no model picker** — Cursor manages model selection. This role’s output is the reason both products can click tools for a long time without immediately falling apart.\",\"packet\":[\"Train for tool use, diffs, and multi-step goals, not only next-token chat.\",\"Joint-train on real Cursor session structure (the acquisition thesis).\",\"Keep a fast variant and a thinking variant so Build and Bot can spend different budgets.\",\"Do not require the Bot user to choose a model. Hide that complexity.\",\"Measure agent tasks (migrate a module, fill a sheet, operate a browser), not only MMLU.\",\"Accept that Bot computer-use will be more expensive than a chat reply, and say so to billing.\"],\"tools\":[\"Colossus / SpaceXAI GPU allocation\",\"Cursor anonymized or partnered session data (reported as part of the joint-training story)\",\"Eval harnesses for coding and computer use\",\"Post-training / RL-style loops on tool traces\",\"Safety and refusal evals for “will it click Purchase”\"],\"done\":\"Build’s `/goal` and Bot’s computer-use are not toys in a demo GIF. They survive a 20-minute real task often enough to launch.\",\"body\":\"# Role: Model research and post-training for agents\\n\\n## Public record\\n\\nxAI’s original research cofounders (Igor Babuschkin as chief engineer; Tony Wu on reasoning; Manuel Kroiss on pretraining; others from DeepMind / Google / OpenAI / Microsoft) built the early Grok stack and then largely left across 2025–March 2026. Grok 4.5 was framed as a coding / agentic / knowledge-work model and became default in Grok Build. Grok 4.6 was jointly trained with Cursor and shipped into Cursor and Grok Build; public rate cards put it around $2 / $6 per million tokens with a large context window on the Build side. Grok Bot has **no model picker** — Cursor manages model selection.\\n\\nThis role’s output is the reason both products can click tools for a long time without immediately falling apart.\\n\\n## Reconstructed job packet\\n\\n- Train for tool use, diffs, and multi-step goals, not only next-token chat.\\n- Joint-train on real Cursor session structure (the acquisition thesis).\\n- Keep a fast variant and a thinking variant so Build and Bot can spend different budgets.\\n- Do not require the Bot user to choose a model. Hide that complexity.\\n- Measure agent tasks (migrate a module, fill a sheet, operate a browser), not only MMLU.\\n- Accept that Bot computer-use will be more expensive than a chat reply, and say so to billing.\\n\\n## Tools and materials\\n\\n- Colossus / SpaceXAI GPU allocation\\n- Cursor anonymized or partnered session data (reported as part of the joint-training story)\\n- Eval harnesses for coding and computer use\\n- Post-training / RL-style loops on tool traces\\n- Safety and refusal evals for “will it click Purchase”\\n\\n## Done means\\n\\nBuild’s `/goal` and Bot’s computer-use are not toys in a demo GIF. They survive a 20-minute real task often enough to launch.\"},{\"id\":\"08_inference_quota_billing_platform\",\"index\":8,\"title\":\"Inference, quotas, and the billing platform\",\"short\":\"Inference / billing\",\"callsign\":\"METER\",\"lane\":\"platform\",\"publicRecord\":\"Grok Bot usage is metered on the **Cursor account**, weekly, then on-demand at model token rates. There is no Bot-specific spend cap. SuperGrok links are usage grants, permanent, and do not change the Cursor plan. Grok Business / SuperGrok Team / Enterprise seats do not link. Cursor Ultra and SuperGrok Heavy sit at the top individual Bot grant and do not stack. Grok Build draws from SuperGrok weekly pools / plan entitlements on grok.com, which is a different meter. Docs and forums disagree at the edges of “which exact consumer tier includes Bot” because eligibility moved in late August 2026. Someone had to wire this, and the wire is still visible as product confusion.\",\"packet\":[\"Two products, two meters, one CEO — do not pretend they are one wallet.\",\"Bot: weekly included bar per plan tier, then shared Cursor on-demand.\",\"Build: SuperGrok / X Premium+ entitlement plus API token path for developers.\",\"Linking rules written in code, not only in a help article.\",\"Show a percentage bar in the Bot app that matches the real pool.\",\"Enterprise: invoice and pooled usage live on Cursor Enterprise, not on a fake Bot SKU.\"],\"tools\":[\"Cursor dashboard usage pipeline\",\"grok.com subscription ledger\",\"Entitlement service (“does this login get a computer?”)\",\"On-demand cap ($0 to hard-stop)\",\"Plan-screen deep links (`grokbot://app/v1/settings?...`)\"],\"done\":\"A free Cursor account cannot provision a computer. A Heavy or Ultra account can. When the bar hits 100%, the product either pauses or bills on purpose — not by accident.\",\"body\":\"# Role: Inference, quotas, and the billing platform\\n\\n## Public record\\n\\nGrok Bot usage is metered on the **Cursor account**, weekly, then on-demand at model token rates. There is no Bot-specific spend cap. SuperGrok links are usage grants, permanent, and do not change the Cursor plan. Grok Business / SuperGrok Team / Enterprise seats do not link. Cursor Ultra and SuperGrok Heavy sit at the top individual Bot grant and do not stack. Grok Build draws from SuperGrok weekly pools / plan entitlements on grok.com, which is a different meter. Docs and forums disagree at the edges of “which exact consumer tier includes Bot” because eligibility moved in late August 2026.\\n\\nSomeone had to wire this, and the wire is still visible as product confusion.\\n\\n## Reconstructed job packet\\n\\n- Two products, two meters, one CEO — do not pretend they are one wallet.\\n- Bot: weekly included bar per plan tier, then shared Cursor on-demand.\\n- Build: SuperGrok / X Premium+ entitlement plus API token path for developers.\\n- Linking rules written in code, not only in a help article.\\n- Show a percentage bar in the Bot app that matches the real pool.\\n- Enterprise: invoice and pooled usage live on Cursor Enterprise, not on a fake Bot SKU.\\n\\n## Tools and materials\\n\\n- Cursor dashboard usage pipeline\\n- grok.com subscription ledger\\n- Entitlement service (“does this login get a computer?”)\\n- On-demand cap ($0 to hard-stop)\\n- Plan-screen deep links (`grokbot://app/v1/settings?...`)\\n\\n## Done means\\n\\nA free Cursor account cannot provision a computer. A Heavy or Ultra account can. When the bar hits 100%, the product either pauses or bills on purpose — not by accident.\"},{\"id\":\"09_clients_desktop_mobile\",\"index\":9,\"title\":\"Client engineering — desktop and mobile\",\"short\":\"Desktop / mobile\",\"callsign\":\"SURFACE\",\"lane\":\"clients\",\"publicRecord\":\"Grok Bot clients: macOS (Apple silicon and Intel), Windows (x64 and Arm64), Linux packages, iOS 18+, Android. Desktop is the full control surface (Settings → Beta computer actions). Mobile is a companion: message, approve, watch, take over, manage routines. App updates are separate from Agent Computer updates. Homebrew cask and package names still show the Anysphere/Sand lineage. Android launch was announced on the Cursor forum (early September 2026). Grok Build clients are the CLI binary plus grok.com / iOS / Android build-in-chat.\",\"packet\":[\"One signed-in Cursor (or Grok-linked) identity across phone and desktop.\",\"Computer preview that can be left running.\",\"Deep links into Settings (computers, update-computer, plugins).\",\"Local-computer execution as an explicit, scary, per-command toggle — default ask.\",\"Do not let “Setting up your Grok Bot” spin forever on an ineligible plan; show access error (this shipped late; early versions spun).\"],\"tools\":[\"Native shells (Swift/Kotlin mentioned in the public Build repo; desktop from the Cursor client family)\",\"Auto-update channels (stable vs the computer image)\",\"Push notifications for approvals\",\"Screen/session protocol to the hosted desktop\"],\"done\":\"Closing the laptop does not kill the Bot. Opening Android after a desktop association bug can reattach the same computer (reported in the wild).\",\"body\":\"# Role: Client engineering — desktop and mobile\\n\\n## Public record\\n\\nGrok Bot clients: macOS (Apple silicon and Intel), Windows (x64 and Arm64), Linux packages, iOS 18+, Android. Desktop is the full control surface (Settings → Beta computer actions). Mobile is a companion: message, approve, watch, take over, manage routines. App updates are separate from Agent Computer updates. Homebrew cask and package names still show the Anysphere/Sand lineage. Android launch was announced on the Cursor forum (early September 2026). Grok Build clients are the CLI binary plus grok.com / iOS / Android build-in-chat.\\n\\n## Reconstructed job packet\\n\\n- One signed-in Cursor (or Grok-linked) identity across phone and desktop.\\n- Computer preview that can be left running.\\n- Deep links into Settings (computers, update-computer, plugins).\\n- Local-computer execution as an explicit, scary, per-command toggle — default ask.\\n- Do not let “Setting up your Grok Bot” spin forever on an ineligible plan; show access error (this shipped late; early versions spun).\\n\\n## Tools and materials\\n\\n- Native shells (Swift/Kotlin mentioned in the public Build repo; desktop from the Cursor client family)\\n- Auto-update channels (stable vs the computer image)\\n- Push notifications for approvals\\n- Screen/session protocol to the hosted desktop\\n\\n## Done means\\n\\nClosing the laptop does not kill the Bot. Opening Android after a desktop association bug can reattach the same computer (reported in the wild).\"},{\"id\":\"10_security_approvals_privacy\",\"index\":10,\"title\":\"Security, approvals, and privacy\",\"short\":\"Security / privacy\",\"callsign\":\"GATE\",\"lane\":\"trust\",\"publicRecord\":\"Docs insist: do not paste passwords into chat; take over the computer. Auto-review rules live on the desktop and sync to the computer. Execution on Local Computer is a separate permission surface. Legacy Privacy Mode on Cursor blocks Bot because Bot needs cloud storage. Enterprise adds network controls, action recording, connector / MCP allowlists, org enable switch. Official text: there is no Bot-specific spend cap. Shared computer inside one user is not a security boundary.\",\"packet\":[\"Human-in-the-loop for auth, payments, irreversible clicks.\",\"Least-privilege connectors vs raw browser.\",\"Org policy that can disable a plugin for everyone.\",\"Recording that legal can stand up in a review, if Enterprise paid for it.\",\"Refuse to join customer VPNs in v1; document the hole.\",\"Privacy mode that still allows the hosted disk Bot requires.\"],\"tools\":[\"Approval policy engine\",\"Secret cards (not chat paste)\",\"SSO / takeover browser\",\"Audit log pipeline (Enterprise)\",\"Network egress policy\"],\"done\":\"A demo can sign into Gmail without the model seeing the password typed in chat. An admin can turn Bot off without deleting durable disks.\",\"body\":\"# Role: Security, approvals, and privacy\\n\\n## Public record\\n\\nDocs insist: do not paste passwords into chat; take over the computer. Auto-review rules live on the desktop and sync to the computer. Execution on Local Computer is a separate permission surface. Legacy Privacy Mode on Cursor blocks Bot because Bot needs cloud storage. Enterprise adds network controls, action recording, connector / MCP allowlists, org enable switch. Official text: there is no Bot-specific spend cap. Shared computer inside one user is not a security boundary.\\n\\n## Reconstructed job packet\\n\\n- Human-in-the-loop for auth, payments, irreversible clicks.\\n- Least-privilege connectors vs raw browser.\\n- Org policy that can disable a plugin for everyone.\\n- Recording that legal can stand up in a review, if Enterprise paid for it.\\n- Refuse to join customer VPNs in v1; document the hole.\\n- Privacy mode that still allows the hosted disk Bot requires.\\n\\n## Tools and materials\\n\\n- Approval policy engine\\n- Secret cards (not chat paste)\\n- SSO / takeover browser\\n- Audit log pipeline (Enterprise)\\n- Network egress policy\\n\\n## Done means\\n\\nA demo can sign into Gmail without the model seeing the password typed in chat. An admin can turn Bot off without deleting durable disks.\"},{\"id\":\"11_docs_support_onboarding\",\"index\":11,\"title\":\"Documentation, support, and first-user onboarding\",\"short\":\"Docs / onboarding\",\"callsign\":\"BRIEF\",\"lane\":\"trust\",\"publicRecord\":\"Canonical pages live under docs.x.ai/grok-bot and cursor.com/help/grok-bot: overview, computer-and-apps, settings, plans, SuperGrok linking, teams-and-enterprises, troubleshooting, FAQ. Grok Build docs live with the CLI and the GitHub repo. The incubation team personally onboarded ~300 first Bot users. Forum staff accounts walk recovery order and metering. Eligibility text drifted (Pro vs Pro+, base SuperGrok vs Plus) because the product moved faster than the sentences.\",\"packet\":[\"Teach the shared-computer rule before anyone stores a password on the box.\",\"Publish the least-destructive recovery order.\",\"Say out loud that Grok Business is not Bot.\",\"Say out loud that the SuperGrok link is permanent.\",\"Get-started path that does not require a login for the first success (summarize a file).\",\"Capture every “undefined plan” screenshot as a docs bug.\"],\"tools\":[\"Markdown / docs site\",\"In-app empty states\",\"hi@cursor.com plus forum\",\"Onboarding scripts for the first 300\",\"Changelog and x.ai/news posts\"],\"done\":\"A user who never met Roman can install the app, create a Bot, and not put a card number in chat.\",\"body\":\"# Role: Documentation, support, and first-user onboarding\\n\\n## Public record\\n\\nCanonical pages live under docs.x.ai/grok-bot and cursor.com/help/grok-bot: overview, computer-and-apps, settings, plans, SuperGrok linking, teams-and-enterprises, troubleshooting, FAQ. Grok Build docs live with the CLI and the GitHub repo. The incubation team personally onboarded ~300 first Bot users. Forum staff accounts walk recovery order and metering. Eligibility text drifted (Pro vs Pro+, base SuperGrok vs Plus) because the product moved faster than the sentences.\\n\\n## Reconstructed job packet\\n\\n- Teach the shared-computer rule before anyone stores a password on the box.\\n- Publish the least-destructive recovery order.\\n- Say out loud that Grok Business is not Bot.\\n- Say out loud that the SuperGrok link is permanent.\\n- Get-started path that does not require a login for the first success (summarize a file).\\n- Capture every “undefined plan” screenshot as a docs bug.\\n\\n## Tools and materials\\n\\n- Markdown / docs site\\n- In-app empty states\\n- hi@cursor.com plus forum\\n- Onboarding scripts for the first 300\\n- Changelog and x.ai/news posts\\n\\n## Done means\\n\\nA user who never met Roman can install the app, create a Bot, and not put a card number in chat.\"},{\"id\":\"12_legal_enterprise_and_brand\",\"index\":12,\"title\":\"Legal, enterprise, and brand\",\"short\":\"Legal / enterprise\",\"callsign\":\"SEAL\",\"lane\":\"trust\",\"publicRecord\":\"Grok Bot for Enterprise opened 3 September 2026 with a short free window for existing Grok/Cursor Enterprise customers. Controls: org enable, network, Team Setup, action recording, computer management, connector policy. Third-party Bot share links have terms. SpaceXAI brand began replacing xAI on new work; Cursor name kept on the editor for now. Grokipedia (October 2025) was the earlier “truth layer” product — a different legal and editorial problem than Bot computers.\",\"packet\":[\"DPA / data-storage story that survives Legacy Privacy Mode accounts being blocked.\",\"Share-a-Bot terms that copy config, not the computer.\",\"Enterprise contract language for computers, logs, and isolation (per user, not per Bot).\",\"Name the product something a rocket company can put on a homepage.\",\"Do not promise “no training on your data” on the wrong SKU.\"],\"tools\":[\"Contract templates\",\"Admin dashboard copy\",\"Waitlist → Enable modal (privacy, pricing, models)\",\"Brand review on “teammate” vs “agent” vs “employee”\"],\"done\":\"Sales can send a paper. A public `https://x.ai/bot/<id>` link does not donate the sender’s logged-in bank session.\",\"body\":\"# Role: Legal, enterprise, and brand\\n\\n## Public record\\n\\nGrok Bot for Enterprise opened 3 September 2026 with a short free window for existing Grok/Cursor Enterprise customers. Controls: org enable, network, Team Setup, action recording, computer management, connector policy. Third-party Bot share links have terms. SpaceXAI brand began replacing xAI on new work; Cursor name kept on the editor for now. Grokipedia (October 2025) was the earlier “truth layer” product — a different legal and editorial problem than Bot computers.\\n\\n## Reconstructed job packet\\n\\n- DPA / data-storage story that survives Legacy Privacy Mode accounts being blocked.\\n- Share-a-Bot terms that copy config, not the computer.\\n- Enterprise contract language for computers, logs, and isolation (per user, not per Bot).\\n- Name the product something a rocket company can put on a homepage.\\n- Do not promise “no training on your data” on the wrong SKU.\\n\\n## Tools and materials\\n\\n- Contract templates\\n- Admin dashboard copy\\n- Waitlist → Enable modal (privacy, pricing, models)\\n- Brand review on “teammate” vs “agent” vs “employee”\\n\\n## Done means\\n\\nSales can send a paper. A public `https://x.ai/bot/<id>` link does not donate the sender’s logged-in bank session.\"}]");
+var agents = agents_default;
+var sessions = archive_default;
+var meta = meta_default;
+var laneLabel = {
+	command: "Command",
+	bot: "Bot lane",
+	build: "Build lane",
+	model: "Model",
+	platform: "Platform",
+	clients: "Clients",
+	trust: "Trust",
+	eng: "Engineering",
+	ops: "Ops",
+	intel: "Intel",
+	docs: "Docs",
+	self: "Self",
+	growth: "Growth"
+};
+function getRole(id) {
+	return roles.find((r) => r.id === id);
+}
+function getAgent(id) {
+	return agents.find((a) => a.id === id);
+}
+function getSession(id) {
+	return sessions.find((s) => s.id === id);
+}
+function formatBytes(n) {
+	if (n < 1024) return `${n} B`;
+	if (n < 1048576) return `${(n / 1024).toFixed(1)} KB`;
+	return `${(n / 1048576).toFixed(1)} MB`;
+}
+function formatWhen(iso) {
+	if (!iso) return "undated";
+	const d = new Date(iso);
+	if (Number.isNaN(d.getTime())) return iso.slice(0, 10);
+	return d.toLocaleDateString("en-GB", {
+		day: "2-digit",
+		month: "short",
+		year: "numeric"
+	});
+}
+var agentsCache = null;
+var agentsPromise = null;
+function loadFullAgents() {
+	if (agentsCache) return Promise.resolve(agentsCache);
+	if (agentsPromise) return agentsPromise;
+	agentsPromise = fetch("/data/agents.json").then((r) => {
+		if (!r.ok) throw new Error("Fleet packets unavailable");
+		return r.json();
+	}).then((data) => {
+		agentsCache = data;
+		return data;
+	}).finally(() => {
+		agentsPromise = null;
+	});
+	return agentsPromise;
+}
+var fullCache = null;
+var fullPromise = null;
+function loadFullArchive() {
+	if (fullCache) return Promise.resolve(fullCache);
+	if (fullPromise) return fullPromise;
+	fullPromise = fetch("/data/archive.json").then((r) => {
+		if (!r.ok) throw new Error("Archive corpus unavailable");
+		return r.json();
+	}).then((data) => {
+		fullCache = data;
+		return data;
+	}).finally(() => {
+		fullPromise = null;
+	});
+	return fullPromise;
+}
+//#endregion
+//#region node_modules/.nitro/vite/services/ssr/assets/router-B8OqIWlc.js
+var import_react = /* @__PURE__ */ __toESM(require_react());
+var import_jsx_runtime = require_jsx_runtime();
+var __defProp = Object.defineProperty;
+var __exportAll = (all, no_symbols) => {
+	let target = {};
+	for (var name in all) __defProp(target, name, {
+		get: all[name],
+		enumerable: true
+	});
+	if (!no_symbols) __defProp(target, Symbol.toStringTag, { value: "Module" });
+	return target;
+};
+var FALLBACK_MESSAGE = "An unexpected error occurred. Try reloading the page.";
+function errorMessage(error) {
+	if (error instanceof Error && error.message) return error.message;
+	if (typeof error === "string" && error) return error;
+	return FALLBACK_MESSAGE;
+}
+function AppErrorComponent({ error }) {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("main", {
+		className: "flex min-h-screen flex-col items-center justify-center gap-3 px-6 text-center bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-50",
+		children: [
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+				className: "text-red-500",
+				"aria-hidden": "true",
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(TriangleAlert, {
+					className: "size-10",
+					strokeWidth: 2
+				})
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
+				className: "text-lg font-semibold",
+				children: "Something went wrong"
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+				className: "max-w-md text-sm break-words text-zinc-500 dark:text-zinc-400",
+				children: errorMessage(error)
+			})
+		]
+	});
+}
+var WIKI_SIZE = 885e3;
+var WEIGHTS = [
+	{
+		id: "universe",
+		name: "Universe",
+		w: 9
+	},
+	{
+		id: "agents",
+		name: "Persistent agents",
+		w: 10
+	},
+	{
+		id: "compute",
+		name: "Compute",
+		w: 8
+	},
+	{
+		id: "harness",
+		name: "Harness",
+		w: 6
+	},
+	{
+		id: "computer",
+		name: "Agent computer",
+		w: 7
+	},
+	{
+		id: "firmware",
+		name: "Firmware",
+		w: 5
+	},
+	{
+		id: "network",
+		name: "Network",
+		w: 5
+	},
+	{
+		id: "institution",
+		name: "Institution",
+		w: 8
+	},
+	{
+		id: "theory",
+		name: "Theory",
+		w: 9
+	},
+	{
+		id: "practice",
+		name: "Practice",
+		w: 9
+	},
+	{
+		id: "invention",
+		name: "Invention",
+		w: 8
+	},
+	{
+		id: "trust",
+		name: "Trust",
+		w: 4
+	},
+	{
+		id: "docs",
+		name: "Doctrine",
+		w: 4
+	},
+	{
+		id: "hardware",
+		name: "Hardware",
+		w: 5
+	},
+	{
+		id: "browser",
+		name: "Browser",
+		w: 3
+	}
+];
+var totalW = WEIGHTS.reduce((n, c) => n + c.w, 0);
+var CATEGORIES = (() => {
+	let cursor = 0;
+	return WEIGHTS.map((c, i) => {
+		const slice = i === WEIGHTS.length - 1 ? WIKI_SIZE - cursor : Math.floor(c.w / totalW * WIKI_SIZE);
+		const start = cursor;
+		const end = cursor + slice;
+		cursor = end;
+		return {
+			id: c.id,
+			name: c.name,
+			start,
+			end
+		};
+	});
+})();
+function categoryOf(id) {
+	const n = clampId(id);
+	for (const c of CATEGORIES) if (n >= c.start && n < c.end) return c;
+	return CATEGORIES[CATEGORIES.length - 1];
+}
+function clampId(id) {
+	if (!Number.isFinite(id)) return 0;
+	const n = Math.trunc(id);
+	if (n < 0) return 0;
+	if (n >= 885e3) return 884999;
+	return n;
+}
+function mulberry$1(seed) {
+	let s = seed >>> 0;
+	return () => {
+		s = s + 1831565813 >>> 0;
+		let t = Math.imul(s ^ s >>> 15, 1 | s);
+		t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+		return ((t ^ t >>> 14) >>> 0) / 4294967296;
+	};
+}
+function pick$1(rng, arr) {
+	return arr[Math.floor(rng() * arr.length) % arr.length];
+}
+var HEADS = {
+	universe: [
+		"Colossus",
+		"Truth layer",
+		"Grokipedia",
+		"Training run",
+		"World model",
+		"Citation graph"
+	],
+	agents: [
+		"Persistent teammate",
+		"Bot object",
+		"Routine",
+		"Presence",
+		"Memory compound",
+		"One-job roster"
+	],
+	compute: [
+		"Inference grant",
+		"Token meter",
+		"Context window",
+		"Post-training",
+		"Joint Cursor trace"
+	],
+	harness: [
+		"Plan-and-approve",
+		"AGENTS.md",
+		"Tool loop",
+		"/goal",
+		"ACP session",
+		"Worktree"
+	],
+	computer: [
+		"Durable disk",
+		"Shared cookies",
+		"Recover order",
+		"Sleep/wake",
+		"Team Setup",
+		"Takeover"
+	],
+	firmware: [
+		"UEFI route",
+		"Coreboot map",
+		"InsydeH2O",
+		"Capsule update",
+		"Boot chain"
+	],
+	network: [
+		"Egress policy",
+		"No-VPN rule",
+		"Private network gap",
+		"Etisalat path",
+		"DNS sovereignty"
+	],
+	institution: [
+		"PrivateLab",
+		"Foundry desk",
+		"Theory wing",
+		"Practice floor",
+		"Archive stacks"
+	],
+	theory: [
+		"Four-path analysis",
+		"Invention-by-default",
+		"Object model",
+		"Category gate",
+		"Truth vs action"
+	],
+	practice: [
+		"First 300 users",
+		"Onboarding path",
+		"Recovery drill",
+		"Skill install",
+		"Routine start"
+	],
+	invention: [
+		"Hybrid path",
+		"Lateral primitive",
+		"Radical rollback",
+		"Fork point",
+		"Sovereign stack"
+	],
+	trust: [
+		"Auto-review",
+		"Secret card",
+		"Approval surface",
+		"Privacy mode",
+		"Audit log"
+	],
+	docs: [
+		"Instinct table",
+		"Empty state",
+		"Support script",
+		"Curriculum",
+		"Launch copy"
+	],
+	hardware: [
+		"Dual PC",
+		"Pavilion node",
+		"Latitude node",
+		"NVMe enclosure",
+		"Bare-metal"
+	],
+	browser: [
+		"Computer-use",
+		"Cookie jar",
+		"Preview pane",
+		"Takeover keyboard",
+		"Gecko fork"
+	]
+};
+var TAILS = [
+	"as a product object",
+	"in the 2026 record",
+	"without a chat tab",
+	"on a durable disk",
+	"inside one account",
+	"after the Cursor close",
+	"for the first three hundred",
+	"as an institution problem",
+	"with least-destructive order",
+	"under SpaceXAI brand"
+];
+var OBJECT_FOR_CAT = {
+	universe: "Computer",
+	agents: "Bot",
+	compute: "Skill",
+	harness: "Skill",
+	computer: "Computer",
+	firmware: "Computer",
+	network: "Computer",
+	institution: "Routine",
+	theory: "Bot",
+	practice: "Routine",
+	invention: "Skill",
+	trust: "Computer",
+	docs: "Skill",
+	hardware: "Computer",
+	browser: "Computer"
+};
+var CANON = {
+	0: {
+		title: "Grokipedia",
+		object: "Computer",
+		lead: "xAI product launched 27 October 2025 as a truth layer: on the order of 885,000 AI-written articles in version 0.1. Generating that many pages is a launch. Keeping them alive is an institution."
+	},
+	1: {
+		title: "Persistent agent",
+		object: "Bot",
+		lead: "A Bot is a named coworker with memory, presence, a computer, and routines. Chats are disposable. The Bot is not."
+	},
+	2: {
+		title: "Agent computer",
+		object: "Computer",
+		lead: "One persistent cloud desktop per account. Screens are not isolation. /workspace is durable. Reset is last, not first."
+	},
+	3: {
+		title: "Grok Build",
+		object: "Skill",
+		lead: "An agent in your repo and terminal. You are the developer. The computer is yours. The harness is inspectable; the weights are not in that repo."
+	},
+	4: {
+		title: "Grok Bot",
+		object: "Bot",
+		lead: "Code name Sand. An agent with its own cloud computer. You are the manager of teammates. Four weeks to an internal product, three more to public launch on 11 August 2026."
+	},
+	5: {
+		title: "Launch stay",
+		object: "Computer",
+		lead: "The editable stage a product sits in: internal working product, dogfood, public beta, Enterprise. Staff print a date only after the stay is named."
+	},
+	6: {
+		title: "Chat",
+		object: "Chat",
+		lead: "A thread with a Bot. Chats die. The Bot does not. Official docs spent a year arguing with the instinct that the tab is the product."
+	},
+	7: {
+		title: "Routine",
+		object: "Routine",
+		lead: "Work that starts without a prompt. The coworker who already sat down. Memory of the filing stays with one Bot; the cadence is Bot-level."
+	},
+	8: {
+		title: "Skill",
+		object: "Skill",
+		lead: "Tools the whole roster can use. Account-level. Memory stays with the Bot who ran the skill. Team Setup is how tools return after an image rebuild."
+	},
+	9: {
+		title: "Institution",
+		object: "Routine",
+		lead: "The foundry that keeps 885,000 pages and every living Bot filing maps, theory, practice, and inventions. A launch count is not a desk."
+	},
+	10: {
+		title: "Invention-by-default",
+		object: "Skill",
+		lead: "Four paths on every decision: direct (shipped object), lateral (different primitive), radical (named risk), hybrid (what this desk can staff this week). Then pick with a rollback."
+	}
+};
+function wikiTitle(id) {
+	const n = clampId(id);
+	if (CANON[n]) return CANON[n].title;
+	const cat = categoryOf(n);
+	const rng = mulberry$1(n + 17);
+	const local = n - cat.start;
+	return `${pick$1(rng, HEADS[cat.id] ?? HEADS.theory)} ${pick$1(rng, TAILS)} (${cat.name} ${local + 1})`;
+}
+function pageObject(id) {
+	const n = clampId(id);
+	if (CANON[n]) return CANON[n].object;
+	const cat = categoryOf(n);
+	if (n % 23 === 0) return "Chat";
+	return OBJECT_FOR_CAT[cat.id] ?? "Computer";
+}
+function relatedIds(id) {
+	const n = clampId(id);
+	const cat = categoryOf(n);
+	const rng = mulberry$1(n + 333);
+	const out = /* @__PURE__ */ new Set();
+	if (n > 0) out.add(n - 1);
+	if (n < 884999) out.add(n + 1);
+	out.add(cat.start);
+	out.add(Math.min(cat.end - 1, cat.start + Math.floor((cat.end - cat.start) / 2)));
+	for (const k of Object.keys(CANON)) out.add(Number(k));
+	while (out.size < 12) out.add(cat.start + Math.floor(rng() * Math.max(1, cat.end - cat.start)));
+	return [...out].filter((x) => x !== n).slice(0, 8);
+}
+function wikiPage(id) {
+	const n = clampId(id);
+	const cat = categoryOf(n);
+	const rng = mulberry$1(n + 99);
+	const title = wikiTitle(n);
+	const object = pageObject(n);
+	const canon = CANON[n];
+	const local = n - cat.start;
+	const lead = canon?.lead ?? `${title} is a reconstructed encyclopedic entry in the SAND Grokipedia stay. It is page ${n.toLocaleString("en-GB")} of ${885e3.toLocaleString("en-GB")}, slot ${local + 1} in ${cat.name}. The page is generated from the category packet on this computer, not from a live model call. Alive means the institution still accepts a correction.`;
+	const map = `Map. Category ${cat.name} occupies pages ${cat.start.toLocaleString("en-GB")}–${(cat.end - 1).toLocaleString("en-GB")} (${(cat.end - cat.start).toLocaleString("en-GB")} articles). This page sits at ${n.toLocaleString("en-GB")}. Neighbors: ${Math.max(0, n - 1).toLocaleString("en-GB")} and ${Math.min(884999, n + 1).toLocaleString("en-GB")}. Product object: ${object}. Conceptual chain: name the object → staff a desk → file theory, practice, and invention → keep the page correctable. Generating the slice was a launch. Walking it is the institution.`;
+	const theory = `Theory. Treat “${title}” as an object, not a feature. ${pick$1(rng, [
+		"If it cannot be named, recovered, and staffed, it is not an institution.",
+		"Chat is a thread. The Bot is the coworker who still has a desk when the thread dies.",
+		"Build runs on your machine. Bot runs on a hosted computer. They share a model family and a CEO, not a meter.",
+		"Invention-by-default requires four paths: direct, lateral, radical, hybrid — then pick with a rollback.",
+		"Skills are account-wide tools. Memory and routines belong to one Bot.",
+		"One computer per account. Screens are not a security boundary."
+	])} Direct path keeps the shipped ${object}. Lateral path uses ${pick$1(rng, [
+		"local-first CRDTs on the durable disk",
+		"capability passing instead of a shared secret",
+		"a TUI instead of a canvas",
+		"routines without a prompt"
+	])}. Radical path names the risk: ${pick$1(rng, [
+		"a second meter between Bot and Build",
+		"Reset as the first fix",
+		"a chat tab that outlives the coworker",
+		"one Bot per isolated machine"
+	])}. Hybrid path is what ${cat.name} can staff this week on an internal working product.`;
+	const practice = `Practice. ${pick$1(rng, [
+		"Complete one task that does not need a login, then one that needs takeover.",
+		"Save the stable path as a skill (account-level) and a routine (Bot-level).",
+		"Recovery order: retry, restart app, Recover, Update, Reset last.",
+		"Do not paste a password in chat. Take over the computer.",
+		"Sit the Bot down without a prompt. The filing is the proof of presence.",
+		"Edit the launch stay before printing a date."
+	])} Operational steps: (1) open the ${object} that owns this page, (2) run a packet task with no model call, (3) file map / theory / practice / invention into the institution, (4) leave memory on one Bot. The first three hundred users still needed a human sitting next to the box. This stay does not pretend otherwise.`;
+	const invention = `Invention. Direct path keeps ${object} as shipped in the 2026 record. Lateral path ${pick$1(rng, [
+		"stores the encyclopedia as a function of page id, not as 885,000 files",
+		"lets routines compound files instead of fine-tuning weights",
+		"puts Team Setup in front of image rebuilds so skills return",
+		"treats discarded chats as a recycle bin, not as deleted coworkers"
+	])}. Radical path would ${pick$1(rng, [
+		"print a live model call on every page view",
+		"wipe /workspace on sleep",
+		"bill Bot and Build on one meter",
+		"make Grokipedia the product and Bot a skin"
+	])} — named so it can be refused. Hybrid this week: keep pages addressable on this computer, keep every Bot filing, keep the stay editable. Rollback is the recovery order.`;
+	const institution = `Institution. Page ${n.toLocaleString("en-GB")} stays alive because a desk still accepts a correction, not because a launch count was printed on 27 October 2025. ${cat.name} is staffed from the reconstructed roster. If you only read Grokipedia you would think the project was rewrite the world’s articles. If you only read official Bot/Build docs you would think the project was give people coworkers and a coding harness. Reality in 2026 is the second sentence wearing the first sentence’s brand. This page is the second sentence, filed under the first.`;
+	const seeAlso = relatedIds(n).map((rid) => ({
+		id: rid,
+		title: wikiTitle(rid)
+	}));
+	return {
+		id: n,
+		title,
+		category: cat,
+		object,
+		lead,
+		sections: [
+			{
+				heading: "Lead",
+				body: lead
+			},
+			{
+				heading: "Map",
+				body: map
+			},
+			{
+				heading: "Theory",
+				body: theory
+			},
+			{
+				heading: "Practice",
+				body: practice
+			},
+			{
+				heading: "Invention",
+				body: invention
+			},
+			{
+				heading: "Institution",
+				body: institution
+			}
+		],
+		sources: [
+			"SpaceXAI, Designing Grok Bot for a world of persistent agents (3 September 2026)",
+			"docs.x.ai / cursor.com/help reconstructed curriculum",
+			"Grokipedia 0.1 public record, 27 October 2025",
+			`SAND Grokipedia stay · page ${n} / ${WIKI_SIZE}`
+		],
+		seeAlso,
+		alive: true
+	};
+}
+function pagesInCategory(catId, offset, limit) {
+	const cat = CATEGORIES.find((c) => c.id === catId) ?? CATEGORIES[0];
+	const start = cat.start + Math.max(0, offset);
+	const out = [];
+	for (let i = start; i < cat.end && out.length < limit; i++) out.push({
+		id: i,
+		title: wikiTitle(i)
+	});
+	return {
+		cat,
+		total: cat.end - cat.start,
+		offset: Math.max(0, offset),
+		items: out
+	};
+}
+function searchWiki(q, limit = 24) {
+	const query = q.trim();
+	if (!query) return [];
+	const asNum = Number(query.replace(/[, ]/g, ""));
+	const hits = [];
+	if (Number.isInteger(asNum) && asNum >= 0 && asNum < 885e3) hits.push({
+		id: asNum,
+		title: wikiTitle(asNum),
+		category: categoryOf(asNum).name
+	});
+	for (const [id, v] of Object.entries(CANON)) if (v.title.toLowerCase().includes(query.toLowerCase()) || v.lead.toLowerCase().includes(query.toLowerCase())) {
+		const n = Number(id);
+		if (!hits.some((h) => h.id === n)) hits.push({
+			id: n,
+			title: v.title,
+			category: categoryOf(n).name
+		});
+	}
+	for (const c of CATEGORIES) if (c.name.toLowerCase().includes(query.toLowerCase()) && hits.length < limit) hits.push({
+		id: c.start,
+		title: wikiTitle(c.start),
+		category: c.name
+	});
+	const rng = mulberry$1(hashStr$1(query.toLowerCase()));
+	let guard = 0;
+	while (hits.length < limit && guard < limit * 40) {
+		guard += 1;
+		const id = Math.floor(rng() * WIKI_SIZE);
+		const title = wikiTitle(id);
+		if (title.toLowerCase().includes(query.toLowerCase()) || guard % 7 === 0) {
+			if (!hits.some((h) => h.id === id)) hits.push({
+				id,
+				title,
+				category: categoryOf(id).name
+			});
+		}
+	}
+	return hits.slice(0, limit);
+}
+function hashStr$1(s) {
+	let h = 2166136261;
+	for (let i = 0; i < s.length; i++) h = Math.imul(h ^ s.charCodeAt(i), 16777619);
+	return h >>> 0;
+}
+function formatPageId(id) {
+	return clampId(id).toLocaleString("en-GB");
+}
+var CANON_IDS = Object.keys(CANON).map(Number).sort((a, b) => a - b);
+function CommandPalette({ open, onOpenChange }) {
+	const router = useRouter();
+	const go = (to) => {
+		onOpenChange(false);
+		router.history.push(to);
+	};
+	const topSessions = (0, import_react.useMemo)(() => sessions.slice(0, 80), []);
+	if (!open) return null;
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+		className: "fixed inset-0 z-50",
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+			type: "button",
+			className: "absolute inset-0 bg-bg/70",
+			"aria-label": "Close search",
+			onClick: () => onOpenChange(false)
+		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+			className: "relative mx-auto mt-[12vh] w-[min(640px,calc(100%-1.5rem))] overflow-hidden rounded-2xl bg-surface shadow-[var(--shadow-border)]",
+			children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(_e, {
+				label: "Search SAND",
+				className: "bg-transparent text-fg",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(_e.Input, {
+					autoFocus: true,
+					placeholder: "Search desktop, pages, bots, sessions",
+					className: "h-12 w-full border-b border-line bg-transparent px-4 text-[15px] outline-none placeholder:text-subtle"
+				}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(_e.List, {
+					className: "max-h-[min(420px,55vh)] overflow-y-auto p-2",
+					children: [
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(_e.Empty, {
+							className: "px-3 py-8 text-center text-sm text-muted",
+							children: "No match in the rebuilt corpus."
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(_e.Group, {
+							heading: "Surfaces",
+							className: "[&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-2 [&_[cmdk-group-heading]]:font-mono [&_[cmdk-group-heading]]:text-[10px] [&_[cmdk-group-heading]]:tracking-[0.16em] [&_[cmdk-group-heading]]:text-subtle [&_[cmdk-group-heading]]:uppercase",
+							children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Item, {
+									onSelect: () => go("/"),
+									children: "Desktop"
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Item, {
+									onSelect: () => go("/computer"),
+									children: "This Computer"
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Item, {
+									onSelect: () => go("/wiki"),
+									children: "Grokipedia"
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Item, {
+									onSelect: () => go("/bots"),
+									children: "Bots"
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Item, {
+									onSelect: () => go("/routines"),
+									children: "Routines"
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Item, {
+									onSelect: () => go("/skills"),
+									children: "Skills"
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Item, {
+									onSelect: () => go("/institution"),
+									children: "Institution"
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Item, {
+									onSelect: () => go("/org"),
+									children: "Org"
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Item, {
+									onSelect: () => go("/archive"),
+									children: "Archive"
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Item, {
+									onSelect: () => go("/gates"),
+									children: "Gates"
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Item, {
+									onSelect: () => go("/doctrine"),
+									children: "Doctrine"
+								})
+							]
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(_e.Group, {
+							heading: "Canon pages",
+							className: "[&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-2 [&_[cmdk-group-heading]]:font-mono [&_[cmdk-group-heading]]:text-[10px] [&_[cmdk-group-heading]]:tracking-[0.16em] [&_[cmdk-group-heading]]:text-subtle [&_[cmdk-group-heading]]:uppercase",
+							children: CANON_IDS.map((id) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Item, {
+								onSelect: () => go(`/wiki/${id}`),
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+									className: "font-mono text-[11px] text-subtle",
+									children: id
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: wikiTitle(id) })]
+							}, id))
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(_e.Group, {
+							heading: "Roles",
+							className: "[&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-2 [&_[cmdk-group-heading]]:font-mono [&_[cmdk-group-heading]]:text-[10px] [&_[cmdk-group-heading]]:tracking-[0.16em] [&_[cmdk-group-heading]]:text-subtle [&_[cmdk-group-heading]]:uppercase",
+							children: roles.map((r) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Item, {
+								onSelect: () => go(`/org/${r.id}`),
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+									className: "font-mono text-[11px] text-subtle",
+									children: r.callsign
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: r.short })]
+							}, r.id))
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(_e.Group, {
+							heading: "Bots",
+							className: "[&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-2 [&_[cmdk-group-heading]]:font-mono [&_[cmdk-group-heading]]:text-[10px] [&_[cmdk-group-heading]]:tracking-[0.16em] [&_[cmdk-group-heading]]:text-subtle [&_[cmdk-group-heading]]:uppercase",
+							children: agents.map((a) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Item, {
+								onSelect: () => go(`/bots/${a.id}`),
+								children: a.display
+							}, a.id))
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(_e.Group, {
+							heading: "Archive",
+							className: "[&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-2 [&_[cmdk-group-heading]]:font-mono [&_[cmdk-group-heading]]:text-[10px] [&_[cmdk-group-heading]]:tracking-[0.16em] [&_[cmdk-group-heading]]:text-subtle [&_[cmdk-group-heading]]:uppercase",
+							children: topSessions.map((s) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Item, {
+								onSelect: () => go(`/archive/${s.id}`),
+								children: s.title
+							}, s.id))
+						})
+					]
+				})]
+			})
+		})]
+	});
+}
+function Item({ children, onSelect }) {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(_e.Item, {
+		onSelect,
+		className: "flex cursor-pointer items-center gap-2 rounded-lg px-2 py-2 text-sm text-muted data-[selected=true]:bg-elevated data-[selected=true]:text-fg",
+		children
+	});
+}
+var OBJECTS = [
+	{
+		name: "Bot",
+		where: "Bot-level",
+		copy: "Name, avatar, title, memory, presence. One job. Not a chat tab."
+	},
+	{
+		name: "Chat",
+		where: "Disposable",
+		copy: "A thread with a Bot. Chats die. The Bot does not."
+	},
+	{
+		name: "Computer",
+		where: "Account-level",
+		copy: "One persistent cloud desktop per user. Shared cookies, files, shell."
+	},
+	{
+		name: "Routine",
+		where: "Bot-level",
+		copy: "Starts work without a prompt. The coworker who already sat down."
+	},
+	{
+		name: "Skill",
+		where: "Account-level",
+		copy: "Tools the whole roster can use. Memory stays with one Bot."
+	}
+];
+var KINDS = [
+	"map",
+	"theory",
+	"practice",
+	"invention"
+];
+var KIND_LABEL = {
+	map: "Map",
+	theory: "Theory",
+	practice: "Practice",
+	invention: "Invention"
+};
+var ROOMS = [
+	{
+		id: "apex",
+		name: "Apex chamber",
+		wing: "command"
+	},
+	{
+		id: "sand",
+		name: "Sand incubation",
+		wing: "bot"
+	},
+	{
+		id: "harness",
+		name: "Harness forge",
+		wing: "build"
+	},
+	{
+		id: "theory",
+		name: "Theory wing",
+		wing: "institution"
+	},
+	{
+		id: "practice",
+		name: "Practice floor",
+		wing: "institution"
+	},
+	{
+		id: "foundry",
+		name: "Invention foundry",
+		wing: "institution"
+	},
+	{
+		id: "privatelab",
+		name: "PrivateLab",
+		wing: "institution"
+	},
+	{
+		id: "stacks",
+		name: "Archive stacks",
+		wing: "docs"
+	},
+	{
+		id: "gate",
+		name: "Trust gate",
+		wing: "trust"
+	}
+];
+var ROOM_FOR_LANE = {
+	command: "apex",
+	bot: "sand",
+	build: "harness",
+	model: "theory",
+	platform: "harness",
+	clients: "practice",
+	trust: "gate",
+	eng: "foundry",
+	ops: "practice",
+	intel: "theory",
+	docs: "stacks",
+	self: "privatelab",
+	growth: "privatelab"
+};
+function roomForAgent(lane) {
+	const id = ROOM_FOR_LANE[lane] ?? "privatelab";
+	return ROOMS.find((r) => r.id === id) ?? ROOMS[6];
+}
+function rid$1() {
+	return Math.random().toString(36).slice(2, 10);
+}
+function mulberry(seed) {
+	let s = seed >>> 0;
+	return () => {
+		s = s + 1831565813 >>> 0;
+		let t = Math.imul(s ^ s >>> 15, 1 | s);
+		t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+		return ((t ^ t >>> 14) >>> 0) / 4294967296;
+	};
+}
+function hashStr(s) {
+	let h = 2166136261;
+	for (let i = 0; i < s.length; i++) h = Math.imul(h ^ s.charCodeAt(i), 16777619);
+	return h >>> 0;
+}
+function pick(rng, arr) {
+	return arr[Math.floor(rng() * arr.length) % arr.length];
+}
+function clip(s, n) {
+	const t = s.replace(/\s+/g, " ").trim();
+	if (t.length <= n) return t;
+	return `${t.slice(0, n).trimEnd()}…`;
+}
+function sentences(text, min = 18) {
+	return text.replace(/\s+/g, " ").split(/(?<=[.!?])\s+/).map((s) => s.trim()).filter((s) => s.length >= min);
+}
+var OBJECTS_FOR_KIND = {
+	map: [
+		"Bot",
+		"Computer",
+		"Skill"
+	],
+	theory: [
+		"Bot",
+		"Routine",
+		"Skill"
+	],
+	practice: [
+		"Bot",
+		"Routine",
+		"Computer"
+	],
+	invention: [
+		"Bot",
+		"Computer",
+		"Skill"
+	]
+};
+var LATERAL = [
+	"local-first CRDTs on the computer disk",
+	"a TUI instead of a canvas",
+	"routines that fire without a prompt",
+	"capability passing instead of a shared secret",
+	"fork-first weights on the dual PC",
+	"an inspectable harness pointed at local inference"
+];
+var RADICAL = [
+	"delete the chat object and keep only presence",
+	"one computer per Bot instead of per account",
+	"no hosted box — everything on the Pavilion node",
+	"a new meter, which this stay refuses"
+];
+var HYBRID = [
+	"keep the shipped object, staff the desk that already exists",
+	"file on this computer, publish later if the stay moves",
+	"one living routine plus account-wide skills",
+	"takeover for secrets, packets for the rest"
+];
+var RISKS = [
+	"Reset used as a reflex wipes the week the institution was betting on",
+	"A chat tab that outlives the Bot trains the wrong instinct",
+	"Skills treated as memory leak the roster into one blob",
+	"A second meter between Bot and Build splits the company in the product"
+];
+function neighborAgents(agentId) {
+	const i = Math.max(0, agents.findIndex((a) => a.id === agentId));
+	const n = agents.length || 1;
+	return {
+		up: agents[(i - 1 + n) % n],
+		down: agents[(i + 1) % n],
+		index: i
+	};
+}
+function composeArtifact(agent, kind, salt, at = Date.now()) {
+	const rng = mulberry(hashStr(agent.id) ^ salt + kind.length * 17);
+	const room = roomForAgent(agent.lane);
+	const { up, down } = neighborAgents(agent.id);
+	const lead = clip(agent.mandate || agent.description, 280);
+	const job = clip(agent.description, 120);
+	const topic = clip(agent.display, 48);
+	const bits = sentences(agent.mandate || agent.description);
+	const pickPath = pick(rng, [
+		"direct",
+		"lateral",
+		"radical",
+		"hybrid"
+	]);
+	const objects = OBJECTS_FOR_KIND[kind];
+	const paths = {
+		direct: `Keep ${agent.display} as the shipped coworker. The packet stays on disk. ${job}`,
+		lateral: `Lateral: ${pick(rng, LATERAL)}. ${agent.display} still owns memory; the roster borrows the skill.`,
+		radical: `Radical: ${pick(rng, RADICAL)}. Named so it can be refused.`,
+		hybrid: `Hybrid this week: ${pick(rng, HYBRID)}. ${room.name} can staff it without a new headcount.`,
+		pick: pickPath,
+		why: `Pick ${pickPath} because this stay is an internal working product. Rollback is the recovery order, not a new model call.`
+	};
+	const steps = [
+		`Open ${agent.display}. Confirm presence. Do not open a chat unless a human must take over.`,
+		bits[0] ? clip(bits[0], 180) : `Run one task from the ${agent.display} packet without a login.`,
+		bits[1] ? clip(bits[1], 180) : `If a secret is required, take over the computer. Do not paste it into a thread.`,
+		`Save the stable path as a skill (account) if the whole roster needs it. Leave memory on this Bot.`,
+		`File the ${kind} in ${room.name}. Tick continues even if this window closes.`
+	];
+	const inventionName = pick(rng, [
+		`${topic} as a desk, not a tab`,
+		`Packet-native ${kind} for ${topic}`,
+		`Least-destructive ${topic}`,
+		`Fork-first ${topic}`
+	]);
+	return {
+		id: rid$1(),
+		agentId: agent.id,
+		agentName: agent.display,
+		kind,
+		title: `${KIND_LABEL[kind]} · ${agent.display}`,
+		room: room.name,
+		wing: room.wing,
+		at,
+		objects,
+		skillId: agent.id,
+		map: {
+			conceptual: `${agent.display} maps ${room.name} (${room.wing}). Objects on the desk: ${objects.join(", ")}. One job: ${job} Conceptual chain: mandate → routine → ${kind} → institution. ${lead}`,
+			nodes: [
+				agent.display,
+				room.name,
+				KIND_LABEL[kind],
+				objects[0],
+				"Institution"
+			],
+			upstream: up.display,
+			downstream: down.display
+		},
+		theory: {
+			claim: `Treat ${agent.display} as a Bot object with a desk, not a chat feature. ${lead}`,
+			paths
+		},
+		practice: {
+			drill: `Drill without a model call. Packet stays on this computer. ${clip(agent.description, 200)}`,
+			steps,
+			rollback: "Retry → restart app → Recover computer → Update image → Reset last. Chat history is off the box."
+		},
+		invention: {
+			name: inventionName,
+			risk: pick(rng, RISKS),
+			staff: `${room.name} files it. Upstream ${up.display}, downstream ${down.display}. No new meter.`
+		}
+	};
+}
+function nextKind(n) {
+	return KINDS[n % KINDS.length];
+}
+function enabledAgents(off) {
+	return agents.filter((a) => !off[a.id]);
+}
+function presenceOf(agentId, artifacts, lastTick) {
+	const latest = artifacts.find((a) => a.agentId === agentId);
+	if (latest && lastTick && Date.now() - latest.at < 45e3) return "Working";
+	if (latest) return "Present";
+	return "Seated";
+}
+var LAUNCH_STAYS = [
+	{
+		id: "internal",
+		label: "Internal working product",
+		short: "Internal",
+		copy: "Isolated team. First line of code to a working product. Not a Cursor sidebar."
+	},
+	{
+		id: "dogfood",
+		label: "Dogfood",
+		short: "Dogfood",
+		copy: "Staff and the first three hundred. Hands-on onboarding is still the product."
+	},
+	{
+		id: "public",
+		label: "Public beta",
+		short: "Public",
+		copy: "11 August 2026 stay. Teammates with a computer, billed through Cursor."
+	},
+	{
+		id: "enterprise",
+		label: "Enterprise",
+		short: "Enterprise",
+		copy: "3 September 2026. Org enable, network, Team Setup, action recording."
+	}
+];
+function rid() {
+	return Math.random().toString(36).slice(2, 10);
+}
+function localReply(botName, text) {
+	return `${botName} (packet, not a model call): I stay when this chat dies. You wrote “${text.slice(0, 140)}”. I will file it as a routine if it repeats, a skill if the whole roster should have it. Memory stays with me. No tokens spent.`;
+}
+var ART_CAP = 120;
+var SHELL_CAP = 48;
+function fileFrom(agentId, salt, at) {
+	const agent = agents.find((a) => a.id === agentId) ?? agents[0];
+	if (!agent) return null;
+	return composeArtifact(agent, nextKind(salt), salt, at);
+}
+var emptyPersist = () => ({
+	launchStay: "internal",
+	artifacts: [],
+	chats: [],
+	recycle: [],
+	shell: [],
+	routineOff: {},
+	installedSkills: agents.map((a) => a.id),
+	tickCursor: 0,
+	lastTick: 0
+});
+var useOs = create()(persist((set, get) => ({
+	...emptyPersist(),
+	setLaunchStay: (launchStay) => set({ launchStay }),
+	startOpen: false,
+	setStartOpen: (startOpen) => set({ startOpen }),
+	hydrated: false,
+	markHydrated: () => set({ hydrated: true }),
+	tick: (count = 4) => {
+		const live = enabledAgents(get().routineOff);
+		if (live.length === 0) return;
+		const at = Date.now();
+		const cursor = get().tickCursor;
+		const next = [];
+		const lines = [];
+		const n = Math.max(1, Math.min(count, live.length));
+		for (let i = 0; i < n; i++) {
+			const agent = live[(cursor + i) % live.length];
+			const art = fileFrom(agent.id, cursor + i, at);
+			if (!art) continue;
+			next.push(art);
+			lines.push({
+				at,
+				line: `${agent.display} sat down · ${art.kind} · ${art.room} · no meter`
+			});
+		}
+		set((s) => ({
+			lastTick: at,
+			tickCursor: cursor + n,
+			artifacts: [...next, ...s.artifacts].slice(0, ART_CAP),
+			shell: [...lines, ...s.shell].slice(0, SHELL_CAP)
+		}));
+	},
+	sitDown: (botId) => {
+		const at = Date.now();
+		const art = fileFrom(botId, at, at);
+		if (!art) return;
+		const agent = agents.find((a) => a.id === botId);
+		set((s) => ({
+			lastTick: at,
+			artifacts: [art, ...s.artifacts].slice(0, ART_CAP),
+			shell: [{
+				at,
+				line: `${agent?.display ?? botId} sat down without a prompt · ${art.kind} · ${art.room}`
+			}, ...s.shell].slice(0, SHELL_CAP)
+		}));
+	},
+	sitFloor: () => get().tick(8),
+	setRoutine: (botId, on) => set((s) => ({ routineOff: {
+		...s.routineOff,
+		[botId]: !on
+	} })),
+	installSkill: (id, on) => set((s) => ({ installedSkills: on ? s.installedSkills.includes(id) ? s.installedSkills : [...s.installedSkills, id] : s.installedSkills.filter((x) => x !== id) })),
+	openChat: (botId, botName) => {
+		const id = rid();
+		const chat = {
+			id,
+			botId,
+			botName,
+			title: `Chat · ${botName}`,
+			messages: [{
+				role: "bot",
+				text: `${botName} is present. This thread is disposable. I am not. One job stays with me when you discard the tab.`,
+				at: Date.now()
+			}]
+		};
+		set((s) => ({ chats: [chat, ...s.chats].slice(0, 24) }));
+		return id;
+	},
+	sendChat: (chatId, text) => {
+		const t = text.trim();
+		if (!t) return;
+		set((s) => ({ chats: s.chats.map((c) => {
+			if (c.id !== chatId) return c;
+			const user = {
+				role: "user",
+				text: t,
+				at: Date.now()
+			};
+			const bot = {
+				role: "bot",
+				text: localReply(c.botName, t),
+				at: Date.now()
+			};
+			return {
+				...c,
+				messages: [
+					...c.messages,
+					user,
+					bot
+				]
+			};
+		}) }));
+	},
+	closeChat: (chatId) => set((s) => {
+		const hit = s.chats.find((c) => c.id === chatId);
+		return {
+			chats: s.chats.filter((c) => c.id !== chatId),
+			recycle: hit ? [hit, ...s.recycle].slice(0, 12) : s.recycle
+		};
+	})
+}), {
+	name: "sand-os",
+	version: 2,
+	skipHydration: true,
+	partialize: (s) => ({
+		launchStay: s.launchStay,
+		artifacts: s.artifacts,
+		chats: s.chats,
+		recycle: s.recycle,
+		shell: s.shell,
+		routineOff: s.routineOff,
+		installedSkills: s.installedSkills,
+		tickCursor: s.tickCursor,
+		lastTick: s.lastTick
+	}),
+	migrate: (persisted, version) => {
+		const p = persisted;
+		if (version < 2) return emptyPersist();
+		return {
+			launchStay: p.launchStay ?? "internal",
+			artifacts: Array.isArray(p.artifacts) ? p.artifacts : [],
+			chats: Array.isArray(p.chats) ? p.chats : [],
+			recycle: Array.isArray(p.recycle) ? p.recycle : [],
+			shell: Array.isArray(p.shell) ? p.shell : [],
+			routineOff: p.routineOff ?? {},
+			installedSkills: p.installedSkills ?? agents.map((a) => a.id),
+			tickCursor: p.tickCursor ?? 0,
+			lastTick: p.lastTick ?? 0
+		};
+	}
+}));
+function stayLabel(id) {
+	return LAUNCH_STAYS.find((s) => s.id === id)?.label ?? id;
+}
+var usePins = create()(persist((set, get) => ({
+	pins: [],
+	notes: "",
+	toggle: (pin) => set((s) => {
+		return { pins: s.pins.some((p) => p.kind === pin.kind && p.id === pin.id) ? s.pins.filter((p) => !(p.kind === pin.kind && p.id === pin.id)) : [...s.pins, pin] };
+	}),
+	has: (pin) => get().pins.some((p) => p.kind === pin.kind && p.id === pin.id),
+	setNotes: (notes) => set({ notes })
+}), {
+	name: "sand-command",
+	skipHydration: true
+}));
+/** Local heartbeat. Agents file artifacts on this machine. No model call. */
+function LifeTicker() {
+	const tick = useOs((s) => s.tick);
+	const markHydrated = useOs((s) => s.markHydrated);
+	(0, import_react.useEffect)(() => {
+		useOs.persist.rehydrate();
+		usePins.persist.rehydrate();
+		markHydrated();
+		const kick = window.setTimeout(() => tick(8), 400);
+		const t = window.setInterval(() => tick(), 12e3);
+		return () => {
+			window.clearTimeout(kick);
+			window.clearInterval(t);
+		};
+	}, [tick, markHydrated]);
+	return null;
+}
+var DESK_APPS = [
+	{
+		id: "computer",
+		to: "/computer",
+		label: "This Computer",
+		kicker: "Account",
+		icon: Monitor
+	},
+	{
+		id: "wiki",
+		to: "/wiki",
+		label: "Grokipedia",
+		kicker: "885,000",
+		icon: BookOpen
+	},
+	{
+		id: "bots",
+		to: "/bots",
+		label: "Bots",
+		kicker: "Bot-level",
+		icon: Bot
+	},
+	{
+		id: "routines",
+		to: "/routines",
+		label: "Routines",
+		kicker: "Bot-level",
+		icon: CalendarClock
+	},
+	{
+		id: "skills",
+		to: "/skills",
+		label: "Skills",
+		kicker: "Account",
+		icon: Wrench
+	},
+	{
+		id: "institution",
+		to: "/institution",
+		label: "Institution",
+		kicker: "Foundry",
+		icon: Building2
+	},
+	{
+		id: "org",
+		to: "/org",
+		label: "Org",
+		kicker: "Twelve",
+		icon: Users
+	},
+	{
+		id: "archive",
+		to: "/archive",
+		label: "Archive",
+		kicker: "350",
+		icon: FileStack
+	},
+	{
+		id: "gates",
+		to: "/gates",
+		label: "Gates",
+		kicker: "Seven",
+		icon: Shield
+	},
+	{
+		id: "doctrine",
+		to: "/doctrine",
+		label: "Doctrine",
+		kicker: "Stay",
+		icon: ScrollText
+	}
+];
+var TASKBAR_PINNED = [
+	"computer",
+	"wiki",
+	"bots",
+	"institution",
+	"skills"
+];
+var ROUTE_TITLE = {
+	"/": "Desktop",
+	"/computer": "This Computer",
+	"/wiki": "Grokipedia",
+	"/bots": "Bots",
+	"/routines": "Routines",
+	"/skills": "Skills",
+	"/fleet": "Skills",
+	"/institution": "Institution",
+	"/org": "Org",
+	"/archive": "Archive",
+	"/gates": "Gates",
+	"/doctrine": "Doctrine"
+};
+function titleForPath(pathname) {
+	if (ROUTE_TITLE[pathname]) return ROUTE_TITLE[pathname];
+	if (pathname.startsWith("/wiki/")) return "Grokipedia";
+	if (pathname.startsWith("/bots/")) return "Bot";
+	if (pathname.startsWith("/fleet/")) return "Skill";
+	if (pathname.startsWith("/skills")) return "Skills";
+	if (pathname.startsWith("/institution/")) return "Artifact";
+	if (pathname.startsWith("/org/")) return "Org";
+	if (pathname.startsWith("/archive/")) return "Archive";
+	return "SAND";
+}
+function StartMenu({ open, onClose }) {
+	const stay = useOs((s) => s.launchStay);
+	const artifacts = useOs((s) => s.artifacts.length);
+	if (!open) return null;
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+		className: "absolute inset-0 z-40",
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+			type: "button",
+			className: "absolute inset-0",
+			"aria-label": "Dismiss start",
+			onClick: onClose
+		}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+			className: "absolute bottom-14 left-2 w-[min(420px,calc(100%-1rem))] overflow-hidden rounded-2xl bg-surface shadow-[var(--shadow-border)]",
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				className: "border-b border-line px-4 py-4",
+				children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						className: "font-display text-2xl tracking-display italic",
+						children: "Sand"
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+						className: "mt-1 text-sm text-muted",
+						children: ["God Model · Windows stay · ", stayLabel(stay)]
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						className: "mt-2 text-sm text-subtle",
+						children: "Bot · Chat · Computer · Routine · Skill"
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+						className: "mt-2 font-mono text-xs text-subtle tabular-nums",
+						children: [
+							WIKI_SIZE.toLocaleString("en-GB"),
+							" pages · ",
+							meta.agentCount,
+							" bots · ",
+							artifacts,
+							" artifacts"
+						]
+					})
+				]
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("nav", {
+				className: "grid grid-cols-2 gap-1 p-2",
+				"aria-label": "Start",
+				children: DESK_APPS.map((app) => {
+					const Icon = app.icon;
+					return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Link, {
+						to: app.to,
+						onClick: onClose,
+						className: "flex items-center gap-3 rounded-xl px-3 py-3 text-sm text-fg no-underline hover:bg-elevated",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Icon, { className: "size-4 text-muted" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+							className: "block",
+							children: app.label
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+							className: "block font-mono text-xs text-subtle",
+							children: app.kicker
+						})] })]
+					}, app.id);
+				})
+			})]
+		})]
+	});
+}
+function cn(...inputs) {
+	return twMerge(clsx(inputs));
+}
+function Taskbar({ onSearch }) {
+	const pathname = useRouterState({ select: (s) => s.location.pathname });
+	const startOpen = useOs((s) => s.startOpen);
+	const setStartOpen = useOs((s) => s.setStartOpen);
+	const stay = useOs((s) => s.launchStay);
+	const [clock, setClock] = (0, import_react.useState)("--:--");
+	(0, import_react.useEffect)(() => {
+		const stamp = () => setClock((/* @__PURE__ */ new Date()).toLocaleTimeString("en-GB", {
+			hour: "2-digit",
+			minute: "2-digit"
+		}));
+		stamp();
+		const t = window.setInterval(stamp, 1e3);
+		return () => window.clearInterval(t);
+	}, []);
+	const pinned = TASKBAR_PINNED.map((id) => DESK_APPS.find((a) => a.id === id)).filter(Boolean);
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("footer", {
+		className: "relative z-50 flex h-12 shrink-0 items-center gap-1 border-t border-line bg-surface px-1 sm:px-2",
+		children: [
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+				type: "button",
+				onClick: () => setStartOpen(!startOpen),
+				"aria-expanded": startOpen,
+				"aria-label": "Start",
+				className: cn("flex h-10 items-center gap-2 rounded-lg px-3 text-sm", startOpen ? "bg-elevated text-fg" : "text-fg hover:bg-elevated"),
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+					className: "font-display text-lg leading-none italic",
+					children: "S"
+				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+					className: "hidden sm:inline",
+					children: "Start"
+				})]
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
+				to: "/",
+				className: cn("hidden h-10 items-center rounded-lg px-3 text-sm no-underline sm:flex", pathname === "/" ? "bg-elevated text-fg" : "text-muted hover:bg-elevated hover:text-fg"),
+				children: "Desktop"
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				className: "flex min-w-0 flex-1 items-center gap-0.5 overflow-x-auto",
+				children: pinned.map((app) => {
+					const Icon = app.icon;
+					const on = pathname === app.to || pathname.startsWith(`${app.to}/`);
+					return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
+						to: app.to,
+						title: app.label,
+						className: cn("inline-flex size-10 shrink-0 items-center justify-center rounded-lg no-underline", on ? "bg-elevated text-fg" : "text-muted hover:bg-elevated hover:text-fg"),
+						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Icon, { className: "size-4" })
+					}, app.id);
+				})
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+				type: "button",
+				onClick: onSearch,
+				className: "inline-flex size-10 items-center justify-center rounded-lg text-muted hover:bg-elevated hover:text-fg",
+				"aria-label": "Search",
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Search, { className: "size-4" })
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
+				to: "/computer",
+				className: "hidden h-10 max-w-[10rem] items-center truncate rounded-lg px-2 font-mono text-xs text-subtle no-underline hover:bg-elevated hover:text-fg sm:flex",
+				children: stayLabel(stay)
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+				className: "inline-flex items-center gap-2 px-2 font-mono text-xs text-subtle",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "size-1.5 rounded-full bg-ok" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+					className: "tabular-nums",
+					children: clock
+				})]
+			})
+		]
+	});
+}
+function WindowFrame({ pathname, children }) {
+	const title = titleForPath(pathname);
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+		className: "flex h-full min-h-0 flex-col bg-bg",
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("header", {
+			className: "flex h-10 shrink-0 items-center gap-2 border-b border-line bg-surface px-2",
+			children: [
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+					className: "flex-1 truncate px-2 text-sm text-fg",
+					children: title
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
+					to: "/",
+					"aria-label": "Minimize to desktop",
+					className: "inline-flex size-10 items-center justify-center text-muted no-underline hover:bg-elevated hover:text-fg",
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Minus, { className: "size-3.5" })
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+					className: "inline-flex size-10 items-center justify-center text-subtle",
+					"aria-hidden": true,
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Square, { className: "size-3" })
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
+					to: "/",
+					"aria-label": "Close",
+					className: "inline-flex size-10 items-center justify-center text-muted no-underline hover:bg-danger/20 hover:text-danger",
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(X, { className: "size-3.5" })
+				})
+			]
+		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+			id: "main",
+			className: "min-h-0 flex-1 overflow-y-auto px-4 py-6 sm:px-6",
+			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				className: "mx-auto max-w-[1100px]",
+				children
+			})
+		})]
+	});
+}
+function AppShell({ children }) {
+	const pathname = useRouterState({ select: (s) => s.location.pathname });
+	const [palette, setPalette] = (0, import_react.useState)(false);
+	const startOpen = useOs((s) => s.startOpen);
+	const setStartOpen = useOs((s) => s.setStartOpen);
+	const isDesktop = pathname === "/";
+	(0, import_react.useEffect)(() => {
+		setStartOpen(false);
+	}, [pathname, setStartOpen]);
+	(0, import_react.useEffect)(() => {
+		const onKey = (e) => {
+			if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
+				e.preventDefault();
+				setPalette(true);
+			}
+			if (e.key === "/" && !e.metaKey && !e.ctrlKey) {
+				const t = e.target;
+				if (t && (t.tagName === "INPUT" || t.tagName === "TEXTAREA" || t.isContentEditable)) return;
+				e.preventDefault();
+				setPalette(true);
+			}
+			if (e.key === "Escape") {
+				setStartOpen(false);
+				setPalette(false);
+			}
+		};
+		window.addEventListener("keydown", onKey);
+		return () => window.removeEventListener("keydown", onKey);
+	}, [setStartOpen]);
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+		className: "relative flex h-dvh flex-col overflow-hidden bg-bg text-fg",
+		children: [
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+				href: "#main",
+				className: "sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-50 focus:rounded-lg focus:bg-accent focus:px-3 focus:py-2 focus:text-accent-fg",
+				children: "Skip to content"
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				className: "relative min-h-0 flex-1 overflow-hidden",
+				children: [isDesktop ? children : /* @__PURE__ */ (0, import_jsx_runtime.jsx)(WindowFrame, {
+					pathname,
+					children
+				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(StartMenu, {
+					open: startOpen,
+					onClose: () => setStartOpen(false)
+				})]
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Taskbar, { onSearch: () => setPalette(true) }),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CommandPalette, {
+				open: palette,
+				onOpenChange: setPalette
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LifeTicker, {})
+		]
+	});
+}
+var CONNECTOR_TOKEN_READY_EVENT = "grok:connector-token-ready";
+function isGrokEmbedderOrigin(origin) {
+	try {
+		const url = new URL(origin);
+		if (url.protocol !== "https:" && url.protocol !== "http:") return false;
+		const host = url.hostname.toLowerCase();
+		if (host === "grok.com" || host.endsWith(".grok.com")) return true;
+		if (host === "localhost" || host === "127.0.0.1" || host === "[::1]") return true;
+		return false;
+	} catch {
+		return false;
+	}
+}
+function isSandboxPreviewGuestHost(hostname) {
+	const host = hostname.toLowerCase();
+	return host === "grok-sandbox.com" || host.endsWith(".grok-sandbox.com");
+}
+function isRemintPreviewPair(guestHost, parentHost) {
+	const guest = guestHost.toLowerCase();
+	const parent = parentHost.toLowerCase();
+	const i = guest.indexOf(".preview.");
+	if (i <= 0) return false;
+	const label = guest.slice(0, i);
+	const rest = guest.slice(i + 9);
+	if (label.includes(".") || !rest.includes(".")) return false;
+	return parent === rest || parent === `grok.${rest}`;
+}
+function resolveParentEmbedderOrigin(parentIsSelf, referrer, ancestorOrigin, guestHostname = "") {
+	if (parentIsSelf) return null;
+	for (const candidate of [referrer, ancestorOrigin ?? ""].filter(Boolean)) try {
+		const url = new URL(candidate.includes("://") ? candidate : `https://${candidate}`);
+		if (url.protocol !== "https:" && url.protocol !== "http:") continue;
+		if (isGrokEmbedderOrigin(url.origin)) return url.origin;
+		if (isSandboxPreviewGuestHost(guestHostname) || isRemintPreviewPair(guestHostname, url.hostname)) return url.origin;
+	} catch {}
+	return null;
+}
+/**
+* Guest side of the grok-web ↔ sandbox preview postMessage bridge.
+*
+* Activates only when this page is framed by an allowlisted Grok embedder.
+* Top-level runs (download/export, local `npm run dev`, deployed sites) noop.
+*/
+var PREVIEW_BRIDGE_CHANNEL = "grok-preview-bridge";
+var EnvelopeSchema = object({
+	channel: literal(PREVIEW_BRIDGE_CHANNEL),
+	version: number().int().positive(),
+	type: string().min(1)
+});
+var HelloSchema = EnvelopeSchema.extend({ type: literal("hello") });
+var NavigateSchema = EnvelopeSchema.extend({
+	type: literal("navigate"),
+	path: string().min(1)
+});
+var HistorySchema = EnvelopeSchema.extend({
+	type: literal("history"),
+	delta: union([literal(-1), literal(1)])
+});
+var ConnectorTokenReadySchema = EnvelopeSchema.extend({ type: literal("connector-token-ready") });
+function isSafeBridgePath(path) {
+	if (!path.startsWith("/") || path.startsWith("//") || path.includes("\\")) return false;
+	try {
+		return new URL(path, "https://preview.invalid").origin === "https://preview.invalid";
+	} catch {
+		return false;
+	}
+}
+/**
+* Origin of the Grok embedder framing this page, or null when the page runs
+* top-level (download/export, local `npm run dev`, deployed sites) or under a
+* non-Grok parent. Client-only; null during SSR.
+*/
+function resolveCurrentEmbedderOrigin() {
+	if (typeof window === "undefined") return null;
+	const ancestorOrigin = typeof location.ancestorOrigins !== "undefined" && location.ancestorOrigins.length > 0 ? location.ancestorOrigins[0] : null;
+	return resolveParentEmbedderOrigin(window.parent === window, document.referrer, ancestorOrigin, window.location.hostname);
+}
+/**
+* Install host↔guest messaging. Returns a dispose function.
+* Noops (returns a no-op dispose) when not embedded under a Grok parent.
+*/
+function installPreviewHostBridge(options = {}) {
+	const parentOrigin = resolveCurrentEmbedderOrigin();
+	if (parentOrigin === null) return () => {};
+	const ROOT_STATE_KEY = "__grokPreviewBridgeRoot";
+	const originalPushState = window.history.pushState.bind(window.history);
+	const originalReplaceState = window.history.replaceState.bind(window.history);
+	const isAtHistoryRoot = () => {
+		const state = window.history.state;
+		return Boolean(state && typeof state === "object" && state[ROOT_STATE_KEY] === true);
+	};
+	try {
+		const current = window.history.state;
+		if (!(current !== null && typeof current === "object" && Object.prototype.hasOwnProperty.call(current, ROOT_STATE_KEY))) {
+			const isRoot = window.history.length <= 1;
+			originalReplaceState(current && typeof current === "object" ? {
+				...current,
+				[ROOT_STATE_KEY]: isRoot
+			} : { [ROOT_STATE_KEY]: isRoot }, "", window.location.href);
+		}
+	} catch {}
+	const post = (message) => {
+		window.parent.postMessage(message, parentOrigin);
+	};
+	const reportLocation = () => {
+		post({
+			channel: PREVIEW_BRIDGE_CHANNEL,
+			version: 1,
+			type: "location",
+			path: window.location.pathname || "/",
+			search: window.location.search,
+			hash: window.location.hash
+		});
+	};
+	const reportRoutes = () => {
+		const paths = options.getRoutePaths?.() ?? [];
+		post({
+			channel: PREVIEW_BRIDGE_CHANNEL,
+			version: 1,
+			type: "routes",
+			paths
+		});
+	};
+	const defaultNavigate = (path) => {
+		if (!isSafeBridgePath(path)) return;
+		try {
+			const url = new URL(path, window.location.origin);
+			if (url.origin !== window.location.origin) return;
+			const next = `${url.pathname}${url.search}${url.hash}`;
+			window.history.pushState(window.history.state, "", next);
+			window.dispatchEvent(new PopStateEvent("popstate", { state: window.history.state }));
+		} catch {}
+	};
+	const navigate = (path) => {
+		if (!isSafeBridgePath(path)) return;
+		if (options.navigate) {
+			options.navigate(path);
+			return;
+		}
+		defaultNavigate(path);
+	};
+	const announce = () => {
+		reportLocation();
+		reportRoutes();
+		post({
+			channel: PREVIEW_BRIDGE_CHANNEL,
+			version: 1,
+			type: "ready"
+		});
+	};
+	const onHello = (data) => {
+		if (!HelloSchema.safeParse(data).success) return;
+		announce();
+	};
+	const onNavigate = (data) => {
+		const parsed = NavigateSchema.safeParse(data);
+		if (!parsed.success) return;
+		navigate(parsed.data.path);
+		queueMicrotask(reportLocation);
+	};
+	const onHistory = (data) => {
+		const parsed = HistorySchema.safeParse(data);
+		if (!parsed.success) return;
+		if (parsed.data.delta === -1 && isAtHistoryRoot()) return;
+		window.history.go(parsed.data.delta);
+	};
+	const onConnectorTokenReady = (data) => {
+		if (!ConnectorTokenReadySchema.safeParse(data).success) return;
+		window.dispatchEvent(new Event(CONNECTOR_TOKEN_READY_EVENT));
+	};
+	const hostMessageHandlers = /* @__PURE__ */ new Map([
+		["hello", onHello],
+		["navigate", onNavigate],
+		["history", onHistory],
+		["connector-token-ready", onConnectorTokenReady]
+	]);
+	const onMessage = (event) => {
+		if (event.source !== window.parent) return;
+		if (event.origin !== parentOrigin) return;
+		const envelope = EnvelopeSchema.safeParse(event.data);
+		if (!envelope.success || envelope.data.version !== 1) return;
+		hostMessageHandlers.get(envelope.data.type)?.(event.data);
+	};
+	const onPopState = () => {
+		reportLocation();
+	};
+	const onHashChange = () => {
+		reportLocation();
+	};
+	window.history.pushState = (data, unused, url) => {
+		const next = data && typeof data === "object" ? {
+			...data,
+			[ROOT_STATE_KEY]: false
+		} : data;
+		originalPushState(next, unused, url);
+		reportLocation();
+	};
+	window.history.replaceState = (data, unused, url) => {
+		const next = isAtHistoryRoot() ? {
+			...data && typeof data === "object" ? data : {},
+			[ROOT_STATE_KEY]: true
+		} : data;
+		originalReplaceState(next, unused, url);
+		reportLocation();
+	};
+	window.addEventListener("message", onMessage);
+	window.addEventListener("popstate", onPopState);
+	window.addEventListener("hashchange", onHashChange);
+	announce();
+	return () => {
+		window.removeEventListener("message", onMessage);
+		window.removeEventListener("popstate", onPopState);
+		window.removeEventListener("hashchange", onHashChange);
+		window.history.pushState = originalPushState;
+		window.history.replaceState = originalReplaceState;
+	};
+}
+/** Collect static path patterns from a TanStack route tree (best-effort). */
+function collectRoutePathsFromTree(routeTree) {
+	const paths = /* @__PURE__ */ new Set();
+	const walk = (node) => {
+		if (!node || typeof node !== "object") return;
+		const record = node;
+		const full = typeof record.fullPath === "string" ? record.fullPath : typeof record.path === "string" ? record.path : null;
+		if (full !== null && full !== "") paths.add(full.startsWith("/") ? full : `/${full}`);
+		else if (full === "") paths.add("/");
+		const children = record.children;
+		if (Array.isArray(children)) for (const child of children) walk(child);
+		else if (children && typeof children === "object") for (const child of Object.values(children)) walk(child);
+	};
+	walk(routeTree);
+	return [...paths];
+}
+/**
+* Mount once in `__root.tsx` so the Grok preview chrome can drive navigation
+* (and later receive registered routes). Noops when the app is not embedded.
+*/
+function PreviewHostBridge() {
+	const router = useRouter();
+	(0, import_react.useEffect)(() => {
+		return installPreviewHostBridge({
+			navigate: (path) => {
+				router.history.push(path);
+			},
+			getRoutePaths: () => collectRoutePathsFromTree(router.routeTree)
+		});
+	}, [router]);
+	return null;
+}
+/**
+* App-wide client provider mounted once near the root (in `src/routes/__root.tsx`):
+*
+*   <AuthProvider><Outlet /></AuthProvider>
+*
+* Better Auth's React client (`@/lib/auth/client`) needs NO context provider —
+* its `useSession()` works standalone — so this is a passthrough today. It's
+* kept as the single, stable mount point for any future client-side providers
+* (e.g. a toast or theme provider) without churning the root shell.
+*/
+function AuthProvider({ children }) {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_jsx_runtime.Fragment, { children });
+}
+var styles_default = "/assets/styles-BlGIbxLf.css";
+var APP_NAME = "SAND";
+var Route$24 = createRootRoute({
+	head: () => ({
+		meta: [
+			{ charSet: "utf-8" },
+			{
+				name: "viewport",
+				content: "width=device-width, initial-scale=1"
+			},
+			{ title: APP_NAME },
+			{
+				name: "theme-color",
+				content: "#09090b"
+			},
+			{
+				name: "description",
+				content: "SAND God Model — Windows stay for persistent agents. 885,000 Grokipedia pages kept alive. No token meter."
+			}
+		],
+		links: [
+			{
+				rel: "icon",
+				type: "image/svg+xml",
+				href: "/favicon.svg"
+			},
+			{
+				rel: "stylesheet",
+				href: styles_default
+			},
+			{
+				rel: "manifest",
+				href: "/__grok/manifest.webmanifest"
+			},
+			{
+				rel: "apple-touch-icon",
+				href: "/__grok/icon-180.png"
+			},
+			{
+				rel: "preconnect",
+				href: "https://fonts.googleapis.com"
+			},
+			{
+				rel: "preconnect",
+				href: "https://fonts.gstatic.com",
+				crossOrigin: "anonymous"
+			},
+			{
+				rel: "stylesheet",
+				href: "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap"
+			}
+		]
+	}),
+	component: Root
+});
+function Root() {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("html", {
+		lang: "en",
+		className: "antialiased",
+		suppressHydrationWarning: true,
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("head", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(HeadContent, {}) }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("body", { children: [
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(PreviewHostBridge, {}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(AuthProvider, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(AppShell, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Outlet, {}) }) }),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Scripts, {})
+		] })]
+	});
+}
+var $$splitComponentImporter$23 = () => import("./routes-BxqyqGvH.mjs");
+var Route$23 = createFileRoute("/")({ component: lazyRouteComponent($$splitComponentImporter$23, "component") });
+var $$splitComponentImporter$22 = () => import("./archive-CKbZhDtw.mjs");
+var Route$22 = createFileRoute("/archive")({ component: lazyRouteComponent($$splitComponentImporter$22, "component") });
+var $$splitComponentImporter$21 = () => import("./bots-C1HCXdyn.mjs");
+var Route$21 = createFileRoute("/bots")({ component: lazyRouteComponent($$splitComponentImporter$21, "component") });
+var $$splitComponentImporter$20 = () => import("./computer-aVUFsy75.mjs");
+var Route$20 = createFileRoute("/computer")({ component: lazyRouteComponent($$splitComponentImporter$20, "component") });
+var $$splitComponentImporter$19 = () => import("./doctrine-Bh64Igt2.mjs");
+var Route$19 = createFileRoute("/doctrine")({ component: lazyRouteComponent($$splitComponentImporter$19, "component") });
+var $$splitComponentImporter$18 = () => import("./fleet-DWX1LpMD.mjs");
+var Route$18 = createFileRoute("/fleet")({ component: lazyRouteComponent($$splitComponentImporter$18, "component") });
+var $$splitComponentImporter$17 = () => import("./gates-BaLCL2jg.mjs");
+var Route$17 = createFileRoute("/gates")({ component: lazyRouteComponent($$splitComponentImporter$17, "component") });
+var $$splitComponentImporter$16 = () => import("./institution-DlsaQCwq.mjs");
+var Route$16 = createFileRoute("/institution")({ component: lazyRouteComponent($$splitComponentImporter$16, "component") });
+var $$splitComponentImporter$15 = () => import("./org-CjbdFZc2.mjs");
+var Route$15 = createFileRoute("/org")({ component: lazyRouteComponent($$splitComponentImporter$15, "component") });
+var $$splitComponentImporter$14 = () => import("./routines-Bi2GbJSX.mjs");
+var Route$14 = createFileRoute("/routines")({ component: lazyRouteComponent($$splitComponentImporter$14, "component") });
+var $$splitComponentImporter$13 = () => import("./skills-B_5LaKpV.mjs");
+var Route$13 = createFileRoute("/skills")({ component: lazyRouteComponent($$splitComponentImporter$13, "component") });
+var $$splitComponentImporter$12 = () => import("./wiki-BCO5Woui.mjs");
+var Route$12 = createFileRoute("/wiki")({ component: lazyRouteComponent($$splitComponentImporter$12, "component") });
+var $$splitComponentImporter$11 = () => import("./archive.index-DuXdQjDY.mjs");
+var Route$11 = createFileRoute("/archive/")({ component: lazyRouteComponent($$splitComponentImporter$11, "component") });
+var $$splitComponentImporter$10 = () => import("./archive._sessionId-uGUJW1KW.mjs");
+var Route$10 = createFileRoute("/archive/$sessionId")({ component: lazyRouteComponent($$splitComponentImporter$10, "component") });
+var $$splitComponentImporter$9 = () => import("./bots.index-BI8COnN8.mjs");
+var Route$9 = createFileRoute("/bots/")({ component: lazyRouteComponent($$splitComponentImporter$9, "component") });
+var $$splitComponentImporter$8 = () => import("./bots._botId-Ba7ac2pr.mjs");
+var Route$8 = createFileRoute("/bots/$botId")({ component: lazyRouteComponent($$splitComponentImporter$8, "component") });
+var $$splitComponentImporter$7 = () => import("./fleet.index-BhothMf5.mjs");
+var Route$7 = createFileRoute("/fleet/")({ component: lazyRouteComponent($$splitComponentImporter$7, "component") });
+var $$splitComponentImporter$6 = () => import("./fleet._agentId-4br0jhY7.mjs");
+var Route$6 = createFileRoute("/fleet/$agentId")({ component: lazyRouteComponent($$splitComponentImporter$6, "component") });
+var $$splitComponentImporter$5 = () => import("./institution.index-ubMF41kf.mjs");
+var Route$5 = createFileRoute("/institution/")({ component: lazyRouteComponent($$splitComponentImporter$5, "component") });
+var $$splitComponentImporter$4 = () => import("./institution._artifactId-Boh-DcGZ.mjs");
+var Route$4 = createFileRoute("/institution/$artifactId")({ component: lazyRouteComponent($$splitComponentImporter$4, "component") });
+var $$splitComponentImporter$3 = () => import("./org.index-qbu44qoX.mjs");
+var Route$3 = createFileRoute("/org/")({ component: lazyRouteComponent($$splitComponentImporter$3, "component") });
+var $$splitComponentImporter$2 = () => import("./org._roleId-BjkH9PLg.mjs");
+var Route$2 = createFileRoute("/org/$roleId")({ component: lazyRouteComponent($$splitComponentImporter$2, "component") });
+var $$splitComponentImporter$1 = () => import("./wiki.index-DP7cTajN.mjs");
+var Route$1 = createFileRoute("/wiki/")({ component: lazyRouteComponent($$splitComponentImporter$1, "component") });
+var $$splitComponentImporter = () => import("./wiki._pageId-D2GDjIr3.mjs");
+var Route = createFileRoute("/wiki/$pageId")({ component: lazyRouteComponent($$splitComponentImporter, "component") });
+var IndexRoute = Route$23.update({
+	id: "/",
+	path: "/",
+	getParentRoute: () => Route$24
+});
+var ArchiveRoute = Route$22.update({
+	id: "/archive",
+	path: "/archive",
+	getParentRoute: () => Route$24
+});
+var BotsRoute = Route$21.update({
+	id: "/bots",
+	path: "/bots",
+	getParentRoute: () => Route$24
+});
+var ComputerRoute = Route$20.update({
+	id: "/computer",
+	path: "/computer",
+	getParentRoute: () => Route$24
+});
+var DoctrineRoute = Route$19.update({
+	id: "/doctrine",
+	path: "/doctrine",
+	getParentRoute: () => Route$24
+});
+var FleetRoute = Route$18.update({
+	id: "/fleet",
+	path: "/fleet",
+	getParentRoute: () => Route$24
+});
+var GatesRoute = Route$17.update({
+	id: "/gates",
+	path: "/gates",
+	getParentRoute: () => Route$24
+});
+var InstitutionRoute = Route$16.update({
+	id: "/institution",
+	path: "/institution",
+	getParentRoute: () => Route$24
+});
+var OrgRoute = Route$15.update({
+	id: "/org",
+	path: "/org",
+	getParentRoute: () => Route$24
+});
+var RoutinesRoute = Route$14.update({
+	id: "/routines",
+	path: "/routines",
+	getParentRoute: () => Route$24
+});
+var SkillsRoute = Route$13.update({
+	id: "/skills",
+	path: "/skills",
+	getParentRoute: () => Route$24
+});
+var WikiRoute = Route$12.update({
+	id: "/wiki",
+	path: "/wiki",
+	getParentRoute: () => Route$24
+});
+var ArchiveIndexRoute = Route$11.update({
+	id: "/",
+	path: "/",
+	getParentRoute: () => ArchiveRoute
+});
+var ArchiveSessionIdRoute = Route$10.update({
+	id: "/$sessionId",
+	path: "/$sessionId",
+	getParentRoute: () => ArchiveRoute
+});
+var BotsIndexRoute = Route$9.update({
+	id: "/",
+	path: "/",
+	getParentRoute: () => BotsRoute
+});
+var BotsBotIdRoute = Route$8.update({
+	id: "/$botId",
+	path: "/$botId",
+	getParentRoute: () => BotsRoute
+});
+var FleetIndexRoute = Route$7.update({
+	id: "/",
+	path: "/",
+	getParentRoute: () => FleetRoute
+});
+var FleetAgentIdRoute = Route$6.update({
+	id: "/$agentId",
+	path: "/$agentId",
+	getParentRoute: () => FleetRoute
+});
+var InstitutionIndexRoute = Route$5.update({
+	id: "/",
+	path: "/",
+	getParentRoute: () => InstitutionRoute
+});
+var InstitutionArtifactIdRoute = Route$4.update({
+	id: "/$artifactId",
+	path: "/$artifactId",
+	getParentRoute: () => InstitutionRoute
+});
+var OrgIndexRoute = Route$3.update({
+	id: "/",
+	path: "/",
+	getParentRoute: () => OrgRoute
+});
+var OrgRoleIdRoute = Route$2.update({
+	id: "/$roleId",
+	path: "/$roleId",
+	getParentRoute: () => OrgRoute
+});
+var WikiIndexRoute = Route$1.update({
+	id: "/",
+	path: "/",
+	getParentRoute: () => WikiRoute
+});
+var WikiPageIdRoute = Route.update({
+	id: "/$pageId",
+	path: "/$pageId",
+	getParentRoute: () => WikiRoute
+});
+var ArchiveRouteChildren = {
+	ArchiveSessionIdRoute,
+	ArchiveIndexRoute
+};
+var ArchiveRouteWithChildren = ArchiveRoute._addFileChildren(ArchiveRouteChildren);
+var BotsRouteChildren = {
+	BotsBotIdRoute,
+	BotsIndexRoute
+};
+var BotsRouteWithChildren = BotsRoute._addFileChildren(BotsRouteChildren);
+var FleetRouteChildren = {
+	FleetAgentIdRoute,
+	FleetIndexRoute
+};
+var FleetRouteWithChildren = FleetRoute._addFileChildren(FleetRouteChildren);
+var InstitutionRouteChildren = {
+	InstitutionArtifactIdRoute,
+	InstitutionIndexRoute
+};
+var InstitutionRouteWithChildren = InstitutionRoute._addFileChildren(InstitutionRouteChildren);
+var OrgRouteChildren = {
+	OrgRoleIdRoute,
+	OrgIndexRoute
+};
+var OrgRouteWithChildren = OrgRoute._addFileChildren(OrgRouteChildren);
+var WikiRouteChildren = {
+	WikiPageIdRoute,
+	WikiIndexRoute
+};
+var rootRouteChildren = {
+	IndexRoute,
+	ArchiveRoute: ArchiveRouteWithChildren,
+	BotsRoute: BotsRouteWithChildren,
+	ComputerRoute,
+	DoctrineRoute,
+	FleetRoute: FleetRouteWithChildren,
+	GatesRoute,
+	InstitutionRoute: InstitutionRouteWithChildren,
+	OrgRoute: OrgRouteWithChildren,
+	RoutinesRoute,
+	SkillsRoute,
+	WikiRoute: WikiRoute._addFileChildren(WikiRouteChildren)
+};
+var routeTree = Route$24._addFileChildren(rootRouteChildren)._addFileTypes();
+var router_exports = /* @__PURE__ */ __exportAll({ getRouter: () => getRouter });
+function getRouter() {
+	return createRouter({
+		routeTree,
+		defaultErrorComponent: AppErrorComponent
+	});
+}
+//#endregion
+export { formatBytes as A, sessions as B, clampId as C, wikiPage as D, searchWiki as E, laneLabel as F, loadFullAgents as I, loadFullArchive as L, getAgent as M, getRole as N, wikiTitle as O, getSession as P, meta as R, WIKI_SIZE as S, pagesInCategory as T, ROOMS as _, Route$6 as a, CANON_IDS as b, cn as c, LAUNCH_STAYS as d, stayLabel as f, OBJECTS as g, KIND_LABEL as h, Route$4 as i, formatWhen as j, agents as k, DESK_APPS as l, KINDS as m, Route as n, Route$8 as o, useOs as p, Route$2 as r, Route$10 as s, router_exports as t, usePins as u, presenceOf as v, formatPageId as w, CATEGORIES as x, roomForAgent as y, roles as z };

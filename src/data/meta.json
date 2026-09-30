@@ -1,0 +1,40 @@
+{
+  "rebuiltAt": "2026-09-13T04:19:06.281Z",
+  "roleCount": 12,
+  "agentCount": 42,
+  "sessionCount": 350,
+  "spaces": [
+    {
+      "name": "library",
+      "count": 240
+    },
+    {
+      "name": "all",
+      "count": 12
+    },
+    {
+      "name": "PrivateLab",
+      "count": 97
+    },
+    {
+      "name": "BillDoors-NotGates WebDev Ultimate Guide",
+      "count": 1
+    }
+  ],
+  "tagCounts": {
+    "ai-stack": 269,
+    "grok": 22,
+    "hardware": 103,
+    "network": 72,
+    "docs": 76,
+    "infra": 93,
+    "business": 22,
+    "learning": 35,
+    "browser": 75,
+    "firmware": 77,
+    "security": 35,
+    "general": 23
+  },
+  "corpusBytes": 7499909,
+  "source": "grok-build-bot-org + agent skill zips + groktoperp library"
+}

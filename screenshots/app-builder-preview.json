@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "SAND",
+      "hasCanvas": false,
+      "bodyTextLen": 553,
+      "bodyTextHash": "a7a01870afdaa15c6d60fa1e38c0c87ae24f040311d03c2bf3700f488f19257c",
+      "bodyTextPrefix": "Skip to content Sand This Computer Account Grokipedia 885,000 Bo",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "SAND",
+      "hasCanvas": false,
+      "bodyTextLen": 435,
+      "bodyTextHash": "e496ab6bb88d56a6d6be20fd7a85b80fd5098b75b8d6521adfbb05111abaf668",
+      "bodyTextPrefix": "Skip to content This Computer Grokipedia Bots Routines Skills In",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
